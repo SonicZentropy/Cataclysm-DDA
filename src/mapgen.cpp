@@ -570,7 +570,7 @@ static void GENERATOR_add_fire( map &md,
                 // Only place fire on flammable surfaces unless the cataclysm started very recently
                 // Note that most floors are FLAMMABLE_HARD, this is fine. This check is primarily geared
                 // at preventing fire in the middle of roads or parking lots.
-                md.add_field( current_tile, field_fd_fire,
+                //md.add_field( current_tile, field_fd_fire,
                               rng( fire_vars.min_intensity, fire_vars.max_intensity ) );
             }
         }
