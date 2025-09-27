@@ -571,7 +571,7 @@ static void GENERATOR_add_fire( map &md,
                 // Note that most floors are FLAMMABLE_HARD, this is fine. This check is primarily geared
                 // at preventing fire in the middle of roads or parking lots.
                 //md.add_field( current_tile, field_fd_fire,
-                              rng( fire_vars.min_intensity, fire_vars.max_intensity ) );
+                //              rng( fire_vars.min_intensity, fire_vars.max_intensity ) );
             }
         }
 
@@ -610,6 +610,9 @@ static void GENERATOR_pre_burn( map &md,
     for( int i = 0; i < burnt_vars.num_attempts; i++ ) {
         if( !x_in_y( burnt_vars.percent_chance, 100 ) ) {
             continue; // failed roll
+        }
+        else {
+            continue;
         }
         for( tripoint_bub_ms current_tile : all_points_in_map ) {
             if( md.has_flag_ter( ter_furn_flag::TFLAG_NATURAL_UNDERGROUND, current_tile ) ||
