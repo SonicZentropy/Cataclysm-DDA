@@ -41,7 +41,7 @@ constexpr int MAX_WORN_PER_TYPE = 2;
  * Items on the map with at most this distance to the player are considered available for crafting,
  * see inventory::form_from_map
 */
-constexpr int PICKUP_RANGE = 6;
+constexpr int PICKUP_RANGE = 26;
 
 // Maximum move cost when handling an item.
 constexpr int MAX_HANDLING_COST = 400;
@@ -84,10 +84,10 @@ constexpr units::temperature boiling = units::from_celsius( 100 ); // 100 Celsiu
 constexpr int MAX_AIM_COST = 10;
 
 // Maximum (effective) level for a skill.
-constexpr int MAX_SKILL = 10;
+constexpr int MAX_SKILL = 15;
 
 // Maximum (effective) level for a stat.
-constexpr int MAX_STAT = 14;
+constexpr int MAX_STAT = 25;
 
 // Accuracy levels which a shots tangent must be below.
 constexpr double accuracy_headshot = 0.1;

@@ -1384,20 +1384,20 @@ void Character::modify_morale( item &food, const int nutr )
         const int maximum_stacked_morale_penalty = -400;
         if( sapiovore && spiritual ) {
             add_msg_if_player( m_good, _( "You eat the human flesh, and in doing so, devour their spirit." ) );
-            add_morale( morale_cannibal, minor_morale_bonus, minor_morale_bonus * 5 );
+            //add_morale( morale_cannibal, minor_morale_bonus, minor_morale_bonus * 5 );
         } else if( sapiovore ) {
             add_msg_if_player( _( "Mmh.  Tastes like venison." ) );
         } else if( cannibal && spiritual ) {
             add_msg_if_player( m_good,
                                _( "Even as you indulge your darkest impulses, you dread what judgement may come." ) );
             // Reduced penalties
-            add_morale( morale_cannibal, moderate_morale_penalty, maximum_stacked_morale_penalty,
-                        7_days, 4_days );
+            //add_morale( morale_cannibal, moderate_morale_penalty, maximum_stacked_morale_penalty,
+            //            7_days, 4_days );
         } else if( cannibal && psycho ) {
             add_msg_if_player( m_good,
                                _( "You worry that your hunger for human flesh is going to be a liability one of these days." ) );
             // Reduced penalties
-            add_morale( morale_cannibal, minor_morale_penalty, minor_morale_penalty * 5, 6_hours, 3_hours );
+            //add_morale( morale_cannibal, minor_morale_penalty, minor_morale_penalty * 5, 6_hours, 3_hours );
         } else if( cannibal ) {
             add_msg_if_player( m_good, _( "You indulge your shameful hunger." ) );
             // No morale added, but lack of morale penalty is a huge bonus already.
@@ -1408,18 +1408,18 @@ void Character::modify_morale( item &food, const int nutr )
         } else if( has_flag( json_flag_HEMOVORE ) && food.has_flag( flag_HEMOVORE_FUN ) ) {
             add_msg_if_player(
                 _( "Despite your cravings, you still can't help feeling weird about drinking somebody's blood." ) );
-            add_morale( morale_cannibal, minor_morale_penalty, minor_morale_penalty * 3,
-                        30_minutes, 15_minutes );
+            //add_morale( morale_cannibal, minor_morale_penalty, minor_morale_penalty * 3,
+            //            30_minutes, 15_minutes );
         } else if( spiritual ) {
             add_msg_if_player( m_bad,
                                _( "This is probably going to count against you if there's still an afterlife." ) );
-            add_morale( morale_cannibal, huge_morale_penalty, maximum_stacked_morale_penalty, 7_days, 4_days );
+            //add_morale( morale_cannibal, huge_morale_penalty, maximum_stacked_morale_penalty, 7_days, 4_days );
         } else if( numb ) {
             add_msg_if_player( m_bad, _( "You find this meal distasteful, but necessary." ) );
-            add_morale( morale_cannibal, huge_morale_penalty, maximum_stacked_morale_penalty, 7_days, 4_days );
+            //add_morale( morale_cannibal, huge_morale_penalty, maximum_stacked_morale_penalty, 7_days, 4_days );
         } else {
             add_msg_if_player( m_bad, _( "You feel horrible for eating a person." ) );
-            add_morale( morale_cannibal, huge_morale_penalty, maximum_stacked_morale_penalty, 7_days, 4_days );
+            //add_morale( morale_cannibal, huge_morale_penalty, maximum_stacked_morale_penalty, 7_days, 4_days );
         }
     }
 
