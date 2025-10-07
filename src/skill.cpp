@@ -378,48 +378,50 @@ bool SkillLevel::isRusty() const
 
 bool SkillLevel::rust( int rust_resist, float rust_multiplier )
 {
-    if( ( calendar::turn - _lastPracticed ) < 24_hours ) {
-        // don't rust within the grace period
-        return false;
-    }
-
-    if( unadjustedLevel() >= MAX_SKILL ) {
-        // don't rust any more once you hit the level cap, at least until we have a way to "pause" rust for a while.
-        return false;
-    }
-
-    const int level_multiplier = pow( unadjustedLevel() + 1, 2U );
-    float level_exp = level_multiplier * 10000.0f;
-    if( _rustAccumulator > level_exp * 3 ) {
-        // at this point the numbers ahead will be too small to bother.  Just cap it off.
-        return false;
-    }
-
-    // Future plans: Have rust_slowdown impacted by intelligence and other memory-affecting things
-    float rust_slowdown = std::max( static_cast<float>( std::sqrt( _rustAccumulator / level_exp ) ),
-                                    0.04f );
-
-    // rust amount starts at 4% of a level's xp, run every 24 hours.
-    // Once the accumulated rust exceeds 16% of a level, rust_amount starts to drop.
-    int rust_amount = level_multiplier * rust_multiplier * 16 / rust_slowdown;
-
-    if( rust_resist > 0 ) {
-        rust_amount = std::lround( rust_amount * ( std::max( ( 100 - rust_resist ), 0 ) / 100.0 ) );
-    }
-
-    if( level() == 0 ) {
-        rust_amount = std::min( rust_amount, _exercise );
-    }
-
-    if( rust_amount <= 0 ) {
-        return false;
-    }
-
-    _rustAccumulator += rust_amount;
-    _exercise -= rust_amount;
-    on_exercise_change();
-
+    // remove skill rust by skipping entirely
     return false;
+    // if( ( calendar::turn - _lastPracticed ) < 24_hours ) {
+    //     // don't rust within the grace period
+    //     return false;
+    // }
+    //
+    // if( unadjustedLevel() >= MAX_SKILL ) {
+    //     // don't rust any more once you hit the level cap, at least until we have a way to "pause" rust for a while.
+    //     return false;
+    // }
+    //
+    // const int level_multiplier = pow( unadjustedLevel() + 1, 2U );
+    // float level_exp = level_multiplier * 10000.0f;
+    // if( _rustAccumulator > level_exp * 3 ) {
+    //     // at this point the numbers ahead will be too small to bother.  Just cap it off.
+    //     return false;
+    // }
+    //
+    // // Future plans: Have rust_slowdown impacted by intelligence and other memory-affecting things
+    // float rust_slowdown = std::max( static_cast<float>( std::sqrt( _rustAccumulator / level_exp ) ),
+    //                                 0.04f );
+    //
+    // // rust amount starts at 4% of a level's xp, run every 24 hours.
+    // // Once the accumulated rust exceeds 16% of a level, rust_amount starts to drop.
+    // int rust_amount = level_multiplier * rust_multiplier * 16 / rust_slowdown;
+    //
+    // if( rust_resist > 0 ) {
+    //     rust_amount = std::lround( rust_amount * ( std::max( ( 100 - rust_resist ), 0 ) / 100.0 ) );
+    // }
+    //
+    // if( level() == 0 ) {
+    //     rust_amount = std::min( rust_amount, _exercise );
+    // }
+    //
+    // if( rust_amount <= 0 ) {
+    //     return false;
+    // }
+    //
+    // _rustAccumulator += rust_amount;
+    // _exercise -= rust_amount;
+    // on_exercise_change();
+    //
+    // return false;
 }
 
 void SkillLevel::practice()
