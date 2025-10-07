@@ -10,6 +10,7 @@
     "categories": [ "CLASSIC" ],
     "color": "white_cyan",
     "death_drops": "mon_zombie_scientist_death_drops",
+    "dissect": "dissect_mon_zombie_scientist",
     "delete": { "flags": [ "GROUP_BASH" ] }
   },
   {

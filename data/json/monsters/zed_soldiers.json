@@ -47,6 +47,7 @@
     "vision_day": 30,
     "vision_night": 35,
     "harvest": "zombie_humanoid_shadow",
+    "dissect": "dissect_bionics_mil",
     "special_attacks": [
       { "id": "grab" },
       { "id": "scratch_humanoid" },
