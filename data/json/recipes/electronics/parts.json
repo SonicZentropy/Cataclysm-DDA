@@ -52,6 +52,7 @@
   {
     "type": "recipe",
     "result": "control_laptop",
+    "activity_level": "LIGHT_EXERCISE",
     "category": "CC_ELECTRONIC",
     "subcategory": "CSC_ELECTRONIC_TOOLS",
     "skill_used": "electronics",
