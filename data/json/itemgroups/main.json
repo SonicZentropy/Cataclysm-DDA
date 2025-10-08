@@ -21,6 +21,7 @@
       { "item": "holo_cloak", "prob": 10 },
       { "item": "portal", "prob": 10 },
       { "item": "rm13_armor", "prob": 10 },
+      { "item": "control_laptop", "prob": 10 },
       { "item": "high_density_capacitor", "prob": 10 },
       { "item": "beam_scatterer", "prob": 10 },
       { "item": "rm11b_sniper_rifle", "prob": 10 },

@@ -828,6 +828,7 @@
       [ "file", 10 ],
       [ "atomic_lamp", 1 ],
       { "item": "smart_lamp", "prob": 2, "charges": [ 0, 100 ] },
+      [ "control_laptop", 1 ],
       [ "bot_manhack", 2 ],
       [ "teleporter", 1 ],
       { "group": "used_laptops", "prob": 4, "contents-group": "efiles_science" },
