@@ -147,7 +147,8 @@
   {
     "id": "veh_spare_parts",
     "type": "ITEM_CATEGORY",
-    "name": { "str": "VEHICLE SPARE PARTS" },
+    "name_header": { "str": "Vehicle Spare parts" },
+    "name_noun": { "ctxt": "item_category", "str": "vehicle part" },
     "zone": "LOOT_VEHICLE_SPARE_PARTS",
     "sort_rank": -10
   },
