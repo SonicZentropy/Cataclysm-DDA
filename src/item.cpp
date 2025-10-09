@@ -905,7 +905,7 @@ void item::rand_degradation()
     if( type->degrade_increments() == 0 ) {
         return; // likely count_by_charges
     }
-    set_degradation( rng( 0, damage() ) * 50.0f / type->degrade_increments() );
+    //set_degradation( rng( 0, damage() ) * 50.0f / type->degrade_increments() );
 }
 
 int item::damage_level( bool precise ) const
@@ -964,12 +964,14 @@ float item::damage_adjusted_armor_resist( float value, const damage_type_id &dmg
 void item::set_damage( int qty )
 {
     damage_ = std::clamp( qty, degradation_, max_damage() );
+
 }
 
 void item::set_degradation( int qty )
 {
     if( type->degrade_increments() > 0 ) {
-        degradation_ = std::clamp( qty, 0, max_damage() );
+        //degradation_ = std::clamp( qty, 0, max_damage() );
+        degradation_ = 0;
     } else {
         degradation_ = 0;
     }
@@ -9449,7 +9451,7 @@ bool item::mod_damage( int qty )
         set_damage( damage_ + qty );
 
         if( qty > 0 && !destroy ) { // apply automatic degradation
-            set_degradation( degradation_ + get_degrade_amount( *this, damage_, dmg_before ) );
+            //set_degradation( degradation_ + get_degrade_amount( *this, damage_, dmg_before ) );
         }
 
         // TODO: think about better way to telling the game what faults should be applied when
