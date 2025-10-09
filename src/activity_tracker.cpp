@@ -11,10 +11,11 @@
 
 int activity_tracker::weariness() const
 {
-    if( intake > tracker ) {
-        return tracker / 2000;
-    }
-    return ( tracker - intake * 0.5 ) / 1000;
+    return 0;
+    //if( intake > tracker ) {
+    //    return tracker / 2000;
+    //}
+    //return ( tracker - intake * 0.5 ) / 1000;
 }
 
 // Called every 5 minutes, when activity level is logged
