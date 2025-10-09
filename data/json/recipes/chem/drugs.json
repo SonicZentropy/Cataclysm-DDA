@@ -109,5 +109,2475 @@
       [ [ "lye_powder", 5 ], [ "chem_potassium_hydroxide", 25 ], [ "lye", 1 ], [ "lye_potassium", 1 ] ]
     ],
     "charges": 180
+  },
+  {
+    "type": "recipe",
+    "result": "adrenaline_injector_bundle",
+    "id_suffix": "adrenaline_injector_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "adrenaline_injector", 50 ] ]
+    ]
+  },
+  {
+    "result": "adrenaline_injector_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "adrenaline_injector", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "antibiotics_bundle",
+    "id_suffix": "antibiotics_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "antibiotics", 50 ] ]
+    ]
+  },
+  {
+    "result": "antibiotics_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "antibiotics", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "antifungal_bundle",
+    "id_suffix": "antifungal_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "antifungal", 50 ] ]
+    ]
+  },
+  {
+    "result": "antifungal_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "antifungal", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "antiparasitic_bundle",
+    "id_suffix": "antiparasitic_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "antiparasitic", 50 ] ]
+    ]
+  },
+  {
+    "result": "antiparasitic_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "antiparasitic", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "aspirin_bundle",
+    "id_suffix": "aspirin_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "aspirin", 50 ] ]
+    ]
+  },
+  {
+    "result": "aspirin_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "aspirin", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "ibuprofen_bundle",
+    "id_suffix": "ibuprofen_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "ibuprofen", 50 ] ]
+    ]
+  },
+  {
+    "result": "ibuprofen_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "ibuprofen", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "naproxen_bundle",
+    "id_suffix": "naproxen_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "naproxen", 50 ] ]
+    ]
+  },
+  {
+    "result": "naproxen_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "naproxen", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "acetaminophen_bundle",
+    "id_suffix": "acetaminophen_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "acetaminophen", 50 ] ]
+    ]
+  },
+  {
+    "result": "acetaminophen_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "acetaminophen", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "metaprolol_bundle",
+    "id_suffix": "metaprolol_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "metaprolol", 50 ] ]
+    ]
+  },
+  {
+    "result": "metaprolol_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "metaprolol", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "bfipowder_bundle",
+    "id_suffix": "bfipowder_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "bfipowder", 50 ] ]
+    ]
+  },
+  {
+    "result": "bfipowder_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "bfipowder", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "caff_gum_bundle",
+    "id_suffix": "caff_gum_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "caff_gum", 50 ] ]
+    ]
+  },
+  {
+    "result": "caff_gum_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "caff_gum", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "caffeine_bundle",
+    "id_suffix": "caffeine_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "caffeine", 50 ] ]
+    ]
+  },
+  {
+    "result": "caffeine_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "caffeine", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "chaw_bundle",
+    "id_suffix": "chaw_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "chaw", 50 ] ]
+    ]
+  },
+  {
+    "result": "chaw_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "chaw", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "chem_hydrogen_peroxide_bundle",
+    "id_suffix": "chem_hydrogen_peroxide_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "chem_hydrogen_peroxide", 50 ] ]
+    ]
+  },
+  {
+    "result": "chem_hydrogen_peroxide_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "chem_hydrogen_peroxide", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "skunk_spray_neutralizing_solution_bundle",
+    "id_suffix": "skunk_spray_neutralizing_solution_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "skunk_spray_neutralizing_solution", 50 ] ]
+    ]
+  },
+  {
+    "result": "skunk_spray_neutralizing_solution_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "skunk_spray_neutralizing_solution", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "cig_bundle",
+    "id_suffix": "cig_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "cig", 50 ] ]
+    ]
+  },
+  {
+    "result": "cig_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "cig", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "cigar_bundle",
+    "id_suffix": "cigar_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "cigar", 50 ] ]
+    ]
+  },
+  {
+    "result": "cigar_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "cigar", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "debug_chloroform_rag_bundle",
+    "id_suffix": "debug_chloroform_rag_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "debug_chloroform_rag", 50 ] ]
+    ]
+  },
+  {
+    "result": "debug_chloroform_rag_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "debug_chloroform_rag", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "codeine_bundle",
+    "id_suffix": "codeine_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "codeine", 50 ] ]
+    ]
+  },
+  {
+    "result": "codeine_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "codeine", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "coke_bundle",
+    "id_suffix": "coke_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "coke", 50 ] ]
+    ]
+  },
+  {
+    "result": "coke_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "coke", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "cola_meth_bundle",
+    "id_suffix": "cola_meth_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "cola_meth", 50 ] ]
+    ]
+  },
+  {
+    "result": "cola_meth_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "cola_meth", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "myopia_contacts_weekly_bundle",
+    "id_suffix": "myopia_contacts_weekly_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "myopia_contacts_weekly", 50 ] ]
+    ]
+  },
+  {
+    "result": "myopia_contacts_weekly_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "myopia_contacts_weekly", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "myopia_transition_contacts_weekly_bundle",
+    "id_suffix": "myopia_transition_contacts_weekly_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "myopia_transition_contacts_weekly", 50 ] ]
+    ]
+  },
+  {
+    "result": "myopia_transition_contacts_weekly_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "myopia_transition_contacts_weekly", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "myopia_contacts_daily_bundle",
+    "id_suffix": "myopia_contacts_daily_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "myopia_contacts_daily", 50 ] ]
+    ]
+  },
+  {
+    "result": "myopia_contacts_daily_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "myopia_contacts_daily", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "myopia_transition_contacts_daily_bundle",
+    "id_suffix": "myopia_transition_contacts_daily_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "myopia_transition_contacts_daily", 50 ] ]
+    ]
+  },
+  {
+    "result": "myopia_transition_contacts_daily_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "myopia_transition_contacts_daily", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "hyperopia_contacts_weekly_bundle",
+    "id_suffix": "hyperopia_contacts_weekly_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "hyperopia_contacts_weekly", 50 ] ]
+    ]
+  },
+  {
+    "result": "hyperopia_contacts_weekly_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "hyperopia_contacts_weekly", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "hyperopia_transition_contacts_weekly_bundle",
+    "id_suffix": "hyperopia_transition_contacts_weekly_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "hyperopia_transition_contacts_weekly", 50 ] ]
+    ]
+  },
+  {
+    "result": "hyperopia_transition_contacts_weekly_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "hyperopia_transition_contacts_weekly", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "hyperopia_contacts_daily_bundle",
+    "id_suffix": "hyperopia_contacts_daily_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "hyperopia_contacts_daily", 50 ] ]
+    ]
+  },
+  {
+    "result": "hyperopia_contacts_daily_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "hyperopia_contacts_daily", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "hyperopia_transition_contacts_daily_bundle",
+    "id_suffix": "hyperopia_transition_contacts_daily_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "hyperopia_transition_contacts_daily", 50 ] ]
+    ]
+  },
+  {
+    "result": "hyperopia_transition_contacts_daily_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "hyperopia_transition_contacts_daily", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "bifocal_contacts_weekly_bundle",
+    "id_suffix": "bifocal_contacts_weekly_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "bifocal_contacts_weekly", 50 ] ]
+    ]
+  },
+  {
+    "result": "bifocal_contacts_weekly_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "bifocal_contacts_weekly", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "bifocal_transition_contacts_weekly_bundle",
+    "id_suffix": "bifocal_transition_contacts_weekly_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "bifocal_transition_contacts_weekly", 50 ] ]
+    ]
+  },
+  {
+    "result": "bifocal_transition_contacts_weekly_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "bifocal_transition_contacts_weekly", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "bifocal_contacts_daily_bundle",
+    "id_suffix": "bifocal_contacts_daily_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "bifocal_contacts_daily", 50 ] ]
+    ]
+  },
+  {
+    "result": "bifocal_contacts_daily_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "bifocal_contacts_daily", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "bifocal_transition_contacts_daily_bundle",
+    "id_suffix": "bifocal_transition_contacts_daily_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "bifocal_transition_contacts_daily", 50 ] ]
+    ]
+  },
+  {
+    "result": "bifocal_transition_contacts_daily_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "bifocal_transition_contacts_daily", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "plano_transition_contacts_weekly_bundle",
+    "id_suffix": "plano_transition_contacts_weekly_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "plano_transition_contacts_weekly", 50 ] ]
+    ]
+  },
+  {
+    "result": "plano_transition_contacts_weekly_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "plano_transition_contacts_weekly", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "plano_transition_contacts_daily_bundle",
+    "id_suffix": "plano_transition_contacts_daily_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "plano_transition_contacts_daily", 50 ] ]
+    ]
+  },
+  {
+    "result": "plano_transition_contacts_daily_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "plano_transition_contacts_daily", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "crack_bundle",
+    "id_suffix": "crack_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "crack", 50 ] ]
+    ]
+  },
+  {
+    "result": "crack_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "crack", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "dayquil_bundle",
+    "id_suffix": "dayquil_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "dayquil", 50 ] ]
+    ]
+  },
+  {
+    "result": "dayquil_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "dayquil", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "disinfectant_bundle",
+    "id_suffix": "disinfectant_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "disinfectant", 50 ] ]
+    ]
+  },
+  {
+    "result": "disinfectant_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "disinfectant", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "disinfectant_makeshift_bundle",
+    "id_suffix": "disinfectant_makeshift_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "disinfectant_makeshift", 50 ] ]
+    ]
+  },
+  {
+    "result": "disinfectant_makeshift_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "disinfectant_makeshift", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "diazepam_bundle",
+    "id_suffix": "diazepam_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "diazepam", 50 ] ]
+    ]
+  },
+  {
+    "result": "diazepam_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "diazepam", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "hi_q_shatter_bundle",
+    "id_suffix": "hi_q_shatter_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "hi_q_shatter", 50 ] ]
+    ]
+  },
+  {
+    "result": "hi_q_shatter_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "hi_q_shatter", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "hi_q_wax_bundle",
+    "id_suffix": "hi_q_wax_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "hi_q_wax", 50 ] ]
+    ]
+  },
+  {
+    "result": "hi_q_wax_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "hi_q_wax", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "hi_q_distillate_bundle",
+    "id_suffix": "hi_q_distillate_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "hi_q_distillate", 50 ] ]
+    ]
+  },
+  {
+    "result": "hi_q_distillate_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "hi_q_distillate", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "ecig_bundle",
+    "id_suffix": "ecig_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "ecig", 50 ] ]
+    ]
+  },
+  {
+    "result": "ecig_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "ecig", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "eyedrops_bundle",
+    "id_suffix": "eyedrops_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "eyedrops", 50 ] ]
+    ]
+  },
+  {
+    "result": "eyedrops_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "eyedrops", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "steroid_eyedrops_bundle",
+    "id_suffix": "steroid_eyedrops_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "steroid_eyedrops", 50 ] ]
+    ]
+  },
+  {
+    "result": "steroid_eyedrops_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "steroid_eyedrops", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "flu_shot_bundle",
+    "id_suffix": "flu_shot_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "flu_shot", 50 ] ]
+    ]
+  },
+  {
+    "result": "flu_shot_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "flu_shot", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "handrolled_cig_bundle",
+    "id_suffix": "handrolled_cig_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "handrolled_cig", 50 ] ]
+    ]
+  },
+  {
+    "result": "handrolled_cig_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "handrolled_cig", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "heroin_bundle",
+    "id_suffix": "heroin_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "heroin", 50 ] ]
+    ]
+  },
+  {
+    "result": "heroin_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "heroin", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "iodine_bundle",
+    "id_suffix": "iodine_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "iodine", 50 ] ]
+    ]
+  },
+  {
+    "result": "iodine_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "iodine", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "joint_bundle",
+    "id_suffix": "joint_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "joint", 50 ] ]
+    ]
+  },
+  {
+    "result": "joint_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "joint", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "lsd_bundle",
+    "id_suffix": "lsd_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "lsd", 50 ] ]
+    ]
+  },
+  {
+    "result": "lsd_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "lsd", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "meth_bundle",
+    "id_suffix": "meth_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "meth", 50 ] ]
+    ]
+  },
+  {
+    "result": "meth_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "meth", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "pure_meth_bundle",
+    "id_suffix": "pure_meth_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "pure_meth", 50 ] ]
+    ]
+  },
+  {
+    "result": "pure_meth_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "pure_meth", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "morphine_bundle",
+    "id_suffix": "morphine_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "morphine", 50 ] ]
+    ]
+  },
+  {
+    "result": "morphine_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "morphine", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "wintergreen_oil_bundle",
+    "id_suffix": "wintergreen_oil_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "wintergreen_oil", 50 ] ]
+    ]
+  },
+  {
+    "result": "wintergreen_oil_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "wintergreen_oil", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "mugwort_oil_bundle",
+    "id_suffix": "mugwort_oil_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "mugwort_oil", 50 ] ]
+    ]
+  },
+  {
+    "result": "mugwort_oil_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "mugwort_oil", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "nic_gum_bundle",
+    "id_suffix": "nic_gum_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "nic_gum", 50 ] ]
+    ]
+  },
+  {
+    "result": "nic_gum_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "nic_gum", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "nyquil_bundle",
+    "id_suffix": "nyquil_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "nyquil", 50 ] ]
+    ]
+  },
+  {
+    "result": "nyquil_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "nyquil", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "antihistamine_bundle",
+    "id_suffix": "antihistamine_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "antihistamine", 50 ] ]
+    ]
+  },
+  {
+    "result": "antihistamine_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "antihistamine", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "oxycodone_bundle",
+    "id_suffix": "oxycodone_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "oxycodone", 50 ] ]
+    ]
+  },
+  {
+    "result": "oxycodone_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "oxycodone", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "pills_sleep_bundle",
+    "id_suffix": "pills_sleep_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "pills_sleep", 50 ] ]
+    ]
+  },
+  {
+    "result": "pills_sleep_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "pills_sleep", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "poppy_pain_bundle",
+    "id_suffix": "poppy_pain_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "poppy_pain", 50 ] ]
+    ]
+  },
+  {
+    "result": "poppy_pain_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "poppy_pain", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "poppy_sleep_bundle",
+    "id_suffix": "poppy_sleep_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "poppy_sleep", 50 ] ]
+    ]
+  },
+  {
+    "result": "poppy_sleep_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "poppy_sleep", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "poppysyrup_bundle",
+    "id_suffix": "poppysyrup_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "poppysyrup", 50 ] ]
+    ]
+  },
+  {
+    "result": "poppysyrup_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "poppysyrup", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "prophylactic_antivenom_bundle",
+    "id_suffix": "prophylactic_antivenom_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "prophylactic_antivenom", 50 ] ]
+    ]
+  },
+  {
+    "result": "prophylactic_antivenom_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "prophylactic_antivenom", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "prozac_bundle",
+    "id_suffix": "prozac_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "prozac", 50 ] ]
+    ]
+  },
+  {
+    "result": "prozac_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "prozac", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "prussian_blue_bundle",
+    "id_suffix": "prussian_blue_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "prussian_blue", 50 ] ]
+    ]
+  },
+  {
+    "result": "prussian_blue_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "prussian_blue", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "quikclot_bundle",
+    "id_suffix": "quikclot_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "quikclot", 50 ] ]
+    ]
+  },
+  {
+    "result": "quikclot_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "quikclot", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "saline_bundle",
+    "id_suffix": "saline_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "saline", 50 ] ]
+    ]
+  },
+  {
+    "result": "saline_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "saline", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "thorazine_bundle",
+    "id_suffix": "thorazine_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "thorazine", 50 ] ]
+    ]
+  },
+  {
+    "result": "thorazine_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "thorazine", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "thyme_oil_bundle",
+    "id_suffix": "thyme_oil_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "thyme_oil", 50 ] ]
+    ]
+  },
+  {
+    "result": "thyme_oil_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "thyme_oil", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "tobacco_bundle",
+    "id_suffix": "tobacco_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "tobacco", 50 ] ]
+    ]
+  },
+  {
+    "result": "tobacco_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "tobacco", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "tramadol_bundle",
+    "id_suffix": "tramadol_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "tramadol", 50 ] ]
+    ]
+  },
+  {
+    "result": "tramadol_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "tramadol", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "vitamins_bundle",
+    "id_suffix": "vitamins_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "vitamins", 50 ] ]
+    ]
+  },
+  {
+    "result": "vitamins_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "vitamins", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "calcium_tablet_bundle",
+    "id_suffix": "calcium_tablet_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "calcium_tablet", 50 ] ]
+    ]
+  },
+  {
+    "result": "calcium_tablet_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "calcium_tablet", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "bonemeal_tablet_bundle",
+    "id_suffix": "bonemeal_tablet_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "bonemeal_tablet", 50 ] ]
+    ]
+  },
+  {
+    "result": "bonemeal_tablet_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "bonemeal_tablet", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "flavored_bonemeal_tablet_bundle",
+    "id_suffix": "flavored_bonemeal_tablet_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "flavored_bonemeal_tablet", 50 ] ]
+    ]
+  },
+  {
+    "result": "flavored_bonemeal_tablet_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "flavored_bonemeal_tablet", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "vitc_tablet_bundle",
+    "id_suffix": "vitc_tablet_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "vitc_tablet", 50 ] ]
+    ]
+  },
+  {
+    "result": "vitc_tablet_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "vitc_tablet", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "vitc_fragment_bundle",
+    "id_suffix": "vitc_fragment_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "vitc_fragment", 50 ] ]
+    ]
+  },
+  {
+    "result": "vitc_fragment_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "vitc_fragment", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "gummy_vitamins_bundle",
+    "id_suffix": "gummy_vitamins_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "gummy_vitamins", 50 ] ]
+    ]
+  },
+  {
+    "result": "gummy_vitamins_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "gummy_vitamins", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "homeopathic_pills_bundle",
+    "id_suffix": "homeopathic_pills_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "homeopathic_pills", 50 ] ]
+    ]
+  },
+  {
+    "result": "homeopathic_pills_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "homeopathic_pills", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "inj_iron_bundle",
+    "id_suffix": "inj_iron_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "inj_iron", 50 ] ]
+    ]
+  },
+  {
+    "result": "inj_iron_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "inj_iron", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "weed_bundle",
+    "id_suffix": "weed_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "weed", 50 ] ]
+    ]
+  },
+  {
+    "result": "weed_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "weed", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "xanax_bundle",
+    "id_suffix": "xanax_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "xanax", 50 ] ]
+    ]
+  },
+  {
+    "result": "xanax_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "xanax", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "weak_antibiotic_bundle",
+    "id_suffix": "weak_antibiotic_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "weak_antibiotic", 50 ] ]
+    ]
+  },
+  {
+    "result": "weak_antibiotic_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "weak_antibiotic", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "pepto_bundle",
+    "id_suffix": "pepto_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "pepto", 50 ] ]
+    ]
+  },
+  {
+    "result": "pepto_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "pepto", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "tums_bundle",
+    "id_suffix": "tums_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "tums", 50 ] ]
+    ]
+  },
+  {
+    "result": "tums_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "tums", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "panacea_bundle",
+    "id_suffix": "panacea_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "panacea", 50 ] ]
+    ]
+  },
+  {
+    "result": "panacea_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "panacea", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "cattail_jelly_bundle",
+    "id_suffix": "cattail_jelly_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "cattail_jelly", 50 ] ]
+    ]
+  },
+  {
+    "result": "cattail_jelly_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "cattail_jelly", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "strong_antibiotic_bundle",
+    "id_suffix": "strong_antibiotic_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "strong_antibiotic", 50 ] ]
+    ]
+  },
+  {
+    "result": "strong_antibiotic_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "strong_antibiotic", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "cocaine_topical_bundle",
+    "id_suffix": "cocaine_topical_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "cocaine_topical", 50 ] ]
+    ]
+  },
+  {
+    "result": "cocaine_topical_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "cocaine_topical", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "nic_pouch_bundle",
+    "id_suffix": "nic_pouch_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "nic_pouch", 50 ] ]
+    ]
+  },
+  {
+    "result": "nic_pouch_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "nic_pouch", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "birth_control_bundle",
+    "id_suffix": "birth_control_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "birth_control", 50 ] ]
+    ]
+  },
+  {
+    "result": "birth_control_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "birth_control", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
+  },
+  {
+    "type": "recipe",
+    "result": "estrogen_bundle",
+    "id_suffix": "estrogen_bundle_create",
+    "category": "CC_CHEM",
+    "subcategory": "CSC_CHEM_DRUGS",
+    "skill_used": "cooking",
+    "activity_level": "NO_EXERCISE",
+    "difficulty": 0,
+    "time": "1 m",
+    "autolearn": true,
+    "qualities": [ { "id": "COOK", "level": 1 } ],
+    "components": [
+      [ [ "estrogen", 50 ] ]
+    ]
+  },
+  {
+    "result": "estrogen_bundle",
+    "type": "uncraft",
+    "activity_level": "NO_EXERCISE",
+    "skill_used": "cooking",
+    "difficulty": 0,
+    "time": "1 m",
+    "components": [ [ [ "estrogen", 50 ] ] ],
+    "flags": [ "BLIND_HARD" ]
   }
 ]

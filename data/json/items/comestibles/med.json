@@ -60,6 +60,14 @@
     "use_action": { "type": "consume_drug", "activation_message": "You take some %s." }
   },
   {
+    "id": "adderall_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "adderall",
+    "name": { "str_sp": "adderall bundle" }
+  },
+  {
     "id": "adrenaline_injector",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
@@ -2415,5 +2423,765 @@
     "color": "white",
     "flags": [ "NO_TEMP" ],
     "use_action": { "type": "consume_drug", "activation_message": "You set the pill under your tongue and let it dissolve." }
+  },
+  {
+    "id": "adrenaline_injector_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "adrenaline_injector",
+    "name": { "str": "adrenaline_injector bundle" }
+  },
+  {
+    "id": "antibiotics_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "antibiotics",
+    "name": { "str_sp": "antibiotics bundle" }
+  },
+  {
+    "id": "antifungal_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "antifungal",
+    "name": { "str_sp": "antifungal bundle" }
+  },
+  {
+    "id": "antiparasitic_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "antiparasitic",
+    "name": { "str_sp": "antiparasitic bundle" }
+  },
+  {
+    "id": "aspirin_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "aspirin",
+    "name": { "str": "aspirin bundle" }
+  },
+  {
+    "id": "ibuprofen_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "ibuprofen",
+    "name": { "str_sp": "ibuprofen bundle" }
+  },
+  {
+    "id": "naproxen_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "naproxen",
+    "name": { "str_sp": "naproxen bundle" }
+  },
+  {
+    "id": "acetaminophen_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "acetaminophen",
+    "name": { "str_sp": "acetaminophen bundle" }
+  },
+  {
+    "id": "metaprolol_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "metaprolol",
+    "name": { "str_sp": "metaprolol bundle" }
+  },
+  {
+    "id": "bfipowder_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "bfipowder",
+    "name": { "str_sp": "bfipowder bundle" }
+  },
+  {
+    "id": "caff_gum_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "caff_gum",
+    "name": { "str": "caff_gum bundle" }
+  },
+  {
+    "id": "caffeine_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "caffeine",
+    "name": { "str": "caffeine bundle" }
+  },
+  {
+    "id": "chaw_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "chaw",
+    "name": { "str_sp": "chaw bundle" }
+  },
+  {
+    "id": "chem_hydrogen_peroxide_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "chem_hydrogen_peroxide",
+    "name": { "str_sp": "chem_hydrogen_peroxide bundle" }
+  },
+  {
+    "id": "skunk_spray_neutralizing_solution_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "skunk_spray_neutralizing_solution",
+    "name": { "str_sp": "skunk_spray_neutralizing_solution bundle" }
+  },
+  {
+    "id": "cig_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "cig",
+    "name": { "str": "cig bundle" }
+  },
+  {
+    "id": "cigar_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "cigar",
+    "name": { "str": "cigar bundle" }
+  },
+  {
+    "id": "debug_chloroform_rag_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "debug_chloroform_rag",
+    "name": { "str": "debug_chloroform_rag bundle" }
+  },
+  {
+    "id": "codeine_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "codeine",
+    "name": { "str_sp": "codeine bundle" }
+  },
+  {
+    "id": "coke_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "coke",
+    "name": { "str_sp": "coke bundle" }
+  },
+  {
+    "id": "cola_meth_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "cola_meth",
+    "name": { "str_sp": "cola_meth bundle" }
+  },
+  {
+    "id": "myopia_contacts_weekly_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "myopia_contacts_weekly",
+    "name": { "str_sp": "myopia_contacts_weekly bundle" }
+  },
+  {
+    "id": "myopia_transition_contacts_weekly_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "myopia_transition_contacts_weekly",
+    "name": { "str_sp": "myopia_transition_contacts_weekly bundle" }
+  },
+  {
+    "id": "myopia_contacts_daily_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "myopia_contacts_daily",
+    "name": { "str_sp": "myopia_contacts_daily bundle" }
+  },
+  {
+    "id": "myopia_transition_contacts_daily_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "myopia_transition_contacts_daily",
+    "name": { "str_sp": "myopia_transition_contacts_daily bundle" }
+  },
+  {
+    "id": "hyperopia_contacts_weekly_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "hyperopia_contacts_weekly",
+    "name": { "str_sp": "hyperopia_contacts_weekly bundle" }
+  },
+  {
+    "id": "hyperopia_transition_contacts_weekly_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "hyperopia_transition_contacts_weekly",
+    "name": { "str_sp": "hyperopia_transition_contacts_weekly bundle" }
+  },
+  {
+    "id": "hyperopia_contacts_daily_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "hyperopia_contacts_daily",
+    "name": { "str_sp": "hyperopia_contacts_daily bundle" }
+  },
+  {
+    "id": "hyperopia_transition_contacts_daily_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "hyperopia_transition_contacts_daily",
+    "name": { "str_sp": "hyperopia_transition_contacts_daily bundle" }
+  },
+  {
+    "id": "bifocal_contacts_weekly_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "bifocal_contacts_weekly",
+    "name": { "str_sp": "bifocal_contacts_weekly bundle" }
+  },
+  {
+    "id": "bifocal_transition_contacts_weekly_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "bifocal_transition_contacts_weekly",
+    "name": { "str_sp": "bifocal_transition_contacts_weekly bundle" }
+  },
+  {
+    "id": "bifocal_contacts_daily_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "bifocal_contacts_daily",
+    "name": { "str_sp": "bifocal_contacts_daily bundle" }
+  },
+  {
+    "id": "bifocal_transition_contacts_daily_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "bifocal_transition_contacts_daily",
+    "name": { "str_sp": "bifocal_transition_contacts_daily bundle" }
+  },
+  {
+    "id": "plano_transition_contacts_weekly_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "plano_transition_contacts_weekly",
+    "name": { "str_sp": "plano_transition_contacts_weekly bundle" }
+  },
+  {
+    "id": "plano_transition_contacts_daily_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "plano_transition_contacts_daily",
+    "name": { "str_sp": "plano_transition_contacts_daily bundle" }
+  },
+  {
+    "id": "crack_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "crack",
+    "name": { "str_sp": "crack bundle" }
+  },
+  {
+    "id": "dayquil_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "dayquil",
+    "name": { "str_sp": "dayquil bundle" }
+  },
+  {
+    "id": "disinfectant_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "disinfectant",
+    "name": { "str_sp": "disinfectant bundle" }
+  },
+  {
+    "id": "disinfectant_makeshift_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "disinfectant_makeshift",
+    "name": { "str_sp": "disinfectant_makeshift bundle" }
+  },
+  {
+    "id": "diazepam_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "diazepam",
+    "name": { "str_sp": "diazepam bundle" }
+  },
+  {
+    "id": "hi_q_shatter_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "hi_q_shatter",
+    "name": { "str_sp": "hi_q_shatter bundle" }
+  },
+  {
+    "id": "hi_q_wax_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "hi_q_wax",
+    "name": { "str_sp": "hi_q_wax bundle" }
+  },
+  {
+    "id": "hi_q_distillate_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "hi_q_distillate",
+    "name": { "str_sp": "hi_q_distillate bundle" }
+  },
+  {
+    "id": "ecig_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "ecig",
+    "name": { "str": "ecig bundle" }
+  },
+  {
+    "id": "eyedrops_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "eyedrops",
+    "name": { "str_sp": "eyedrops bundle" }
+  },
+  {
+    "id": "steroid_eyedrops_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "steroid_eyedrops",
+    "name": { "str_sp": "steroid_eyedrops bundle" }
+  },
+  {
+    "id": "flu_shot_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "flu_shot",
+    "name": { "str": "flu_shot bundle" }
+  },
+  {
+    "id": "handrolled_cig_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "handrolled_cig",
+    "name": { "str": "handrolled_cig bundle" }
+  },
+  {
+    "id": "heroin_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "heroin",
+    "name": { "str_sp": "heroin bundle" }
+  },
+  {
+    "id": "iodine_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "iodine",
+    "name": { "str": "iodine bundle" }
+  },
+  {
+    "id": "joint_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "joint",
+    "name": { "str": "joint bundle" }
+  },
+  {
+    "id": "lsd_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "lsd",
+    "name": { "str": "lsd bundle" }
+  },
+  {
+    "id": "meth_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "meth",
+    "name": { "str_sp": "meth bundle" }
+  },
+  {
+    "id": "pure_meth_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "pure_meth",
+    "name": { "str_sp": "pure_meth bundle" }
+  },
+  {
+    "id": "morphine_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "morphine",
+    "name": { "str_sp": "morphine bundle" }
+  },
+  {
+    "id": "wintergreen_oil_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "wintergreen_oil",
+    "name": { "str_sp": "wintergreen_oil bundle" }
+  },
+  {
+    "id": "mugwort_oil_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "mugwort_oil",
+    "name": { "str_sp": "mugwort_oil bundle" }
+  },
+  {
+    "id": "nic_gum_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "nic_gum",
+    "name": { "str": "nic_gum bundle" }
+  },
+  {
+    "id": "nyquil_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "nyquil",
+    "name": { "str_sp": "nyquil bundle" }
+  },
+  {
+    "id": "antihistamine_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "antihistamine",
+    "name": { "str_sp": "antihistamine bundle" }
+  },
+  {
+    "id": "oxycodone_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "oxycodone",
+    "name": { "str_sp": "oxycodone bundle" }
+  },
+  {
+    "id": "pills_sleep_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "pills_sleep",
+    "name": { "str": "pills_sleep bundle" }
+  },
+  {
+    "id": "poppy_pain_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "poppy_pain",
+    "name": { "str_sp": "poppy_pain bundle" }
+  },
+  {
+    "id": "poppy_sleep_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "poppy_sleep",
+    "name": { "str_sp": "poppy_sleep bundle" }
+  },
+  {
+    "id": "poppysyrup_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "poppysyrup",
+    "name": { "str_sp": "poppysyrup bundle" }
+  },
+  {
+    "id": "prophylactic_antivenom_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "prophylactic_antivenom",
+    "name": { "str_sp": "prophylactic_antivenom bundle" }
+  },
+  {
+    "id": "prozac_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "prozac",
+    "name": { "str_sp": "prozac bundle" }
+  },
+  {
+    "id": "prussian_blue_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "prussian_blue",
+    "name": { "str": "prussian_blue bundle" }
+  },
+  {
+    "id": "quikclot_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "quikclot",
+    "name": { "str_sp": "quikclot bundle" }
+  },
+  {
+    "id": "saline_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "saline",
+    "name": { "str_sp": "saline bundle" }
+  },
+  {
+    "id": "thorazine_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "thorazine",
+    "name": { "str_sp": "thorazine bundle" }
+  },
+  {
+    "id": "thyme_oil_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "thyme_oil",
+    "name": { "str_sp": "thyme_oil bundle" }
+  },
+  {
+    "id": "tobacco_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "tobacco",
+    "name": { "str_sp": "tobacco bundle" }
+  },
+  {
+    "id": "tramadol_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "tramadol",
+    "name": { "str_sp": "tramadol bundle" }
+  },
+  {
+    "id": "vitamins_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "vitamins",
+    "name": { "str_sp": "vitamins bundle" }
+  },
+  {
+    "id": "calcium_tablet_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "calcium_tablet",
+    "name": { "str": "calcium_tablet bundle" }
+  },
+  {
+    "id": "bonemeal_tablet_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "bonemeal_tablet",
+    "name": { "str": "bonemeal_tablet bundle" }
+  },
+  {
+    "id": "flavored_bonemeal_tablet_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "flavored_bonemeal_tablet",
+    "name": { "str": "flavored_bonemeal_tablet bundle" }
+  },
+  {
+    "id": "vitc_tablet_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "vitc_tablet",
+    "name": { "str": "vitc_tablet bundle" }
+  },
+  {
+    "id": "vitc_fragment_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "vitc_fragment",
+    "name": { "str": "vitc_fragment bundle" }
+  },
+  {
+    "id": "gummy_vitamins_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "gummy_vitamins",
+    "name": { "str_sp": "gummy_vitamins bundle" }
+  },
+  {
+    "id": "homeopathic_pills_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "homeopathic_pills",
+    "name": { "str": "homeopathic_pills bundle" }
+  },
+  {
+    "id": "inj_iron_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "inj_iron",
+    "name": { "str_sp": "inj_iron bundle" }
+  },
+  {
+    "id": "weed_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "weed",
+    "name": { "str_sp": "weed bundle" }
+  },
+  {
+    "id": "xanax_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "xanax",
+    "name": { "str_sp": "xanax bundle" }
+  },
+  {
+    "id": "weak_antibiotic_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "weak_antibiotic",
+    "name": { "str_sp": "weak_antibiotic bundle" }
+  },
+  {
+    "id": "pepto_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "pepto",
+    "name": { "str_sp": "pepto bundle" }
+  },
+  {
+    "id": "tums_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "tums",
+    "name": { "str": "tums bundle" }
+  },
+  {
+    "id": "panacea_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "panacea",
+    "name": { "str": "panacea bundle" }
+  },
+  {
+    "id": "cattail_jelly_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "cattail_jelly",
+    "name": { "str_sp": "cattail_jelly bundle" }
+  },
+  {
+    "id": "strong_antibiotic_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "strong_antibiotic",
+    "name": { "str_sp": "strong_antibiotic bundle" }
+  },
+  {
+    "id": "cocaine_topical_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "cocaine_topical",
+    "name": { "str_sp": "cocaine_topical bundle" }
+  },
+  {
+    "id": "nic_pouch_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "nic_pouch",
+    "name": { "str": "nic_pouch bundle" }
+  },
+  {
+    "id": "birth_control_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "birth_control",
+    "name": { "str": "birth_control bundle" }
+  },
+  {
+    "id": "estrogen_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "estrogen",
+    "name": { "str": "estrogen bundle" }
   }
 ]
