@@ -13,6 +13,7 @@
     "category": "veh_parts",
     "price": "350 USD",
     "price_postapoc": "1 USD",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 4 }
   },
   {
@@ -23,6 +24,7 @@
     "description": "A soft car seat covered with leather.",
     "material": [ "leather", "nylon", "lc_steel" ],
     "price": "600 USD",
+    "degradation_multiplier": 0.0,
     "price_postapoc": "2 USD 50 cent"
   },
   {
@@ -39,6 +41,7 @@
     "category": "veh_parts",
     "price": "350 USD",
     "price_postapoc": "1 USD",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 4 }
   },
   {
@@ -49,6 +52,7 @@
     "description": "A wide, flat seat like you'd find in the back of a sedan, upholstered with leather.",
     "material": [ "leather", "nylon", "lc_steel" ],
     "price": "600 USD",
+    "degradation_multiplier": 0.0,
     "price_postapoc": "2 USD 50 cent"
   },
   {
@@ -62,6 +66,7 @@
     "price": "25 USD",
     "price_postapoc": "2 USD 50 cent",
     "copy-from": "seat",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 2 }
   }
 ]

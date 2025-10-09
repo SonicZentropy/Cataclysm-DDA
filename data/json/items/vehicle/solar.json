@@ -21,6 +21,7 @@
     "category": "veh_parts",
     "price": "900 USD",
     "price_postapoc": "10 USD",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 1 }
   },
   {
@@ -30,6 +31,7 @@
     "name": { "str": "solar panel array" },
     "description": "A collection of four solar panels, ready to get to work converting solar radiation into electric power.  Install them to use them in a static power grid.",
     "copy-from": "solar_panel",
+    "degradation_multiplier": 0.0,
     "proportional": { "weight": 4, "volume": 4, "price": 4, "price_postapoc": 4, "longest_side": 2 }
   },
   {
@@ -50,6 +52,7 @@
     "longest_side": "53 cm",
     "use_action": { "type": "deploy_appliance", "base": "folding_solar_panel_deployed" },
     "price": "280 USD",
+    "degradation_multiplier": 0.0,
     "price_postapoc": "5 USD"
   },
   {
@@ -65,6 +68,7 @@
     "ammo_type": [ "battery" ],
     "capacity": 1,
     "flags": [ "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD", "RECHARGE" ],
+    "degradation_multiplier": 0.0,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 1 } } ]
   },
   {
@@ -83,6 +87,7 @@
     "longest_side": "83 cm",
     "use_action": { "type": "deploy_appliance", "base": "folding_solar_panel_v2_deployed" },
     "price": "320 USD",
+    "degradation_multiplier": 0.0,
     "price_postapoc": "20 USD"
   },
   {
@@ -98,6 +103,7 @@
     "ammo_type": [ "battery" ],
     "capacity": 1,
     "flags": [ "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD", "RECHARGE" ],
+    "degradation_multiplier": 0.0,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 1 } } ]
   },
   {
@@ -111,6 +117,7 @@
     "volume": "6500 ml",
     "price": "1 kUSD 200 USD",
     "price_postapoc": "15 USD",
+    "degradation_multiplier": 0.0,
     "copy-from": "solar_panel"
   },
   {
@@ -121,6 +128,7 @@
     "description": "An electronic device that can convert solar radiation into electric power.  This one is a high-performance type made with monocrystalline silicon cells.",
     "price": "1 kUSD 900 USD",
     "price_postapoc": "30 USD",
+    "degradation_multiplier": 0.0,
     "copy-from": "solar_panel"
   },
   {
@@ -130,6 +138,7 @@
     "name": { "str": "advanced solar panel array" },
     "description": "A collection of four smaller solar panels, ready to convert solar radiation into electric power.  These panels are high-performance, made with monocrystalline silicon cells.",
     "copy-from": "solar_panel_v2",
+    "degradation_multiplier": 0.0,
     "proportional": { "price": 4, "price_postapoc": 4, "weight": 4, "volume": 4, "longest_side": 2 }
   },
   {
@@ -139,6 +148,7 @@
     "description": "An advanced solar panel that has been covered with a pane of reinforced glass to protect the delicate solar cells from zombies or errant baseballs.  The glass causes this panel to produce slightly less power than a normal advanced panel.",
     "price": "2 kUSD 400 USD",
     "price_postapoc": "35 USD",
+    "degradation_multiplier": 0.0,
     "copy-from": "reinforced_solar_panel"
   },
   {
@@ -152,6 +162,7 @@
     "category": "spare_parts",
     "price": "50 USD",
     "price_postapoc": "1 USD",
+    "degradation_multiplier": 0.0,
     "copy-from": "solar_panel"
   },
   {
@@ -161,6 +172,7 @@
     "description": "A small electronic device that can convert solar radiation into electric power.  This one is a high-performance type made of monocrystalline silicon.",
     "price": "150 USD",
     "price_postapoc": "3 USD",
+    "degradation_multiplier": 0.0,
     "copy-from": "solar_cell"
   }
 ]

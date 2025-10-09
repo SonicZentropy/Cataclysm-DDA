@@ -13,6 +13,7 @@
     "volume": "12500 ml",
     "to_hit": { "grip": "solid", "length": "long", "surface": "any", "balance": "clumsy" },
     "category": "veh_parts",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 8 }
   },
   {
@@ -29,6 +30,7 @@
     "volume": "12500 ml",
     "to_hit": { "grip": "bad", "length": "long", "surface": "any", "balance": "clumsy" },
     "category": "veh_parts",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 8 }
   },
   {
@@ -45,6 +47,7 @@
     "volume": "12500 ml",
     "to_hit": { "grip": "solid", "length": "long", "surface": "any", "balance": "clumsy" },
     "category": "veh_parts",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 8 }
   },
   {
@@ -61,6 +64,7 @@
     "volume": "12500 ml",
     "to_hit": { "grip": "solid", "length": "long", "surface": "any", "balance": "clumsy" },
     "category": "veh_parts",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 8 }
   },
   {
@@ -76,6 +80,7 @@
     "category": "veh_parts",
     "price": "90 USD",
     "price_postapoc": "1 USD",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 18 }
   },
   {
@@ -92,6 +97,7 @@
     "category": "veh_parts",
     "price": "90 USD",
     "price_postapoc": "12 USD 50 cent",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 4 }
   },
   {
@@ -108,6 +114,7 @@
     "volume": "12500 ml",
     "to_hit": { "grip": "none", "length": "long", "surface": "any", "balance": "clumsy" },
     "category": "veh_parts",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 8 }
   },
   {
@@ -124,6 +131,7 @@
     "volume": "12500 ml",
     "to_hit": { "grip": "none", "length": "long", "surface": "any", "balance": "clumsy" },
     "category": "veh_parts",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 8 }
   },
   {
@@ -140,6 +148,7 @@
     "volume": "12500 ml",
     "to_hit": { "grip": "solid", "length": "long", "surface": "any", "balance": "clumsy" },
     "category": "veh_parts",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 8 }
   }
 ]

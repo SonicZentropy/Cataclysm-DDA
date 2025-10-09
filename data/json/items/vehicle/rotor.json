@@ -12,6 +12,7 @@
     "looks_like": "xl_wind_turbine",
     "material": [ "mc_steel" ],
     "symbol": "X",
+    "degradation_multiplier": 0.0,
     "color": "dark_gray"
   },
   {
@@ -27,6 +28,7 @@
     "looks_like": "xl_wind_turbine",
     "material": [ "mc_steel" ],
     "symbol": "X",
+    "degradation_multiplier": 0.0,
     "color": "blue"
   }
 ]

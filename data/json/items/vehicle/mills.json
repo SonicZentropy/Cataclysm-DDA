@@ -13,6 +13,7 @@
     "category": "veh_parts",
     "price": "600 USD",
     "price_postapoc": "10 USD",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 1 }
   },
   {
@@ -26,6 +27,7 @@
     "volume": "60 L",
     "price": "1 kUSD 500 USD",
     "price_postapoc": "15 USD",
+    "degradation_multiplier": 0.0,
     "copy-from": "wind_turbine"
   },
   {
@@ -40,6 +42,7 @@
     "volume": "30 L",
     "price": "1 kUSD 200 USD",
     "price_postapoc": "10 USD",
+    "degradation_multiplier": 0.0,
     "copy-from": "wind_turbine",
     "melee_damage": { "bash": 3 }
   },
@@ -53,6 +56,7 @@
     "volume": "60 L",
     "price": "2 kUSD",
     "price_postapoc": "15 USD",
+    "degradation_multiplier": 0.0,
     "copy-from": "water_wheel"
   }
 ]

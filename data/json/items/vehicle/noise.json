@@ -15,6 +15,7 @@
     "price": "30 USD",
     "price_postapoc": "1 USD",
     "qualities": [ [ "HAMMER", 1 ] ],
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 19 }
   },
   {
@@ -33,6 +34,7 @@
     "price_postapoc": "1 USD",
     "flags": [ "WATER_BREAK", "ELECTRONIC" ],
     "faults": [ { "fault_group": "electronic_general" } ],
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 2 }
   },
   {
@@ -49,6 +51,7 @@
     "price": "8 USD",
     "price_postapoc": "1 USD",
     "faults": [ { "fault_group": "electronic_general" } ],
+    "degradation_multiplier": 0.0,
     "flags": [ "WATER_BREAK", "ELECTRONIC" ]
   },
   {
@@ -65,6 +68,7 @@
     "price": "50 USD",
     "price_postapoc": "2 USD 50 cent",
     "faults": [ { "fault_group": "electronic_general" } ],
+    "degradation_multiplier": 0.0,
     "flags": [ "WATER_BREAK", "ELECTRONIC" ]
   }
 ]

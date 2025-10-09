@@ -15,6 +15,7 @@
     "price": "100 USD",
     "price_postapoc": "50 cent",
     "qualities": [ [ "COOK", 1 ] ],
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 20 }
   },
   {
@@ -31,6 +32,7 @@
     "symbol": "]",
     "color": "light_gray",
     "looks_like": "foldframe",
+    "degradation_multiplier": 0.0,
     "flags": [ "TRADER_AVOID" ]
   },
   {
@@ -45,6 +47,7 @@
     "weight": "500 g",
     "volume": "250 ml",
     "price": "8 USD",
+    "degradation_multiplier": 0.0,
     "price_postapoc": "50 cent"
   },
   {
@@ -53,6 +56,7 @@
     "name": { "str": "folding wire basket" },
     "description": "A large wire basket from a shopping cart, modified to be foldable.",
     "weight": "7000 g",
+    "degradation_multiplier": 0.0,
     "copy-from": "basket"
   },
   {
@@ -64,6 +68,7 @@
     "volume": "5 L",
     "price": "35 USD",
     "price_postapoc": "50 cent",
+    "degradation_multiplier": 0.0,
     "copy-from": "basket"
   },
   {
@@ -80,6 +85,7 @@
     "category": "veh_parts",
     "price": "400 USD",
     "price_postapoc": "5 USD",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 2 }
   },
   {
@@ -95,6 +101,7 @@
     "category": "veh_parts",
     "price": "200 USD",
     "price_postapoc": "5 USD",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 2 }
   },
   {
@@ -113,6 +120,7 @@
     "looks_like": "cargo_rack",
     "properties": { "creature_size_capacity": "HUGE" },
     "use_action": [ "CAPTURE_MONSTER_VEH" ],
+    "degradation_multiplier": 0.0,
     "flags": [ "TRADER_AVOID" ]
   },
   {
@@ -127,6 +135,7 @@
     "weight": "27600 g",
     "volume": "18750 ml",
     "price": "375 USD",
+    "degradation_multiplier": 0.0,
     "price_postapoc": "7 USD 50 cent"
   },
   {
@@ -137,6 +146,7 @@
     "description": "A locker used to contain animals safely during transportation if installed properly.  There is room for animal food and other animal care goods.  It is meant to hold medium or smaller animals for transport.  Use it on a suitable animal to capture, use it on an empty tile to release.",
     "weight": "10000 g",
     "volume": "31250 ml",
+    "degradation_multiplier": 0.0,
     "properties": { "creature_size_capacity": "MEDIUM" }
   }
 ]

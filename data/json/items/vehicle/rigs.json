@@ -10,6 +10,7 @@
     "price_postapoc": "20 USD",
     "material": [ "lc_steel" ],
     "symbol": "&",
+    "degradation_multiplier": 0.0,
     "color": "light_cyan"
   },
   {
@@ -17,6 +18,7 @@
     "copy-from": "vehicle_rig",
     "type": "ITEM",
     "name": { "str": "vehicle forge rig" },
+    "degradation_multiplier": 0.0,
     "description": "A forge rig made to run off a vehicle's storage battery, with integrated tool storage for metalworking equipment."
   },
   {
@@ -24,6 +26,7 @@
     "copy-from": "vehicle_rig",
     "type": "ITEM",
     "name": { "str": "vehicle kiln" },
+    "degradation_multiplier": 0.0,
     "description": "An electric kiln made to run off a vehicle's storage battery."
   },
   {
@@ -31,6 +34,7 @@
     "copy-from": "vehicle_rig",
     "type": "ITEM",
     "name": { "str": "vehicle high-temperature welding kit" },
+    "degradation_multiplier": 0.0,
     "description": "A welder combined with a fireproof insulating blanket, allowing for advanced welds and repairs to tempered steels."
   }
 ]

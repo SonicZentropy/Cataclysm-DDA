@@ -11,6 +11,7 @@
     "material": [ "lc_steel" ],
     "volume": "500 ml",
     "category": "veh_parts",
+    "degradation_multiplier": 0.0,
     "price": "90 USD",
     "price_postapoc": "1 USD"
   },
@@ -21,6 +22,7 @@
     "name": { "str": "foot crank" },
     "description": "A pedal and gear assembly from a bicycle.",
     "//": "Steel grade is a guess: its load is similar to wheel axles that are made out of medium steel",
+    "degradation_multiplier": 0.0,
     "material": [ "mc_steel" ]
   }
 ]

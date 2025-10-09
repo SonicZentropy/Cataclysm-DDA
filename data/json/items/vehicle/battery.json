@@ -19,6 +19,7 @@
     "//1": "58Ah @ 12VDC. Could supply ~833 watts for an hour",
     "//2": "Approximate energy density 0.3 MJ/L / 0.14 MJ/Kg for lead-acid batteries",
     "flags": [ "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD", "RECHARGE" ],
+    "degradation_multiplier": 0.0,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 3000 } } ]
   },
   {
@@ -35,6 +36,7 @@
     "price_postapoc": "2 USD 50 cent",
     "capacity": 450,
     "//": "12Ah @ 12VDC. Could supply ~125 watts for an hour",
+    "degradation_multiplier": 0.0,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 450 } } ]
   },
   {
@@ -51,6 +53,7 @@
     "price_postapoc": "1 USD",
     "capacity": 225,
     "//": "~2.4Ah @ 12VDC. Could supply ~125 watts 30 minutes or so",
+    "degradation_multiplier": 0.0,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 225 } } ]
   },
   {
@@ -68,6 +71,7 @@
     "category": "veh_parts",
     "price": "10 USD",
     "price_postapoc": "1 USD",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 1 }
   },
   {
@@ -83,6 +87,7 @@
     "category": "veh_parts",
     "price": "10 USD",
     "price_postapoc": "5 USD",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 1 }
   },
   {
@@ -99,6 +104,7 @@
     "price_postapoc": "250 USD",
     "capacity": 100000,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 100000 } } ],
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 40 }
   },
   {
@@ -115,6 +121,7 @@
     "price_postapoc": "22 USD 50 cent",
     "capacity": 10000,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 10000 } } ],
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 14 }
   },
   {
@@ -131,6 +138,7 @@
     "price_postapoc": "2 USD",
     "capacity": 1000,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 1000 } } ],
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 7 }
   },
   {
@@ -153,6 +161,7 @@
     "//": "Approximate energy density 2.1 MJ/L / 0.73 MJ/Kg for lithium nickel manganese cobalt oxide (NMC) batteries",
     "flags": [ "NO_SALVAGE", "NO_UNLOAD", "NO_RELOAD", "RECHARGE", "NO_REPAIR" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 50000 } } ],
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 20 }
   }
 ]

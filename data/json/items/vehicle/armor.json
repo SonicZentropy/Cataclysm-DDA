@@ -13,6 +13,7 @@
     "material": [ "lc_steel" ],
     "symbol": "]",
     "color": "light_cyan",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 6 }
   },
   {
@@ -29,6 +30,7 @@
     "material": [ "hc_steel", "lc_steel" ],
     "symbol": "]",
     "color": "light_cyan",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 6 }
   }
 ]

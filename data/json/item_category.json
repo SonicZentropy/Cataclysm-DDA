@@ -145,6 +145,13 @@
     "sort_rank": -10
   },
   {
+    "id": "veh_spare_parts",
+    "type": "ITEM_CATEGORY",
+    "name": { "str": "VEHICLE SPARE PARTS" },
+    "zone": "LOOT_VEHICLE_SPARE_PARTS",
+    "sort_rank": -10
+  },
+  {
     "id": "other",
     "type": "ITEM_CATEGORY",
     "name_header": { "str": "Other" },

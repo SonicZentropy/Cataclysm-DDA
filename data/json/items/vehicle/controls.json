@@ -14,6 +14,7 @@
     "price": "100 USD",
     "price_postapoc": "12 USD 50 cent",
     "faults": [ { "fault_group": "electronic_general" } ],
+    "degradation_multiplier": 0.0,
     "flags": [ "WATER_BREAK", "ELECTRONIC" ]
   },
   {
@@ -31,6 +32,7 @@
     "price": "100 USD",
     "price_postapoc": "7 USD 50 cent",
     "faults": [ { "fault_group": "electronic_general" } ],
+    "degradation_multiplier": 0.0,
     "flags": [ "WATER_BREAK", "ELECTRONIC" ]
   },
   {
@@ -44,6 +46,7 @@
     "to_hit": { "grip": "none", "length": "hand", "surface": "any", "balance": "clumsy" },
     "material": [ "lc_steel", "plastic" ],
     "price": "200 USD",
+    "degradation_multiplier": 0.0,
     "price_postapoc": "15 USD"
   },
   {
@@ -62,6 +65,7 @@
     "price_postapoc": "5 USD",
     "flags": [ "WATER_BREAK", "ELECTRONIC" ],
     "faults": [ { "fault_group": "electronic_general" } ],
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 2 }
   },
   {
@@ -78,6 +82,7 @@
     "symbol": "W",
     "color": "light_gray",
     "looks_like": "rope_6",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 1 }
   },
   {
@@ -95,6 +100,7 @@
     "price_postapoc": "2 USD 50 cent",
     "flags": [ "WATER_BREAK", "ELECTRONIC" ],
     "faults": [ { "fault_group": "electronic_general" } ],
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 1 }
   },
   {
@@ -110,6 +116,7 @@
     "price": "40 USD",
     "price_postapoc": "2 USD 50 cent",
     "faults": [ { "fault_group": "electronic_general" } ],
+    "degradation_multiplier": 0.0,
     "flags": [ "WATER_BREAK", "ELECTRONIC" ]
   },
   {
@@ -123,6 +130,7 @@
     "price": "2 kUSD",
     "price_postapoc": "15 USD",
     "copy-from": "vehicle_controls",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 1 }
   },
   {
@@ -137,6 +145,7 @@
     "price": "200 USD",
     "price_postapoc": "10 USD",
     "copy-from": "vehicle_controls",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 1 }
   },
   {
@@ -150,6 +159,7 @@
     "volume": "9 L",
     "price": "5 kUSD",
     "price_postapoc": "30 USD",
+    "degradation_multiplier": 0.0,
     "copy-from": "vehicle_controls"
   },
   {
@@ -166,6 +176,7 @@
     "category": "veh_parts",
     "price": "400 USD",
     "price_postapoc": "40 cent",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 3 }
   },
   {
@@ -182,6 +193,7 @@
     "category": "veh_parts",
     "price": "100 USD",
     "price_postapoc": "40 cent",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 3 }
   },
   {
@@ -198,6 +210,7 @@
     "category": "veh_parts",
     "price": "20 USD",
     "price_postapoc": "20 cent",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 1 }
   }
 ]

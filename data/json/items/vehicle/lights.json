@@ -12,6 +12,7 @@
     "volume": "1 L",
     "price": "30 USD",
     "price_postapoc": "1 USD",
+    "degradation_multiplier": 0.0,
     "flags": [ "NO_SALVAGE" ]
   },
   {
@@ -23,6 +24,7 @@
     "volume": "250 ml",
     "price": "50 USD",
     "price_postapoc": "1 USD",
+    "degradation_multiplier": 0.0,
     "copy-from": "car_headlight"
   },
   {
@@ -35,6 +37,7 @@
     "volume": "1250 ml",
     "price": "40 USD",
     "price_postapoc": "1 USD 50 cent",
+    "degradation_multiplier": 0.0,
     "copy-from": "car_headlight"
   },
   {
@@ -49,6 +52,7 @@
     "price": "400 USD",
     "price_postapoc": "2 USD 50 cent",
     "copy-from": "car_headlight",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 4 }
   },
   {
@@ -58,6 +62,7 @@
     "description": "A wide-angle vehicle headlight with a cage built around it to protect it from damage without reducing its effectiveness.",
     "weight": "4800 g",
     "volume": "1250 ml",
+    "degradation_multiplier": 0.0,
     "copy-from": "headlight_reinforced"
   },
   {
@@ -72,6 +77,7 @@
     "price": "400 USD",
     "price_postapoc": "1 USD",
     "copy-from": "car_headlight",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 1 }
   },
   {
@@ -80,6 +86,7 @@
     "name": { "str": "emergency vehicle light (blue)", "str_pl": "emergency vehicle lights (blue)" },
     "description": "A blue light from the top of an emergency services vehicle.  When turned on, the light rotates to shine in all directions.",
     "color": "blue",
+    "degradation_multiplier": 0.0,
     "copy-from": "light_emergency_red"
   },
   {
@@ -93,6 +100,7 @@
     "volume": "2 L",
     "price": "900 USD",
     "price_postapoc": "15 USD",
+    "degradation_multiplier": 0.0,
     "copy-from": "car_headlight",
     "melee_damage": { "bash": 5 }
   },
@@ -100,6 +108,7 @@
     "type": "ITEM",
     "id": "directed_floodlight",
     "name": { "str": "directed floodlight" },
+    "degradation_multiplier": 0.0,
     "description": "A large, heavy light designed to illuminate a wide area in a half-circular cone.",
     "copy-from": "floodlight"
   }

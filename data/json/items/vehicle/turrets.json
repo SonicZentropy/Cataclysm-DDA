@@ -11,6 +11,7 @@
     "weight": "10000 g",
     "volume": "2500 ml",
     "price": "55 USD",
+    "degradation_multiplier": 0.0,
     "price_postapoc": "25 USD"
   }
 ]

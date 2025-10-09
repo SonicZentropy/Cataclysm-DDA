@@ -14,6 +14,7 @@
     "material": [ "mc_steel" ],
     "symbol": ";",
     "color": "light_gray",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 4 }
   },
   {
@@ -30,6 +31,7 @@
     "category": "veh_parts",
     "price": "200 USD",
     "price_postapoc": "15 USD",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 8 }
   },
   {
@@ -42,6 +44,7 @@
     "volume": "3750 ml",
     "price": "100 USD",
     "price_postapoc": "7 USD 50 cent",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 3 }
   },
   {
@@ -58,6 +61,7 @@
     "category": "veh_parts",
     "price": "200 USD",
     "price_postapoc": "15 USD",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 8 }
   },
   {
@@ -70,6 +74,7 @@
     "volume": "3750 ml",
     "price": "100 USD",
     "price_postapoc": "7 USD 50 cent",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 3 }
   },
   {
@@ -86,6 +91,7 @@
     "category": "veh_parts",
     "price": "30 USD",
     "price_postapoc": "10 cent",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 4 }
   },
   {
@@ -102,6 +108,7 @@
     "category": "veh_parts",
     "price": "900 USD",
     "price_postapoc": "10 USD",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 5 }
   },
   {
@@ -114,6 +121,7 @@
     "price": "15 USD",
     "price_postapoc": "1 USD",
     "looks_like": "cable",
+    "degradation_multiplier": 0.0,
     "copy-from": "recharge_station"
   },
   {
@@ -129,6 +137,7 @@
     "category": "veh_parts",
     "price": "600 USD",
     "price_postapoc": "5 USD",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 8 }
   },
   {
@@ -144,6 +153,7 @@
     "category": "veh_parts",
     "price": "900 USD",
     "price_postapoc": "25 USD",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 3 }
   },
   {
@@ -156,6 +166,7 @@
     "symbol": "A",
     "color": "yellow",
     "weight": "34500 g",
+    "degradation_multiplier": 0.0,
     "volume": "76 L",
     "copy-from": "washing_machine"
   },
@@ -165,6 +176,7 @@
     "name": { "str": "portable dishwasher" },
     "description": "A very small dishwasher designed for use in vehicles.",
     "looks_like": "washing_machine",
+    "degradation_multiplier": 0.0,
     "copy-from": "washing_machine"
   },
   {
@@ -176,6 +188,7 @@
     "insulation": 10,
     "volume": "72 L",
     "weight": "48 kg",
+    "degradation_multiplier": 0.0,
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
@@ -196,6 +209,7 @@
     "insulation": 10,
     "volume": "112 L",
     "weight": "67 kg",
+    "degradation_multiplier": 0.0,
     "pocket_data": [
       {
         "pocket_type": "CONTAINER",
@@ -211,6 +225,7 @@
     "copy-from": "fridgetank",
     "id": "heattank",
     "name": { "str": "heated tank" },
+    "degradation_multiplier": 0.0,
     "description": "A 60 L heated tank for keeping liquids from freezing.  Provides some insulation from outside weather."
   },
   {
@@ -227,6 +242,7 @@
     "category": "veh_parts",
     "price": "30 USD",
     "price_postapoc": "50 cent",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 2 }
   }
 ]

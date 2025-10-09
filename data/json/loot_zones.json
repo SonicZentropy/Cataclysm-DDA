@@ -313,6 +313,13 @@
     "description": "Destination for vehicle parts."
   },
   {
+    "id": "LOOT_VEHICLE_SPARE_PARTS",
+    "type": "LOOT_ZONE",
+    "name": "Loot: Vehicle Spare Parts",
+    "can_be_personal": true,
+    "description": "Destination for vehicle spare parts."
+  },
+  {
     "id": "LOOT_WEAPONS",
     "type": "LOOT_ZONE",
     "name": "Loot: Weapons",
