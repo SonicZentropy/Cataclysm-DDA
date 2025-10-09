@@ -22,6 +22,14 @@
     }
   },
   {
+    "id": "melatonin_bundle",
+    "type": "ITEM",
+    "subtypes": [ "COMESTIBLE" ],
+    "comestible_type": "MED",
+    "copy-from": "melatonin_tablet",
+    "name": { "str": "melatonin bundle" }
+  },
+  {
     "id": "adderall",
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
