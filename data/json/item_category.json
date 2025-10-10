@@ -292,5 +292,12 @@
     "name_header": { "str": "Weapon held" },
     "name_noun": { "ctxt": "item_category", "str": "weapon held", "str_pl": "weapons held" },
     "sort_rank": -200
+  },
+  {
+    "id": "BUNDLES",
+    "type": "ITEM_CATEGORY",
+    "name_header": { "str": "Weapon held" },
+    "name_noun": { "ctxt": "item_category", "str": "bundle", "str_pl": "bundles" },
+    "sort_rank": -200
   }
 ]
