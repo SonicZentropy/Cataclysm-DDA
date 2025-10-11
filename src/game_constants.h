@@ -41,7 +41,7 @@ constexpr int MAX_WORN_PER_TYPE = 2;
  * Items on the map with at most this distance to the player are considered available for crafting,
  * see inventory::form_from_map
 */
-constexpr int PICKUP_RANGE = 26;
+constexpr int PICKUP_RANGE = 2;
 
 // Maximum move cost when handling an item.
 constexpr int MAX_HANDLING_COST = 400;

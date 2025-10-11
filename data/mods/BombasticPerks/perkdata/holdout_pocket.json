@@ -17,7 +17,6 @@
       {
         "pocket_type": "CONTAINER",
         "holster": true,
-        "min_item_volume": "300 ml",
         "max_contains_volume": "10 L",
         "max_contains_weight": "50 kg",
         "max_item_length": "250 cm",
