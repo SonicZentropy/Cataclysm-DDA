@@ -219,7 +219,7 @@
     "nested_mapgen_id": "mnm_vampire",
     "object": {
       "mapgensize": [ 24, 24 ],
-      "place_monster": [ { "monster": "mon_star_vampire_coiling", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 25 } ]
+      "place_monster": [ { "monster": "mon_star_vampire_coiling", "x": [ 0, 23 ], "y": [ 0, 23 ], "chance": 1 } ]
     }
   },
   {
