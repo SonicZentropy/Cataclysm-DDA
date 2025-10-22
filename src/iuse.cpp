@@ -2492,10 +2492,10 @@ std::optional<int> iuse::water_purifier( Character *p, item *it, const tripoint_
     for( const item *water : liquids ) {
         charges_of_water += water->charges;
     }
-    if( !it->ammo_sufficient( p, charges_of_water ) ) {
-        p->add_msg_if_player( m_info, _( "That volume of water is too large to purify." ) );
-        return std::nullopt;
-    }
+    // if( !it->ammo_sufficient( p, charges_of_water ) ) {
+    //     p->add_msg_if_player( m_info, _( "That volume of water is too large to purify." ) );
+    //     return std::nullopt;
+    // }
 
     p->mod_moves( -to_moves<int>( 2_seconds ) );
 
