@@ -957,8 +957,7 @@ static void smash()
     avatar &player_character = get_avatar();
     avatar::smash_result res = player_character.smash( smashp );
     if( res.did_smash && !res.success &&
-        res.resistance > 0 && res.skill >= res.resistance &&
-        query_yn( _( "Keep smashing until destroyed?" ) ) ) {
+        res.resistance > 0 && res.skill >= res.resistance ) {
         player_character.assign_activity( bash_activity_actor( smashp ) );
     }
 }
