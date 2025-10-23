@@ -140,17 +140,23 @@
       }
     ],
     "qualities": [
+      [ "HAMMER", 3 ],
+      [ "HAMMER_FINE", 1 ],
       [ "SAW_W", 1 ],
       [ "SAW_M", 1 ],
       [ "SAW_M_FINE", 1 ],
       [ "WRENCH", 1 ],
       [ "WRENCH_FINE", 1 ],
+      [ "WHEEL_FAST", 1 ],
       [ "SCREW", 1 ],
       [ "SCREW_FINE", 1 ],
       [ "CUT", 2 ],
       [ "PRY", 1 ],
+      [ "DRILL", 3 ],
+      [ "BOIL", 3 ],
+      [ "HOTPLATE", 1 ],
       [ "PRYING_NAIL", 1 ],
-      [ "BUTCHER", -15 ]
+      [ "BUTCHER", -38 ]
     ],
     "use_action": [ { "type": "CROWBAR", "ammo_scale": 0 } ],
     "melee_damage": { "bash": 1, "cut": 3 }
