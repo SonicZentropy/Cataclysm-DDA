@@ -10491,7 +10491,7 @@ bool game::prompt_dangerous_tile( const tripoint_bub_ms &dest_loc,
 
     if( !harmful_stuff->empty() &&
         !query_yn( _( "Really step into %s?" ), enumerate_as_string( *harmful_stuff ) ) ) {
-        //return false;
+        return false;
     }
     if( !harmful_stuff->empty() && u.is_mounted() && here.is_open_air( dest_loc ) ) {
         add_msg( m_warning, _( "Your %s refuses to move over that ledge!" ),
