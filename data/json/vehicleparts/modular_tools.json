@@ -169,7 +169,13 @@
         "propane_cooker",
         "towel",
         "vac_oven_small",
-        "vac_pump"
+        "vac_pump",
+        "circsaw_off",
+        "cordless_impact_wrench",
+        "reciprocating_saw",
+        "welder",
+        "welder_crude",
+        "welding_kit"
       ]
     }
   },
@@ -182,7 +188,29 @@
     "item": "veh_tools_workshop",
     "//": "allow tools here that require high power draw but no fume hood",
     "extend": {
-      "allowed_tools": [ "circsaw_off", "cordless_impact_wrench", "reciprocating_saw", "welder", "welder_crude", "welding_kit" ]
+      "allowed_tools": [
+        "chemistry_set",
+        "closed_loop_extractor_large",
+        "closed_loop_extractor_small",
+        "dehydrator",
+        "electrolysis_kit",
+        "electrolyzer_makeshift",
+        "hotplate",
+        "hotplate_induction",
+        "ketene_lamp",
+        "microwave",
+        "oven",
+        "propane_cooker",
+        "towel",
+        "vac_oven_small",
+        "vac_pump",
+        "circsaw_off",
+        "cordless_impact_wrench",
+        "reciprocating_saw",
+        "welder",
+        "welder_crude",
+        "welding_kit"
+      ]
     }
   }
 ]
