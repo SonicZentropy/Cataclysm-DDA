@@ -411,8 +411,7 @@ faction_price_rule const *npc_class::get_price_rules( item const &it, npc const 
 
 const time_duration &npc_class::get_shop_restock_interval() const
 {
-    time_duration three_days = 3_days;
-    return three_days;
+    return restock_interval;
 }
 
 int npc_class::roll_strength() const
