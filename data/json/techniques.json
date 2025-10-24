@@ -204,13 +204,12 @@
     "melee_allowed": true,
     "skill_requirements": [ { "name": "melee", "level": 2 } ],
     "mult_bonuses": [
-      { "stat": "movecost", "scale": 0.5 },
-      { "stat": "damage", "type": "bash", "scale": 0.66 },
-      { "stat": "damage", "type": "cut", "scale": 0.66 },
-      { "stat": "damage", "type": "stab", "scale": 0.66 }
+      { "stat": "damage", "type": "bash", "scale": 1.32 },
+      { "stat": "damage", "type": "cut", "scale": 1.32 },
+      { "stat": "damage", "type": "stab", "scale": 1.32 }
     ],
-    "messages": [ "You quickly strike %s", "<npcname> quickly strikes %s" ],
-    "description": "50% moves, 66% damage, min 2 melee",
+    "messages": [ "You strike %s with extreme speed", "<npcname> quickly strikes %s" ],
+    "description": "132% damage, min 2 melee, replaces crappy rapid strike",
     "attack_vectors": [ "vector_null" ]
   },
   {
