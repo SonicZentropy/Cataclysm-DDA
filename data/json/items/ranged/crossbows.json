@@ -218,7 +218,7 @@
     "volume": "1250 ml",
     "longest_side": "86 cm",
     "ranged_damage": { "damage_type": "bullet", "amount": 4 },
-    "range": 10,
+    "range": 14,
     "dispersion": 55,
     "sight_dispersion": 90,
     "durability": 6,
@@ -257,8 +257,8 @@
     "weight": "900 g",
     "volume": "500 ml",
     "longest_side": "70 cm",
-    "ranged_damage": { "damage_type": "stab", "amount": 3 },
-    "range": 6,
+    "ranged_damage": { "damage_type": "stab", "amount": 17 },
+    "range": 17,
     "dispersion": 400,
     "sight_dispersion": 90,
     "durability": 6,
@@ -274,7 +274,7 @@
       [ "dampening", 1 ]
     ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "bolt": 1 } } ],
-    "melee_damage": { "bash": 2 }
+    "melee_damage": { "bash": 4 }
   },
   {
     "id": "crossbow",
@@ -292,7 +292,7 @@
     "material": [ "wood" ],
     "flags": [ "PRIMITIVE_RANGED_WEAPON", "FRAGILE_MELEE" ],
     "skill": "rifle",
-    "min_strength": 8,
+    "min_strength": 9,
     "longest_side": "86 cm",
     "ammo": [ "bolt" ],
     "weight": "2728 g",
@@ -300,16 +300,16 @@
     "//volume": "L 86 * W 25 * H 6 cm, volume is calculated as area of triangle multiplied by height",
     "to_hit": { "grip": "none", "length": "short", "surface": "any", "balance": "uneven" },
     "loudness": 10,
-    "ranged_damage": { "damage_type": "stab", "amount": 4 },
-    "range": 9,
+    "ranged_damage": { "damage_type": "stab", "amount": 21 },
+    "range": 21,
     "dispersion": 375,
     "sight_dispersion": 90,
     "durability": 6,
     "clip_size": 1,
-    "reload": 1200,
+    "reload": 200,
     "valid_mod_locations": [ [ "dampening", 1 ], [ "rail mount", 1 ], [ "sights mount", 1 ], [ "underbarrel mount", 1 ], [ "sling", 1 ] ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "bolt": 1 } } ],
-    "melee_damage": { "bash": 5 }
+    "melee_damage": { "bash": 10 }
   },
   {
     "id": "compositecrossbow",
@@ -333,14 +333,14 @@
     "volume": "1750 ml",
     "longest_side": "86 cm",
     "to_hit": 1,
-    "ranged_damage": { "damage_type": "stab", "amount": 6 },
-    "range": 16,
+    "ranged_damage": { "damage_type": "stab", "amount": 23 },
+    "range": 23,
     "loudness": 8,
     "dispersion": 350,
     "sight_dispersion": 90,
     "durability": 6,
     "clip_size": 1,
-    "reload": 1200,
+    "reload": 200,
     "valid_mod_locations": [
       [ "grip", 1 ],
       [ "mechanism", 2 ],
@@ -349,10 +349,11 @@
       [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
-      [ "dampening", 1 ]
+      [ "dampening", 1 ],
+      [ "reloading mechanism", 1 ]
     ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "bolt": 1 } } ],
-    "melee_damage": { "bash": 5 }
+    "melee_damage": { "bash": 10 }
   },
   {
     "id": "compcrossbow",
@@ -376,13 +377,13 @@
     "longest_side": "69 cm",
     "price_postapoc": "60 USD",
     "to_hit": 1,
-    "ranged_damage": { "damage_type": "stab", "amount": 13 },
-    "range": 22,
+    "ranged_damage": { "damage_type": "stab", "amount": 28 },
+    "range": 28,
     "loudness": 12,
     "dispersion": 325,
     "durability": 6,
     "clip_size": 1,
-    "reload": 1200,
+    "reload": 200,
     "valid_mod_locations": [
       [ "grip", 1 ],
       [ "mechanism", 2 ],
@@ -391,10 +392,11 @@
       [ "sling", 1 ],
       [ "stock", 1 ],
       [ "underbarrel", 1 ],
-      [ "dampening", 1 ]
+      [ "dampening", 1 ],
+      [ "reloading mechanism", 1 ]
     ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "bolt": 1 } } ],
-    "melee_damage": { "bash": 5 }
+    "melee_damage": { "bash": 10 }
   },
   {
     "id": "huge_crossbow",
@@ -417,17 +419,17 @@
     "longest_side": "102 cm",
     "price_postapoc": "40 USD",
     "to_hit": -1,
-    "ranged_damage": { "damage_type": "stab", "amount": 6 },
-    "range": 30,
+    "ranged_damage": { "damage_type": "stab", "amount": 45 },
+    "range": 35,
     "dispersion": 300,
     "sight_dispersion": 90,
     "recoil": 30,
     "durability": 6,
     "clip_size": 1,
-    "reload": 6000,
-    "valid_mod_locations": [ [ "dampening", 1 ] ],
+    "reload": 400,
+    "valid_mod_locations": [ [ "dampening", 1 ], [ "reloading mechanism", 1 ] ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "bolt": 1 } } ],
-    "melee_damage": { "bash": 10 }
+    "melee_damage": { "bash": 20 }
   },
   {
     "id": "rep_crossbow",
@@ -450,16 +452,16 @@
     "longest_side": "70 cm",
     "price_postapoc": "60 USD",
     "to_hit": -1,
-    "ranged_damage": { "damage_type": "stab", "amount": 1 },
-    "range": 8,
+    "ranged_damage": { "damage_type": "stab", "amount": 17 },
+    "range": 17,
     "dispersion": 500,
     "sight_dispersion": 90,
     "recoil": 30,
     "durability": 6,
     "clip_size": 10,
-    "reload": 900,
-    "valid_mod_locations": [ [ "dampening", 1 ] ],
+    "reload": 150,
+    "valid_mod_locations": [ [ "dampening", 1 ], [ "reloading mechanism", 1 ] ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "bolt": 10 } } ],
-    "melee_damage": { "bash": 6 }
+    "melee_damage": { "bash": 12 }
   }
 ]

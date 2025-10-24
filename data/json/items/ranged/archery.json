@@ -163,7 +163,7 @@
     "price_postapoc": "40 cent",
     "damage": { "damage_type": "stab", "armor_penetration": 1, "constant_damage_multiplier": 1.5 },
     "range": 2,
-    "recovery_chance": 97,
+    "recovery_chance": 99,
     "melee_damage": { "bash": 3, "cut": 2 }
   },
   {
@@ -361,7 +361,6 @@
     "//": "52in Elm Shortbow at 24in draw with 26in, 0.077 lb aspen arrow: 45J, 50 lbs draw, 0.35 slugs with 30g arrow.",
     "material": [ "wood" ],
     "flags": [
-      "FRAGILE_MELEE",
       "FIRE_TWOHAND",
       "RELOAD_AND_SHOOT",
       "PRIMITIVE_RANGED_WEAPON",
@@ -381,7 +380,7 @@
     "price_postapoc": "5 USD",
     "reload_noise_volume": 3,
     "loudness": 6,
-    "ranged_damage": { "damage_type": "stab", "amount": 4 },
+    "ranged_damage": { "damage_type": "stab", "amount": 9 },
     "range": 10,
     "dispersion": 1000,
     "sight_dispersion": 3000,
@@ -390,7 +389,7 @@
     "valid_mod_locations": [ [ "dampening", 1 ], [ "arrow rest", 1 ] ],
     "reload": 50,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "arrow": 1 }, "open_container": true } ],
-    "melee_damage": { "bash": 3 },
+    "melee_damage": { "bash": 6 },
     "armor": [
       {
         "material": [ { "type": "wood", "covered_by_mat": 100, "thickness": 1.0 } ],
@@ -433,8 +432,8 @@
     "to_hit": 1,
     "reload_noise_volume": 3,
     "loudness": 10,
-    "ranged_damage": { "damage_type": "stab", "amount": 10 },
-    "range": 18,
+    "ranged_damage": { "damage_type": "stab", "amount": 22 },
+    "range": 22,
     "dispersion": 850,
     "sight_dispersion": 3000,
     "durability": 6,
@@ -450,7 +449,7 @@
     },
     "reload": 50,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "arrow": 1 }, "open_container": true } ],
-    "melee_damage": { "bash": 4 }
+    "melee_damage": { "bash": 8 }
   },
   {
     "id": "compbow_high",
@@ -461,7 +460,7 @@
     "description": "A high-powered bow with shaped cams and extra cables for high-velocity shots that can be used effectively by very strong archers.  Currently set to a high weight, and ready to cause some real damage - if you can draw it.",
     "//": "80 lb draw weight, efficient, 0.62 slugs of momentum with a 30g arrow.",
     "min_strength": 11,
-    "ranged_damage": { "damage_type": "stab", "amount": 12 },
+    "ranged_damage": { "damage_type": "stab", "amount": 24 },
     "use_action": {
       "ammo_scale": 0,
       "menu_text": "Loosen Limbs",
@@ -480,7 +479,7 @@
     "description": "A high-powered bow with shaped cams and extra cables for high-velocity shots that can be used effectively by average archers.  Currently set to a low weight, making it much easier to draw.",
     "//": "40 lb draw weight, efficient, 0.45 slugs of momentum with a 30g arrow.",
     "min_strength": 7,
-    "ranged_damage": { "damage_type": "stab", "amount": 7 },
+    "ranged_damage": { "damage_type": "stab", "amount": 20 },
     "use_action": {
       "ammo_scale": 0,
       "menu_text": "Tighten Limbs",
@@ -523,8 +522,8 @@
     "price_postapoc": "30 USD",
     "reload_noise_volume": 3,
     "loudness": 6,
-    "ranged_damage": { "damage_type": "stab", "amount": 8 },
-    "range": 12,
+    "ranged_damage": { "damage_type": "stab", "amount": 21 },
+    "range": 23,
     "dispersion": 950,
     "sight_dispersion": 3000,
     "durability": 6,
@@ -532,7 +531,7 @@
     "valid_mod_locations": [ [ "dampening", 1 ], [ "arrow rest", 1 ] ],
     "reload": 50,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "arrow": 1 }, "open_container": true } ],
-    "melee_damage": { "bash": 4 },
+    "melee_damage": { "bash": 8 },
     "armor": [
       {
         "material": [
@@ -579,8 +578,8 @@
     "price_postapoc": "20 USD",
     "reload_noise_volume": 3,
     "loudness": 6,
-    "ranged_damage": { "damage_type": "stab", "amount": 6 },
-    "range": 12,
+    "ranged_damage": { "damage_type": "stab", "amount": 18 },
+    "range": 20,
     "dispersion": 950,
     "sight_dispersion": 3000,
     "durability": 6,
@@ -588,7 +587,7 @@
     "valid_mod_locations": [ [ "dampening", 1 ], [ "arrow rest", 1 ] ],
     "reload": 50,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "arrow": 1 }, "open_container": true } ],
-    "melee_damage": { "bash": 6 },
+    "melee_damage": { "bash": 12 },
     "armor": [
       {
         "material": [ { "type": "wood", "covered_by_mat": 100, "thickness": 1.0 } ],
@@ -632,8 +631,8 @@
     "price_postapoc": "20 USD",
     "reload_noise_volume": 3,
     "loudness": 8,
-    "ranged_damage": { "damage_type": "stab", "amount": 6 },
-    "range": 14,
+    "ranged_damage": { "damage_type": "stab", "amount": 18 },
+    "range": 18,
     "dispersion": 850,
     "sight_dispersion": 3000,
     "durability": 6,
@@ -641,7 +640,7 @@
     "valid_mod_locations": [ [ "underbarrel", 1 ], [ "sights", 1 ], [ "stabilizer", 1 ], [ "dampening", 1 ], [ "arrow rest", 1 ] ],
     "reload": 50,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "arrow": 1 }, "open_container": true } ],
-    "melee_damage": { "bash": 6 },
+    "melee_damage": { "bash": 12 },
     "armor": [
       {
         "material": [
@@ -689,8 +688,8 @@
     "price_postapoc": "22 USD",
     "reload_noise_volume": 3,
     "loudness": 8,
-    "ranged_damage": { "damage_type": "stab", "amount": 6 },
-    "range": 14,
+    "ranged_damage": { "damage_type": "stab", "amount": 18 },
+    "range": 18,
     "dispersion": 850,
     "sight_dispersion": 3000,
     "durability": 6,
@@ -707,7 +706,7 @@
       "ammo_scale": 0,
       "moves": 1500
     },
-    "melee_damage": { "bash": 6 },
+    "melee_damage": { "bash": 12 },
     "armor": [
       {
         "material": [
@@ -751,7 +750,7 @@
       "msg": "You assemble your bow.",
       "moves": 1500
     },
-    "melee_damage": { "bash": 6 }
+    "melee_damage": { "bash": 12 }
   },
   {
     "id": "longbow",
@@ -785,7 +784,7 @@
     "price_postapoc": "30 USD",
     "reload_noise_volume": 3,
     "loudness": 8,
-    "ranged_damage": { "damage_type": "stab", "amount": 6 },
+    "ranged_damage": { "damage_type": "stab", "amount": 15 },
     "range": 18,
     "dispersion": 1000,
     "sight_dispersion": 3000,
@@ -794,7 +793,7 @@
     "valid_mod_locations": [ [ "dampening", 1 ], [ "arrow rest", 1 ] ],
     "reload": 50,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "arrow": 1 }, "open_container": true } ],
-    "melee_damage": { "bash": 5 },
+    "melee_damage": { "bash": 10 },
     "armor": [
       {
         "material": [ { "type": "wood", "covered_by_mat": 100, "thickness": 1.0 } ],
@@ -821,8 +820,8 @@
     "price_postapoc": "20 USD",
     "durability": 8,
     "loudness": 16,
-    "ranged_damage": { "damage_type": "stab", "amount": 11 },
-    "range": 20,
+    "ranged_damage": { "damage_type": "stab", "amount": 24 },
+    "range": 24,
     "armor": [
       {
         "material": [ { "type": "wood", "covered_by_mat": 100, "thickness": 2.0 } ],
@@ -851,8 +850,8 @@
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "strange_arrow": 1 }, "open_container": true } ],
     "durability": 8,
     "loudness": 16,
-    "ranged_damage": { "damage_type": "stab", "amount": 11 },
-    "range": 20,
+    "ranged_damage": { "damage_type": "stab", "amount": 24 },
+    "range": 31,
     "armor": [
       {
         "material": [
@@ -898,15 +897,15 @@
     "reload_noise_volume": 4,
     "loudness": 20,
     "durability": 8,
-    "ranged_damage": { "damage_type": "stab", "amount": 11 },
-    "range": 22,
+    "ranged_damage": { "damage_type": "stab", "amount": 31 },
+    "range": 31,
     "dispersion": 1000,
     "sight_dispersion": 3000,
     "clip_size": 1,
     "valid_mod_locations": [ [ "underbarrel", 1 ], [ "sights", 1 ], [ "stabilizer", 1 ], [ "dampening", 1 ], [ "arrow rest", 1 ] ],
     "reload": 50,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "arrow": 1 }, "open_container": true } ],
-    "melee_damage": { "bash": 7 }
+    "melee_damage": { "bash": 14 }
   },
   {
     "id": "reflexrecurvebow",
@@ -925,7 +924,6 @@
       "RELOAD_AND_SHOOT",
       "PRIMITIVE_RANGED_WEAPON",
       "BELTED",
-      "FRAGILE_MELEE",
       "WATER_FRIENDLY",
       "SHEATH_BOW",
       "WATERPROOF_GUN",
@@ -933,7 +931,7 @@
     ],
     "ammo_effects": [ "NEVER_MISFIRES" ],
     "skill": "archery",
-    "min_strength": 8,
+    "min_strength": 12,
     "ammo": [ "arrow" ],
     "weight": "450 g",
     "volume": "2 L",
@@ -941,8 +939,8 @@
     "price_postapoc": "60 USD",
     "reload_noise_volume": 3,
     "loudness": 8,
-    "ranged_damage": { "damage_type": "stab", "amount": 5 },
-    "range": 18,
+    "ranged_damage": { "damage_type": "stab", "amount": 26 },
+    "range": 32,
     "dispersion": 950,
     "sight_dispersion": 3000,
     "durability": 6,
@@ -950,7 +948,7 @@
     "valid_mod_locations": [ [ "sights", 1 ], [ "dampening", 1 ], [ "arrow rest", 1 ] ],
     "reload": 50,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "arrow": 1 }, "open_container": true } ],
-    "melee_damage": { "bash": 6 },
+    "melee_damage": { "bash": 12 },
     "armor": [
       {
         "material": [ { "type": "wood", "covered_by_mat": 100, "thickness": 1.0 } ],

@@ -1319,5 +1319,67 @@
     "tools": [ [ [ "forge", 150 ], [ "oxy_torch", 150 ] ], [ [ "metalworking_tongs_any", 1, "LIST" ] ] ],
     "byproducts": [ [ "scrap_aluminum", 3 ] ],
     "components": [ [ [ "material_aluminium_ingot", 1 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "MODERATE_EXERCISE",
+    "result": "cord_crossbow_mech",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "gun", 2 ] ],
+    "difficulty": 3,
+    "autolearn": true,
+    "time": "1 h",
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [ [ [ "plastic_chunk", 1 ], [ "2x4", 1 ] ], [ [ "cordage", 1, "LIST" ] ] ]
+  },
+  {
+    "type": "recipe",
+    "activity_level": "MODERATE_EXERCISE",
+    "result": "windlass_crossbow_mech",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "fabrication",
+    "skills_required": [ [ "gun", 3 ] ],
+    "difficulty": 5,
+    "autolearn": true,
+    "time": "1 h",
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "HAMMER", "level": 1 },
+      { "id": "SCREW", "level": 1 },
+      { "id": "WRENCH", "level": 1 },
+      { "id": "SAW_M", "level": 1 }
+    ],
+    "components": [ [ [ "rope_6", 2 ] ], [ [ "foot_crank", 1 ] ], [ [ "spring", 4 ] ], [ [ "steel_chunk", 4 ], [ "scrap", 12 ] ] ]
+  },
+  {
+    "type": "recipe",
+    "result": "electric_crossbow_mech",
+    "activity_level": "MODERATE_EXERCISE",
+    "category": "CC_WEAPON",
+    "subcategory": "CSC_WEAPON_MODS",
+    "skill_used": "electronics",
+    "skills_required": [ [ "gun", 3 ] ],
+    "difficulty": 5,
+    "autolearn": true,
+    "time": "1 h",
+    "using": [ [ "soldering_standard", 10 ], [ "surface_heat", 10 ] ],
+    "qualities": [
+      { "id": "CUT", "level": 1 },
+      { "id": "HAMMER", "level": 1 },
+      { "id": "SCREW", "level": 1 },
+      { "id": "WRENCH", "level": 1 },
+      { "id": "SAW_M", "level": 1 }
+    ],
+    "components": [
+      [ [ "plastic_chunk", 6 ] ],
+      [ [ "blade", 2 ] ],
+      [ [ "motor_tiny", 1 ] ],
+      [ [ "power_supply", 1 ] ],
+      [ [ "scrap", 1 ] ],
+      [ [ "cable", 5 ] ]
+    ]
   }
 ]
