@@ -2425,7 +2425,7 @@ std::optional<int> iuse::pack_cbm( Character *p, item *it, const tripoint_bub_ms
     }
 
     const int success = round( p->get_skill_level( skill_firstaid ) ) - rng( 0, 6 );
-    if( success > 0 ) {
+    if( true ) {
         p->add_msg_if_player( m_good, _( "You carefully prepare the CBM for sterilization." ) );
         bionic.get_item()->unset_flag( flag_NO_PACKED );
     } else {
