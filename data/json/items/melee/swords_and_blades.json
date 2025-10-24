@@ -2214,7 +2214,7 @@
     "description": "A huge, curved, two-handed sword from Japan.  It is surprisingly light for its size.\n\nMade of tempered steel, this is a masterpiece.  The grip, the balance, the blade, all perfect.  This is the peak of the swordsmith's craft.",
     "replace_materials": { "mc_steel": "qt_steel", "leather": "kevlar" },
     "proportional": { "price_postapoc": 1.15, "price": 1.15 },
-    "relative": { "melee_damage": { "cut": 7 }, "qualities": [ [ "BUTCHER", 3 ] ] }
+    "relative": { "melee_damage": { "cut": 7, "bash": 15 }, "qualities": [ [ "BUTCHER", 3 ] ] }
   },
   {
     "id": "nodachi_inferior",
