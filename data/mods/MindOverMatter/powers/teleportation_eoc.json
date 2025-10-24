@@ -290,7 +290,13 @@
             "type": "neutral"
           }
         ],
-        "else": [ { "run_eocs": [ "EOC_TELEPORTER_GATEWAY_MESSAGE_CARRYING_TOO_MUCH" ] } ]
+        "else": [
+          { "u_cast_spell": { "id": "teleport_farstep_real", "hit_self": false }, "targeted": true },
+          {
+            "u_message": "There is a moment of darkness and terrible cold, and you are somewhere else.",
+            "type": "neutral"
+          }
+        ]
       }
     ],
     "false_effect": [ { "u_message": "You feel a strange, inward force.", "type": "bad" } ]

@@ -3882,7 +3882,7 @@ std::unique_ptr<activity_actor> try_sleep_activity_actor::deserialize( JsonValue
 
 time_duration safecracking_activity_actor::safecracking_time( const Character &who )
 {
-    time_duration cracking_time = 150_minutes;
+    time_duration cracking_time = 1_minutes;
     /** @EFFECT_DEVICES decreases time needed for safe cracking */
     cracking_time -= 20_minutes * ( who.get_skill_level( skill_traps ) - 3 ) ;
     /** @EFFECT_PER decreases time needed for safe cracking */

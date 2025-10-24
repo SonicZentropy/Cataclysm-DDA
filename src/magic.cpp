@@ -2455,8 +2455,9 @@ int known_magic::max_mana( const Character &guy ) const
     int penalty_calc = std::round( std::max<int64_t>( 0,
                                    units::to_kilojoule( guy.get_power_level() ) ) );
 
-    const int bionic_penalty = guy.enchantment_cache->modify_value(
-                                   enchant_vals::mod::BIONIC_MANA_PENALTY, penalty_calc );
+    //const int bionic_penalty = guy.enchantment_cache->modify_value(
+    //                               enchant_vals::mod::BIONIC_MANA_PENALTY, penalty_calc );
+    const int bionic_penalty = 0;
 
     const float unaugmented_mana = std::max( 0.0f,
                                    ( mana_base + int_bonus ) - bionic_penalty );
