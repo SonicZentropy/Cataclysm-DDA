@@ -969,7 +969,7 @@
         { "item": "sheet_metal_small", "count": [ 0, 4 ] }
       ]
     },
-    "max_volume": "3500 L",
+    "max_volume": "100000 L",
     "bash": {
       "str_min": 8,
       "str_max": 30,
