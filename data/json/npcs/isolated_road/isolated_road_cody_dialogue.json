@@ -115,7 +115,7 @@
             { "compare_string": [ "yes", { "u_val": "dialogue_artisans_blacksmith_heard_the_deal" } ] }
           ]
         },
-        "topic": "TALK_BLACKSMITH_NOT_INTERESTED_FABRICATE"
+        "topic": "TALK_BLACKSMITH_FABRICATE"
       },
       {
         "text": "Could you make me a suit of armor?",
@@ -139,7 +139,7 @@
             { "compare_string": [ "yes", { "u_val": "dialogue_artisans_blacksmith_heard_the_deal" } ] }
           ]
         },
-        "topic": "TALK_BLACKSMITH_NOT_INTERESTED_FABRICATE"
+        "topic": "TALK_BLACKSMITH_FABRICATE"
       },
       {
         "text": "Could you make me a weapon?",
