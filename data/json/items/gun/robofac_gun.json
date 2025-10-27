@@ -511,8 +511,8 @@
     "looks_like": "stanag30",
     "type": "ITEM",
     "subtypes": [ "MAGAZINE" ],
-    "name": { "str": "HWP 20-round 7.62 magazine" },
-    "description": "A 20-round stick magazine for use with the Hub 01 Hybrid Weapons Platform.",
+    "name": { "str": "HWP 30-round 7.62 magazine" },
+    "description": "A 30-round stick magazine for use with the Hub 01 Hybrid Weapons Platform.",
     "weight": "180 g",
     "volume": "320 ml",
     "longest_side": "152 mm",
@@ -523,7 +523,7 @@
     "color": "light_gray",
     "ammo_type": [ "308" ],
     "flags": [ "MAG_COMPACT" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "308": 20 } } ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "308": 30 } } ]
   },
   {
     "id": "robofac50",
