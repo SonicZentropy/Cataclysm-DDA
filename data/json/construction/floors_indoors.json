@@ -509,7 +509,7 @@
     "category": "CONSTRUCT",
     "skill": "fabrication",
     "difficulty": 2,
-    "time": "90 m",
+    "time": "1 m",
     "qualities": [ { "id": "SMOOTH", "level": 1 } ],
     "components": [ [ [ "alien_pod_resin", 2 ] ] ],
     "pre_special": "check_empty",
