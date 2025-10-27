@@ -302,6 +302,7 @@ item &inventory::add_item( item newit, bool keep_invlet, bool assign_invlet, boo
 {
     binned = false;
 
+
     Character &player_character = get_player_character();
     if( should_stack ) {
         // See if we can't stack this item.

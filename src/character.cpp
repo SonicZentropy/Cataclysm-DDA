@@ -7129,7 +7129,7 @@ int Character::get_cardiofit() const
     // Mut mod contains the base 1.0f for all modifiers
     const float mut_mod = enchantment_cache->modify_value( enchant_vals::mod::CARDIO_MULTIPLIER, 1 );
     // 1 point of athletics skill = 1% more cardio, up to 10% cardio
-    const float athletics_mod = get_skill_level( skill_swimming ) / 100.0f;
+    const float athletics_mod = get_skill_level( skill_swimming ) / 50.0f;
     // At some point we might have proficiencies that affect this.
     const float prof_mod = 0.0f;
     // 10 points of health = 1% cardio, up to 20% cardio
