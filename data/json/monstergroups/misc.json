@@ -418,6 +418,7 @@
     "id": "GROUP_BUNKER",
     "monsters": [
       { "monster": "mon_zombie_armored", "weight": 25, "cost_multiplier": 20, "pack_size": [ 2, 6 ] },
+      { "monster": "mon_zombie_bio_op", "weight": 150, "cost_multiplier": 10 },
       { "monster": "mon_zombie_soldier", "weight": 600, "cost_multiplier": 3 }
     ]
   },
@@ -457,6 +458,7 @@
       { "monster": "mon_ant_soldier_mega" },
       { "monster": "mon_mantis_mega" },
       { "monster": "mon_lady_bug_giant" },
+      { "monster": "mon_zombie_bio_op" },
       { "monster": "mon_mi_go_guard" },
       { "monster": "mon_mi_go_scout" },
       { "monster": "mon_shrapnel_swarm" },
