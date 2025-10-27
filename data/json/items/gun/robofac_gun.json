@@ -406,7 +406,7 @@
     "color": "light_gray",
     "ammo_type": [ "223" ],
     "flags": [ "MAG_COMPACT" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "223": 40 } } ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "223": 50 } } ]
   },
   {
     "id": "xedra40",
@@ -415,7 +415,7 @@
     "name": { "str": "prototype 40-round 5.56 magazine" },
     "description": "A high-capacity 40-round box magazine.",
     "copy-from": "robofac40",
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "223": 40 } } ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "223": 50 } } ]
   },
   {
     "id": "robofacmultimag",
@@ -440,8 +440,8 @@
     "looks_like": "calicomag",
     "type": "ITEM",
     "subtypes": [ "MAGAZINE" ],
-    "name": { "str": "HWP 60-round 9mm helical magazine" },
-    "description": "A surprisingly compact 60-round helical magazine for use with the Hub 01 Hybrid Weapons Platform.",
+    "name": { "str": "HWP 80-round 9mm helical magazine" },
+    "description": "A surprisingly compact 80-round helical magazine for use with the Hub 01 Hybrid Weapons Platform.",
     "weight": "360 g",
     "volume": "360 ml",
     "longest_side": "232 mm",
@@ -454,7 +454,7 @@
     "reload_time": 160,
     "mag_jam_mult": 3,
     "flags": [ "MAG_COMPACT" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "9mm": 60 } } ]
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "9mm": 80 } } ]
   },
   {
     "id": "robofac10",
