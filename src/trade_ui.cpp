@@ -284,9 +284,10 @@ bool trade_ui::_confirm_trade() const
             popup( _( "Sorry, I'm only willing to extend you %s in credit." ),
                    format_money( np.max_credit_extended() ) );
         }
-    } else if( !np.is_shopkeeper() &&
-               !npc_trading::npc_can_fit_items( np, _panes[_you]->to_trade() ) ) {
-        popup( _( "%s doesn't have the appropriate pockets to accept that." ), np.get_name() );
+    //}
+    //else if( !np.is_shopkeeper() &&
+      //         !npc_trading::npc_can_fit_items( np, _panes[_you]->to_trade() ) ) {
+       // popup( _( "%s doesn't have the appropriate pockets to accept that." ), np.get_name() );
     } else if( npc_trading::calc_npc_owes_you( np, _balance ) < _balance ) {
         // NPC is happy with the trade, but isn't willing to remember the whole debt.
         return query_yn(
