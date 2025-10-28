@@ -856,7 +856,7 @@
     "connections": [ { "point": [ 0, -1, 0 ], "terrain": "road", "connection": "local_road" } ],
     "locations": [ "field", "forest_without_trail" ],
     "city_distance": [ 10, -1 ],
-    "occurrences": [ 2, 100 ],
+    "occurrences": [ 30, 100 ],
     "flags": [ "LAB", "OVERMAP_UNIQUE", "MAN_MADE" ]
   },
   {
@@ -871,7 +871,7 @@
     "connections": [ { "point": [ 0, -1, 0 ], "terrain": "road", "connection": "local_road" } ],
     "locations": [ "field", "forest_without_trail" ],
     "city_distance": [ 10, -1 ],
-    "occurrences": [ 2, 100 ],
+    "occurrences": [ 10, 100 ],
     "flags": [ "ANT", "OVERMAP_UNIQUE", "MAN_MADE" ],
     "spawns": { "group": "GROUP_ANT_SURFACE", "population": [ 1000, 2000 ], "radius": [ 10, 30 ] }
   },
@@ -922,7 +922,7 @@
     "locations": [ "forest" ],
     "city_distance": [ 15, -1 ],
     "priority": 1,
-    "occurrences": [ 2, 100 ],
+    "occurrences": [ 40, 100 ],
     "flags": [ "OVERMAP_UNIQUE", "LAB", "WILDERNESS", "MAN_MADE" ],
     "rotate": false
   },
@@ -937,7 +937,7 @@
     "connections": [ { "point": [ 0, -1, 0 ], "terrain": "road", "connection": "local_road" } ],
     "locations": [ "field", "forest_without_trail" ],
     "city_distance": [ 10, -1 ],
-    "occurrences": [ 2, 100 ],
+    "occurrences": [ 10, 100 ],
     "flags": [ "LAB", "OVERMAP_UNIQUE", "MAN_MADE" ]
   },
   {
