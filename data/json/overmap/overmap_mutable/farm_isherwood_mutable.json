@@ -6,9 +6,9 @@
     "locations": [ "subterranean_empty", "land", "open_air", "special_isherwood" ],
     "city_distance": [ 5, -1 ],
     "city_sizes": [ 1, -1 ],
-    "occurrences": [ 35, 100 ],
+    "occurrences": [ 100, 100 ],
     "priority": 1,
-    "flags": [ "FARM", "GLOBALLY_UNIQUE", "SAFE_AT_WORLDGEN", "MAN_MADE" ],
+    "flags": [ "FARM", "OVERMAP_UNIQUE", "SAFE_AT_WORLDGEN", "MAN_MADE" ],
     "check_for_locations_area": [ { "type": [ "land" ], "from": [ -10, 0, 0 ], "to": [ 7, 26, 0 ] } ],
     "joins": [
       "root_to_road",

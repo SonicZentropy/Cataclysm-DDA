@@ -19,7 +19,7 @@
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 0, 20 ],
     "occurrences": [ 1, 100 ],
-    "flags": [ "GLOBALLY_UNIQUE", "MAN_MADE" ]
+    "flags": [ "OVERMAP_UNIQUE", "MAN_MADE" ]
   },
   {
     "type": "overmap_special",
@@ -389,6 +389,6 @@
     "locations": [ "land" ],
     "city_distance": [ 5, -1 ],
     "occurrences": [ 20, 100 ],
-    "flags": [ "LAB", "MAN_MADE", "GLOBALLY_UNIQUE" ]
+    "flags": [ "LAB", "MAN_MADE", "OVERMAP_UNIQUE" ]
   }
 ]

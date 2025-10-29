@@ -17,9 +17,9 @@
       { "point": [ 4, -2, 0 ], "locations": [ "land", "road" ] }
     ],
     "connections": [ { "point": [ 4, -2, 0 ], "terrain": "road", "connection": "local_road", "existing": true, "from": [ 3, -2, 0 ] } ],
-    "occurrences": [ 10, 100 ],
+    "occurrences": [ 90, 100 ],
     "priority": 1,
-    "flags": [ "GLOBALLY_UNIQUE", "FARM", "MAN_MADE", "SAFE_AT_WORLDGEN" ],
+    "flags": [ "OVERMAP_UNIQUE", "FARM", "MAN_MADE", "SAFE_AT_WORLDGEN" ],
     "rotate": false
   }
 ]

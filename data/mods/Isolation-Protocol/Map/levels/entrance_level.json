@@ -8,7 +8,7 @@
       { "point": [ 0, -2, -1 ], "overmap": "iso_next_level_elevator_south" }
     ],
     "locations": [ "iso_nether" ],
-    "flags": [ "ISO_MAP", "GLOBALLY_UNIQUE" ],
+    "flags": [ "ISO_MAP", "OVERMAP_UNIQUE" ],
     "city_distance": [ 0, 30 ],
     "city_sizes": [ 0, 16 ],
     "occurrences": [ 4, 4 ]

@@ -204,6 +204,6 @@
     "locations": [ "lake_surface" ],
     "occurrences": [ 75, 100 ],
     "priority": 1,
-    "flags": [ "LAKE", "MAN_MADE", "GLOBALLY_UNIQUE", "MILITARY", "SAFE_AT_WORLDGEN" ]
+    "flags": [ "LAKE", "MAN_MADE", "OVERMAP_UNIQUE", "MILITARY", "SAFE_AT_WORLDGEN" ]
   }
 ]

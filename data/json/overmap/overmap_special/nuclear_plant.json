@@ -731,8 +731,8 @@
     "locations": [ "wilderness" ],
     "city_distance": [ 5, 15 ],
     "city_sizes": [ 5, -1 ],
-    "occurrences": [ 900, 1000 ],
+    "occurrences": [ 1000, 1000 ],
     "priority": 1,
-    "flags": [ "CLASSIC", "MAN_MADE", "GLOBALLY_UNIQUE", "SAFE_AT_WORLDGEN" ]
+    "flags": [ "CLASSIC", "MAN_MADE", "OVERMAP_UNIQUE", "SAFE_AT_WORLDGEN" ]
   }
 ]

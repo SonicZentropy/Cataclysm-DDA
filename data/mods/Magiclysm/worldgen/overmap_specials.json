@@ -312,7 +312,7 @@
     "//": "Meant for the Last Mage on Earth start",
     "city_sizes": [ 0, 13 ],
     "occurrences": [ 10, 100 ],
-    "flags": [ "MAN_MADE", "GLOBALLY_UNIQUE", "WILDERNESS" ]
+    "flags": [ "MAN_MADE", "OVERMAP_UNIQUE", "WILDERNESS" ]
   },
   {
     "type": "overmap_special",
@@ -408,6 +408,6 @@
     "city_distance": [ 20, -1 ],
     "city_sizes": [ 0, 20 ],
     "occurrences": [ 1, 16 ],
-    "flags": [ "GLOBALLY_UNIQUE" ]
+    "flags": [ "OVERMAP_UNIQUE" ]
   }
 ]
