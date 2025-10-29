@@ -10489,7 +10489,7 @@ bool game::prompt_dangerous_tile( const tripoint_bub_ms &dest_loc,
         harmful_stuff = &dangerous_tile;
     }
 
-    if( !harmful_stuff->empty() &&
+    if( !harmful_stuff->empty() && here.is_open_air( dest_loc ) &&
         !query_yn( _( "Really step into %s?" ), enumerate_as_string( *harmful_stuff ) ) ) {
         return false;
     }
