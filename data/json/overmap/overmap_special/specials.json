@@ -952,7 +952,7 @@
     "connections": [ { "point": [ 0, -1, 0 ], "terrain": "road", "connection": "local_road", "from": [ 0, 0, 0 ] } ],
     "locations": [ "forest" ],
     "city_distance": [ 20, -1 ],
-    "occurrences": [ 5, 100 ],
+    "occurrences": [ 15, 100 ],
     "flags": [ "MILITARY", "OVERMAP_UNIQUE", "MAN_MADE" ]
   },
   {

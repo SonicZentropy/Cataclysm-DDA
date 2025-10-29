@@ -1,6 +1,6 @@
 [{
   "type": "mod_tileset",
-  "compatibility": ["UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE", "MshockRealXotto", "MSX++DEAD_PEOPLE", "MSXotto+", "Chibi_Ultica"],
+  "compatibility": ["UNDEAD_PEOPLE_BASE", "UNDEAD_PEOPLE", "MshockRealXotto", "MSX++DEAD_PEOPLE", "MSXotto+", "Chibi_Ultica", "MshockXottoplus"],
   "tiles-new": [
     {
       "file": "ChibiLarge.png",
