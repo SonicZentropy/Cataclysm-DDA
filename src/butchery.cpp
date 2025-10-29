@@ -444,7 +444,7 @@ int butcher_time_to_cut( Character &you, const item &corpse_item, const butcher_
             }
             break;
         case butcher_type::DISSECT:
-            time_to_cut *= 6;
+            time_to_cut /= 2;
             break;
         case butcher_type::NUM_TYPES:
             debugmsg( "ERROR: Invalid butcher_type" );
