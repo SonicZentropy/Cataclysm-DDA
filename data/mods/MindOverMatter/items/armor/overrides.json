@@ -5,8 +5,7 @@
     "type": "ITEM",
     "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
     "category": "clothing",
-    "name": { "str": "5-point anchor" },
-    "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "mutations": [ "ANCHORCROWN_NOSPELL" ] } ]
+    "name": { "str": "5-point anchor" }
   },
   {
     "id": "dimensional_anchor_on",
@@ -14,7 +13,6 @@
     "type": "ITEM",
     "subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
     "category": "clothing",
-    "name": { "str": "5-point anchor (on)", "str_pl": "5-point anchors (on)" },
-    "passive_effects": [ { "has": "WORN", "condition": "ACTIVE", "mutations": [ "ANCHORCROWN_NOSPELL" ] } ]
+    "name": { "str": "5-point anchor (on)", "str_pl": "5-point anchors (on)" }
   }
 ]
