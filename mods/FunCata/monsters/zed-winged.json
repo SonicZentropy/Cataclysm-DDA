@@ -1,0 +1,10 @@
+[
+  {
+    "id": "mon_spawn_raptor_electric",
+    "copy-from": "mon_spawn_raptor_electric",
+    "type": "MONSTER",
+    "extend": {
+      "special_attacks": [ [ "SHOCKSTORM", 25 ] ]
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "integrated_cable",
+    "type": "ITEM",
+    "subtypes": [ "TOOL_ARMOR" ],
+    "category": "armor",
+    "weight": "25 g",
+    "volume": "300 ml",
+    "price": "10 USD",
+    "price_postapoc": "1000 USD",
+    "symbol": "s",
+    "color": "brown",
+    "flags": [
+      "INTEGRATED",
+      "UNBREAKABLE",
+      "PERSONAL",
+      "WATER_FRIENDLY",
+      "SOFT",
+      "NO_REPAIR",
+      "ALLOWS_NATURAL_ATTACKS",
+      "TRADER_AVOID",
+      "CABLE_SPOOL",
+      "SINGLE_USE"
+    ],
+    "material": [ "superalloy", "copper" ],
+    "name": { "str_sp": "integrated cable" },
+    "description": "Integrated bionic cable for charging.",
+    "to_hit": -1,
+    "use_action": [
+      {
+        "type": "link_up",
+        "menu_text": "Attach / Detach",
+        "cable_length": 3,
+        "targets": [ "no_link", "bio_cable", "ups", "solarpack", "vehicle_port", "vehicle_battery" ]
+      }
+    ],
+    "melee_damage": { "bash": 1 }
+  }
+]

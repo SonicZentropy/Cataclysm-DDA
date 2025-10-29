@@ -1,0 +1,20 @@
+[
+  {
+    "type": "region_overlay",
+    "regions": [ "all" ],
+    "city": {
+      "shops": {
+        "afs_augmentation_clinic_1": 200
+      },
+      "houses": { "house_09": 20 }
+    },
+    "map_extras": {
+      "road": {
+        "chance": 75,
+        "extras": {
+          "mx_XEDRA_truck": 10
+        }
+      }
+    }
+  }
+]

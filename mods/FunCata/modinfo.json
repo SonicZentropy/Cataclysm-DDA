@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "fundda",
+    "name": "<color_yellow>FunCata</color>",
+    "authors": [ "chacomain" ],
+    "description": "Fun Stuff",
+    "category": "content",
+    "dependencies": [ "dda" ]
+  }
+]
