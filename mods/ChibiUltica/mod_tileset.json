@@ -11400,20 +11400,7 @@
         { "id": "river_c_not_ne", "fg": 9494, "bg": 9207, "rotates": false },
         { "id": "river_c_not_sw", "fg": 9497, "bg": 9207, "rotates": false },
         { "id": "river_c_not_se", "fg": 9496, "bg": 9207, "rotates": false },
-        {
-          "id": "road",
-          "fg": 9522,
-          "bg": 9207,
-          "multitile": true,
-          "additional_tiles": [
-            { "id": "center", "fg": 9507 },
-            { "id": "corner", "fg": [ 9509, 9511, 9510, 9508 ], "bg": 9207 },
-            { "id": "t_connection", "fg": [ 9519, 9521, 9520, 9518 ] },
-            { "id": "edge", "fg": [ 9513, 9512 ] },
-            { "id": "end_piece", "fg": [ 9515, 9517, 9516, 9514 ] },
-            { "id": "unconnected", "fg": 9522, "bg": 9207 }
-          ]
-        },
+       
         { "id": "trailer_hub_01", "fg": 9507 },
         { "id": "trailer_hub_11", "fg": [ 9512, 9513 ], "rotates": true },
         {
@@ -14239,107 +14226,7 @@
         { "id": "t_palisade_gate", "fg": 11334, "bg": 11023 },
         { "id": "t_palisade_gate_season_summer", "fg": 11334, "bg": 11033 },
         { "id": "t_palisade_gate_season_autumn", "fg": 11334, "bg": 11028 },
-        { "id": "t_palisade_gate_season_winter", "fg": 11334, "bg": 9730 },
-        {
-          "id": "t_pavement",
-          "multitile": true,
-          "fg": 11335,
-          "additional_tiles": [
-            {
-              "id": "center",
-              "fg": [
-                { "weight": 1, "sprite": 11335 },
-                { "weight": 1, "sprite": 11336 },
-                { "weight": 1, "sprite": 11337 },
-                { "weight": 1, "sprite": 11338 }
-              ]
-            },
-            { "id": "corner", "bg": 11023, "fg": [ 11347, 11350, 11349, 11346 ] },
-            { "id": "t_connection", "fg": [ 11345, 11353, 11348, 11339 ] },
-            { "id": "edge", "fg": [ 11352, 11344 ] },
-            { "id": "end_piece", "fg": [ 11341, 11343, 11342, 11340 ] },
-            { "id": "unconnected", "fg": 11351 }
-          ]
-        },
-        {
-          "id": "t_pavement_season_summer",
-          "multitile": true,
-          "fg": 11335,
-          "additional_tiles": [
-            {
-              "id": "center",
-              "fg": [
-                { "weight": 1, "sprite": 11335 },
-                { "weight": 1, "sprite": 11336 },
-                { "weight": 1, "sprite": 11337 },
-                { "weight": 1, "sprite": 11338 }
-              ]
-            },
-            { "id": "corner", "bg": 11033, "fg": [ 11347, 11350, 11349, 11346 ] },
-            { "id": "t_connection", "fg": [ 11345, 11353, 11348, 11339 ] },
-            { "id": "edge", "fg": [ 11352, 11344 ] },
-            { "id": "end_piece", "fg": [ 11341, 11343, 11342, 11340 ] },
-            { "id": "unconnected", "fg": 11351 }
-          ]
-        },
-        {
-          "id": "t_pavement_season_autumn",
-          "multitile": true,
-          "fg": 11335,
-          "additional_tiles": [
-            {
-              "id": "center",
-              "fg": [
-                { "weight": 1, "sprite": 11335 },
-                { "weight": 1, "sprite": 11336 },
-                { "weight": 1, "sprite": 11337 },
-                { "weight": 1, "sprite": 11338 }
-              ]
-            },
-            { "id": "corner", "bg": 11028, "fg": [ 11347, 11350, 11349, 11346 ] },
-            { "id": "t_connection", "fg": [ 11345, 11353, 11348, 11339 ] },
-            { "id": "edge", "fg": [ 11352, 11344 ] },
-            { "id": "end_piece", "fg": [ 11341, 11343, 11342, 11340 ] },
-            { "id": "unconnected", "fg": 11351 }
-          ]
-        },
-        { "id": "t_pavement_season_winter", "fg": 9729 },
-        { "id": "t_pavement_y", "fg": 11354 },
-        { "id": "t_pavement_y_season_winter", "fg": 9729 },
-        {
-          "id": "t_pit",
-          "fg": 11370,
-          "bg": [ { "weight": 100, "sprite": 11023 }, { "weight": 100, "sprite": 11025 } ],
-          "multitile": true,
-          "additional_tiles": [
-            { "id": "center", "fg": 11355, "bg": [ { "weight": 100, "sprite": 11023 }, { "weight": 100, "sprite": 11025 } ] },
-            {
-              "id": "corner",
-              "fg": [ 11357, 11359, 11358, 11356 ],
-              "bg": [ { "weight": 100, "sprite": 11023 }, { "weight": 100, "sprite": 11025 } ]
-            },
-            {
-              "id": "t_connection",
-              "fg": [ 11367, 11369, 11368, 11366 ],
-              "bg": [ { "weight": 100, "sprite": 11023 }, { "weight": 100, "sprite": 11025 } ]
-            },
-            {
-              "id": "edge",
-              "fg": [ 11361, 11360 ],
-              "bg": [ { "weight": 100, "sprite": 11023 }, { "weight": 100, "sprite": 11025 } ]
-            },
-            {
-              "id": "end_piece",
-              "fg": [ 11363, 11365, 11364, 11362 ],
-              "bg": [ { "weight": 100, "sprite": 11023 }, { "weight": 100, "sprite": 11025 } ]
-            },
-            {
-              "id": "unconnected",
-              "fg": [ 11370, 11370 ],
-              "bg": [ { "weight": 100, "sprite": 11023 }, { "weight": 100, "sprite": 11025 } ]
-            }
-          ]
-        },
+        { "id": "t_palisade_gate_season_winter", "fg": 11334, "bg": 9730 },        
         {
           "id": "t_pit_season_summer",
           "fg": 11370,

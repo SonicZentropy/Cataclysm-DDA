@@ -1351,6 +1351,7 @@
       "PADDED",
       "USE_UPS",
       "NO_UNLOAD",
+      "OVERSIZE",
       "COMBAT_TOGGLEABLE",
       "UNBREAKABLE_MELEE"
     ],
