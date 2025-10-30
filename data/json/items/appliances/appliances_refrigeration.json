@@ -228,13 +228,13 @@
     "//": "Infrico AGN602BT, 850 x 1030 x 750 mm (because of technical limitations, 1000L instead of 1421L ), gross capacity 745 L, 3365 kwh/annum, 384 kwh",
     "use_action": { "type": "deploy_appliance", "base": "heavy_duty_freezer" },
     "weight": "172 kg",
-    "volume": "100 L",
+    "volume": "100000 L",
     "longest_side": "10300 mm",
     "price": "4599 USD",
     "price_postapoc": "15 USD",
     "insulation": 4,
     "copy-from": "minifridge",
-    "pocket_data": [ { "pocket_type": "CONTAINER", "rigid": true, "max_contains_volume": "99999 L", "max_contains_weight": "2500000 kg" } ]
+    "pocket_data": [ { "pocket_type": "CONTAINER", "rigid": true, "max_contains_volume": "999999 L", "max_contains_weight": "2500000 kg" } ]
   },
   {
     "type": "ITEM",
