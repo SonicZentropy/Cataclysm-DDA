@@ -1258,12 +1258,12 @@ std::optional<int> iuse::purify_smart( Character *p, item *it, const tripoint_bu
     valid.erase( valid.begin() + mutation_index );
 
     // and one or two more untargeted purifications.
-    if( !valid.empty() ) {
-        p->remove_mutation( random_entry_removed( valid ) );
-    }
-    if( !valid.empty() && one_in( 2 ) ) {
-        p->remove_mutation( random_entry_removed( valid ) );
-    }
+    //if( !valid.empty() ) {
+    //    p->remove_mutation( random_entry_removed( valid ) );
+    //}
+    //if( !valid.empty() && one_in( 2 ) ) {
+    //    p->remove_mutation( random_entry_removed( valid ) );
+    //}
 
     p->mod_pain( 3 );
 
