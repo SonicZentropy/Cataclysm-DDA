@@ -1,6 +1,6 @@
-﻿[
+[
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "afs_titanium_frame",
     "name": { "str": "ultralight frame" },
     "description": "A sturdy, lightweight frame made from titanium.  Useful for crafting.",
@@ -17,7 +17,7 @@
     "melee_damage": { "bash": 15 }
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "afs_titanium_foldable_frame",
     "copy-from": "afs_titanium_frame",
     "name": { "str": "ultralight foldable frame" },

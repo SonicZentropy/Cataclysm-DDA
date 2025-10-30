@@ -1,6 +1,6 @@
-﻿[
+[
   {
-    "type": "GENERIC",
+    "type": "ITEM",
     "id": "vehicle_shelving",
     "name": { "str": "vehicle shelving" },
     "description": "Several heavy frames retrofitted to be installed together which are outfitted with tie-downs and attachment points gallore for carrying an extended amount of cargo.",
@@ -17,7 +17,7 @@
   {
     "id": "afs_fridge",
     "category": "veh_parts",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "vehicle refrigerator" },
     "description": "A household refrigerator with impressive capacity.  Its power connection has been refurbished, and it can be mounted onto a vehicle to draw from its power.",
     "symbol": "{",
@@ -34,7 +34,7 @@
   {
     "id": "afs_freezer",
     "category": "veh_parts",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "vehicle freezer" },
     "copy-from": "afs_fridge",
     "description": "This refurbished refrigerator has been stripped of much of its internal components and converted to run at a much lower temperature, causing it to serve as a freezer for more power.  Like its predecessor, it runs on vehicle power.",
@@ -43,7 +43,7 @@
   {
     "id": "blaze_washing_machine",
     "category": "veh_parts",
-    "type": "GENERIC",
+    "type": "ITEM",
     "name": { "str": "vehicle washing machine" },
     "copy-from": "washing_machine",
     "description": "This refurbished washing machine has been stripped of much of its internal components and converted to run within vehicles.",

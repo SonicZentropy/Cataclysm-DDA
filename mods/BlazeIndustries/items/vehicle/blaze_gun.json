@@ -1,8 +1,9 @@
-﻿[
+[
   {
     "id": "blaze_marlin_9a",
     "looks_like": "ar15",
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": ["GUN"],
     "reload_noise_volume": 10,
     "name": { "str_sp": "modified Marlin 39A" },
     "description": "A Marlin 39A, modified for use in a vehicle turret.",
@@ -32,7 +33,6 @@
       [ "stock", 1 ],
       [ "underbarrel", 1 ]
     ],
-    "faults": [ "fault_gun_blackpowder", "fault_gun_dirt" ],
     "flags": [ "RELOAD_ONE" ],
     "pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "22": 19 } } ],
     "melee_damage": { "bash": 12 }
@@ -40,7 +40,8 @@
   {
     "id": "blaze_sks",
     "looks_like": "ar15",
-    "type": "GUN",
+    "type": "ITEM",
+    "subtypes": ["GUN"],
     "reload_noise_volume": 10,
     "name": { "str_sp": "modified SKS" },
     "description": "An SKS, modified to be suitable for use in a vehicle turret.",
