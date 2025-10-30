@@ -176,7 +176,7 @@
     "min_range": 1,
     "energy_source": "STAMINA",
     "base_energy_cost": 0,
-    "base_casting_time": { "math": [ "2880000 - max(( u_spell_level('teleport_gateway') * 108000), 180000)" ] }
+    "base_casting_time": 200
   },
   {
     "id": "vita_pain_split",

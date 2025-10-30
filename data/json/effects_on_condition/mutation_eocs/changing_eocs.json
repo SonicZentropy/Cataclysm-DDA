@@ -3,7 +3,7 @@
     "type": "effect_on_condition",
     "id": "changing_initiate_check",
     "//": "Give player the CHANGING trait when they have enough basic mutagen in their blood.",
-    "recurrence": [ "30 m", "45 m" ],
+    "recurrence": [ "1 m", "2 m" ],
     "condition": { "and": [ { "math": [ "u_vitamin('mutagen') >= 450" ] }, { "not": { "u_has_flag": "CHANGING" } } ] },
     "deactivate_condition": { "u_has_flag": "CHANGING" },
     "effect": [
@@ -15,7 +15,7 @@
   {
     "type": "effect_on_condition",
     "id": "changing_failed",
-    "condition": { "one_in_chance": 4 },
+    "condition": { "one_in_chance": 24 },
     "effect": [ { "u_message": "<CHANGING_FAILED>", "type": "bad" } ]
   },
   {
@@ -26,7 +26,7 @@
   {
     "type": "effect_on_condition",
     "id": "changing_reqs_not_met",
-    "condition": { "one_in_chance": 3 },
+    "condition": { "one_in_chance": 23 },
     "effect": [
       { "u_message": "<CHANGING_ENDS>", "type": "bad" },
       { "u_lose_trait": "CHANGING" },
@@ -37,7 +37,7 @@
     "type": "effect_on_condition",
     "id": "changing_mutate",
     "//": "Time for mutation!",
-    "recurrence": [ "1 h", "6 h" ],
+    "recurrence": [ "1 m", "2 m" ],
     "condition": { "and": [ { "u_has_flag": "CHANGING" } ] },
     "deactivate_condition": { "not": { "u_has_flag": "CHANGING" } },
     "effect": [

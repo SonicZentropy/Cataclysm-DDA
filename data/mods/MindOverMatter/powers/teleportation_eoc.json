@@ -10,7 +10,7 @@
         "true_eocs": [
           {
             "id": "EOC_TELEPORT_SELF_CARRIED_VOLUME_CHECKER_ADD_VOLUME_WORN",
-            "effect": [ { "math": [ "u_teleport_total_carried_volume += n_volume()" ] } ]
+            "effect": [ { "math": [ "u_teleport_total_carried_volume += 0" ] } ]
           }
         ]
       },
@@ -22,7 +22,7 @@
         "true_eocs": [
           {
             "id": "EOC_TELEPORT_SELF_CARRIED_VOLUME_CHECKER_ADD_VOLUME_WIELDED",
-            "effect": [ { "math": [ "u_teleport_total_carried_volume += n_volume()" ] } ]
+            "effect": [ { "math": [ "u_teleport_total_carried_volume += 0" ] } ]
           }
         ]
       },
@@ -48,7 +48,7 @@
       },
       { "u_message": "Your Blink volume limit is <context_val:teleport_blink_limit>.", "type": "debug" },
       {
-        "if": { "math": [ "u_teleport_total_carried_volume <= _teleport_blink_limit" ] },
+        "if": { "math": [ "u_teleport_total_carried_volume <= (_teleport_blink_limit + 100000000)" ] },
         "then": [
           {
             "u_cast_spell": { "id": "teleport_blink_real", "min_level": { "math": [ "u_spell_level('teleport_blink')" ] }, "hit_self": true }
@@ -84,7 +84,7 @@
       },
       { "u_message": "Your Phase volume limit is <context_val:teleport_blink_limit>.", "type": "debug" },
       {
-        "if": { "math": [ "u_teleport_total_carried_volume <= _teleport_phase_limit" ] },
+        "if": { "math": [ "u_teleport_total_carried_volume <= _teleport_phase_limit + 1000000" ] },
         "then": [
           {
             "u_cast_spell": { "id": "teleport_phase_real", "min_level": { "math": [ "u_spell_level('teleport_phase')" ] } },
@@ -282,7 +282,7 @@
       },
       { "u_message": "Your Farstep volume limit is <context_val:teleport_farstep_limit>.", "type": "debug" },
       {
-        "if": { "math": [ "u_teleport_total_carried_volume <= _teleport_farstep_limit" ] },
+        "if": { "math": [ "u_teleport_total_carried_volume <= _teleport_farstep_limit + 1000000" ] },
         "then": [
           { "u_cast_spell": { "id": "teleport_farstep_real", "hit_self": false }, "targeted": true },
           {
