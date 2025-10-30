@@ -613,18 +613,18 @@
   {
     "type": "effect_on_condition",
     "id": "EOC_IERDE_TUNNEL_TRANSLOCATE_CHECK",
-    "condition": {
-      "and": [
-        {
-          "or": [
-            { "u_is_on_terrain": "t_rock_floor" },
-            { "u_is_on_terrain": "t_railroad_rubble" },
-            { "u_is_on_terrain": "t_dirt_underground" }
-          ]
-        },
-        { "math": [ "u_val('pos_z') <= -2" ] }
-      ]
-    },
+//    "condition": {
+//      "and": [
+//        {
+//          "or": [
+//            { "u_is_on_terrain": "t_rock_floor" },
+//            { "u_is_on_terrain": "t_railroad_rubble" },
+//            { "u_is_on_terrain": "t_dirt_underground" }
+//          ]
+//        },
+//        { "math": [ "u_val('pos_z') <= -2" ] }
+//      ]
+//    },
     "effect": [ { "u_cast_spell": { "id": "paraclesian_translocate" } } ],
     "false_effect": [ { "u_message": "You must be standing deep underground and on the living earth to translocate.", "type": "mixed" } ]
   },

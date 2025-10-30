@@ -28,7 +28,7 @@
     "components": [
       [ [ "frame", 4 ] ],
       [ [ "nail", 48 ] ],
-      [ [ "teleporter", 2 ] ],
+      [ [ "teleporter", 1 ] ],
       [ [ "sheet_metal", 4 ] ],
       [ [ "crystallized_mana", 250 ] ]
     ],
