@@ -497,7 +497,7 @@
       {
         "if": { "math": [ "u_teleport_total_carried_volume >= 0" ] },
         "then": [ { "u_teleport": { "u_val": "gateway_destination_1" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ],
-        "else": [ { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE_CARRYING_TOO_MUCH" } ]
+        "else":[ { "u_teleport": { "u_val": "gateway_destination_1" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ]
       }
     ]
   },
@@ -506,11 +506,11 @@
     "id": "EOC_TELEPORT_GATEWAY_ATTUNE_01",
     "effect": [
       { "run_eocs": "EOC_TELEPORTER_ATTUNING_MESSAGE" },
-      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
-      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
+      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "1 minute" },
+      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "1 minute" },
       {
         "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_01_SUCCESS",
-        "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
+        "time_in_future": { "math": [ "60 - clamp(( u_spell_level('teleport_gateway') * 2), 0, 55)" ] }
       }
     ]
   },
@@ -561,7 +561,11 @@
           { "u_teleport": { "u_val": "gateway_destination_2" } },
           { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" }
         ],
-        "else": [ { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE_CARRYING_TOO_MUCH" } ]
+        "else": [
+          { "message": "Destination coordinates are <u_val:gateway_destination_2>.", "type": "debug" },
+          { "u_teleport": { "u_val": "gateway_destination_2" } },
+          { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" }
+        ]
       }
     ]
   },
@@ -570,11 +574,12 @@
     "id": "EOC_TELEPORT_GATEWAY_ATTUNE_02",
     "effect": [
       { "run_eocs": "EOC_TELEPORTER_ATTUNING_MESSAGE" },
-      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
-      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
+      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "1 minute" },
+      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "1 minute" },
       {
         "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_02_SUCCESS",
-        "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
+        "time_in_future": { "math": [ "60 - clamp(( u_spell_level('teleport_gateway') * 2), 0, 55)" ] }
+
       }
     ]
   },
@@ -621,7 +626,7 @@
       {
         "if": { "math": [ "u_teleport_total_carried_volume >= 0" ] },
         "then": [ { "u_teleport": { "u_val": "gateway_destination_3" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ],
-        "else": [ { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE_CARRYING_TOO_MUCH" } ]
+        "else": [ { "u_teleport": { "u_val": "gateway_destination_3" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ]
       }
     ]
   },
@@ -630,11 +635,12 @@
     "id": "EOC_TELEPORT_GATEWAY_ATTUNE_03",
     "effect": [
       { "run_eocs": "EOC_TELEPORTER_ATTUNING_MESSAGE" },
-      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
-      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
+      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "1 minute" },
+      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "1 minute" },
       {
         "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_03_SUCCESS",
-        "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
+        "time_in_future": { "math": [ "60 - clamp(( u_spell_level('teleport_gateway') * 2), 0, 55)" ] }
+
       }
     ]
   },
@@ -681,7 +687,7 @@
       {
         "if": { "math": [ "u_teleport_total_carried_volume >= 0" ] },
         "then": [ { "u_teleport": { "u_val": "gateway_destination_4" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ],
-        "else": [ { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE_CARRYING_TOO_MUCH" } ]
+        "else": [ { "u_teleport": { "u_val": "gateway_destination_4" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ]
       }
     ]
   },
@@ -690,11 +696,12 @@
     "id": "EOC_TELEPORT_GATEWAY_ATTUNE_04",
     "effect": [
       { "run_eocs": "EOC_TELEPORTER_ATTUNING_MESSAGE" },
-      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
-      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
+      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "1 minute" },
+      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "1 minute" },
       {
         "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_04_SUCCESS",
-        "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
+        "time_in_future": { "math": [ "60 - clamp(( u_spell_level('teleport_gateway') * 2), 0, 55)" ] }
+
       }
     ]
   },
@@ -741,7 +748,7 @@
       {
         "if": { "math": [ "u_teleport_total_carried_volume >= 0" ] },
         "then": [ { "u_teleport": { "u_val": "gateway_destination_5" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ],
-        "else": [ { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE_CARRYING_TOO_MUCH" } ]
+        "else": [ { "u_teleport": { "u_val": "gateway_destination_5" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ]
       }
     ]
   },
@@ -750,11 +757,12 @@
     "id": "EOC_TELEPORT_GATEWAY_ATTUNE_05",
     "effect": [
       { "run_eocs": "EOC_TELEPORTER_ATTUNING_MESSAGE" },
-      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
-      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
+      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "1 minute" },
+      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "1 minute" },
       {
         "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_05_SUCCESS",
-        "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
+        "time_in_future": { "math": [ "60 - clamp(( u_spell_level('teleport_gateway') * 2), 0, 55)" ] }
+
       }
     ]
   },
@@ -801,7 +809,7 @@
       {
         "if": { "math": [ "u_teleport_total_carried_volume >= 0" ] },
         "then": [ { "u_teleport": { "u_val": "gateway_destination_6" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ],
-        "else": [ { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE_CARRYING_TOO_MUCH" } ]
+        "else": [ { "u_teleport": { "u_val": "gateway_destination_6" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ]
       }
     ]
   },
@@ -810,11 +818,12 @@
     "id": "EOC_TELEPORT_GATEWAY_ATTUNE_06",
     "effect": [
       { "run_eocs": "EOC_TELEPORTER_ATTUNING_MESSAGE" },
-      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
-      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
+      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "1 minute" },
+      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "1 minute" },
       {
         "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_06_SUCCESS",
-        "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
+        "time_in_future": { "math": [ "60 - clamp(( u_spell_level('teleport_gateway') * 2), 0, 55)" ] }
+
       }
     ]
   },
@@ -861,7 +870,7 @@
       {
         "if": { "math": [ "u_teleport_total_carried_volume >= 0" ] },
         "then": [ { "u_teleport": { "u_val": "gateway_destination_7" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ],
-        "else": [ { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE_CARRYING_TOO_MUCH" } ]
+        "else": [ { "u_teleport": { "u_val": "gateway_destination_7" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ]
       }
     ]
   },
@@ -870,11 +879,12 @@
     "id": "EOC_TELEPORT_GATEWAY_ATTUNE_07",
     "effect": [
       { "run_eocs": "EOC_TELEPORTER_ATTUNING_MESSAGE" },
-      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
-      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
+      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "1 minute" },
+      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "1 minute" },
       {
         "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_07_SUCCESS",
-        "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
+        "time_in_future": { "math": [ "60 - clamp(( u_spell_level('teleport_gateway') * 2), 0, 55)" ] }
+
       }
     ]
   },
@@ -921,7 +931,7 @@
       {
         "if": { "math": [ "u_teleport_total_carried_volume >= 0" ] },
         "then": [ { "u_teleport": { "u_val": "gateway_destination_8" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ],
-        "else": [ { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE_CARRYING_TOO_MUCH" } ]
+        "else": [ { "u_teleport": { "u_val": "gateway_destination_8" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ]
       }
     ]
   },
@@ -930,11 +940,12 @@
     "id": "EOC_TELEPORT_GATEWAY_ATTUNE_08",
     "effect": [
       { "run_eocs": "EOC_TELEPORTER_ATTUNING_MESSAGE" },
-      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
-      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
+      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "1 minute" },
+      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "1 minute" },
       {
         "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_08_SUCCESS",
-        "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
+        "time_in_future": { "math": [ "60 - clamp(( u_spell_level('teleport_gateway') * 2), 0, 55)" ] }
+
       }
     ]
   },
@@ -981,7 +992,7 @@
       {
         "if": { "math": [ "u_teleport_total_carried_volume >= 0" ] },
         "then": [ { "u_teleport": { "u_val": "gateway_destination_9" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ],
-        "else": [ { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE_CARRYING_TOO_MUCH" } ]
+        "else":  [ { "u_teleport": { "u_val": "gateway_destination_9" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ]
       }
     ]
   },
@@ -990,11 +1001,12 @@
     "id": "EOC_TELEPORT_GATEWAY_ATTUNE_09",
     "effect": [
       { "run_eocs": "EOC_TELEPORTER_ATTUNING_MESSAGE" },
-      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
-      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
+      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "1 minute" },
+      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "1 minute" },
       {
         "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_09_SUCCESS",
-        "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
+        "time_in_future": { "math": [ "60 - clamp(( u_spell_level('teleport_gateway') * 2), 0, 55)" ] }
+
       }
     ]
   },
@@ -1041,7 +1053,7 @@
       {
         "if": { "math": [ "u_teleport_total_carried_volume >= 0" ] },
         "then": [ { "u_teleport": { "u_val": "gateway_destination_10" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ],
-        "else": [ { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE_CARRYING_TOO_MUCH" } ]
+        "else": [ { "u_teleport": { "u_val": "gateway_destination_10" } }, { "run_eocs": "EOC_TELEPORTER_GATEWAY_MESSAGE" } ]
       }
     ]
   },
@@ -1050,11 +1062,12 @@
     "id": "EOC_TELEPORT_GATEWAY_ATTUNE_10",
     "effect": [
       { "run_eocs": "EOC_TELEPORTER_ATTUNING_MESSAGE" },
-      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "8 hours" },
-      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "8 hours" },
+      { "u_add_effect": "effect_teleporter_attuning_to_area", "duration": "1 minute" },
+      { "u_assign_activity": "ACT_PSI_TELEPORTER_ATTUNING", "duration": "1 minute" },
       {
         "run_eocs": "EOC_TELEPORT_GATEWAY_ATTUNE_10_SUCCESS",
-        "time_in_future": { "math": [ "28800 - clamp(( u_spell_level('teleport_gateway') * 1200), 0, 27000)" ] }
+        "time_in_future": { "math": [ "60 - clamp(( u_spell_level('teleport_gateway') * 2), 0, 55)" ] }
+
       }
     ]
   },
