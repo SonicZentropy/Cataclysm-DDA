@@ -187,7 +187,6 @@
     "location": "structure",
     "categories": [ "hull", "energy" ],
     "color": "white",
-    "broken_color": "white",
     "durability": 10,
     "description": "A length of heavy-duty copper wire, useful for routing power from one part of a vehicle to another part.",
     "folded_volume": "250 ml",
@@ -199,5 +198,26 @@
     },
     "flags": [ "INITIAL_PART", "AISLE" ],
     "variants": [ { "symbols": ".", "symbols_broken": "#" } ]
+  },
+  {
+    "id": "stabilized_cargo_portal",
+    "type": "vehicle_part",
+    "name": { "str": "pocket dimension cargo" },
+    "//": "Keep away from Svarog detectors!",
+    "item": "stablilized_portal",
+    "location": "center",
+    "color": "magenta",
+    "broken_color": "magenta",
+    "durability": 400,
+    "size": "6000 L",
+    "cargo_weight_modifier": 0,
+    "breaks_into": [ { "item": "cargo_rack", "prob": 50 } ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 8 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] },
+      "removal": { "skills": [ [ "mechanics", 6 ] ], "time": "30 m", "using": [ [ "vehicle_weld_removal", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 9 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "variants": [ { "symbols": ".", "symbols_broken": "#" } ],
+    "flags": [ "CARGO", "COVERED" ]
   }
 ]

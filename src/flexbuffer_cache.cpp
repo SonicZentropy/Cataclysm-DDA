@@ -334,8 +334,8 @@ class flexbuffer_disk_cache
                                        *root_relative_source_path.begin() != std::filesystem::u8path( "templates" );
                 if( stale_game_data ) {
                     if( get_option<bool>( "WARN_ON_MODIFIED" ) ) {
-                        debugmsg( "Stale game data detected at %s, did you overwrite old files?  When updating the game you must install to a fresh folder, overwriting old files will cause errors.",
-                                  filepath_and_name );
+                        //debugmsg( "Stale game data detected at %s, did you overwrite old files?  When updating the game you must install to a fresh folder, overwriting old files will cause errors.",
+                        //          filepath_and_name );
                     } else {
                         // we still log the modification warning even if the option is disabled, for sifting bug reports
                         DebugLog( D_WARNING, D_MAIN ) << "Stale game data detected (error disabled by user): " <<

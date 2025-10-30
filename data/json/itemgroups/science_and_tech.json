@@ -80,7 +80,7 @@
       [ "bot_manhack", 1 ],
       { "item": "UPS_OFF", "prob": 8, "charges": [ 0, 1000 ] },
       { "item": "tazer", "prob": 3, "charges": [ 0, 500 ] },
-      { "item": "plasma", "prob": 8, "charges": [ 1, 25 ] },
+      { "item": "plasma", "prob": 38, "charges": [ 1, 25 ] },
       [ "wrapped_rad_badge", 15 ],
       { "group": "used_usb_drives", "prob": 25, "contents-group": "efiles_science" },
       [ "canteen", 15 ],
