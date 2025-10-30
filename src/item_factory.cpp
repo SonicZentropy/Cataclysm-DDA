@@ -4082,8 +4082,8 @@ void itype::load( const JsonObject &jo, std::string_view src )
     optional( jo, was_loaded, "explosion", explosion );
     using_legacy_to_hit = false; //required for inherited but undefined "to_hit" field
     optional( jo, was_loaded, "to_hit", m_to_hit, melee_accuracy_reader{ *this }, -2 );
-    float degrade_mult = 1.0f;
-    optional( jo, false, "degradation_multiplier", degrade_mult, 1.0f );
+    float degrade_mult = 0.0f;
+    optional( jo, false, "degradation_multiplier", degrade_mult, 0.0f );
     // TODO: remove condition once degradation is ready to be applied to all items
     if( count_by_charges() || category_force != item_category_veh_parts ) {
         degrade_mult = 0.0f;
@@ -4091,7 +4091,7 @@ void itype::load( const JsonObject &jo, std::string_view src )
     if( ( degrade_mult * itype::damage_max_ ) <= 0.5f ) {
         degrade_increments_ = 0;
     } else {
-        float adjusted_inc = std::max( degrade_increments_ / degrade_mult, 1.0f );
+        float adjusted_inc = 1.0f;
         degrade_increments_ = std::isnan( adjusted_inc ) ? 0 : std::round( adjusted_inc );
     }
 
