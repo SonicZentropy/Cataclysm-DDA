@@ -849,7 +849,7 @@ bool player_morale::consistent_with( const player_morale &morale ) const
             } );
 
             if( iter == rhs.points.end() || lhp.get_net_bonus() != iter->get_net_bonus() ) {
-                debugmsg( "Morale \"%s\" is inconsistent.", lhp.get_name() );
+                //debugmsg( "Morale \"%s\" is inconsistent.", lhp.get_name() );
                 return false;
             }
         }
