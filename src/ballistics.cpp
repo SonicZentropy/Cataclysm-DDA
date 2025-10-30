@@ -446,7 +446,7 @@ void projectile_attack( dealt_projectile_attack &attack, const projectile &proj_
         for( size_t i = 1; i < traj_len && ( has_momentum || stream ); ++i ) {
             tp = t_copy[i];
             if( !here->inbounds( tp ) ) {
-                debugmsg( "Shot along %s out-of-bounds", tp.to_string() );
+                //debugmsg( "Shot along %s out-of-bounds", tp.to_string() );
                 break;
             }
             int distance = rl_dist( source, tp );
