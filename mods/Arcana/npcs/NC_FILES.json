@@ -5,39 +5,39 @@
     "name": { "str": "Hermit" },
     "job_description": "I'm just an old man.",
     "common": false,
-    "bonus_str": { "rng": [ -3, 0 ] },
-    "bonus_dex": { "rng": [ -2, 1 ] },
-    "bonus_int": { "rng": [ 2, 5 ] },
-    "bonus_per": { "rng": [ -2, 2 ] },
+    "bonus_str": { "rng": [-3, 0] },
+    "bonus_dex": { "rng": [-2, 1] },
+    "bonus_int": { "rng": [2, 5] },
+    "bonus_per": { "rng": [-2, 2] },
     "skills": [
-      { "skill": "magic", "level": { "rng": [ 7, 9 ] } },
-      { "skill": "cooking", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "fabrication", "level": { "rng": [ 5, 6 ] } },
-      { "skill": "firstaid", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "speech", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "survival", "level": { "rng": [ 3, 5 ] } },
-      { "skill": "swimming", "level": { "rng": [ 1, 2 ] } },
-      { "skill": "tailor", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "traps", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "archery", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "bashing", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "gun", "level": { "rng": [ 5, 7 ] } },
-      { "skill": "melee", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "stabbing", "level": { "rng": [ 2, 4 ] } }
+      { "skill": "magic", "level": { "rng": [7, 9] } },
+      { "skill": "cooking", "level": { "rng": [2, 4] } },
+      { "skill": "fabrication", "level": { "rng": [5, 6] } },
+      { "skill": "firstaid", "level": { "rng": [1, 3] } },
+      { "skill": "speech", "level": { "rng": [1, 3] } },
+      { "skill": "survival", "level": { "rng": [3, 5] } },
+      { "skill": "swimming", "level": { "rng": [1, 2] } },
+      { "skill": "tailor", "level": { "rng": [2, 4] } },
+      { "skill": "traps", "level": { "rng": [1, 3] } },
+      { "skill": "archery", "level": { "rng": [2, 4] } },
+      { "skill": "bashing", "level": { "rng": [1, 3] } },
+      { "skill": "gun", "level": { "rng": [5, 7] } },
+      { "skill": "melee", "level": { "rng": [1, 3] } },
+      { "skill": "stabbing", "level": { "rng": [2, 4] } }
     ],
     "worn_override": "NC_HERMIT_worn",
     "carry_override": "NC_HERMIT_misc",
     "weapon_override": "NC_HERMIT_weapon",
     "traits": [
-      [ "SKIN_MEDIUM", 100 ],
+      ["SKIN_MEDIUM", 100],
       { "trait": "hair_short", "variant": "white" },
       { "trait": "eye_color", "variant": "brown" },
-      [ "PROF_CHALICE", 100 ],
-      [ "NIGHTVISION", 100 ],
-      [ "MYOPIC", 100 ],
-      [ "BADHEARING", 100 ],
-      [ "LIGHTSTEP", 100 ],
-      [ "BADKNEES", 100 ]
+      ["PROF_CHALICE", 100],
+      ["NIGHTVISION", 100],
+      ["MYOPIC", 100],
+      ["BADHEARING", 100],
+      ["LIGHTSTEP", 100],
+      ["BADKNEES", 100]
     ]
   },
   {
@@ -46,23 +46,28 @@
     "name": { "str": "Deacon" },
     "job_description": "I am a cleric visiting the refugee center.",
     "common": false,
-    "bonus_per": { "rng": [ 0, 2 ] },
-    "bonus_int": { "rng": [ 0, 2 ] },
+    "bonus_per": { "rng": [0, 2] },
+    "bonus_int": { "rng": [0, 2] },
     "skills": [
-      { "skill": "magic", "level": { "rng": [ 0, 2 ] } },
-      { "skill": "computer", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "driving", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "cooking", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "fabrication", "level": { "rng": [ 5, 6 ] } },
-      { "skill": "firstaid", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "speech", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "survival", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "tailor", "level": { "rng": [ 1, 3 ] } }
+      { "skill": "magic", "level": { "rng": [0, 2] } },
+      { "skill": "computer", "level": { "rng": [1, 3] } },
+      { "skill": "driving", "level": { "rng": [1, 3] } },
+      { "skill": "cooking", "level": { "rng": [1, 3] } },
+      { "skill": "fabrication", "level": { "rng": [5, 6] } },
+      { "skill": "firstaid", "level": { "rng": [3, 6] } },
+      { "skill": "speech", "level": { "rng": [2, 4] } },
+      { "skill": "survival", "level": { "rng": [1, 3] } },
+      { "skill": "tailor", "level": { "rng": [1, 3] } }
     ],
     "worn_override": "NC_CF_DEACON_worn",
     "carry_override": "NC_CF_DEACON_misc",
     "weapon_override": "EMPTY_GROUP",
-    "traits": [ { "group": "Appearance_demographics" }, [ "CF_DEACON", 100 ], [ "SPIRITUAL", 100 ], [ "PACIFIST", 100 ] ]
+    "traits": [
+      { "group": "Appearance_demographics" },
+      ["CF_DEACON", 100],
+      ["SPIRITUAL", 100],
+      ["PACIFIST", 100]
+    ]
   },
   {
     "type": "npc_class",
@@ -70,31 +75,31 @@
     "name": { "str": "Thane" },
     "job_description": "I am a founder of the Cleansing Flame.",
     "common": false,
-    "bonus_str": { "rng": [ -1, 2 ] },
-    "bonus_dex": { "rng": [ 0, 2 ] },
-    "bonus_int": { "rng": [ 2, 5 ] },
+    "bonus_str": { "rng": [-1, 2] },
+    "bonus_dex": { "rng": [0, 2] },
+    "bonus_int": { "rng": [2, 5] },
     "skills": [
-      { "skill": "magic", "level": { "rng": [ 6, 8 ] } },
-      { "skill": "cooking", "level": { "rng": [ 3, 5 ] } },
-      { "skill": "fabrication", "level": { "rng": [ 5, 6 ] } },
-      { "skill": "firstaid", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "speech", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "survival", "level": { "rng": [ 3, 5 ] } },
-      { "skill": "tailor", "level": { "rng": [ 3, 5 ] } },
-      { "skill": "bashing", "level": { "rng": [ 1, 2 ] } },
-      { "skill": "dodge", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "melee", "level": { "rng": [ 1, 3 ] } }
+      { "skill": "magic", "level": { "rng": [6, 8] } },
+      { "skill": "cooking", "level": { "rng": [3, 5] } },
+      { "skill": "fabrication", "level": { "rng": [5, 6] } },
+      { "skill": "firstaid", "level": { "rng": [2, 4] } },
+      { "skill": "speech", "level": { "rng": [3, 6] } },
+      { "skill": "survival", "level": { "rng": [3, 5] } },
+      { "skill": "tailor", "level": { "rng": [3, 5] } },
+      { "skill": "bashing", "level": { "rng": [1, 2] } },
+      { "skill": "dodge", "level": { "rng": [3, 6] } },
+      { "skill": "melee", "level": { "rng": [1, 3] } }
     ],
     "carry_override": "NC_CF_REP_misc",
     "worn_override": "NC_CF_REP_worn",
     "weapon_override": "NC_CF_REP_weapon",
     "traits": [
-      [ "SKIN_LIGHT", 100 ],
+      ["SKIN_LIGHT", 100],
       { "trait": "hair_long", "variant": "blond" },
       { "trait": "eye_color", "variant": "green" },
-      [ "PROF_CLEANSINGFLAME", 100 ],
-      [ "NONADDICTIVE", 100 ],
-      [ "SPIRITUAL", 100 ]
+      ["PROF_CLEANSINGFLAME", 100],
+      ["NONADDICTIVE", 100],
+      ["SPIRITUAL", 100]
     ]
   },
   {
@@ -103,38 +108,38 @@
     "name": { "str": "Grandmaster" },
     "job_description": "I am a founder of the Cleansing Flame.",
     "common": false,
-    "bonus_str": { "rng": [ 1, 3 ] },
-    "bonus_dex": { "rng": [ -1, 2 ] },
-    "bonus_per": { "rng": [ 0, 2 ] },
+    "bonus_str": { "rng": [1, 3] },
+    "bonus_dex": { "rng": [-1, 2] },
+    "bonus_per": { "rng": [0, 2] },
     "skills": [
-      { "skill": "magic", "level": { "rng": [ 6, 8 ] } },
-      { "skill": "driving", "level": { "rng": [ 2, 3 ] } },
-      { "skill": "fabrication", "level": { "rng": [ 3, 5 ] } },
-      { "skill": "firstaid", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "speech", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "survival", "level": { "rng": [ 3, 5 ] } },
-      { "skill": "swimming", "level": { "rng": [ 2, 3 ] } },
-      { "skill": "tailor", "level": { "rng": [ 2, 3 ] } },
-      { "skill": "bashing", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "cutting", "level": { "rng": [ 3, 5 ] } },
-      { "skill": "dodge", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "melee", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "unarmed", "level": { "rng": [ 3, 5 ] } },
-      { "skill": "gun", "level": { "rng": [ 3, 5 ] } },
-      { "skill": "traps", "level": { "rng": [ 2, 4 ] } }
+      { "skill": "magic", "level": { "rng": [6, 8] } },
+      { "skill": "driving", "level": { "rng": [2, 3] } },
+      { "skill": "fabrication", "level": { "rng": [3, 5] } },
+      { "skill": "firstaid", "level": { "rng": [1, 3] } },
+      { "skill": "speech", "level": { "rng": [2, 5] } },
+      { "skill": "survival", "level": { "rng": [3, 5] } },
+      { "skill": "swimming", "level": { "rng": [2, 3] } },
+      { "skill": "tailor", "level": { "rng": [2, 3] } },
+      { "skill": "bashing", "level": { "rng": [1, 3] } },
+      { "skill": "cutting", "level": { "rng": [3, 5] } },
+      { "skill": "dodge", "level": { "rng": [2, 4] } },
+      { "skill": "melee", "level": { "rng": [2, 4] } },
+      { "skill": "unarmed", "level": { "rng": [3, 5] } },
+      { "skill": "gun", "level": { "rng": [3, 5] } },
+      { "skill": "traps", "level": { "rng": [2, 4] } }
     ],
     "worn_override": "NC_CF_GM_worn",
     "carry_override": "NC_CF_GM_misc",
     "weapon_override": "NC_CF_GM_weapon",
     "traits": [
-      [ "SKIN_MEDIUM", 100 ],
+      ["SKIN_MEDIUM", 100],
       { "trait": "hair_medium", "variant": "black" },
       { "trait": "eye_color", "variant": "hazel" },
-      [ "PROF_CLEANSINGFLAME", 100 ],
-      [ "MARTIAL_ARTS_CF", 100 ],
-      [ "SPIRITUAL", 100 ],
-      [ "TERRIFYING", 100 ],
-      [ "TRUTHTELLER", 100 ]
+      ["PROF_CLEANSINGFLAME", 100],
+      ["MARTIAL_ARTS_CF", 100],
+      ["SPIRITUAL", 100],
+      ["TERRIFYING", 100],
+      ["TRUTHTELLER", 100]
     ]
   },
   {
@@ -143,31 +148,31 @@
     "name": { "str": "Seeker" },
     "job_description": "I am a founder of the Cleansing Flame.",
     "common": false,
-    "bonus_dex": { "rng": [ -1, 2 ] },
-    "bonus_int": { "rng": [ 1, 3 ] },
-    "bonus_per": { "rng": [ 0, 2 ] },
+    "bonus_dex": { "rng": [-1, 2] },
+    "bonus_int": { "rng": [1, 3] },
+    "bonus_per": { "rng": [0, 2] },
     "skills": [
-      { "skill": "magic", "level": { "rng": [ 5, 7 ] } },
-      { "skill": "driving", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "fabrication", "level": { "rng": [ 3, 5 ] } },
-      { "skill": "firstaid", "level": { "rng": [ 2, 6 ] } },
-      { "skill": "speech", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "survival", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "swimming", "level": { "rng": [ 1, 4 ] } },
-      { "skill": "tailor", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "dodge", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "chemistry", "level": { "rng": [ 2, 4 ] } }
+      { "skill": "magic", "level": { "rng": [5, 7] } },
+      { "skill": "driving", "level": { "rng": [3, 6] } },
+      { "skill": "fabrication", "level": { "rng": [3, 5] } },
+      { "skill": "firstaid", "level": { "rng": [2, 6] } },
+      { "skill": "speech", "level": { "rng": [3, 6] } },
+      { "skill": "survival", "level": { "rng": [3, 6] } },
+      { "skill": "swimming", "level": { "rng": [1, 4] } },
+      { "skill": "tailor", "level": { "rng": [2, 5] } },
+      { "skill": "dodge", "level": { "rng": [3, 6] } },
+      { "skill": "chemistry", "level": { "rng": [2, 4] } }
     ],
     "worn_override": "NC_CF_SEEKER_worn",
     "carry_override": "NC_CF_SEEKER_misc",
     "weapon_override": "EMPTY_GROUP",
     "traits": [
       { "group": "Appearance_cleansingflame" },
-      [ "PROF_CLEANSINGFLAME", 100 ],
-      [ "SPIRITUAL", 100 ],
-      [ "PACIFIST", 100 ],
-      [ "FASTREADER", 100 ],
-      [ "GOODMEMORY", 100 ]
+      ["PROF_CLEANSINGFLAME", 100],
+      ["SPIRITUAL", 100],
+      ["PACIFIST", 100],
+      ["FASTREADER", 100],
+      ["GOODMEMORY", 100]
     ]
   },
   {
@@ -176,19 +181,19 @@
     "name": { "str": "Arcane Purifier" },
     "job_description": "I'm a specialist who studies the anomalous.",
     "common": false,
-    "bonus_str": { "rng": [ -2, 1 ] },
-    "bonus_dex": { "rng": [ -1, 3 ] },
-    "bonus_int": { "rng": [ 2, 4 ] },
+    "bonus_str": { "rng": [-2, 1] },
+    "bonus_dex": { "rng": [-1, 3] },
+    "bonus_int": { "rng": [2, 4] },
     "skills": [
-      { "skill": "magic", "level": { "rng": [ 5, 7 ] } },
-      { "skill": "computer", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "fabrication", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "electronics", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "chemistry", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "survival", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "dodge", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "gun", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "pistol", "level": { "rng": [ 1, 3 ] } }
+      { "skill": "magic", "level": { "rng": [5, 7] } },
+      { "skill": "computer", "level": { "rng": [3, 6] } },
+      { "skill": "fabrication", "level": { "rng": [2, 4] } },
+      { "skill": "electronics", "level": { "rng": [3, 6] } },
+      { "skill": "chemistry", "level": { "rng": [3, 6] } },
+      { "skill": "survival", "level": { "rng": [3, 6] } },
+      { "skill": "dodge", "level": { "rng": [3, 6] } },
+      { "skill": "gun", "level": { "rng": [1, 3] } },
+      { "skill": "pistol", "level": { "rng": [1, 3] } }
     ],
     "bionics": [
       { "id": "bio_batteries", "chance": 100 },
@@ -203,7 +208,11 @@
     "worn_override": "NC_CF_PURIFIER_worn",
     "carry_override": "NC_CF_PURIFIER_misc",
     "weapon_override": "EMPTY_GROUP",
-    "traits": [ { "group": "Appearance_cleansingflame" }, { "group": "Arcanist_starting_traits" }, [ "PROF_CLEANSINGFLAME2", 100 ] ]
+    "traits": [
+      { "group": "Appearance_cleansingflame" },
+      { "group": "Arcanist_starting_traits" },
+      ["PROF_CLEANSINGFLAME2", 100]
+    ]
   },
   {
     "type": "npc_class",
@@ -212,18 +221,18 @@
     "job_description": "I am a hunter of otherworldly monsters and dangerous magic.",
     "common": false,
     "skills": [
-      { "skill": "magic", "level": { "rng": [ 3, 7 ] } },
-      { "skill": "cooking", "level": { "rng": [ 1, 5 ] } },
-      { "skill": "fabrication", "level": { "rng": [ 1, 5 ] } },
-      { "skill": "firstaid", "level": { "rng": [ 1, 5 ] } },
-      { "skill": "speech", "level": { "rng": [ 1, 5 ] } },
-      { "skill": "survival", "level": { "rng": [ 1, 5 ] } },
-      { "skill": "bashing", "level": { "rng": [ 1, 5 ] } },
-      { "skill": "cutting", "level": { "rng": [ 1, 5 ] } },
-      { "skill": "rifle", "level": { "rng": [ 1, 5 ] } },
-      { "skill": "dodge", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "melee", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "gun", "level": { "rng": [ 2, 4 ] } }
+      { "skill": "magic", "level": { "rng": [3, 7] } },
+      { "skill": "cooking", "level": { "rng": [1, 5] } },
+      { "skill": "fabrication", "level": { "rng": [1, 5] } },
+      { "skill": "firstaid", "level": { "rng": [1, 5] } },
+      { "skill": "speech", "level": { "rng": [1, 5] } },
+      { "skill": "survival", "level": { "rng": [1, 5] } },
+      { "skill": "bashing", "level": { "rng": [1, 5] } },
+      { "skill": "cutting", "level": { "rng": [1, 5] } },
+      { "skill": "rifle", "level": { "rng": [1, 5] } },
+      { "skill": "dodge", "level": { "rng": [1, 3] } },
+      { "skill": "melee", "level": { "rng": [2, 4] } },
+      { "skill": "gun", "level": { "rng": [2, 4] } }
     ],
     "worn_override": "NC_MAGE_HUNTER_worn",
     "carry_override": "NC_MAGE_HUNTER_misc",
@@ -232,9 +241,9 @@
       { "group": "Appearance_cleansingflame" },
       { "group": "Arcanist_starting_traits" },
       { "group": "BG_survival_story_MAGE_HUNTER" },
-      [ "PROF_CLEANSINGFLAME", 100 ],
-      [ "MARTIAL_ARTS_CF", 25 ],
-      [ "SPIRITUAL", 75 ]
+      ["PROF_CLEANSINGFLAME", 100],
+      ["MARTIAL_ARTS_CF", 25],
+      ["SPIRITUAL", 75]
     ]
   },
   {
@@ -244,20 +253,20 @@
     "job_description": "I aspire to follow The Path.",
     "common": false,
     "skills": [
-      { "skill": "magic", "level": { "rng": [ 0, 2 ] } },
-      { "skill": "firstaid", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "survival", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "bashing", "level": { "rng": [ 1, 2 ] } },
-      { "skill": "cutting", "level": { "rng": [ 1, 2 ] } },
-      { "skill": "stabbing", "level": { "rng": [ 1, 2 ] } },
-      { "skill": "unarmed", "level": { "rng": [ 1, 2 ] } },
-      { "skill": "throw", "level": { "rng": [ 1, 2 ] } },
-      { "skill": "pistol", "level": { "rng": [ 1, 2 ] } },
-      { "skill": "rifle", "level": { "rng": [ 1, 2 ] } },
-      { "skill": "smg", "level": { "rng": [ 1, 2 ] } },
-      { "skill": "dodge", "level": { "rng": [ 0, 1 ] } },
-      { "skill": "melee", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "gun", "level": { "rng": [ 1, 3 ] } }
+      { "skill": "magic", "level": { "rng": [0, 2] } },
+      { "skill": "firstaid", "level": { "rng": [1, 3] } },
+      { "skill": "survival", "level": { "rng": [1, 3] } },
+      { "skill": "bashing", "level": { "rng": [1, 2] } },
+      { "skill": "cutting", "level": { "rng": [1, 2] } },
+      { "skill": "stabbing", "level": { "rng": [1, 2] } },
+      { "skill": "unarmed", "level": { "rng": [1, 2] } },
+      { "skill": "throw", "level": { "rng": [1, 2] } },
+      { "skill": "pistol", "level": { "rng": [1, 2] } },
+      { "skill": "rifle", "level": { "rng": [1, 2] } },
+      { "skill": "smg", "level": { "rng": [1, 2] } },
+      { "skill": "dodge", "level": { "rng": [0, 1] } },
+      { "skill": "melee", "level": { "rng": [1, 3] } },
+      { "skill": "gun", "level": { "rng": [1, 3] } }
     ],
     "worn_override": "NC_BLOOD_MAGE_APPRENTICE_worn",
     "carry_override": "NC_BLOOD_MAGE_APPRENTICE_misc",
@@ -265,8 +274,8 @@
     "traits": [
       { "group": "Appearance_demographics" },
       { "group": "Sanguine_aspirant_traits" },
-      [ "BGSS_BLOOD_MAGE_1", 100 ],
-      [ "PROF_ARCANIST", 100 ]
+      ["BGSS_BLOOD_MAGE_1", 100],
+      ["PROF_ARCANIST", 100]
     ]
   },
   {
@@ -276,19 +285,19 @@
     "job_description": "I'm a hunter of hunters.",
     "common": false,
     "skills": [
-      { "skill": "magic", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "firstaid", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "fabrication", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "survival", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "bashing", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "cutting", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "stabbing", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "unarmed", "level": { "rng": [ 1, 2 ] } },
-      { "skill": "pistol", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "rifle", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "dodge", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "melee", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "gun", "level": { "rng": [ 3, 6 ] } }
+      { "skill": "magic", "level": { "rng": [2, 5] } },
+      { "skill": "firstaid", "level": { "rng": [2, 5] } },
+      { "skill": "fabrication", "level": { "rng": [1, 3] } },
+      { "skill": "survival", "level": { "rng": [3, 6] } },
+      { "skill": "bashing", "level": { "rng": [1, 3] } },
+      { "skill": "cutting", "level": { "rng": [2, 5] } },
+      { "skill": "stabbing", "level": { "rng": [2, 5] } },
+      { "skill": "unarmed", "level": { "rng": [1, 2] } },
+      { "skill": "pistol", "level": { "rng": [2, 5] } },
+      { "skill": "rifle", "level": { "rng": [2, 5] } },
+      { "skill": "dodge", "level": { "rng": [2, 5] } },
+      { "skill": "melee", "level": { "rng": [3, 6] } },
+      { "skill": "gun", "level": { "rng": [3, 6] } }
     ],
     "worn_override": "NC_BLOOD_MAGE_SHRIKE_worn",
     "carry_override": "NC_BLOOD_MAGE_SHRIKE_misc",
@@ -296,8 +305,8 @@
     "traits": [
       { "group": "Appearance_demographics" },
       { "group": "Arcanist_starting_traits" },
-      [ "BGSS_BLOOD_MAGE_2", 100 ],
-      [ "PROF_SANGUINE", 100 ]
+      ["BGSS_BLOOD_MAGE_2", 100],
+      ["PROF_SANGUINE", 100]
     ]
   },
   {
@@ -307,24 +316,28 @@
     "job_description": "I'm a hunter of hunters.",
     "common": false,
     "skills": [
-      { "skill": "magic", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "firstaid", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "fabrication", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "survival", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "bashing", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "cutting", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "stabbing", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "unarmed", "level": { "rng": [ 1, 2 ] } },
-      { "skill": "pistol", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "rifle", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "dodge", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "melee", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "gun", "level": { "rng": [ 3, 6 ] } }
+      { "skill": "magic", "level": { "rng": [2, 5] } },
+      { "skill": "firstaid", "level": { "rng": [2, 5] } },
+      { "skill": "fabrication", "level": { "rng": [1, 3] } },
+      { "skill": "survival", "level": { "rng": [3, 6] } },
+      { "skill": "bashing", "level": { "rng": [1, 3] } },
+      { "skill": "cutting", "level": { "rng": [2, 5] } },
+      { "skill": "stabbing", "level": { "rng": [2, 5] } },
+      { "skill": "unarmed", "level": { "rng": [1, 2] } },
+      { "skill": "pistol", "level": { "rng": [2, 5] } },
+      { "skill": "rifle", "level": { "rng": [2, 5] } },
+      { "skill": "dodge", "level": { "rng": [2, 5] } },
+      { "skill": "melee", "level": { "rng": [3, 6] } },
+      { "skill": "gun", "level": { "rng": [3, 6] } }
     ],
     "worn_override": "NC_BLOOD_MAGE_SHRIKE_worn",
     "carry_override": "NC_BLOOD_MAGE_SHRIKE_misc",
     "weapon_override": "NC_BLOOD_MAGE_SHRIKE_weapon",
-    "traits": [ { "group": "Appearance_demographics" }, { "group": "Arcanist_starting_traits" }, [ "PROF_SANGUINE", 100 ] ]
+    "traits": [
+      { "group": "Appearance_demographics" },
+      { "group": "Arcanist_starting_traits" },
+      ["PROF_SANGUINE", 100]
+    ]
   },
   {
     "type": "npc_class",
@@ -333,19 +346,19 @@
     "job_description": "I lead this group of Shrikes.",
     "common": false,
     "skills": [
-      { "skill": "magic", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "firstaid", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "fabrication", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "survival", "level": { "rng": [ 4, 7 ] } },
-      { "skill": "bashing", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "cutting", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "stabbing", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "unarmed", "level": { "rng": [ 2, 3 ] } },
-      { "skill": "pistol", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "rifle", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "dodge", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "melee", "level": { "rng": [ 4, 7 ] } },
-      { "skill": "gun", "level": { "rng": [ 4, 7 ] } }
+      { "skill": "magic", "level": { "rng": [3, 6] } },
+      { "skill": "firstaid", "level": { "rng": [3, 6] } },
+      { "skill": "fabrication", "level": { "rng": [2, 4] } },
+      { "skill": "survival", "level": { "rng": [4, 7] } },
+      { "skill": "bashing", "level": { "rng": [2, 4] } },
+      { "skill": "cutting", "level": { "rng": [3, 6] } },
+      { "skill": "stabbing", "level": { "rng": [3, 6] } },
+      { "skill": "unarmed", "level": { "rng": [2, 3] } },
+      { "skill": "pistol", "level": { "rng": [3, 6] } },
+      { "skill": "rifle", "level": { "rng": [3, 6] } },
+      { "skill": "dodge", "level": { "rng": [3, 6] } },
+      { "skill": "melee", "level": { "rng": [4, 7] } },
+      { "skill": "gun", "level": { "rng": [4, 7] } }
     ],
     "worn_override": "NC_BLOOD_MAGE_SHRIKE_HUNTMASTER_worn",
     "carry_override": "NC_BLOOD_MAGE_SHRIKE_misc",
@@ -354,8 +367,8 @@
       { "group": "Arcanist_starting_traits" },
       { "trait": "hair_long", "variant": "black" },
       { "trait": "eye_color", "variant": "brown" },
-      [ "SKIN_MEDIUM", 100 ],
-      [ "PROF_SANGUINE", 100 ]
+      ["SKIN_MEDIUM", 100],
+      ["PROF_SANGUINE", 100]
     ]
   },
   {
@@ -365,18 +378,18 @@
     "job_description": "I'm just here to survive.",
     "common": false,
     "skills": [
-      { "skill": "magic", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "speech", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "fabrication", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "survival", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "bashing", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "cutting", "level": { "rng": [ 4, 7 ] } },
-      { "skill": "stabbing", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "unarmed", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "archery", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "dodge", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "melee", "level": { "rng": [ 4, 7 ] } },
-      { "skill": "gun", "level": { "rng": [ 2, 4 ] } }
+      { "skill": "magic", "level": { "rng": [3, 6] } },
+      { "skill": "speech", "level": { "rng": [3, 6] } },
+      { "skill": "fabrication", "level": { "rng": [2, 4] } },
+      { "skill": "survival", "level": { "rng": [3, 6] } },
+      { "skill": "bashing", "level": { "rng": [2, 4] } },
+      { "skill": "cutting", "level": { "rng": [4, 7] } },
+      { "skill": "stabbing", "level": { "rng": [3, 6] } },
+      { "skill": "unarmed", "level": { "rng": [2, 4] } },
+      { "skill": "archery", "level": { "rng": [2, 4] } },
+      { "skill": "dodge", "level": { "rng": [3, 6] } },
+      { "skill": "melee", "level": { "rng": [4, 7] } },
+      { "skill": "gun", "level": { "rng": [2, 4] } }
     ],
     "worn_override": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_worn",
     "carry_override": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_misc",
@@ -385,12 +398,12 @@
       { "group": "Arcanist_starting_traits" },
       { "trait": "hair_short", "variant": "black" },
       { "trait": "eye_color", "variant": "amber" },
-      [ "SKIN_LIGHT", 100 ],
-      [ "PROF_SANGUINE", 100 ],
-      [ "PSYCHOPATH", 100 ],
-      [ "TERRIFYING", 100 ],
-      [ "BADTEMPER", 100 ],
-      [ "DEFT", 100 ]
+      ["SKIN_LIGHT", 100],
+      ["PROF_SANGUINE", 100],
+      ["PSYCHOPATH", 100],
+      ["TERRIFYING", 100],
+      ["BADTEMPER", 100],
+      ["DEFT", 100]
     ]
   },
   {
@@ -401,17 +414,17 @@
     "job_description": "I follow The Path.",
     "common": false,
     "skills": [
-      { "skill": "magic", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "firstaid", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "fabrication", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "survival", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "tailor", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "bashing", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "stabbing", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "unarmed", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "dodge", "level": { "rng": [ 1, 4 ] } },
-      { "skill": "melee", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "gun", "level": { "rng": [ 3, 6 ] } }
+      { "skill": "magic", "level": { "rng": [3, 6] } },
+      { "skill": "firstaid", "level": { "rng": [2, 5] } },
+      { "skill": "fabrication", "level": { "rng": [2, 5] } },
+      { "skill": "survival", "level": { "rng": [2, 5] } },
+      { "skill": "tailor", "level": { "rng": [1, 3] } },
+      { "skill": "bashing", "level": { "rng": [1, 3] } },
+      { "skill": "stabbing", "level": { "rng": [2, 5] } },
+      { "skill": "unarmed", "level": { "rng": [1, 3] } },
+      { "skill": "dodge", "level": { "rng": [1, 4] } },
+      { "skill": "melee", "level": { "rng": [1, 3] } },
+      { "skill": "gun", "level": { "rng": [3, 6] } }
     ],
     "worn_override": "NC_BLOOD_MAGE_MAGUS_worn",
     "carry_override": "NC_BLOOD_MAGE_MAGUS_misc",
@@ -419,15 +432,15 @@
     "traits": [
       { "group": "Appearance_demographics" },
       { "group": "Arcanist_starting_traits" },
-      [ "ARCANA_SCALYPATCHES", 100 ],
-      [ "ARCANA_DRAGONTAIL", 75 ],
-      [ "ARCANA_SCALYWINGS", 50 ],
-      [ "ARCANA_INNERFIRE", 100 ],
-      [ "ARCANA_FIREAFFINITY", 50 ],
-      [ "ARCANA_DRAGONCLAWS", 50 ],
-      [ "ARCANA_DRAGONTEETH", 75 ],
-      [ "ARCANA_DRAGONHORNS", 25 ],
-      [ "PROF_SANGUINE", 100 ]
+      ["ARCANA_SCALYPATCHES", 100],
+      ["ARCANA_DRAGONTAIL", 75],
+      ["ARCANA_SCALYWINGS", 50],
+      ["ARCANA_INNERFIRE", 100],
+      ["ARCANA_FIREAFFINITY", 50],
+      ["ARCANA_DRAGONCLAWS", 50],
+      ["ARCANA_DRAGONTEETH", 75],
+      ["ARCANA_DRAGONHORNS", 25],
+      ["PROF_SANGUINE", 100]
     ]
   },
   {
@@ -436,33 +449,33 @@
     "name": { "str": "Arcanist" },
     "job_description": "I'm a scholar of the Beyond.",
     "common": false,
-    "bonus_str": { "rng": [ -1, 1 ] },
-    "bonus_dex": { "rng": [ -1, 2 ] },
-    "bonus_int": { "rng": [ 3, 4 ] },
-    "bonus_per": { "rng": [ 0, 2 ] },
+    "bonus_str": { "rng": [-1, 1] },
+    "bonus_dex": { "rng": [-1, 2] },
+    "bonus_int": { "rng": [3, 4] },
+    "bonus_per": { "rng": [0, 2] },
     "skills": [
-      { "skill": "magic", "level": { "rng": [ 4, 6 ] } },
-      { "skill": "cooking", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "fabrication", "level": { "rng": [ 4, 5 ] } },
-      { "skill": "firstaid", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "speech", "level": { "rng": [ 0, 5 ] } },
-      { "skill": "survival", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "tailor", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "driving", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "mechanics", "level": { "rng": [ 1, 4 ] } },
-      { "skill": "dodge", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "gun", "level": { "rng": [ 2, 5 ] } }
+      { "skill": "magic", "level": { "rng": [4, 6] } },
+      { "skill": "cooking", "level": { "rng": [1, 3] } },
+      { "skill": "fabrication", "level": { "rng": [4, 5] } },
+      { "skill": "firstaid", "level": { "rng": [2, 4] } },
+      { "skill": "speech", "level": { "rng": [0, 5] } },
+      { "skill": "survival", "level": { "rng": [2, 4] } },
+      { "skill": "tailor", "level": { "rng": [1, 3] } },
+      { "skill": "driving", "level": { "rng": [2, 5] } },
+      { "skill": "mechanics", "level": { "rng": [1, 4] } },
+      { "skill": "dodge", "level": { "rng": [2, 5] } },
+      { "skill": "gun", "level": { "rng": [2, 5] } }
     ],
     "worn_override": "NC_CF_AUX_MAGE_worn",
     "carry_override": "NC_CF_AUX_MAGE_misc",
     "weapon_override": "EMPTY_GROUP",
     "traits": [
       { "group": "Appearance_demographics" },
-      [ "PROF_ARCANIST", 100 ],
-      [ "OUTDOORSMAN", 100 ],
-      [ "LIGHTSTEP", 100 ],
-      [ "TRUTHTELLER", 100 ],
-      [ "ANIMALDISCORD", 100 ]
+      ["PROF_ARCANIST", 100],
+      ["OUTDOORSMAN", 100],
+      ["LIGHTSTEP", 100],
+      ["TRUTHTELLER", 100],
+      ["ANIMALDISCORD", 100]
     ]
   },
   {
@@ -471,55 +484,55 @@
     "name": { "str": "Gunslinger" },
     "job_description": "I'm a hired gun.",
     "common": false,
-    "bonus_str": { "rng": [ -2, 3 ] },
-    "bonus_dex": { "rng": [ -1, 1 ] },
-    "bonus_int": { "rng": [ -1, 1 ] },
-    "bonus_per": { "rng": [ 1, 4 ] },
+    "bonus_str": { "rng": [-2, 3] },
+    "bonus_dex": { "rng": [-1, 1] },
+    "bonus_int": { "rng": [-1, 1] },
+    "bonus_per": { "rng": [1, 4] },
     "skills": [
-      { "skill": "magic", "level": { "rng": [ 0, 2 ] } },
-      { "skill": "cooking", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "fabrication", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "firstaid", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "speech", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "survival", "level": { "rng": [ 4, 7 ] } },
-      { "skill": "tailor", "level": { "rng": [ 0, 2 ] } },
-      { "skill": "driving", "level": { "rng": [ 2, 5 ] } },
-      { "skill": "dodge", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "gun", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "rifle", "level": { "rng": [ 3, 6 ] } },
-      { "skill": "pistol", "level": { "rng": [ 2, 4 ] } },
-      { "skill": "melee", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "unarmed", "level": { "rng": [ 1, 3 ] } },
-      { "skill": "traps", "level": { "rng": [ 2, 4 ] } }
+      { "skill": "magic", "level": { "rng": [0, 2] } },
+      { "skill": "cooking", "level": { "rng": [1, 3] } },
+      { "skill": "fabrication", "level": { "rng": [2, 4] } },
+      { "skill": "firstaid", "level": { "rng": [1, 3] } },
+      { "skill": "speech", "level": { "rng": [1, 3] } },
+      { "skill": "survival", "level": { "rng": [4, 7] } },
+      { "skill": "tailor", "level": { "rng": [0, 2] } },
+      { "skill": "driving", "level": { "rng": [2, 5] } },
+      { "skill": "dodge", "level": { "rng": [1, 3] } },
+      { "skill": "gun", "level": { "rng": [3, 6] } },
+      { "skill": "rifle", "level": { "rng": [3, 6] } },
+      { "skill": "pistol", "level": { "rng": [2, 4] } },
+      { "skill": "melee", "level": { "rng": [1, 3] } },
+      { "skill": "unarmed", "level": { "rng": [1, 3] } },
+      { "skill": "traps", "level": { "rng": [2, 4] } }
     ],
     "worn_override": "NC_CF_AUX_MERC_worn",
     "carry_override": "NC_CF_AUX_MERC_misc",
     "weapon_override": "NC_CF_AUX_MERC_weapon",
     "traits": [
-      [ "SKIN_MEDIUM", 100 ],
+      ["SKIN_MEDIUM", 100],
       { "trait": "hair_medium", "variant": "gray" },
       { "trait": "eye_color", "variant": "gray" },
-      [ "BGSS_Gung_Ho_1", 100 ],
-      [ "OUTDOORSMAN", 100 ],
-      [ "PSYCHOPATH", 75 ],
-      [ "PAINRESIST", 75 ],
-      [ "PAINREC3", 50 ],
-      [ "NIGHTVISION", 50 ],
-      [ "THICKSKIN", 50 ],
-      [ "INFIMMUNE", 50 ],
-      [ "FASTHEALER2", 25 ],
-      [ "TOUGH3", 25 ],
-      [ "TOXICFLESH", 25 ],
-      [ "HYPEROPIC", 100 ],
-      [ "BADTEMPER", 75 ],
-      [ "BADHEARING", 75 ],
-      [ "TRIGGERHAPPY", 50 ],
-      [ "ANTIJUNK", 50 ],
-      [ "BADKNEES", 50 ],
-      [ "BADBACK", 50 ],
-      [ "BADCARDIO", 25 ],
-      [ "FORGETFUL", 25 ],
-      [ "COLDBLOOD", 25 ]
+      ["BGSS_Gung_Ho_1", 100],
+      ["OUTDOORSMAN", 100],
+      ["PSYCHOPATH", 75],
+      ["PAINRESIST", 75],
+      ["PAINREC3", 50],
+      ["NIGHTVISION", 50],
+      ["THICKSKIN", 50],
+      ["INFIMMUNE", 50],
+      ["FASTHEALER2", 25],
+      ["TOUGH3", 25],
+      ["TOXICFLESH", 25],
+      ["HYPEROPIC", 100],
+      ["BADTEMPER", 75],
+      ["BADHEARING", 75],
+      ["TRIGGERHAPPY", 50],
+      ["ANTIJUNK", 50],
+      ["BADKNEES", 50],
+      ["BADBACK", 50],
+      ["BADCARDIO", 25],
+      ["FORGETFUL", 25],
+      ["COLDBLOOD", 25]
     ]
   },
   {
@@ -533,14 +546,17 @@
       { "group": "Arcanist_starting_traits" },
       { "group": "Appearance_demographics" }
     ],
-    "bonus_str": { "rng": [ -2, 3 ] },
-    "bonus_dex": { "rng": [ -1, 1 ] },
-    "bonus_int": { "rng": [ -1, 1 ] },
-    "bonus_per": { "rng": [ 1, 4 ] },
+    "bonus_str": { "rng": [-2, 3] },
+    "bonus_dex": { "rng": [-1, 1] },
+    "bonus_int": { "rng": [-1, 1] },
+    "bonus_per": { "rng": [1, 4] },
     "skills": [
-      { "skill": "ALL", "level": { "sum": [ { "dice": [ 3, 2 ] }, { "constant": -3 } ] } },
-      { "skill": "gun", "bonus": { "rng": [ 2, 4 ] } },
-      { "skill": "shotgun", "bonus": { "rng": [ 2, 5 ] } }
+      {
+        "skill": "ALL",
+        "level": { "sum": [{ "dice": [3, 2] }, { "constant": -3 }] }
+      },
+      { "skill": "gun", "bonus": { "rng": [2, 4] } },
+      { "skill": "shotgun", "bonus": { "rng": [2, 5] } }
     ],
     "worn_override": "NC_BANDIT_PURIFIER_AMBUSHER_worn",
     "carry_override": "NC_BANDIT_PURIFIER_AMBUSHER_misc",
@@ -567,18 +583,23 @@
   {
     "type": "item_group",
     "id": "NC_HERMIT_weapon",
-    "items": [ [ "q_staff", 30 ], [ "i_staff", 20 ], [ "spear_steel", 40 ], [ "qiang", 10 ] ]
+    "items": [
+      ["q_staff", 30],
+      ["i_staff", 20],
+      ["spear_steel", 40],
+      ["qiang", 10]
+    ]
   },
   {
     "id": "NC_HERMIT_misc",
     "type": "item_group",
     "subtype": "collection",
     "items": [
-      { "item": "essence", "count": [ 10, 25 ] },
+      { "item": "essence", "count": [10, 25] },
       { "item": "arcanemap", "prob": 50 },
       { "item": "book_sacrifice" },
       { "item": "offering_chalice" },
-      { "group": "magic_consumables", "count": [ 2, 4 ] }
+      { "group": "magic_consumables", "count": [2, 4] }
     ]
   },
   {
@@ -601,7 +622,7 @@
     "type": "item_group",
     "subtype": "collection",
     "entries": [
-      { "item": "FMCNote", "count": [ 2, 5 ] },
+      { "item": "FMCNote", "count": [2, 5] },
       { "item": "holybook_bible2" },
       { "item": "water_clean" },
       { "item": "matches" },
@@ -629,21 +650,21 @@
     "id": "NC_CF_REP_weapon",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [ { "item": "q_staff" } ]
+    "entries": [{ "item": "q_staff" }]
   },
   {
     "id": "NC_CF_REP_misc",
     "type": "item_group",
     "subtype": "collection",
     "items": [
-      { "item": "CF_golden_scale", "count": [ 30, 60 ] },
-      { "item": "essence_dull", "count": [ 30, 60 ] },
+      { "item": "CF_golden_scale", "count": [30, 60] },
+      { "item": "essence_dull", "count": [30, 60] },
       { "item": "holybook_havamal" },
       { "item": "book_hexenhammer" },
       { "item": "water_clean" },
       { "item": "lighter" },
-      { "group": "rural_church_medical_items", "count": [ 3, 5 ] },
-      { "group": "cleansing_flame_crafting", "count": [ 3, 5 ] }
+      { "group": "rural_church_medical_items", "count": [3, 5] },
+      { "group": "cleansing_flame_crafting", "count": [3, 5] }
     ]
   },
   {
@@ -667,21 +688,21 @@
     "id": "NC_CF_GM_weapon",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [ { "item": "arming_sword" } ]
+    "entries": [{ "item": "arming_sword" }]
   },
   {
     "id": "NC_CF_GM_misc",
     "type": "item_group",
     "subtype": "collection",
     "items": [
-      { "item": "CF_golden_scale", "count": [ 30, 60 ] },
-      { "item": "essence_dull", "count": [ 30, 60 ] },
+      { "item": "CF_golden_scale", "count": [30, 60] },
+      { "item": "essence_dull", "count": [30, 60] },
       { "item": "book_hexenhammer" },
       { "item": "holybook_bible2" },
       { "item": "water_clean" },
       { "item": "lighter" },
-      { "group": "rural_church_medical_items", "count": [ 3, 5 ] },
-      { "group": "cleansing_flame_crafting", "count": [ 3, 5 ] }
+      { "group": "rural_church_medical_items", "count": [3, 5] },
+      { "group": "cleansing_flame_crafting", "count": [3, 5] }
     ]
   },
   {
@@ -704,12 +725,12 @@
     "type": "item_group",
     "subtype": "collection",
     "items": [
-      { "item": "CF_golden_scale", "count": [ 30, 60 ] },
-      { "item": "essence_dull", "count": [ 20, 60 ] },
-      { "group": "cleansing_flame_books", "count": [ 3, 5 ] },
-      { "group": "mansion_books", "count": [ 3, 5 ] },
-      { "group": "cleansing_flame_crafting", "count": [ 1, 3 ] },
-      { "group": "cleansing_flame_gear_consumables", "count": [ 1, 3 ] },
+      { "item": "CF_golden_scale", "count": [30, 60] },
+      { "item": "essence_dull", "count": [20, 60] },
+      { "group": "cleansing_flame_books", "count": [3, 5] },
+      { "group": "mansion_books", "count": [3, 5] },
+      { "group": "cleansing_flame_crafting", "count": [1, 3] },
+      { "group": "cleansing_flame_gear_consumables", "count": [1, 3] },
       { "group": "reading_lights" }
     ]
   },
@@ -722,7 +743,11 @@
       { "item": "under_armor" },
       { "item": "socks" },
       {
-        "distribution": [ { "item": "pants", "prob": 25 }, { "item": "jeans", "prob": 25 }, { "item": "pants_cargo", "prob": 50 } ]
+        "distribution": [
+          { "item": "pants", "prob": 25 },
+          { "item": "jeans", "prob": 25 },
+          { "item": "pants_cargo", "prob": 50 }
+        ]
       },
       { "item": "tshirt" },
       {
@@ -733,8 +758,18 @@
           { "item": "cloak", "prob": 25 }
         ]
       },
-      { "distribution": [ { "item": "boots", "prob": 50 }, { "item": "boots_hiking", "prob": 50 } ] },
-      { "distribution": [ { "item": "mbag", "prob": 50 }, { "item": "slingpack", "prob": 50 } ] }
+      {
+        "distribution": [
+          { "item": "boots", "prob": 50 },
+          { "item": "boots_hiking", "prob": 50 }
+        ]
+      },
+      {
+        "distribution": [
+          { "item": "mbag", "prob": 50 },
+          { "item": "slingpack", "prob": 50 }
+        ]
+      }
     ]
   },
   {
@@ -742,10 +777,10 @@
     "type": "item_group",
     "subtype": "collection",
     "items": [
-      { "item": "CF_golden_scale", "count": [ 25, 50 ] },
-      { "item": "essence_dull", "count": [ 20, 60 ] },
-      { "group": "cleansing_flame_crafting", "count": [ 1, 3 ] },
-      { "group": "science", "count": [ 1, 3 ] }
+      { "item": "CF_golden_scale", "count": [25, 50] },
+      { "item": "essence_dull", "count": [20, 60] },
+      { "group": "cleansing_flame_crafting", "count": [1, 3] },
+      { "group": "science", "count": [1, 3] }
     ]
   },
   {
@@ -755,7 +790,11 @@
     "ammo": 100,
     "entries": [
       {
-        "distribution": [ { "item": "undershirt", "prob": 50 }, { "item": "long_undertop", "prob": 25 }, { "item": "under_armor", "prob": 25 } ]
+        "distribution": [
+          { "item": "undershirt", "prob": 50 },
+          { "item": "long_undertop", "prob": 25 },
+          { "item": "under_armor", "prob": 25 }
+        ]
       },
       {
         "distribution": [
@@ -764,8 +803,18 @@
           { "item": "under_armor_shorts", "prob": 25 }
         ]
       },
-      { "distribution": [ { "item": "socks", "prob": 50 }, { "item": "socks_wool", "prob": 50 } ] },
-      { "distribution": [ { "item": "pants", "prob": 75 }, { "item": "jeans", "prob": 25 } ] },
+      {
+        "distribution": [
+          { "item": "socks", "prob": 50 },
+          { "item": "socks_wool", "prob": 50 }
+        ]
+      },
+      {
+        "distribution": [
+          { "item": "pants", "prob": 75 },
+          { "item": "jeans", "prob": 25 }
+        ]
+      },
       {
         "distribution": [
           { "item": "dress_shirt", "prob": 50 },
@@ -783,7 +832,11 @@
         ]
       },
       {
-        "distribution": [ { "item": "backpack", "prob": 50 }, { "item": "backpack_leather", "prob": 25 }, { "item": "rucksack", "prob": 25 } ]
+        "distribution": [
+          { "item": "backpack", "prob": 50 },
+          { "item": "backpack_leather", "prob": 25 },
+          { "item": "rucksack", "prob": 25 }
+        ]
       },
       {
         "distribution": [
@@ -836,8 +889,8 @@
       { "item": "water_clean" },
       { "item": "lighter" },
       { "item": "book_hexenhammer", "prob": 20 },
-      { "item": "essence_dull", "charges": [ 10, 25 ] },
-      { "item": "bolt_steel", "charges": [ 10, 15 ] }
+      { "item": "essence_dull", "charges": [10, 25] },
+      { "item": "bolt_steel", "charges": [10, 15] }
     ]
   },
   {
@@ -845,21 +898,21 @@
     "id": "NC_MAGE_HUNTER_weapon",
     "ammo": 100,
     "items": [
-      [ "warhammer", 10 ],
-      [ "mace", 3 ],
-      [ "morningstar", 2 ],
-      [ "hexenhammer", 15 ],
-      [ "arming_sword", 6 ],
-      [ "broadsword", 5 ],
-      [ "scimitar", 4 ],
-      [ "katana", 3 ],
-      [ "jian", 2 ],
-      [ "sun_sword", 10 ],
-      [ "crossbow", 12 ],
-      [ "compositecrossbow", 8 ],
-      [ "hand_crossbow", 3 ],
-      [ "huge_crossbow", 2 ],
-      [ "ethereal_crossbow", 25 ]
+      ["warhammer", 10],
+      ["mace", 3],
+      ["morningstar", 2],
+      ["hexenhammer", 15],
+      ["arming_sword", 6],
+      ["broadsword", 5],
+      ["scimitar", 4],
+      ["katana", 3],
+      ["jian", 2],
+      ["sun_sword", 10],
+      ["crossbow", 12],
+      ["compositecrossbow", 8],
+      ["hand_crossbow", 3],
+      ["huge_crossbow", 2],
+      ["ethereal_crossbow", 25]
     ]
   },
   {
@@ -868,14 +921,33 @@
     "subtype": "collection",
     "ammo": 100,
     "entries": [
-      { "distribution": [ { "item": "undershirt", "prob": 10 }, { "item": "long_undertop", "prob": 90 } ] },
-      { "distribution": [ { "item": "boxer_shorts", "prob": 10 }, { "item": "long_underpants", "prob": 90 } ] },
-      { "distribution": [ { "item": "socks", "prob": 75 }, { "item": "stockings", "prob": 25 } ] },
+      {
+        "distribution": [
+          { "item": "undershirt", "prob": 10 },
+          { "item": "long_undertop", "prob": 90 }
+        ]
+      },
+      {
+        "distribution": [
+          { "item": "boxer_shorts", "prob": 10 },
+          { "item": "long_underpants", "prob": 90 }
+        ]
+      },
+      {
+        "distribution": [
+          { "item": "socks", "prob": 75 },
+          { "item": "stockings", "prob": 25 }
+        ]
+      },
       { "group": "clothing_outdoor_torso" },
       { "group": "clothing_outdoor_pants" },
       { "group": "clothing_outdoor_shoes" },
       {
-        "distribution": [ { "item": "backpack", "prob": 25 }, { "item": "mbag", "prob": 50 }, { "item": "slingpack", "prob": 50 } ]
+        "distribution": [
+          { "item": "backpack", "prob": 25 },
+          { "item": "mbag", "prob": 50 },
+          { "item": "slingpack", "prob": 50 }
+        ]
       }
     ]
   },
@@ -887,10 +959,13 @@
       { "item": "water_clean" },
       { "item": "matches" },
       {
-        "distribution": [ { "item": "bandages_makeshift", "prob": 25, "count": [ 1, 3 ] }, { "item": "bandages", "prob": 75 } ],
+        "distribution": [
+          { "item": "bandages_makeshift", "prob": 25, "count": [1, 3] },
+          { "item": "bandages", "prob": 75 }
+        ],
         "prob": 75
       },
-      { "item": "essence_blood", "charges": [ 1, 3 ], "prob": 25 }
+      { "item": "essence_blood", "charges": [1, 3], "prob": 25 }
     ]
   },
   {
@@ -899,17 +974,17 @@
     "ammo": 100,
     "magazine": 100,
     "items": [
-      [ "sten", 15 ],
-      [ "surv_six_shooter", 10 ],
-      [ "surv_hand_cannon", 10 ],
-      [ "2_shot_special", 10 ],
-      [ "ruger_mini", 5 ],
+      ["sten", 15],
+      ["surv_six_shooter", 10],
+      ["surv_hand_cannon", 10],
+      ["2_shot_special", 10],
+      ["ruger_mini", 5],
       { "item": "knife_huge", "variant": "knife_butcher", "prob": 15 },
-      [ "machete", 10 ],
-      [ "blood_athame", 5 ],
-      [ "ax", 10 ],
-      [ "hatchet", 10 ],
-      [ "bloodaxe", 5 ]
+      ["machete", 10],
+      ["blood_athame", 5],
+      ["ax", 10],
+      ["hatchet", 10],
+      ["bloodaxe", 5]
     ]
   },
   {
@@ -918,17 +993,42 @@
     "subtype": "collection",
     "ammo": 100,
     "entries": [
-      { "distribution": [ { "item": "undershirt", "prob": 10 }, { "item": "long_undertop", "prob": 90 } ] },
-      { "distribution": [ { "item": "boxer_shorts", "prob": 10 }, { "item": "long_underpants", "prob": 90 } ] },
-      { "distribution": [ { "item": "socks", "prob": 75 }, { "item": "stockings", "prob": 25 } ] },
+      {
+        "distribution": [
+          { "item": "undershirt", "prob": 10 },
+          { "item": "long_undertop", "prob": 90 }
+        ]
+      },
+      {
+        "distribution": [
+          { "item": "boxer_shorts", "prob": 10 },
+          { "item": "long_underpants", "prob": 90 }
+        ]
+      },
+      {
+        "distribution": [
+          { "item": "socks", "prob": 75 },
+          { "item": "stockings", "prob": 25 }
+        ]
+      },
       {
         "distribution": [
           {
-            "collection": [ { "item": "greatcoat" }, { "item": "peacoat" }, { "item": "breeches" }, { "item": "knee_high_boots" } ],
+            "collection": [
+              { "item": "greatcoat" },
+              { "item": "peacoat" },
+              { "item": "breeches" },
+              { "item": "knee_high_boots" }
+            ],
             "prob": 25
           },
           {
-            "collection": [ { "item": "duster" }, { "item": "dress_shirt" }, { "item": "pants" }, { "item": "boots" } ],
+            "collection": [
+              { "item": "duster" },
+              { "item": "dress_shirt" },
+              { "item": "pants" },
+              { "item": "boots" }
+            ],
             "prob": 25
           },
           { "item": "armor_wyrm", "prob": 50 }
@@ -945,12 +1045,27 @@
         ]
       },
       {
-        "distribution": [ { "item": "bandana", "prob": 50 }, { "item": "keffiyeh", "prob": 25 }, { "item": "knit_scarf", "prob": 25 } ]
+        "distribution": [
+          { "item": "bandana", "prob": 50 },
+          { "item": "keffiyeh", "prob": 25 },
+          { "item": "knit_scarf", "prob": 25 }
+        ]
       },
-      { "distribution": [ { "item": "backpack", "prob": 50 }, { "item": "backpack_leather", "prob": 50 } ] },
-      { "item": "flintlock_pouch", "contents-group": "NC_BLOOD_MAGE_SHRIKE_ammo" },
       {
-        "distribution": [ { "item": "scabbard", "contents-item": "rapier" }, { "item": "sheath", "contents-item": "blood_athame" } ],
+        "distribution": [
+          { "item": "backpack", "prob": 50 },
+          { "item": "backpack_leather", "prob": 50 }
+        ]
+      },
+      {
+        "item": "flintlock_pouch",
+        "contents-group": "NC_BLOOD_MAGE_SHRIKE_ammo"
+      },
+      {
+        "distribution": [
+          { "item": "scabbard", "contents-item": "rapier" },
+          { "item": "sheath", "contents-item": "blood_athame" }
+        ],
         "prob": 90
       }
     ]
@@ -959,7 +1074,7 @@
     "type": "item_group",
     "subtype": "collection",
     "id": "NC_BLOOD_MAGE_SHRIKE_ammo",
-    "entries": [ { "item": "flintlock_ammo", "charges": 14 } ]
+    "entries": [{ "item": "flintlock_ammo", "charges": 14 }]
   },
   {
     "id": "NC_BLOOD_MAGE_SHRIKE_misc",
@@ -969,7 +1084,7 @@
       { "item": "water_clean" },
       { "item": "matches" },
       { "item": "bandages" },
-      { "item": "essence_blood", "charges": [ 2, 5 ], "prob": 75 }
+      { "item": "essence_blood", "charges": [2, 5], "prob": 75 }
     ]
   },
   {
@@ -977,11 +1092,11 @@
     "id": "NC_BLOOD_MAGE_SHRIKE_weapon",
     "ammo": 100,
     "items": [
-      [ "pistol_flintlock", 40 ],
-      [ "carbine_flintlock", 25 ],
-      [ "rifle_flintlock", 15 ],
-      [ "carbine_flintlock_double", 10 ],
-      [ "shrike_misericorde_folded", 10 ]
+      ["pistol_flintlock", 40],
+      ["carbine_flintlock", 25],
+      ["rifle_flintlock", 15],
+      ["carbine_flintlock_double", 10],
+      ["shrike_misericorde_folded", 10]
     ]
   },
   {
@@ -1006,7 +1121,7 @@
     "id": "NC_BLOOD_MAGE_SHRIKE_HUNTMASTER_weapon",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [ { "item": "butterfly_swords" } ]
+    "entries": [{ "item": "butterfly_swords" }]
   },
   {
     "id": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_worn",
@@ -1026,21 +1141,21 @@
     "id": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_weapon",
     "type": "item_group",
     "subtype": "collection",
-    "entries": [ { "item": "zweihander" } ]
+    "entries": [{ "item": "zweihander" }]
   },
   {
     "id": "NC_BLOOD_MAGE_SHRIKE_MERCHANT_misc",
     "type": "item_group",
     "subtype": "collection",
     "items": [
-      { "item": "CF_golden_scale", "count": [ 15, 30 ] },
+      { "item": "CF_golden_scale", "count": [15, 30] },
       { "item": "matches" },
-      { "group": "stash_food", "count": [ 2, 4 ] },
-      { "group": "rural_church_medical_items", "count": [ 1, 3 ] },
+      { "group": "stash_food", "count": [2, 4] },
+      { "group": "rural_church_medical_items", "count": [1, 3] },
       { "item": "manual_shrike" },
-      { "group": "mansion_books", "count": [ 1, 3 ] },
-      { "group": "medieval", "count": [ 1, 3 ] },
-      { "item": "essence_blood", "charges": [ 15, 30 ] }
+      { "group": "mansion_books", "count": [1, 3] },
+      { "group": "medieval", "count": [1, 3] },
+      { "item": "essence_blood", "charges": [15, 30] }
     ]
   },
   {
@@ -1064,7 +1179,7 @@
     "type": "item_group",
     "subtype": "collection",
     "ammo": 100,
-    "entries": [ { "item": "bloodscourge" } ]
+    "entries": [{ "item": "bloodscourge" }]
   },
   {
     "id": "NC_BLOOD_MAGE_MAGUS_misc",
@@ -1075,7 +1190,7 @@
       { "item": "matches" },
       { "item": "bandages" },
       { "item": "bowl_clay" },
-      { "item": "essence_blood", "count": [ 5, 15 ] },
+      { "item": "essence_blood", "count": [5, 15] },
       { "item": "book_bloodmagic" },
       { "group": "sanguine_cult_spells", "prob": 75 }
     ]
@@ -1103,13 +1218,13 @@
     "type": "item_group",
     "subtype": "collection",
     "items": [
-      { "item": "CF_golden_scale", "count": [ 30, 60 ] },
+      { "item": "CF_golden_scale", "count": [30, 60] },
       { "item": "water_clean" },
       { "item": "lighter" },
-      { "group": "gear_survival", "count": [ 3, 6 ] },
-      { "group": "magic_crafting", "count": [ 3, 6 ] },
-      { "group": "unaligned_arcanist_books", "count": [ 3, 5 ] },
-      { "group": "unaligned_arcanist_spells", "count": [ 1, 2 ] }
+      { "group": "gear_survival", "count": [3, 6] },
+      { "group": "magic_crafting", "count": [3, 6] },
+      { "group": "unaligned_arcanist_books", "count": [3, 5] },
+      { "group": "unaligned_arcanist_spells", "count": [1, 2] }
     ]
   },
   {
@@ -1125,7 +1240,12 @@
       { "item": "leather_pouch" },
       { "item": "bandana" },
       { "item": "sheath", "contents-item": "knife_hunting" },
-      { "item": "colt_saa", "ammo-item": "reloaded_45colt_jhp", "charges": 6, "container-item": "holster" },
+      {
+        "item": "colt_saa",
+        "ammo-item": "reloaded_45colt_jhp",
+        "charges": 6,
+        "container-item": "holster"
+      },
       { "item": "duster" },
       { "item": "cowboy_hat" },
       { "item": "boots" }
@@ -1135,7 +1255,14 @@
     "type": "item_group",
     "id": "NC_CF_AUX_MERC_weapon",
     "subtype": "collection",
-    "entries": [ { "item": "1895sbl", "ammo-item": "reloaded_4570_pen", "charges": 7, "contents-item": "shoulder_strap" } ]
+    "entries": [
+      {
+        "item": "1895sbl",
+        "ammo-item": "reloaded_4570_pen",
+        "charges": 7,
+        "contents-item": "shoulder_strap"
+      }
+    ]
   },
   {
     "id": "NC_CF_AUX_MERC_misc",
@@ -1145,15 +1272,18 @@
       { "item": "water_clean" },
       { "item": "matches" },
       { "item": "bandages" },
-      { "item": "reloaded_45colt_jhp", "charges": [ 40, 60 ] },
-      { "item": "reloaded_4570_pen", "charges": [ 30, 50 ] }
+      { "item": "reloaded_45colt_jhp", "charges": [40, 60] },
+      { "item": "reloaded_4570_pen", "charges": [30, 50] }
     ]
   },
   {
     "type": "item_group",
     "id": "NC_BANDIT_PURIFIER_AMBUSHER_misc",
     "subtype": "collection",
-    "entries": [ { "item": "ref_lighter", "charges": 50 }, { "group": "cleansing_flame_gear_consumables" } ]
+    "entries": [
+      { "item": "ref_lighter", "charges": 50 },
+      { "group": "cleansing_flame_gear_consumables" }
+    ]
   },
   {
     "id": "NC_BANDIT_PURIFIER_AMBUSHER_worn",
@@ -1163,7 +1293,11 @@
       { "item": "kevlar" },
       { "item": "jersey" },
       { "item": "jacket_leather_mod" },
-      { "item": "reloaded_shot_00_arcana", "charges": 25, "container-item": "bandolier_shotgun" },
+      {
+        "item": "reloaded_shot_00_arcana",
+        "charges": 25,
+        "container-item": "bandolier_shotgun"
+      },
       { "item": "boxer_shorts" },
       { "item": "jeans" },
       { "item": "gloves_fingerless_mod" },
@@ -1179,38 +1313,44 @@
     "id": "NC_BANDIT_PURIFIER_AMBUSHER_weapon",
     "subtype": "collection",
     "entries": [
-      { "item": "winchester_1897", "ammo-item": "reloaded_shot_00_arcana", "charges": 6, "contents-item": "shoulder_strap" }
+      {
+        "item": "winchester_1897",
+        "ammo-item": "reloaded_shot_00_arcana",
+        "charges": 6,
+        "contents-item": "shoulder_strap"
+      }
     ]
   },
   {
-    "id": "NC_ARSONIST_random",
-    "copy-from": "NC_ARSONIST_random",
+    "id": "NC_ARSONIST_STOCK",
+    "copy-from": "NC_ARSONIST_STOCK",
+    "subtype": "collection",
     "type": "item_group",
-    "extend": { "items": [ [ "bloodscourge", 1 ] ] }
+    "extend": {
+      "items": [
+        ["bloodscourge", 1],
+        ["bloodaxe", 1]
+      ]
+    }
   },
-  {
-    "id": "NC_ARSONIST_misc",
-    "copy-from": "NC_ARSONIST_misc",
-    "type": "item_group",
-    "extend": { "items": [ [ "bloodaxe", 1 ] ] }
-  },
+
   {
     "id": "NC_BOUNTY_HUNTER_coat",
     "copy-from": "NC_BOUNTY_HUNTER_coat",
     "type": "item_group",
-    "extend": { "items": [ [ "gilded_aegis", 1 ] ] }
+    "extend": { "items": [["gilded_aegis", 1]] }
   },
   {
     "id": "NC_DOCTOR_misc",
     "copy-from": "NC_DOCTOR_misc",
     "type": "item_group",
-    "extend": { "items": [ [ "healing_potion", 5 ] ] }
+    "extend": { "items": [["healing_potion", 5]] }
   },
   {
     "id": "NC_HUNTER_archery",
     "copy-from": "NC_HUNTER_archery",
     "type": "item_group",
-    "extend": { "items": [ [ "ethereal_crossbow", 1 ] ] }
+    "extend": { "items": [["ethereal_crossbow", 1]] }
   },
   {
     "id": "NC_HUNTER_misc",
@@ -1218,12 +1358,12 @@
     "type": "item_group",
     "extend": {
       "items": [
-        [ "graboid_fang", 1 ],
-        [ "bone_twisted", 1 ],
-        [ "gracken_knuckles", 1 ],
-        [ "wyrmskin_piece", 1 ],
-        [ "monster_fang", 1 ],
-        [ "iridescent_plate", 1 ]
+        ["graboid_fang", 1],
+        ["bone_twisted", 1],
+        ["gracken_knuckles", 1],
+        ["wyrmskin_piece", 1],
+        ["monster_fang", 1],
+        ["iridescent_plate", 1]
       ]
     }
   },
@@ -1232,19 +1372,24 @@
     "copy-from": "NC_JUNK_SHOPKEEP_misc",
     "type": "item_group",
     "subtype": "collection",
-    "extend": { "items": [ { "item": "scroll_blank", "prob": 10 }, { "item": "silver_glyph", "prob": 5 } ] }
+    "extend": {
+      "items": [
+        { "item": "scroll_blank", "prob": 10 },
+        { "item": "silver_glyph", "prob": 5 }
+      ]
+    }
   },
   {
     "id": "NC_SCAVENGER_gloves",
     "copy-from": "NC_SCAVENGER_gloves",
     "type": "item_group",
-    "extend": { "items": [ [ "gauntlets_necro", 1 ] ] }
+    "extend": { "items": [["gauntlets_necro", 1]] }
   },
   {
     "id": "NC_SCAVENGER_archery",
     "copy-from": "NC_SCAVENGER_archery",
     "type": "item_group",
-    "extend": { "items": [ [ "ethereal_crossbow", 1 ] ] }
+    "extend": { "items": [["ethereal_crossbow", 1]] }
   },
   {
     "id": "NC_SCAVENGER_misc",
@@ -1252,13 +1397,13 @@
     "type": "item_group",
     "extend": {
       "items": [
-        [ "numbness_potion", 1 ],
-        [ "healing_potion", 1 ],
-        [ "scroll_sun", 1 ],
-        [ "scroll_artiface", 1 ],
-        [ "totem_confusion", 1 ],
-        [ "totem_insight", 1 ],
-        [ "totem_plants", 1 ]
+        ["numbness_potion", 1],
+        ["healing_potion", 1],
+        ["scroll_sun", 1],
+        ["scroll_artiface", 1],
+        ["totem_confusion", 1],
+        ["totem_insight", 1],
+        ["totem_plants", 1]
       ]
     }
   },
@@ -1266,7 +1411,13 @@
     "id": "npc_extra",
     "copy-from": "npc_extra",
     "type": "item_group",
-    "extend": { "items": [ [ "triffid_garland", 1 ], [ "amulet_exotic", 1 ], [ "brooch_iridescent", 1 ] ] }
+    "extend": {
+      "items": [
+        ["triffid_garland", 1],
+        ["amulet_exotic", 1],
+        ["brooch_iridescent", 1]
+      ]
+    }
   },
   {
     "id": "NC_EVAC_SHOPKEEP_misc",
@@ -1275,8 +1426,12 @@
     "subtype": "collection",
     "extend": {
       "items": [
-        { "item": "CF_golden_scale", "count": [ 10, 60 ], "prob": 30 },
-        { "group": "cleansing_flame_gear_consumables", "count": [ 1, 3 ], "prob": 10 }
+        { "item": "CF_golden_scale", "count": [10, 60], "prob": 30 },
+        {
+          "group": "cleansing_flame_gear_consumables",
+          "count": [1, 3],
+          "prob": 10
+        }
       ]
     }
   }

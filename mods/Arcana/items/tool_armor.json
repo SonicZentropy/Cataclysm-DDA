@@ -581,7 +581,6 @@
     },
     "extend": {
       "flags": [
-        "LIGHT_60",
         "NO_TAKEOFF",
         "PSYSHIELD_PARTIAL",
         "RAD_PROOF",
