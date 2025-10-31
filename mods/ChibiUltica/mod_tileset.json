@@ -18036,68 +18036,7 @@
               }
             ]
           },
-          {
-            "id": "t_strconc_wall_w",
-            "fg": 12433,
-            "multitile": true,
-            "additional_tiles": [
-              {
-                "id": "center",
-                "fg": 12418
-              },
-              {
-                "id": "corner",
-                "fg": [12420, 12422, 12421, 12419]
-              },
-              {
-                "id": "t_connection",
-                "fg": [12430, 12432, 12431, 12429]
-              },
-              {
-                "id": "edge",
-                "fg": [12424, 12423]
-              },
-              {
-                "id": "end_piece",
-                "fg": [12426, 12428, 12427, 12425]
-              },
-              {
-                "id": "unconnected",
-                "fg": 12433
-              }
-            ]
-          },
-          {
-            "id": "t_strconc_wall_y",
-            "fg": 12449,
-            "multitile": true,
-            "additional_tiles": [
-              {
-                "id": "center",
-                "fg": 12434
-              },
-              {
-                "id": "corner",
-                "fg": [12436, 12438, 12437, 12435]
-              },
-              {
-                "id": "t_connection",
-                "fg": [12446, 12448, 12447, 12445]
-              },
-              {
-                "id": "edge",
-                "fg": [12440, 12439]
-              },
-              {
-                "id": "end_piece",
-                "fg": [12442, 12444, 12443, 12441]
-              },
-              {
-                "id": "unconnected",
-                "fg": 12449
-              }
-            ]
-          },
+
           {
             "id": "t_thconc_r",
             "fg": [
