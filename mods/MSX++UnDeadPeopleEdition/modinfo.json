@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "UndeadPeopleLayerMod",
+    "name": "UndeadPeople tiles as a mod",
+    "authors": [ "ampersand55" ],
+    "description": "Adds the tiles from UndeadPeople to be used as a mod.",
+    "category": "graphical",
+    "dependencies": [ "dda" ]
+  }
+]

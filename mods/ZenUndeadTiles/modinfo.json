@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "ZenUndeadTileset",
+    "name": "Zen Undead Tileset Additions",
+    "authors": [ "SonicZentropy" ],
+    "description": "A custom tileset combining various sprites.",
+    "category": "graphical",
+    "dependencies": [ "dda" ]
+  }
+]
