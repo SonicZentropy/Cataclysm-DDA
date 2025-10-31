@@ -3271,9 +3271,9 @@ bool cata_tiles::draw_terrain( const tripoint_bub_ms &p, const lit_level ll, int
     const ter_id &t = here.ter( p );
     const std::string &tname = t.id().str();
     // Legacy mode does not draw fog sprites
-    if( fov_3d_z_range == 0 && tname == "t_open_air" ) {
-        return false;
-    }
+    //if( fov_3d_z_range == 0 && tname == "t_open_air" ) {
+    //    return false;
+    //}
     if( t && !invisible[0] ) {
         int subtile = 0;
         int rotation = 0;
