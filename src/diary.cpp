@@ -488,10 +488,10 @@ std::string diary::get_head_text( bool is_summary )
 
 void diary::death_entry()
 {
-    bool lasttime = query_yn( _( "Open diary for the last time?" ) );
-    if( lasttime ) {
-        show_diary_ui( this );
-    }
+    //bool lasttime = query_yn( _( "Open diary for the last time?" ) );
+    //if( lasttime ) {
+    //    show_diary_ui( this );
+    //}
     export_to_txt( true );
 }
 
