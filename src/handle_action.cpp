@@ -975,8 +975,7 @@ static void smash( const std::optional<tripoint_bub_ms> &p = std::nullopt )
 
     avatar &player_character = get_avatar();
     avatar::smash_result res = player_character.smash( smashp );
-    if( res.did_smash && !res.success && res.can_smash &&
-        query_yn( _( "Keep smashing until destroyed?" ) ) ) {
+    if( res.did_smash && !res.success && res.can_smash ) {
         player_character.assign_activity( bash_activity_actor( smashp ) );
     }
 }
@@ -1041,9 +1040,9 @@ avatar::smash_result avatar::smash( tripoint_bub_ms &smashp )
                            "field" );
             here.remove_field( smashp, fd_to_smsh.first );
             here.spawn_items( smashp, item_group::items_from( bash_info->drop_group, calendar::turn ) );
-            if( !bash_info->destroyed_field.first.is_null() ) {
-                here.add_field( smashp, bash_info->destroyed_field.first, bash_info->destroyed_field.second );
-            }
+            //if( !bash_info->destroyed_field.first.is_null() ) {
+            //    here.add_field( smashp, bash_info->destroyed_field.first, bash_info->destroyed_field.second );
+            //}
             mod_moves( - bash_info->fd_bash_move_cost );
             add_msg( m_info, bash_info->field_bash_msg_success.translated() );
             ret.did_smash = true;
@@ -1056,9 +1055,9 @@ avatar::smash_result avatar::smash( tripoint_bub_ms &smashp )
             ret.can_smash = bash_info->damage_to( smash_damage ) > 0;
             ret.did_smash = true;
         }
-        if( ret.did_smash && !bash_info->hit_field.first.is_null() ) {
-            here.add_field( smashp, bash_info->hit_field.first, bash_info->hit_field.second );
-        }
+        //if( ret.did_smash && !bash_info->hit_field.first.is_null() ) {
+        //    here.add_field( smashp, bash_info->hit_field.first, bash_info->hit_field.second );
+        //}
         return ret;
     }
 
@@ -1802,7 +1801,7 @@ static void fire()
 
     const item_location weapon = you.get_wielded_item();
     // try reach weapon
-    if( weapon && !weapon->is_gun() && weapon->current_reach_range( you ).first > 1 ) {
+    if( weapon && !weapon->is_gun() && weapon->current_reach_range( you ) > 1 ) {
         reach_attack( you );
         return;
     }
@@ -3013,10 +3012,6 @@ bool game::do_regular_action( action_id &act, avatar &player_character,
                 if( save() ) {
                     player_character.set_moves( 0 );
                     uquit = QUIT_SAVED;
-                } else if( save_is_dirty && query_yn( _( "Unable to save, quit anyway?" ) ) ) {
-                    // Game refused to save because of unsupported game state. But we don't want to trap them here, so at least let give them the option.
-                    player_character.set_moves( 0 );
-                    uquit = QUIT_NOSAVED;
                 }
             }
             break;
@@ -3027,7 +3022,6 @@ bool game::do_regular_action( action_id &act, avatar &player_character,
 
         case ACTION_QUICKLOAD:
             quickload();
-            g->save_is_dirty = true;
             return false;
 
         case ACTION_PL_INFO:
@@ -3178,6 +3172,24 @@ bool game::do_regular_action( action_id &act, avatar &player_character,
                          player_character.get_value( "THIEF_MODE" ).to_string() );
             }
             break;
+
+    case ACTION_TOGGLE_NPC_PROCESSING: {
+            // distinct name of the option in options.json
+            const std::string option_name = "DISABLE_NPC_PROCESSING";
+
+            // Toggle the boolean value
+            bool new_val = !get_option<bool>( option_name );
+            get_options().get_option( option_name ).setValue( new_val ? "true" : "false" );
+
+            // Save the change so it persists
+            auto res = get_options().save();
+
+            // Optional: specific logic if you need to refresh the screen
+            // or notify the player
+            add_msg( m_info, _("Set Disable NPC Processing to: %s."),
+                     get_option<bool>( option_name ) ? "True" : "False" );
+            break;
+    }
 
         case ACTION_TOGGLE_AUTO_FORAGING:
             // Set Auto Foraging to x
