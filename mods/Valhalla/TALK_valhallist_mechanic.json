@@ -1,0 +1,270 @@
+[
+	{
+		"type": "talk_topic",
+		"id": "TALK_VALHALLIST_MECHANIC_1",
+		"dynamic_line": "<greet>",
+		"speaker_effect": { "effect": { "npc_first_topic": "TALK_VALHALLIST_MECHANIC_2" } },
+		"responses": [
+			{ "text": "Who are you, exactly?", "topic": "TALK_VALHALLIST_MECHANIC_WHO" },
+			{ "text": "What's your deal here?", "topic": "TALK_VALHALLIST_MECHANIC_Job" },
+			{
+				"text": "What's the new religion everyone's been talking about?",
+				"condition": { "npc_has_trait": "BGR_Asatro" },
+				"topic": "TALK_VALHALLIST_MECHANIC_Religion"
+			},
+			{ "text": "I don't need anything, just gotta got.", "topic": "TALK_DONE" }
+		]
+	},
+	{
+		"type": "talk_topic",
+		"id": "TALK_VALHALLIST_MECHANIC_WHO",
+		"dynamic_line": {
+			"npc_has_trait": "BGR_Asatro",
+			"yes": "Oh you know, half of us were from the Ag-Sci program at U Amherst, we'd heard some friends talk about a fort up this way and so when things got really hairy we started wandering this direction.  It was a hell of a journey and we lost several of our friends and found some other refugees on the way.  Some others have come and gone depending on if they feel like life here and a new religion work for them, but that group formed the core of the mechanics here.",
+			"no": "I'm just someone looking to make a living for myself these days, and not get eaten by a horde of <zombie>s.  So, here I am, fixing all the bikes and machinery we have."
+		},
+		"responses": [
+			{
+				"text": "What is that new faith?",
+				"condition": { "npc_has_trait": "BGR_Asatro" },
+				"topic": "TALK_VALHALLIST_MECHANIC_Religion"
+			},
+			{ "text": "What's your deal here?", "topic": "TALK_VALHALLIST_MECHANIC_Job" },
+			{ "text": "I have to go.", "topic": "TALK_DONE" }
+		]
+	},
+	{
+		"type": "talk_topic",
+		"id": "TALK_VALHALLIST_MECHANIC_Religion",
+		"dynamic_line": "That faith is the worship of the old Norse gods.  I know it might sound pretty crazy, but I believe that the prophecies of the old ways had something to them, especially now with the craziness that's going on.  If that's correct, why wouldn't the other parts of it be too?  I believe that a return to these old ways will help us, and bring us closer to the Gods.",
+		"responses": [
+			{ "text": "Let's talk about something else.", "topic": "TALK_VALHALLIST_MECHANIC_2" },
+			{ "text": "Good luck with that.", "topic": "TALK_DONE" }
+		]
+	},
+	{
+		"type": "talk_topic",
+		"id": "TALK_VALHALLIST_MECHANIC_2",
+		"dynamic_line": "Here to do business?  We got a couple vehicles that are almost ready to get back on the road.",
+		"responses": [
+			{ "text": "I'm sorry, who are you again?", "topic": "TALK_VALHALLIST_MECHANIC_WHO" },
+			{ "text": "What's your deal here?", "topic": "TALK_VALHALLIST_MECHANIC_Job" },
+			{
+				"text": "Do you mind if we just talk a bit?",
+				"condition": { "not": { "npc_has_effect": "asked_to_socialize" } },
+				"topic": "TALK_FRIEND_CHAT"
+			},
+			{
+				"text": "Any jobs you need done?",
+				"condition": {
+					"and": [
+						{ "compare_string": [ "yes", { "u_val": "u_joined_valhallists" } ] },
+						{ "not": "has_assigned_mission" },
+						{ "not": "has_many_assigned_missions" }
+					]
+				},
+				"topic": "TALK_MISSION_LIST"
+			},
+			{
+				"text": "Would you be willing to sell a car?",
+				"condition": { "not": { "compare_string": [ "yes", { "npc_val": "currently_busy" } ] } },
+				"topic": "TALK_VALHALLIST_MECHANIC_Buy_Vehicles"
+			},
+			{
+				"text": "I'm here to pick up my order.",
+				"condition": { "math": [ "time_since(npc_making_car) >= time('3 d')" ] },
+				"topic": "TALK_VALHALLIST_MECHANIC_Pick_Up_Vehicles"
+			},
+			{
+				"text": "I'm here to pick up my order.",
+				"condition": { "math": [ "time_since(npc_making_car) < time('3 d')" ] },
+				"topic": "TALK_VALHALLIST_MECHANIC_Not_Ready"
+			},
+			{ "text": "A pleasure chatting.  Gotta go!", "topic": "TALK_DONE" }
+		]
+	},
+	{
+		"type": "talk_topic",
+		"id": "TALK_VALHALLIST_MECHANIC_Job",
+		"dynamic_line": "I'm one of the mechanics here.  I do maintenance work on all the vehicles, including some non-automotive machinery.",
+		"responses": [
+			{ "text": "Good to know.", "topic": "TALK_NONE" },
+			{ "text": "A pleasure chatting.  Gotta go!", "topic": "TALK_DONE" }
+		]
+	},
+	{
+		"type": "talk_topic",
+		"id": "TALK_VALHALLIST_MECHANIC_Buy_Vehicles",
+		"dynamic_line": "Sure, I'll get something for you.  I specialize in bikes of any sort, and I'll have it to you in reasonable time; all payments are upfront in signed chit.  So, what would you like?",
+		"responses": [
+			{
+				"text": "[200$]  I'll take a bicycle.",
+				"condition": { "u_has_items": { "item": "signed_chit", "count": 80 } },
+				"effect": [
+					{ "math": [ "npc_making_car = time('now')" ] },
+					{ "npc_add_var": "currently_busy", "value": "yes" },
+					{ "npc_add_var": "u_want_bicycle", "value": "yes" },
+					{ "u_sell_item": "signed_chit", "count": 80 }
+				],
+				"topic": "TALK_DONE"
+			},
+			{
+				"text": "[400$]  I'll take a mountain bike.",
+				"condition": { "u_has_items": { "item": "signed_chit", "count": 160 } },
+				"effect": [
+					{ "math": [ "npc_making_car = time('now')" ] },
+					{ "npc_add_var": "u_want_bicycle_dirt", "value": "yes" },
+					{ "npc_add_var": "currently_busy", "value": "yes" },
+					{ "u_sell_item": "signed_chit", "count": 160 }
+				],
+				"topic": "TALK_DONE"
+			},
+			{
+				"text": "[550$]  I'll take an electric bike.",
+				"condition": { "u_has_items": { "item": "signed_chit", "count": 220 } },
+				"effect": [
+					{ "math": [ "npc_making_car = time('now')" ] },
+					{ "npc_add_var": "u_want_bicycle_electric", "value": "yes" },
+					{ "npc_add_var": "currently_busy", "value": "yes" },
+					{ "u_sell_item": "signed_chit", "count": 220 }
+				],
+				"topic": "TALK_DONE"
+			},
+			{
+				"text": "[750$]  I'll take a dirt bike.",
+				"condition": { "u_has_items": { "item": "signed_chit", "count": 300 } },
+				"effect": [
+					{ "math": [ "npc_making_car = time('now')" ] },
+					{ "npc_add_var": "u_want_motorcycle_enduro", "value": "yes" },
+					{ "npc_add_var": "currently_busy", "value": "yes" },
+					{ "u_sell_item": "signed_chit", "count": 300 }
+				],
+				"topic": "TALK_DONE"
+			},
+			{
+				"text": "[900$]  I'll take a motorcycle.",
+				"condition": { "u_has_items": { "item": "signed_chit", "count": 360 } },
+				"effect": [
+					{ "math": [ "npc_making_car = time('now')" ] },
+					{ "npc_add_var": "u_want_motorcycle_sidecart", "value": "yes" },
+					{ "npc_add_var": "currently_busy", "value": "yes" },
+					{ "u_sell_item": "signed_chit", "count": 360 }
+				],
+				"topic": "TALK_DONE"
+			},
+			{
+				"text": "[1,200$]  I'll take a scooter.",
+				"condition": { "u_has_items": { "item": "signed_chit", "count": 480 } },
+				"effect": [
+					{ "math": [ "npc_making_car = time('now')" ] },
+					{ "npc_add_var": "u_want_scooter", "value": "yes" },
+					{ "npc_add_var": "currently_busy", "value": "yes" },
+					{ "u_sell_item": "signed_chit", "count": 480 }
+				],
+				"topic": "TALK_DONE"
+			},
+			{
+				"text": "[2,000$]  I'll take a electric scooter.",
+				"condition": { "u_has_items": { "item": "signed_chit", "count": 800 } },
+				"effect": [
+					{ "math": [ "npc_making_car = time('now')" ] },
+					{ "npc_add_var": "u_want_scooter_electric", "value": "yes" },
+					{ "npc_add_var": "currently_busy", "value": "yes" },
+					{ "u_sell_item": "signed_chit", "count": 800 }
+				],
+				"topic": "TALK_DONE"
+			},
+			{ "text": "I've changed my mind, I don't want anything.", "topic": "TALK_DONE" }
+		]
+	},
+	{
+		"type": "talk_topic",
+		"id": "TALK_VALHALLIST_MECHANIC_Pick_Up_Vehicles",
+		"dynamic_line": "It's ready!  I'll pull it around here for ya.",
+		"responses": [
+			{
+				"text": "Thanks.",
+				"condition": { "compare_string": [ "yes", { "npc_val": "u_want_bicycle" } ] },
+				"effect": [
+					{ "mapgen_update": "valhallist_place_bicycle", "om_terrain": "valhallist_long_wall" },
+					{ "npc_lose_var": "currently_busy" },
+					{ "math": [ "npc_making_car = null" ] },
+					{ "npc_lose_var": "u_want_bicycle" }
+				],
+				"topic": "TALK_DONE"
+			},
+			{
+				"text": "Thanks.",
+				"condition": { "compare_string": [ "yes", { "npc_val": "u_want_bicycle_dirt" } ] },
+				"effect": [
+					{ "mapgen_update": "valhallist_place_bicycle_dirt", "om_terrain": "valhallist_long_wall" },
+					{ "npc_lose_var": "currently_busy" },
+					{ "math": [ "npc_making_car = null" ] },
+					{ "npc_lose_var": "u_want_bicycle_dirt" }
+				],
+				"topic": "TALK_DONE"
+			},
+			{
+				"text": "Thanks.",
+				"condition": { "compare_string": [ "yes", { "npc_val": "u_want_bicycle_electric" } ] },
+				"effect": [
+					{ "mapgen_update": "valhallist_place_bicycle_electric", "om_terrain": "valhallist_long_wall" },
+					{ "npc_lose_var": "currently_busy" },
+					{ "math": [ "npc_making_car = null" ] },
+					{ "npc_lose_var": "u_want_bicycle_electric" }
+				],
+				"topic": "TALK_DONE"
+			},
+			{
+				"text": "Thanks.",
+				"condition": { "compare_string": [ "yes", { "npc_val": "u_want_motorcycle_enduro" } ] },
+				"effect": [
+					{ "mapgen_update": "valhallist_place_motorcycle_enduro", "om_terrain": "valhallist_long_wall" },
+					{ "npc_lose_var": "currently_busy" },
+					{ "math": [ "npc_making_car = null" ] },
+					{ "npc_lose_var": "u_want_motorcycle_enduro" }
+				],
+				"topic": "TALK_DONE"
+			},
+			{
+				"text": "Thanks.",
+				"condition": { "compare_string": [ "yes", { "npc_val": "u_want_motorcycle_sidecart" } ] },
+				"effect": [
+					{ "mapgen_update": "valhallist_place_motorcycle_sidecart", "om_terrain": "valhallist_long_wall" },
+					{ "npc_lose_var": "currently_busy" },
+					{ "math": [ "npc_making_car = null" ] },
+					{ "npc_lose_var": "u_want_motorcycle_sidecart" }
+				],
+				"topic": "TALK_DONE"
+			},
+			{
+				"text": "Thanks.",
+				"condition": { "compare_string": [ "yes", { "npc_val": "u_want_scooter" } ] },
+				"effect": [
+					{ "mapgen_update": "valhallist_place_scooter", "om_terrain": "valhallist_long_wall" },
+					{ "npc_lose_var": "currently_busy" },
+					{ "math": [ "npc_making_car = null" ] },
+					{ "npc_lose_var": "u_want_scooter" }
+				],
+				"topic": "TALK_DONE"
+			},
+			{
+				"text": "Thanks.",
+				"condition": { "compare_string": [ "yes", { "npc_val": "u_want_scooter_electric" } ] },
+				"effect": [
+					{ "mapgen_update": "valhallist_place_scooter_electric", "om_terrain": "valhallist_long_wall" },
+					{ "npc_lose_var": "currently_busy" },
+					{ "math": [ "npc_making_car = null" ] },
+					{ "npc_lose_var": "u_want_scooter_electric" }
+				],
+				"topic": "TALK_DONE"
+			}
+		]
+	},
+	{
+		"type": "talk_topic",
+		"id": "TALK_VALHALLIST_MECHANIC_Not_Ready",
+		"dynamic_line": "Sorry, it's not ready yet.  Wait a bit and come back later.",
+		"responses": [ { "text": "Okay.", "topic": "TALK_DONE" } ]
+	}
+]

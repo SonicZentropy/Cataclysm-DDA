@@ -1,0 +1,38 @@
+[
+	{
+		"type": "faction",
+		"id": "valhallists",
+		"name": "Norse Evangelicals",
+		"likes_u": 2,
+		"respects_u": 0,
+		"known_by_u": false,
+		"size": 100,
+		"power": 100,
+		"fac_food_supply": [ [ 0, { "calories": 2700000000, "vitamins": { "iron": 86400, "calcium": 86400, "vitC": 86400 } } ] ],
+		"wealth": 25000,
+		"currency": "signed_chit",
+		"relations": {
+			"valhallists": {
+				"kill on sight": false,
+				"watch your back": true,
+				"share my stuff": true,
+				"guard your stuff": true,
+				"lets you in": true,
+				"defends your space": true,
+				"knows your voice": true
+			},
+			"your_followers": {
+				"kill on sight": false,
+				"watch your back": false,
+				"share my stuff": false,
+				"guard your stuff": false,
+				"lets you in": true,
+				"defends your space": false,
+				"knows your voice": false
+			},
+			"marloss": { "kill on sight": true },
+			"hells_raiders": { "kill on sight": true }
+		},
+		"description": "A band of people practicing 'Asatro' or 'Forn Sidr'; the worship of the Norse pantheon.  Thay have the common goal of recruiting new members, entering Valhalla, and exterminating the Marloss Evangelists; whom they deem heretics."
+	}
+]

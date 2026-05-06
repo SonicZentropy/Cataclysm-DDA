@@ -1,0 +1,142 @@
+[
+  {
+    "//": "Spawn a standard bicycle for follower use",
+    "type": "mapgen",
+    "nested_mapgen_id": "bicycle_spawn",
+    "weight": 100,
+    "object": {
+      "mapgensize": [3, 3],
+      "faction_owner": [{ "id": "your_followers", "x": [0, 3], "y": [0, 3] }],
+      "place_vehicles": [
+        {
+          "vehicle": "bicycle",
+          "x": 2,
+          "y": 2,
+          "chance": 100,
+          "status": 0,
+          "rotation": [0, 3]
+        }
+      ]
+    }
+  },
+  {
+    "//": "Spawn a dirt bicycle for off-road follower use",
+    "type": "mapgen",
+    "nested_mapgen_id": "bicycle_dirt_spawn",
+    "weight": 100,
+    "object": {
+      "mapgensize": [3, 3],
+      "faction_owner": [{ "id": "your_followers", "x": [0, 3], "y": [0, 3] }],
+      "place_vehicles": [
+        {
+          "vehicle": "bicycle_dirt",
+          "x": 2,
+          "y": 2,
+          "chance": 100,
+          "status": 0,
+          "rotation": [0, 3]
+        }
+      ]
+    }
+  },
+  {
+    "//": "Spawn an electric bicycle for follower use",
+    "type": "mapgen",
+    "nested_mapgen_id": "bicycle_electric_spawn",
+    "weight": 100,
+    "object": {
+      "mapgensize": [3, 3],
+      "faction_owner": [{ "id": "your_followers", "x": [0, 3], "y": [0, 3] }],
+      "place_vehicles": [
+        {
+          "vehicle": "bicycle_electric",
+          "x": 2,
+          "y": 2,
+          "chance": 100,
+          "status": 0,
+          "rotation": [0, 3]
+        }
+      ]
+    }
+  },
+  {
+    "//": "Spawn an enduro motorcycle for follower combat use",
+    "type": "mapgen",
+    "nested_mapgen_id": "motorcycle_enduro_spawn",
+    "weight": 100,
+    "object": {
+      "mapgensize": [3, 3],
+      "faction_owner": [{ "id": "your_followers", "x": [0, 3], "y": [0, 3] }],
+      "place_vehicles": [
+        {
+          "vehicle": "motorcycle_enduro",
+          "x": 2,
+          "y": 2,
+          "chance": 100,
+          "status": 0,
+          "rotation": [0, 3]
+        }
+      ]
+    }
+  },
+  {
+    "//": "Spawn a motorcycle with sidecar for follower transport",
+    "type": "mapgen",
+    "nested_mapgen_id": "motorcycle_sidecart_spawn",
+    "weight": 100,
+    "object": {
+      "mapgensize": [3, 3],
+      "faction_owner": [{ "id": "your_followers", "x": [0, 3], "y": [0, 3] }],
+      "place_vehicles": [
+        {
+          "vehicle": "motorcycle_sidecart",
+          "x": 2,
+          "y": 2,
+          "chance": 100,
+          "status": 0,
+          "rotation": [0, 3]
+        }
+      ]
+    }
+  },
+  {
+    "//": "Spawn a scooter for urban follower mobility",
+    "type": "mapgen",
+    "nested_mapgen_id": "scooter_spawn",
+    "weight": 100,
+    "object": {
+      "mapgensize": [3, 3],
+      "faction_owner": [{ "id": "your_followers", "x": [0, 3], "y": [0, 3] }],
+      "place_vehicles": [
+        {
+          "vehicle": "scooter",
+          "x": 2,
+          "y": 2,
+          "chance": 100,
+          "status": 0,
+          "rotation": [0, 3]
+        }
+      ]
+    }
+  },
+  {
+    "//": "Spawn an electric scooter for eco-friendly follower transport",
+    "type": "mapgen",
+    "nested_mapgen_id": "scooter_electric_spawn",
+    "weight": 100,
+    "object": {
+      "mapgensize": [3, 3],
+      "faction_owner": [{ "id": "your_followers", "x": [0, 3], "y": [0, 3] }],
+      "place_vehicles": [
+        {
+          "vehicle": "scooter_electric",
+          "x": 2,
+          "y": 2,
+          "chance": 100,
+          "status": 0,
+          "rotation": [0, 3]
+        }
+      ]
+    }
+  }
+]
