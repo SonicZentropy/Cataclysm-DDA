@@ -878,6 +878,16 @@ std::unique_ptr<activity_actor> bash_activity_actor::deserialize( JsonValue &jsi
     return actor.clone();
 }
 
+void bleed_activity_actor::serialize( JsonOut &jsout ) const
+{
+    jsout.write_null();
+}
+
+std::unique_ptr<activity_actor> bleed_activity_actor::deserialize( JsonValue & )
+{
+    return bleed_activity_actor().clone();
+}
+
 void gunmod_remove_activity_actor::start( player_activity &act, Character & )
 {
     act.moves_total = moves_total;
@@ -5961,7 +5971,7 @@ std::unique_ptr<activity_actor> try_sleep_activity_actor::deserialize( JsonValue
 
 time_duration safecracking_activity_actor::safecracking_time( const Character &who )
 {
-    time_duration cracking_time = 150_minutes;
+    time_duration cracking_time = 15_minutes;
     /** @EFFECT_DEVICES decreases time needed for safe cracking */
     cracking_time -= 20_minutes * ( who.get_skill_level( skill_traps ) - 3 ) ;
     /** @EFFECT_PER decreases time needed for safe cracking */
@@ -12810,11 +12820,11 @@ bool pulp_activity_actor::punch_corpse_once( item &corpse, Character &you,
     }
 
     if( pd.stomps_only ) {
-        you.burn_energy_legs( -pd.pulp_effort );
+        you.burn_energy_legs( -1 );
     } else if( pd.weapon_only ) {
-        you.burn_energy_arms( -pd.pulp_effort );
+        you.burn_energy_arms( -1 );
     } else {
-        you.burn_energy_all( -pd.pulp_effort );
+        you.burn_energy_all( -1 );
     }
 
     if( one_in( 128 ) ) {
@@ -14713,6 +14723,7 @@ deserialize_functions = {
     { ACT_ATM, &atm_activity_actor::deserialize },
     { ACT_AUTODRIVE, &autodrive_activity_actor::deserialize },
     { ACT_BASH, &bash_activity_actor::deserialize },
+       { ACT_BLEED, &bleed_activity_actor::deserialize },
     { ACT_BIKERACK_RACKING, &bikerack_racking_activity_actor::deserialize },
     { ACT_BIKERACK_UNRACKING, &bikerack_unracking_activity_actor::deserialize },
     { ACT_BINDER_COPY_RECIPE, &bookbinder_copy_activity_actor::deserialize },
