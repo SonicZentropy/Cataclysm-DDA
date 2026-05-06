@@ -951,8 +951,8 @@ item::armor_status item::damage_armor_durability( damage_unit &du, damage_unit &
                    tname(), damage_chance * 100.0 );
     if( has_flag( flag_STURDY ) && premitigated.amount < armors_own_resist ) {
         return armor_status::UNDAMAGED;
-    } else if( x_in_y( damage_chance, 1.0 ) ) {
-        return mod_damage( itype::damage_scale * enchant_multiplier, holder ) ? armor_status::DESTROYED :
+    } else if( x_in_y( damage_chance / 2.0, 1.0 ) ) {
+        return mod_damage( itype::damage_scale * enchant_multiplier ) ? armor_status::DESTROYED :
                armor_status::DAMAGED;
     }
     return armor_status::UNDAMAGED;
