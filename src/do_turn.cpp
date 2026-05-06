@@ -579,7 +579,10 @@ bool game::do_turn()
     }
 
     // Move hordes every turn, move_hordes has its own rate limiting
-    overmap_buffer.move_hordes();
+    if( !get_option<bool>( "DISABLE_NPC_PROCESSING" ) )
+    {
+        overmap_buffer.move_hordes();
+    }
     if( calendar::once_every( time_duration::from_minutes( 2.5 ) ) ) {
         if( u.has_trait( trait_HAS_NEMESIS ) ) {
             overmap_buffer.move_nemesis();
@@ -604,7 +607,10 @@ bool game::do_turn()
         m.set_lightmap_cache_dirty( z );
     }
 
-    perhaps_add_random_npc( /* ignore_spawn_timers_and_rates = */ false );
+    if( !get_option<bool>( "DISABLE_NPC_PROCESSING" ) )
+    {
+        g->perhaps_add_random_npc( /* ignore_spawn_timers_and_rates = */ false );
+    }
 
     // process avatar activities (ignoring user input)
     while( u.get_moves() > 0 && u.activity ) {
@@ -612,9 +618,12 @@ bool game::do_turn()
     }
 
     // Process NPC sound events before they move or they hear themselves talking
-    for( npc &guy : all_npcs() ) {
-        if( rl_dist( guy.pos_bub(), u.pos_bub() ) < MAX_VIEW_DISTANCE ) {
-            sounds::process_sound_markers( &guy );
+    if( !get_option<bool>( "DISABLE_NPC_PROCESSING" ) )
+    {
+            for( npc &guy : all_npcs() ) {
+            if( rl_dist( guy.pos_bub(), u.pos_bub() ) < MAX_VIEW_DISTANCE ) {
+                sounds::process_sound_markers( &guy );
+            }
         }
     }
 
@@ -635,8 +644,10 @@ bool game::do_turn()
                 // handle_action() may cause map updates, creatures to die
                 m.process_falling();
                 cleanup_dead();
-
-                mon_info_update();
+                if( !get_option<bool>( "DISABLE_NPC_PROCESSING" ) )
+                {
+                    mon_info_update();
+                }
                 // Process any new sounds the player caused during their turn.
                 for( npc &guy : all_npcs() ) {
                     if( rl_dist( guy.pos_bub(), u.pos_bub() ) < MAX_VIEW_DISTANCE ) {
@@ -688,7 +699,10 @@ bool game::do_turn()
                 start = now;
             }
 
-            mon_info_update();
+            if( !get_option<bool>( "DISABLE_NPC_PROCESSING" ) )
+            {
+                mon_info_update();
+            }
 
             // If player is performing a task, a monster is dangerously close,
             // and monster can reach to the player or it has some sort of a ranged attack,
@@ -712,13 +726,16 @@ bool game::do_turn()
         calc_driving_offset( veh );
     }
 
-    scent_map &scent = get_scent();
-    // No-scent debug mutation has to be processed here or else it takes time to start working
-    if( !u.has_flag( json_flag_NO_SCENT ) ) {
-        scent.set( u.pos_bub(), u.scent, u.get_type_of_scent() );
-        overmap_buffer.set_scent( u.pos_abs_omt(),  u.scent );
+    if( !get_option<bool>( "DISABLE_NPC_PROCESSING" ) )
+    {
+        scent_map &scent = get_scent();
+        // No-scent debug mutation has to be processed here or else it takes time to start working
+        if( !u.has_flag( json_flag_NO_SCENT ) ) {
+            scent.set( u.pos_bub(), u.scent, u.get_type_of_scent() );
+            overmap_buffer.set_scent( u.pos_abs_omt(),  u.scent );
+        }
+        scent.update( u.pos_bub(), m );
     }
-    scent.update( u.pos_bub(), m );
 
     // We need floor cache before checking falling 'n stuff
     m.build_floor_caches();
@@ -737,16 +754,16 @@ bool game::do_turn()
     // consider a stripped down cache just for monsters.
     m.build_map_cache( levz, true );
 
-    // process monster and npc turn
-    monmove();
+    if( !get_option<bool>( "DISABLE_NPC_PROCESSING" ) ) {
+        monmove();
 
-    if( calendar::once_every( time_between_npc_OM_moves ) ) {
-        overmap_npc_move();
+        if( calendar::once_every( time_between_npc_OM_moves ) ) {
+            overmap_npc_move();
+        }
+        m.furniture_terrain_emit_fields();
+        // required after monsters move and fields emit
+        mon_info_update();
     }
-    m.furniture_terrain_emit_fields();
-    // required after monsters move and fields emit
-    mon_info_update();
-
     // replenish avatar moves
     u.process_turn();
 
@@ -769,9 +786,12 @@ bool game::do_turn()
 
     if( calendar::once_every( 1_minutes ) ) {
         u.update_morale();
-        for( npc &guy : all_npcs() ) {
-            guy.update_morale();
-            guy.check_and_recover_morale();
+        if( !get_option<bool>( "DISABLE_NPC_PROCESSING" ) )
+        {
+            for( npc &guy : all_npcs() ) {
+                guy.update_morale();
+                guy.check_and_recover_morale();
+            }
         }
     }
 
