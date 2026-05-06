@@ -121,7 +121,8 @@
       { "group": "surgery", "prob": 80 },
       { "group": "drugs_emergency", "prob": 40 },
       { "group": "softdrugs", "prob": 20 },
-      { "group": "harddrugs", "prob": 5 }
+      { "group": "harddrugs", "prob": 5 },
+			{ "group": "bionics_common", "prob": 4 }
     ]
   },
   {
@@ -191,7 +192,8 @@
       [ "strong_antibiotic", 1 ],
       [ "antibiotics", 5 ],
       [ "weak_antibiotic", 15 ],
-      [ "crutches", 5 ]
+      [ "crutches", 5 ],
+			{ "group": "bionics_common", "prob": 2 }
     ]
   },
   {
@@ -1864,7 +1866,15 @@
       [ "thermometer", 3 ],
       [ "hygrometer", 3 ],
       [ "barometer", 3 ],
-      { "item": "remotevehcontrol", "prob": 10, "charges": [ 0, 100 ] }
+      { "item": "remotevehcontrol", "prob": 10, "charges": [ 0, 100 ] },
+			{ "item": "bio_tools", "prob": 2 },
+			{ "item": "bio_flashlight", "prob": 2 },
+			{ "item": "bio_lighter", "prob": 2 },
+			{ "item": "bio_magnet", "prob": 2 },
+			{ "item": "bio_purifier", "prob": 2 },
+			{ "item": "bio_heatsink", "prob": 2 },
+			{ "item": "bio_blood_filter", "prob": 2 },
+			{ "item": "bio_meteorologist", "prob": 2 }
     ]
   },
   {
@@ -2412,7 +2422,10 @@
       [ "straw_doll", 2 ],
       [ "petrified_eye", 1 ],
       [ "spiral_stone", 1 ],
-      [ "etched_skull", 1 ]
+      [ "etched_skull", 1 ],
+			{ "item": "bio_time_freeze", "prob": 4 },
+			{ "item": "bio_teleport", "prob": 4 },
+			{ "item": "bio_probability_travel", "prob": 4 }
     ]
   },
   {
@@ -2854,17 +2867,7 @@
       [ "sandpaper", 20 ],
       [ "vac_mold", 15 ],
       { "item": "welder", "prob": 10 },
-      { "item": "welding_blanket", "prob": 10, "count": [ 0, 1 ] },
-      {
-        "distribution": [
-          { "item": "welding_rod_steel", "prob": 30, "charges": [ 1000, 1600 ] },
-          { "item": "welding_rod_alloy", "prob": 20, "charges": [ 1000, 1600 ] },
-          { "item": "welding_wire_steel", "prob": 20, "charges": [ 1000, 1600 ] },
-          { "item": "welding_wire_alloy", "prob": 15, "charges": [ 1000, 1600 ] },
-          { "item": "brazing_rod_bronze", "prob": 10, "charges": [ 500, 1500 ] },
-          { "item": "brazing_rod_alloy", "prob": 5, "charges": [ 400, 1200 ] }
-        ]
-      }
+      { "item": "welding_blanket", "prob": 10, "count": [ 0, 1 ] }
     ]
   },
   {
