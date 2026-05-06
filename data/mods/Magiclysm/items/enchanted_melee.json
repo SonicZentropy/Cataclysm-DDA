@@ -689,7 +689,7 @@
     "color": "light_gray",
     "techniques": [ "WBLOCK_1", "IMPALE" ],
     "qualities": [ [ "COOK", 1 ] ],
-    "flags": [ "SPEAR", "REACH_ATTACK", "DURABLE_MELEE", "SHEATH_SPEAR", "TRADER_AVOID", "MAGIC_FOCUS", "SPELLCASTING_AID" ],
+    "flags": [ "SPEAR", "REACH_ATTACK", "VERY_DURABLE_MELEE", "SHEATH_SPEAR", "TRADER_AVOID", "MAGIC_FOCUS", "SPELLCASTING_AID" ],
     "melee_damage": { "bash": 6, "stab": 21 }
   },
   {
@@ -717,7 +717,7 @@
       "need_wielding": true,
       "moves": 400
     },
-    "flags": [ "SPEAR", "REACH_ATTACK", "DURABLE_MELEE", "SHEATH_SPEAR", "TRADER_AVOID", "MAGIC_FOCUS", "SPELLCASTING_AID" ],
+    "flags": [ "SPEAR", "REACH_ATTACK", "VERY_DURABLE_MELEE", "SHEATH_SPEAR", "TRADER_AVOID", "MAGIC_FOCUS", "SPELLCASTING_AID" ],
     "melee_damage": { "bash": 9, "stab": 25 }
   },
   {

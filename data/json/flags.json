@@ -259,6 +259,12 @@
     "conflicts": [ "FRAGILE_MELEE" ]
   },
   {
+    "id": "VERY_DURABLE_MELEE",
+    "type": "json_flag",
+    "info": "As a weapon, this item is exceptionally <good>well-made</good> and will <info>withstand the punishment of heavy and repeated combat</info>.",
+    "conflicts": [ "FRAGILE_MELEE" ]
+  },
+  {
     "id": "EASY_CLEAN",
     "type": "json_flag",
     "info": "This gun is made of <info>relatively simple parts</info> which makes powder fouling <good>easier to clean</good>."
