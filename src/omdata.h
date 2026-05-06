@@ -478,6 +478,8 @@ struct oter_type_t {
         void check() const;
         void finalize();
 
+
+
         bool is_rotatable() const {
             return !has_flag( oter_flags::no_rotate ) && !has_flag( oter_flags::line_drawing );
         }
@@ -601,6 +603,8 @@ struct oter_t {
         bool has_flag( oter_flags flag ) const {
             return type->has_flag( flag );
         }
+
+    bool is_hardcoded() const;
 
         bool is_rotatable() const {
             return type->is_rotatable();
