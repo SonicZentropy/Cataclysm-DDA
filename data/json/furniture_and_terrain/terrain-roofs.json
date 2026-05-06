@@ -8,7 +8,7 @@
     "color": "i_cyan",
     "move_cost": 2,
     "roof": "t_flat_roof",
-    "flags": [ "TRANSPARENT", "NO_FLOOR", "EMPTY_SPACE", "FREE_TO_EXAMINE" ],
+    "flags": ["TRANSPARENT", "NO_FLOOR", "EMPTY_SPACE", "FREE_TO_EXAMINE"],
     "examine_action": "ledge"
   },
   {
@@ -22,7 +22,13 @@
     "roof": "t_flat_roof",
     "examine_action": "ledge",
     "connect_groups": "INDOORFLOOR",
-    "flags": [ "TRANSPARENT", "NO_FLOOR", "INDOORS", "EMPTY_SPACE", "FREE_TO_EXAMINE" ]
+    "flags": [
+      "TRANSPARENT",
+      "NO_FLOOR",
+      "INDOORS",
+      "EMPTY_SPACE",
+      "FREE_TO_EXAMINE"
+    ]
   },
   {
     "type": "terrain",
@@ -32,7 +38,7 @@
     "symbol": " ",
     "color": "i_cyan",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "NO_FLOOR", "EMPTY_SPACE", "FREE_TO_EXAMINE" ],
+    "flags": ["TRANSPARENT", "NO_FLOOR", "EMPTY_SPACE", "FREE_TO_EXAMINE"],
     "examine_action": "ledge"
   },
   {
@@ -44,17 +50,27 @@
     "looks_like": "t_metal_floor",
     "color": "white",
     "move_cost": 3,
-    "flags": [ "TRANSPARENT", "THIN_OBSTACLE", "MOUNTABLE", "TINY", "AUTO_WALL_SYMBOL", "UNSTABLE" ],
+    "flags": [
+      "TRANSPARENT",
+      "THIN_OBSTACLE",
+      "MOUNTABLE",
+      "TINY",
+      "AUTO_WALL_SYMBOL",
+      "UNSTABLE"
+    ],
     "connect_groups": "RAILING",
     "connects_to": "RAILING",
-    "deconstruct": { "ter_set": "t_flat_roof", "items": [ { "item": "scrap_aluminum", "count": 12 } ] },
+    "deconstruct": {
+      "ter_set": "t_flat_roof",
+      "items": [{ "item": "scrap_aluminum", "count": 12 }]
+    },
     "bash": {
       "str_min": 5,
       "str_max": 12,
       "sound": "clang!",
       "sound_fail": "clang.",
       "ter_set": "t_flat_roof",
-      "items": [ { "item": "scrap_aluminum", "count": [ 4, 7 ] } ]
+      "items": [{ "item": "scrap_aluminum", "count": [4, 7] }]
     }
   },
   {
@@ -66,38 +82,52 @@
     "looks_like": "t_gutter",
     "color": "white",
     "move_cost": 3,
-    "flags": [ "TRANSPARENT", "THIN_OBSTACLE", "MOUNTABLE", "TINY", "AUTO_WALL_SYMBOL", "UNSTABLE", "CLIMBABLE" ],
+    "flags": [
+      "TRANSPARENT",
+      "THIN_OBSTACLE",
+      "MOUNTABLE",
+      "TINY",
+      "AUTO_WALL_SYMBOL",
+      "UNSTABLE",
+      "CLIMBABLE"
+    ],
     "connect_groups": "RAILING",
     "connects_to": "RAILING",
-    "deconstruct": { "ter_set": "t_flat_roof", "items": [ { "item": "scrap_aluminum", "count": 12 } ] },
+    "deconstruct": {
+      "ter_set": "t_flat_roof",
+      "items": [{ "item": "scrap_aluminum", "count": 12 }]
+    },
     "bash": {
       "str_min": 5,
       "str_max": 12,
       "sound": "clang!",
       "sound_fail": "clang.",
       "ter_set": "t_flat_roof",
-      "items": [ { "item": "scrap_aluminum", "count": [ 4, 7 ] } ]
+      "items": [{ "item": "scrap_aluminum", "count": [4, 7] }]
     }
   },
   {
     "type": "terrain",
     "id": "t_gutter_downspout",
     "name": "downspout",
-    "description": "A length of gutter running from the roof to the ground, you could place a container underneath it to collect rainwater.  It looks flimsy.",
+    "description": "A length of gutter running from the roof to the ground, you could place a container underneath it to collect rainwater.  It looks flimsy.  You may be able to climb up here.",
     "symbol": "|",
     "looks_like": "t_chainfence_posts",
     "color": "white",
     "move_cost": 3,
     "trap": "tr_downspout_funnel",
-    "flags": [ "TRANSPARENT", "THIN_OBSTACLE", "UNSTABLE" ],
-    "deconstruct": { "ter_set": "t_flat_roof", "items": [ { "item": "scrap_aluminum", "count": 12 } ] },
+    "flags": ["TRANSPARENT", "THIN_OBSTACLE", "UNSTABLE", "CLIMBABLE"],
+    "deconstruct": {
+      "ter_set": "t_flat_roof",
+      "items": [{ "item": "scrap_aluminum", "count": 12 }]
+    },
     "bash": {
       "str_min": 5,
       "str_max": 12,
       "sound": "clang!",
       "sound_fail": "clang.",
       "ter_set": "t_dirt",
-      "items": [ { "item": "scrap_aluminum", "count": [ 4, 7 ] } ]
+      "items": [{ "item": "scrap_aluminum", "count": [4, 7] }]
     }
   },
   {
@@ -109,8 +139,15 @@
     "looks_like": "t_concrete",
     "color": "dark_gray",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAT", "ROAD" ],
-    "bash": { "str_min": 30, "str_max": 210, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "FLAT", "ROAD"],
+    "bash": {
+      "str_min": 30,
+      "str_max": 210,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -121,8 +158,15 @@
     "symbol": ".",
     "color": "dark_gray",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAMMABLE", "FLAT" ],
-    "bash": { "str_min": 30, "str_max": 210, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "FLAMMABLE", "FLAT"],
+    "bash": {
+      "str_min": 30,
+      "str_max": 210,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -133,8 +177,15 @@
     "symbol": ".",
     "color": "green",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAMMABLE", "FLAT" ],
-    "bash": { "str_min": 30, "str_max": 210, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "FLAMMABLE", "FLAT"],
+    "bash": {
+      "str_min": 30,
+      "str_max": 210,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -145,8 +196,15 @@
     "symbol": ".",
     "color": "yellow",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAMMABLE" ],
-    "bash": { "str_min": 30, "str_max": 210, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "FLAMMABLE"],
+    "bash": {
+      "str_min": 30,
+      "str_max": 210,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -157,8 +215,15 @@
     "symbol": ".",
     "color": "light_gray",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAT", "ROAD" ],
-    "bash": { "str_min": 30, "str_max": 210, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "FLAT", "ROAD"],
+    "bash": {
+      "str_min": 30,
+      "str_max": 210,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -169,8 +234,15 @@
     "symbol": ".",
     "color": "white",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAT", "FLAMMABLE" ],
-    "bash": { "str_min": 30, "str_max": 210, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "FLAT", "FLAMMABLE"],
+    "bash": {
+      "str_min": 30,
+      "str_max": 210,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -182,14 +254,14 @@
     "color": "cyan",
     "move_cost": 2,
     "//": "TODO: Should break when you step on it if there's no supporting terrain below, might want some warning akin to examine_action ledge",
-    "flags": [ "TRANSPARENT", "TRANSPARENT_FLOOR" ],
+    "flags": ["TRANSPARENT", "TRANSPARENT_FLOOR"],
     "bash": {
       "str_min": 3,
       "str_max": 6,
       "sound": "glass breaking!",
       "sound_fail": "whack!",
       "ter_set": "t_skylight_frame",
-      "items": [ { "item": "glass_shard", "count": [ 21, 29 ] } ]
+      "items": [{ "item": "glass_shard", "count": [21, 29] }]
     }
   },
   {
@@ -201,8 +273,15 @@
     "symbol": ".",
     "color": "brown",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAT" ],
-    "bash": { "str_min": 100, "str_max": 210, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "FLAT"],
+    "bash": {
+      "str_min": 100,
+      "str_max": 210,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -236,7 +315,7 @@
     "symbol": ".",
     "color": "magenta",
     "move_cost": 2,
-    "flags": [ "FLAT" ]
+    "flags": ["FLAT"]
   },
   {
     "type": "terrain",
@@ -247,7 +326,7 @@
     "looks_like": "t_paper",
     "color": "white",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAT" ],
+    "flags": ["TRANSPARENT", "FLAT"],
     "bash": {
       "str_min": 1,
       "str_max": 6,
@@ -268,7 +347,7 @@
     "looks_like": "t_paper",
     "color": "white",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD", "FLAT" ],
+    "flags": ["TRANSPARENT", "FLAMMABLE_HARD", "FLAT"],
     "bash": {
       "str_min": 25,
       "str_max": 150,
@@ -290,8 +369,15 @@
     "looks_like": "t_thconc_floor",
     "color": "dark_gray",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAT", "ROAD" ],
-    "bash": { "str_min": 100, "str_max": 400, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "FLAT", "ROAD"],
+    "bash": {
+      "str_min": 100,
+      "str_max": 400,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -302,8 +388,15 @@
     "symbol": ".",
     "color": "brown",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAMMABLE", "FLAT" ],
-    "bash": { "str_min": 50, "str_max": 400, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "FLAMMABLE", "FLAT"],
+    "bash": {
+      "str_min": 50,
+      "str_max": 400,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -314,8 +407,15 @@
     "symbol": ".",
     "color": "brown",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD", "FLAT" ],
-    "bash": { "str_min": 50, "str_max": 400, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "FLAMMABLE_HARD", "FLAT"],
+    "bash": {
+      "str_min": 50,
+      "str_max": 400,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -326,8 +426,15 @@
     "looks_like": "t_scrap_floor",
     "color": "dark_gray",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAT", "ROAD" ],
-    "bash": { "str_min": 200, "str_max": 500, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "FLAT", "ROAD"],
+    "bash": {
+      "str_min": 200,
+      "str_max": 500,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -338,8 +445,15 @@
     "looks_like": "t_metal_roof",
     "color": "red",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAT", "ROAD" ],
-    "bash": { "str_min": 200, "str_max": 500, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "FLAT", "ROAD"],
+    "bash": {
+      "str_min": 200,
+      "str_max": 500,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -350,8 +464,15 @@
     "looks_like": "t_scrap_floor",
     "color": "dark_gray",
     "move_cost": 4,
-    "flags": [ "TRANSPARENT", "UNSTABLE" ],
-    "bash": { "str_min": 200, "str_max": 500, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "UNSTABLE"],
+    "bash": {
+      "str_min": 200,
+      "str_max": 500,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -362,8 +483,15 @@
     "symbol": ".",
     "color": "green",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAMMABLE" ],
-    "bash": { "str_min": 30, "str_max": 210, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "FLAMMABLE"],
+    "bash": {
+      "str_min": 30,
+      "str_max": 210,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -373,8 +501,15 @@
     "symbol": ".",
     "color": "red",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAT", "ROAD" ],
-    "bash": { "str_min": 48, "str_max": 80, "sound": "crash!", "sound_fail": "whump!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "FLAT", "ROAD"],
+    "bash": {
+      "str_min": 48,
+      "str_max": 80,
+      "sound": "crash!",
+      "sound_fail": "whump!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -384,8 +519,15 @@
     "symbol": ".",
     "color": "blue",
     "move_cost": 2,
-    "flags": [ "TRANSPARENT", "FLAMMABLE_HARD" ],
-    "bash": { "str_min": 1, "str_max": 8, "sound": "rrrrip!", "sound_fail": "slap!", "ter_set": "t_null", "bash_below": false }
+    "flags": ["TRANSPARENT", "FLAMMABLE_HARD"],
+    "bash": {
+      "str_min": 1,
+      "str_max": 8,
+      "sound": "rrrrip!",
+      "sound_fail": "slap!",
+      "ter_set": "t_null",
+      "bash_below": false
+    }
   },
   {
     "type": "terrain",
@@ -393,9 +535,15 @@
     "name": "treetop",
     "description": "The upper branches of a tree.  There's just enough room to perch here.",
     "symbol": "#",
-    "color": [ "light_green", "green", "yellow_yellow", "brown" ],
+    "color": ["light_green", "green", "yellow_yellow", "brown"],
     "move_cost": 8,
-    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "UNSTABLE", "CLIMBABLE", "SINGLE_SUPPORT" ]
+    "flags": [
+      "TRANSPARENT",
+      "FLAMMABLE_ASH",
+      "UNSTABLE",
+      "CLIMBABLE",
+      "SINGLE_SUPPORT"
+    ]
   },
   {
     "type": "terrain",
@@ -403,9 +551,9 @@
     "name": "treetop",
     "description": "The upper branches of a tree.  There's just enough room to perch here.",
     "symbol": "#",
-    "color": [ "green" ],
+    "color": ["green"],
     "move_cost": 8,
-    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "UNSTABLE", "SINGLE_SUPPORT" ]
+    "flags": ["TRANSPARENT", "FLAMMABLE_ASH", "UNSTABLE", "SINGLE_SUPPORT"]
   },
   {
     "type": "terrain",
@@ -415,7 +563,7 @@
     "symbol": "#",
     "color": "brown",
     "move_cost": 8,
-    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "UNSTABLE", "SINGLE_SUPPORT" ]
+    "flags": ["TRANSPARENT", "FLAMMABLE_ASH", "UNSTABLE", "SINGLE_SUPPORT"]
   },
   {
     "type": "terrain",
@@ -425,6 +573,6 @@
     "symbol": "#",
     "color": "red",
     "move_cost": 8,
-    "flags": [ "TRANSPARENT", "FLAMMABLE_ASH", "UNSTABLE", "SINGLE_SUPPORT" ]
+    "flags": ["TRANSPARENT", "FLAMMABLE_ASH", "UNSTABLE", "SINGLE_SUPPORT"]
   }
 ]
