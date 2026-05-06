@@ -1,0 +1,81 @@
+[
+    {
+      "id": "mon_zombie_soldier_blackops_1",
+      "type": "MONSTER",
+      "name": { "str": "black-ops zombie" },
+      "description": "This soldier zombie's skin radiates a sort of shadowy smoke that obscures its outline, making its camouflage even harder to see against the background.  In the darkness it would be nigh invisible.",
+      "copy-from": "mon_zombie_base",
+      "looks_like": "mon_zombie_soldier",
+      "hp": 120,
+      "speed": 90,
+      "color": "light_green_green",
+      "scents_tracked": [ "sc_human", "sc_fetid" ],
+      "melee_skill": 6,
+      "melee_dice_sides": 6,
+      "dodge": 3,
+      "dissect": "dissect_bionics_mil",
+      "bleed_rate": 50,
+      "vision_night": 35,
+      "harvest": "zombie_humanoid_shadow",
+      "special_attacks": [
+        { "id": "grab" },
+        { "id": "scratch_humanoid" },
+        {
+          "id": "bite_humanoid",
+          "cooldown": 8,
+          "damage_max_instance": [ { "damage_type": "stab", "amount": 8, "armor_multiplier": 0.8 } ]
+        }
+      ],
+      "death_drops": "mon_zombie_soldier_death_drops",
+      "upgrades": { "half_life": 45, "into": "mon_zombie_soldier_blackops_2" },
+      "armor": { "bash": 12, "cut": 25, "bullet": 20, "electric": 3 },
+      "extend": {
+        "flags": [ "SMELLS", "NIGHT_INVISIBILITY" ],
+        "weakpoint_sets": [ "wps_humanoid_body_armor", "wps_humanoid_open_helmet" ],
+        "families": [ "prof_wp_syn_armored" ]
+      }
+    },
+    {
+      "id": "mon_zombie_bio_op",
+      "type": "MONSTER",
+      "dissect": "dissect_mon_zombie_bio_op",
+      "name": { "str": "zombie bio-operator" },
+      "description": "This armored soldier zombie appears to have been some sort of special forces agent.  Its malfunctioning equipment sends out occasional showers of sparks.",
+      "copy-from": "mon_zombie_base",
+      "diff": 5,
+      "hp": 120,
+      "speed": 95,
+      "color": "red_cyan",
+      "melee_skill": 7,
+      "melee_dice": 3,
+      "melee_dice_sides": 6,
+      "melee_damage": [ { "damage_type": "electric", "amount": 4 } ],
+      "luminance": 4,
+      "special_attacks": [ { "id": "bio_op_takedown", "cooldown": 20 } ],
+      "special_when_hit": [ "ZAPBACK", 75 ],
+      "death_drops": "mon_zombie_bio_op_death_drops",
+      "armor": { "bash": 10, "cut": 18, "bullet": 14, "electric": 3 },
+      "extend": {
+        "weakpoint_sets": [ "wps_humanoid_body_armor", "wps_humanoid_open_helmet", "wps_humanoid_gasmask" ],
+        "families": [ "prof_wp_syn_armored" ],
+        "flags": [ "ELECTRIC" ]
+      }
+    },
+  {
+    "id": "mon_zombie_bio_op2",
+    "type": "MONSTER",
+    "name": { "str": "elite zombie bio-operator" },
+    "description": "Once a highly-trained soldier, this zombie is still equipped with heavy military gear and dangerous physical abilities.  Its malfunctioning equipment sends out occasional showers of sparks.",
+    "copy-from": "mon_zombie_bio_op",
+    "looks_like": "mon_zombie_bio_op",
+    "diff": 10,
+    "hp": 180,
+    "melee_skill": 8,
+    "dodge": 4,
+    "dissect": "dissect_mon_zombie_bio_op2",
+    "special_attacks": [ [ "BIO_OP_BIOJUTSU", 15 ] ],
+    "armor": { "bullet": 14, "electric": 3, "bash": 15, "cut": 27 }
+  }
+]
+
+

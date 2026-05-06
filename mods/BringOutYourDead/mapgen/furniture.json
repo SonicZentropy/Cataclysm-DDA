@@ -1,0 +1,39 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_cryo_pod",
+    "name": "cryo pod",
+    "symbol": "#",
+    "description": "This is a long term sleep pod.  Cryo pods are mostly used by people waiting a short term for organs or criminals avoiding heat right after a crime.",
+    "color": "light_blue",
+    "move_cost_mod": 15,
+    "coverage": 80,
+    "comfort": 2,
+    "floor_bedding_warmth": 500,
+    "required_str": -1,
+    "looks_like": "t_vat",
+    "flags": [ "TRANSPARENT", "PLACE_ITEM", "MOUNTABLE", "CAN_SIT" ],
+    "bash": {
+      "str_min": 18,
+      "str_max": 40,
+      "sound": "clang!",
+      "sound_fail": "whump.",
+      "items": [
+        {
+          "item": "glass_shard",
+          "count": [
+            42,
+            84
+          ]
+        },
+        {
+          "item": "scrap",
+          "count": [
+            0,
+            2
+          ]
+        }
+      ]
+    }
+  }
+]

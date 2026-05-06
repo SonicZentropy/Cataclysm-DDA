@@ -1,0 +1,13 @@
+[
+  {
+    "type": "item_group",
+    "id": "default_zombie_items_pockets",
+    "copy-from": "default_zombie_items_pockets",
+    "subtype": "collection",
+    "extend": {
+      "entries": [
+        { "group": "powerbanks", "prob": 10 }
+      ]
+    }
+  }
+]

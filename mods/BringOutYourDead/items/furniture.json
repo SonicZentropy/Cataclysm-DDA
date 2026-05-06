@@ -1,0 +1,72 @@
+[
+  {
+    "type": "furniture",
+    "id": "f_atomic_butter_churn",
+    "name": "atomic butter churn on a stand",
+    "description": "The Rivtech Atomic Butter Churn in deployed state.  It hums menacingly.  Ready to add raw milk and salt.  It will churn till the earth is a cinder.",
+    "symbol": "H",
+    "color": "light_green",
+    "crafting_pseudo_item": "atomic_pseudo_churn",
+    "move_cost_mod": -1,
+    "coverage": 70,
+    "required_str": -1,
+    "flags": [
+      "NOITEM",
+      "SEALED",
+      "ALLOW_FIELD_EFFECT",
+      "TRANSPARENT",
+      "EASY_DECONSTRUCT",
+      "CONTAINER",
+      "LIQUIDCONT"
+    ],
+    "deconstruct": { "items": [{ "item": "atomic_butterchurn", "count": 1 }] },
+    "examine_action": "keg",
+    "keg_capacity": "45 L",
+    "bash": {
+      "str_min": 12,
+      "str_max": 50,
+      "sound": "smash!",
+      "sound_fail": "whump.",
+      "items": [
+        { "item": "plastic_chunk", "count": [6, 8] },
+        { "item": "water_faucet", "prob": 50 },
+        { "item": "sheet_metal_small", "count": [6, 12] },
+        { "item": "scrap", "count": [10, 20] }
+      ]
+    }
+  },
+  {
+    "type": "ITEM",
+    "subtypes": ["TOOL"],
+    "id": "autodoc",
+    "looks_like": "f_autodoc",
+    "symbol": "#",
+    "description": "A disconnected surgical apparatus used for the installation and removal of bionics.  Plug it into a vehicle or power grid to use.",
+    "color": "dark_gray_white",
+    "name": { "str": "disconnected Autodoc Mk. XI" },
+    "material": ["budget_steel"],
+    "longest_side": "69 cm",
+    "volume": "200 L",
+    "weight": "30 kg"
+  },
+  {
+    "type": "ITEM",
+    "id": "autodoc_couch",
+    "looks_like": "f_autodoc_couch",
+    "name": { "str": "Autodoc operation couch" },
+    "description": "A plush red sofa made less comfortable by the medical machinery directly above it.  It has a single leather strap on the right armrest.",
+    "symbol": "H",
+    "color": "green",
+    "flags": ["NO_SALVAGE"],
+    "price": "250 USD",
+    "price_postapoc": "15 USD",
+    "longest_side": "110 cm",
+    "volume": "150 L",
+    "weight": "20 kg",
+    "material": [
+      { "type": "cotton", "portion": 75 },
+      { "type": "wood", "portion": 25 }
+    ],
+    "to_hit": -4
+  }
+]

@@ -1,0 +1,117 @@
+[
+  {
+    "type": "item_group",
+    "id": "guns_rifle_rare_45colt",
+    "items": [{ "group": "nested_colt_lightning", "prob": 15 }]
+  },
+  {
+    "type": "item_group",
+    "id": "guns_rifle_rare_display_45colt",
+    "items": [{ "group": "nested_colt_lightning", "prob": 10 }]
+  },
+  {
+    "id": "nested_colt_lightning",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "fnc_colt_lightning", "charges": [0, 14] },
+      { "group": "on_hand_45colt" }
+    ]
+  },
+  {
+    "id": "nested_fs2000",
+    "type": "item_group",
+    "//": "this is a distribution for the gun, reasonable number of backup mags, and some ammo to repack",
+    "subtype": "collection",
+    "ammo": 100,
+    "entries": [
+      { "item": "fnc_fs2000", "charges": [0, 30] },
+      { "group": "stanag_30_random" },
+      { "group": "stanag_30_random", "prob": 50 },
+      { "group": "on_hand_223" }
+    ]
+  },
+  {
+    "id": "SUS_hunting_rifle",
+    "type": "item_group",
+    "copy-from": "SUS_hunting_rifle",
+    "subtype": "collection",
+    "extend": {
+      "entries": [
+        { "item": "fnc_colt_lightning", "prob": 2, "charges": [0, 10] }
+      ]
+    }
+  },
+  {
+    "id": "guns_rifle_milspec",
+    "type": "item_group",
+    "copy-from": "guns_rifle_milspec",
+    "extend": {
+      "items": [{ "group": "guns_rifle_rare_45colt", "prob": 7 }]
+    }
+  },
+  {
+    "id": "guns_rifle_common_display",
+    "type": "item_group",
+    "copy-from": "guns_rifle_common_display",
+    "subtype": "distribution",
+    "extend": {
+      "items": [{ "group": "guns_rifle_rare_display_45colt", "prob": 5 }]
+    }
+  },
+  {
+    "id": "milspec_arsenal_223",
+    "type": "item_group",
+    "copy-from": "milspec_arsenal_223",
+    "extend": {
+      "items": [{ "group": "nested_fs2000", "prob": 6 }]
+    }
+  },
+  {
+    "id": "weapons",
+    "type": "item_group",
+    "copy-from": "weapons",
+    "extend": { "items": [["afs_titanium_bat", 40]] }
+  },
+  {
+    "id": "allsporting",
+    "type": "item_group",
+    "copy-from": "allsporting",
+    "extend": { "items": [["afs_titanium_bat", 40]] }
+  },
+  {
+    "id": "sports",
+    "type": "item_group",
+    "copy-from": "sports",
+    "extend": { "items": [["afs_titanium_bat", 40]] }
+  },
+  {
+    "id": "college_sports",
+    "type": "item_group",
+    "copy-from": "college_sports",
+    "extend": { "items": [["afs_titanium_bat", 60]] }
+  },
+  {
+    "type": "item_group",
+    "id": "nanofab_recipes",
+    "copy-from": "nanofab_recipes",
+    "extend": {
+      "items": [["mininuke", 10]]
+    }
+  },
+  {
+    "type": "item_group",
+    "id": "guns_energy",
+    "copy-from": "guns_energy",
+    "extend": {
+      "items": [
+        ["mininuke", 1],
+        ["afs_energy_saber_off", 30],
+        ["afs_hardlight_longbow", 10],
+        ["afs_hydraulic_gauntlet", 10]
+      ]
+    }
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "nightstand",
+    "type": "item_group",
+    "copy-from": "nightstand",
+    "subtype": "distribution",
+    "extend": {
+      "items": [
+        { "group": "powerbanks", "prob": 2 }
+      ]
+    }
+  },
+  {
+    "id": "livingroom",
+    "type": "item_group",
+    "copy-from": "livingroom",
+    "subtype": "distribution",
+    "extend": {
+      "entries": [
+        { "group": "powerbanks", "prob": 3 }
+      ]
+    }
+  },
+  {
+    "id": "bedroom",
+    "type": "item_group",
+    "copy-from": "bedroom",
+    "subtype": "distribution",
+    "extend": {
+      "entries": [
+        { "group": "powerbanks", "prob": 5 }
+      ]
+    }
+  }
+]

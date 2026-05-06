@@ -1,0 +1,14 @@
+[
+  {
+    "type": "monstergroup",
+    "id": "GROUP_POLICE",
+    "monsters": [
+      {
+        "monster": "mon_afs_copbot",
+        "weight": 10,
+        "cost_multiplier": 3,
+        "ends": "5 days"
+      }
+    ]
+  }
+]

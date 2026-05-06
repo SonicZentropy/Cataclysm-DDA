@@ -1,0 +1,13 @@
+[
+  {
+    "id": "Zomborg_CBM_harvest_ranged_weapons",
+    "type": "item_group",
+    "copy-from": "Zomborg_CBM_harvest_ranged_weapons",
+    "subtype": "distribution",
+    "extend": {
+      "items": [
+        [ "bio_railgun", 10 ]
+      ]
+    }
+  }
+]

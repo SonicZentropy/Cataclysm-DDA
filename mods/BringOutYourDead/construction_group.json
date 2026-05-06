@@ -1,0 +1,12 @@
+[
+  {
+    "type": "construction_group",
+    "id": "place_autodoc",
+    "name": "Place Autodoc Mk. XI"
+  },
+  {
+    "type": "construction_group",
+    "id": "place_autodoc_couch",
+    "name": "Place Autodoc couch"
+  }
+]

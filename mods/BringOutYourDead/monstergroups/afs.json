@@ -1,0 +1,17 @@
+[
+  {
+    "type": "monstergroup",
+    "id": "AFS_GROUP_AUG_CLINIC",
+    "monsters": [
+      { "monster": "mon_broken_cyborg", "weight": 100 },
+      { "monster": "mon_zombie_electric", "weight": 450 },
+      {
+        "monster": "mon_prototype_cyborg",
+        "weight": 100,
+        "cost_multiplier": 2
+      },
+      { "monster": "mon_zombie_technician", "weight": 300 },
+      { "monster": "mon_secubot", "weight": 50, "cost_multiplier": 3 }
+    ]
+  }
+]
