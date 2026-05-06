@@ -1301,7 +1301,7 @@ void Character::update_health()
 
 int Character::weariness() const
 {
-    return activity_history.weariness();
+    return 0; //activity_history.weariness(); //ZEN: Remove weariness, it's pointless when sleep is already forced
 }
 
 int Character::weary_threshold() const
@@ -1342,7 +1342,8 @@ std::pair<int, int> Character::weariness_transition_progress() const
 
 int Character::weariness_level() const
 {
-    int amount = weariness();
+    return 0; // ZEN: Remove weariness, dumb concept
+    /*int amount = weariness();
     int threshold = weary_threshold();
     int level = 0;
     amount -= threshold * get_option<float>( "WEARY_INITIAL_STEP" );
@@ -1359,7 +1360,7 @@ int Character::weariness_level() const
         }
     }
 
-    return level;
+    return level;*/
 }
 
 
@@ -1414,7 +1415,8 @@ float Character::exertion_adjusted_move_multiplier( float level ) const
     if( level < max ) {
         return 1.0f;
     }
-    return max / level;
+    // Get rid of weariness
+    return 1.0f;
 }
 
 bool Character::needs_food() const
