@@ -176,6 +176,7 @@ static const trait_id trait_DEBUG_MANA( "DEBUG_MANA" );
 static const trait_id trait_DEBUG_MIND_CONTROL( "DEBUG_MIND_CONTROL" );
 static const trait_id trait_DEBUG_NODMG( "DEBUG_NODMG" );
 static const trait_id trait_DEBUG_NOTEMP( "DEBUG_NOTEMP" );
+static const trait_id trait_DEBUG_PHASE_MOVEMENT( "DEBUG_PHASE_MOVEMENT" );
 static const trait_id trait_DEBUG_SPEED( "DEBUG_SPEED" );
 static const trait_id trait_DEBUG_STAMINA( "DEBUG_STAMINA" );
 static const trait_id trait_NONE( "NONE" );
@@ -296,6 +297,7 @@ std::string enum_to_string<debug_menu::debug_menu_index>( debug_menu::debug_menu
         case debug_menu::debug_menu_index::TALK_TOPIC: return "TALK_TOPIC";
         case debug_menu::debug_menu_index::IMGUI_DEMO: return "IMGUI_DEMO";
         case debug_menu::debug_menu_index::VEHICLE_EFFECTS: return "VEHICLE_EFFECTS";
+        case debug_menu::debug_menu_index::RESTORE_STAMINA: return "RESTORE_STAMINA";
         // *INDENT-ON*
         case debug_menu::debug_menu_index::last:
             break;
@@ -604,17 +606,18 @@ void map_reveal( int reveal_level_int, const std::optional<tripoint_abs_omt> &p 
 static int player_uilist()
 {
     std::vector<uilist_entry> uilist_initializer = {
+        { uilist_entry( debug_menu_index::RESTORE_STAMINA, true, 's', _( "Restore stamina" ) ) },
         { uilist_entry( debug_menu_index::MUTATE, true, 'M', _( "Mutate" ) ) },
-        { uilist_entry( debug_menu_index::CHANGE_SKILLS, true, 's', _( "Change all skills" ) ) },
+        { uilist_entry( debug_menu_index::CHANGE_SKILLS, true, 'g', _( "Change all skills" ) ) },
         { uilist_entry( debug_menu_index::CHANGE_THEORY, true, 'T', _( "Change all skills theoretical knowledge" ) ) },
         { uilist_entry( debug_menu_index::LEARN_MA, true, 'l', _( "Learn all melee styles" ) ) },
         { uilist_entry( debug_menu_index::UNLOCK_RECIPES, true, 'r', _( "Unlock all recipes" ) ) },
         { uilist_entry( debug_menu_index::FORGET_ALL_RECIPES, true, 'f', _( "Forget all recipes" ) ) },
         { uilist_entry( debug_menu_index::FORGET_ALL_ITEMS, true, 'F', _( "Forget all items" ) ) },
-        { uilist_entry( debug_menu_index::EDIT_PLAYER, true, 'p', _( "Edit player/NPC" ) ) },
+        { uilist_entry( debug_menu_index::EDIT_PLAYER, true, 'a', _( "Edit player/NPC" ) ) },
         { uilist_entry( debug_menu_index::DAMAGE_SELF, true, 'd', _( "Damage self" ) ) },
         { uilist_entry( debug_menu_index::BLEED_SELF, true, 'b', _( "Bleed self" ) ) },
-        { uilist_entry( debug_menu_index::SET_AUTOMOVE, true, 'a', _( "Set auto move route" ) ) },
+        { uilist_entry( debug_menu_index::SET_AUTOMOVE, true, 'r', _( "Set auto move route" ) ) },
         { uilist_entry( debug_menu_index::CONTROL_NPC, true, 'x', _( "Control NPC follower" ) ) },
         { uilist_entry( debug_menu_index::IMPORT_FOLLOWER, true, 'i', _( "Import follower" ) ) },
         { uilist_entry( debug_menu_index::EXPORT_FOLLOWER, true, 'e', _( "Export follower" ) ) },
@@ -1087,7 +1090,6 @@ static int quick_setup_uilist()
 {
     const std::vector<uilist_entry> uilist_initializer = {
         { uilist_entry( debug_menu_index::QUICK_SETUP, true, 'Q', _( "Quick setup…" ) ) },
-        { uilist_entry( debug_menu_index::QUICK_SETUP_FLAG_DIRTY, true, 'D', _( "Quick setup and flag save as dirty" ) ) },
         { uilist_entry( debug_menu_index::TOGGLE_SETUP_MUTATION, true, 't', _( "Toggle debug mutations" ) ) },
         { uilist_entry( debug_menu_index::NORMALIZE_BODY_STAT, true, 'n', _( "Normalize body stats" ) ) },
         { uilist_entry( debug_menu_index::SIX_MILLION_DOLLAR_SURVIVOR, true, 'B', _( "Install ALL bionics" ) ) },
@@ -1126,18 +1128,16 @@ static std::optional<debug_menu_index> debug_menu_uilist()
     };
 
     const std::vector<uilist_entry> debug_menu = {
-        { uilist_entry( D_INFO,        true, 'i', _( "Info…" ) ) },
         { uilist_entry( D_GAME,        true, 'g', _( "Game…" ) ) },
-        { uilist_entry( D_SPAWNING,    true, 's', _( "Spawning…" ) ) },
-        { uilist_entry( D_PLAYER,      true, 'p', _( "Player…" ) ) },
-        { uilist_entry( D_MONSTER,     true, 'c', _( "Monster…" ) ) },
-        { uilist_entry( D_FACTION,     true, 'f', _( "Faction…" ) ) },
-        { uilist_entry( D_VEHICLE,     true, 'v', _( "Vehicle…" ) ) },
-        { uilist_entry( D_TELEPORT,    true, 't', _( "Teleport…" ) ) },
-        { uilist_entry( D_MAP,         true, 'm', _( "Map…" ) ) },
-        { uilist_entry( D_DIALOGUE,    true, 'd', _( "Dialogue…" ) ) },
-        { uilist_entry( D_QUICK_SETUP, true, 'q', _( "Quick setup…" ) ) },
-    };
+            { uilist_entry( D_SPAWNING,    true, 's', _( "Spawning…" ) ) },
+            { uilist_entry( D_PLAYER,      true, 'a', _( "Player…" ) ) },
+            { uilist_entry( D_MONSTER,     true, 'c', _( "Monster…" ) ) },
+            { uilist_entry( D_FACTION,     true, 'f', _( "Faction…" ) ) },
+            { uilist_entry( D_VEHICLE,     true, 'v', _( "Vehicle…" ) ) },
+            { uilist_entry( D_TELEPORT,    true, 't', _( "Teleport…" ) ) },
+            { uilist_entry( D_MAP,         true, 'm', _( "Map…" ) ) },
+            { uilist_entry( D_DIALOGUE,    true, 'd', _( "Dialogue…" ) ) },
+        };
 
     while( true ) {
         // TODO(db48x): go back to allowing a uilist to have both a
@@ -4068,7 +4068,7 @@ void export_save_archive_and_game_report()
     game_report();
 }
 
-void do_debug_quick_setup( bool flag_dirty )
+void do_debug_quick_setup(  )
 {
     // Turn on debug mode. Some debug information displays require just this to be on, so we want it on. Save a few keypresses.
     debug_mode = true;
@@ -4087,9 +4087,6 @@ void do_debug_quick_setup( bool flag_dirty )
     map_reveal( static_cast<int>( om_vision_level::full ) );
     dialogue d( get_talker_for( get_avatar() ), nullptr );
     effect_on_condition_EOC_DEBUG_QUICK_SETUP->activate( d );
-    if( flag_dirty ) {
-        g->save_is_dirty = true;
-    }
 }
 
 void debug()
@@ -4104,8 +4101,8 @@ void debug()
     const bool should_disable_achievements = action && !is_debug_character() &&
             !non_cheaty_options.count( *action );
     if( should_disable_achievements && achievements.is_enabled() ) {
-        add_msg( m_mixed, _( "Achievements have been disabled." ) );
-        achievements.set_enabled( false );
+        //add_msg( m_mixed, _( "Achievements have been disabled." ) );
+        //achievements.set_enabled( false );
     }
 
     if( !action ) {
@@ -4461,7 +4458,6 @@ void debug()
             if( query_yn(
                     _( "Quickload without saving?  This will mark save as 'dirty' and disable future saving to prevent accidental overwriting save.  Also this may cause issues such as duplicated or missing items and vehicles!" ) ) ) {
                 g->quickload();
-                g->save_is_dirty = true;
             }
             break;
         case debug_menu_index::TEST_WEATHER: {
@@ -4568,11 +4564,6 @@ void debug()
             break;
         }
 
-        case debug_menu_index::QUICK_SETUP_FLAG_DIRTY: {
-            do_debug_quick_setup( true );
-            break;
-        }
-
         case debug_menu_index::TOGGLE_SETUP_MUTATION: {
             Character &u = get_avatar();
             for( trait_id &trait : setup_traits ) {
@@ -4611,6 +4602,14 @@ void debug()
         case debug_menu_index::TALK_TOPIC:
             display_talk_topic();
             break;
+
+        case debug_menu_index::RESTORE_STAMINA:
+            {
+                Character &the_player_character = get_player_character();
+                the_player_character.set_stamina( the_player_character.get_stamina_max() );
+                add_msg( m_good, _( "Stamina restored to maximum." ) );
+                break;
+            }
 
         case debug_menu_index::last:
             return;
