@@ -1,0 +1,30 @@
+[
+  {
+    "type": "material",
+    "id": "vortex_fuel_material",
+    "name": "Vortex Fuel",
+    "density": 1,
+    "chip_resist": 0,
+    "conductive": true,
+    "dmg_adj": [ "scratched", "cut", "cracked", "shattered" ],
+    "bash_dmg_verb": "dented",
+    "cut_dmg_verb": "gouged",
+    "fuel_data": { "energy": "1000 kJ" },
+    "resist": { "bash": 0, "cut": 0, "acid": 0, "heat": 0, "bullet": 0 }
+
+  },
+  {
+    "id": "vortex_fuel",
+    "type": "ITEM",
+    "//": "pseudo item, used as fuel type for engines that are vortex-powered",
+    "name": { "str_sp": "vortex core" },
+    "description": "Seeing this is a bug.",
+    "volume": "1 ml",
+    "material": "vortex_fuel_material",
+    "flags": [ "PSEUDO", "PERPETUAL" ],
+    "symbol": "?",
+    "color": "magenta",
+    "stackable": true,
+    "price": "0 cent"
+  }
+]
