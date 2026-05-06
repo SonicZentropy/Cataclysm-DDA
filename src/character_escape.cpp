@@ -222,7 +222,7 @@ bool Character::try_remove_grab( bool attacking )
         float skill_factor = std::min( 0.8f,
                                        std::max( std::max( static_cast<float>( get_skill_level( skill_melee ) ) / 10, 0.1f ),
                                                std::max( static_cast<float>( get_skill_level( skill_unarmed ) ) / 8, 0.1f ) ) );
-        int grab_break_factor = has_grab_break_tec() ? 10 : 0;
+        int grab_break_factor = has_grab_break_tec() ? 20 : 10;
         const tripoint_range<tripoint_bub_ms> &surrounding = here.points_in_radius( pos_bub(), 1, 0 );
 
         // Iterate through all our grabs and attempt to break them one by one
@@ -255,27 +255,27 @@ bool Character::try_remove_grab( bool attacking )
                 continue;
             }
 
-            bool torn_pocket = false;
-            std::vector<item_pocket *> pd = worn.grab_drop_pockets( eff.get_bp() );
-            if( !pd.empty() ) {
-                // choose an item to be ripped off
-                int index = rng( 0, pd.size() - 1 );
-                int chance = rng( 0, get_effect_int( eff.get_id(), eff.get_bp() ) );
-                int sturdiness = rng( 0, pd[index]->get_pocket_data()->ripoff * 10 );
-                add_msg_debug( debugmode::DF_MATTACK, "Tearoff pocket %s chosen, sturdiness %d, tearing chance %d",
-                               pd[index]->get_name(), sturdiness, chance );
-                // the item is ripped off your character
-                if( sturdiness < chance ) {
-                    pd[index]->spill_contents( adjacent_tile() );
-                    add_msg_player_or_npc( m_bad,
-                                           _( "As you struggle to escape the grab something comes loose and falls to the ground!" ),
-                                           _( "As <npcname> struggles to escape the grab something comes loose and falls to the ground!" ) );
-                    if( is_avatar() ) {
-                        popup( _( "As you struggle to escape the grab something comes loose and falls to the ground!" ) );
-                    }
-                    torn_pocket = true;
-                }
-            }
+            // bool torn_pocket = false;
+            // std::vector<item_pocket *> pd = worn.grab_drop_pockets( eff.get_bp() );
+            // if( !pd.empty() ) {
+            //     // choose an item to be ripped off
+            //     int index = rng( 0, pd.size() - 1 );
+            //     int chance = rng( 0, get_effect_int( eff.get_id(), eff.get_bp() ) );
+            //     int sturdiness = rng( 0, pd[index]->get_pocket_data()->ripoff * 10 );
+            //     add_msg_debug( debugmode::DF_MATTACK, "Tearoff pocket %s chosen, sturdiness %d, tearing chance %d",
+            //                    pd[index]->get_name(), sturdiness, chance );
+            //     // the item is ripped off your character
+            //     if( sturdiness < chance ) {
+            //         pd[index]->spill_contents( adjacent_tile() );
+            //         add_msg_player_or_npc( m_bad,
+            //                                _( "As you struggle to escape the grab something comes loose and falls to the ground!" ),
+            //                                _( "As <npcname> struggles to escape the grab something comes loose and falls to the ground!" ) );
+            //         if( is_avatar() ) {
+            //             popup( _( "As you struggle to escape the grab something comes loose and falls to the ground!" ) );
+            //         }
+            //         torn_pocket = true;
+            //     }
+            // }
 
             // Limb factor we check directly
             // Stats might get modified by certain grabby effects, check them to be safe
@@ -299,15 +299,15 @@ bool Character::try_remove_grab( bool attacking )
                            eff.get_bp()->name, grabber_roll, skill_factor, limb_factor, stat_factor, grab_break_factor,
                            escape_chance,
                            escape_chance * 100 / grabber_roll );
-            if( torn_pocket ) {
-                escape_chance *= 1.5f;
-                add_msg_debug( debugmode::DF_MATTACK,
-                               "Pocket torn off in the attempt, escape chance increased to %.1f",
-                               escape_chance * 100 / eff.get_intensity() );
-            }
+            // if( torn_pocket ) {
+            //     escape_chance *= 1.5f;
+            //     add_msg_debug( debugmode::DF_MATTACK,
+            //                    "Pocket torn off in the attempt, escape chance increased to %.1f",
+            //                    escape_chance * 100 / eff.get_intensity() );
+            // }
 
             // Every attempt burns some stamina - maybe some moves?
-            burn_energy_arms( -5 * eff.get_intensity() );
+            //burn_energy_arms( -5 * eff.get_intensity() );
             if( x_in_y( escape_chance, grabber_roll ) ) {
                 grabber->remove_grab( eff.get_bp().id() );
                 add_msg_debug( debugmode::DF_MATTACK, "Removed grab effect %s from monster %s",
