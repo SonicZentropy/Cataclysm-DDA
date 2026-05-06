@@ -41,9 +41,10 @@ void debug();
 void execute_action( debug_menu_index action );
 void open_console();
 
+void do_debug_quick_setup();
 void export_save_archive_and_game_report();
 
-void do_debug_quick_setup( bool flag_dirty = false );
+
 
 /* Splits a string by @param delimiter and push_back's the elements into _Container */
 template<typename Container>

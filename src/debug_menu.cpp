@@ -181,6 +181,7 @@ static const trait_id trait_DEBUG_MANA( "DEBUG_MANA" );
 static const trait_id trait_DEBUG_MIND_CONTROL( "DEBUG_MIND_CONTROL" );
 static const trait_id trait_DEBUG_NODMG( "DEBUG_NODMG" );
 static const trait_id trait_DEBUG_NOTEMP( "DEBUG_NOTEMP" );
+static const trait_id trait_DEBUG_PHASE_MOVEMENT( "DEBUG_PHASE_MOVEMENT" );
 static const trait_id trait_DEBUG_SPEED( "DEBUG_SPEED" );
 static const trait_id trait_DEBUG_STAMINA( "DEBUG_STAMINA" );
 static const trait_id trait_NONE( "NONE" );
@@ -303,6 +304,7 @@ std::string enum_to_string<debug_menu::debug_menu_index>( debug_menu::debug_menu
         case debug_menu::debug_menu_index::VEHICLE_EFFECTS: return "VEHICLE_EFFECTS";
         case debug_menu::debug_menu_index::WISHPROFICIENCY: return "WISHPROFICIENCY";
         case debug_menu::debug_menu_index::RELOAD_GPU_SHADERS: return "RELOAD_GPU_SHADERS";
+        case debug_menu::debug_menu_index::RESTORE_STAMINA: return "RESTORE_STAMINA";
         // *INDENT-ON*
         case debug_menu::debug_menu_index::last:
             break;
@@ -611,17 +613,18 @@ void map_reveal( int reveal_level_int, const std::optional<tripoint_abs_omt> &p 
 static int player_uilist()
 {
     std::vector<uilist_entry> uilist_initializer = {
+        { uilist_entry( debug_menu_index::RESTORE_STAMINA, true, 's', _( "Restore stamina" ) ) },
         { uilist_entry( debug_menu_index::MUTATE, true, 'M', _( "Mutate" ) ) },
-        { uilist_entry( debug_menu_index::CHANGE_SKILLS, true, 's', _( "Change all skills" ) ) },
+        { uilist_entry( debug_menu_index::CHANGE_SKILLS, true, 'g', _( "Change all skills" ) ) },
         { uilist_entry( debug_menu_index::CHANGE_THEORY, true, 'T', _( "Change all skills theoretical knowledge" ) ) },
         { uilist_entry( debug_menu_index::LEARN_MA, true, 'l', _( "Learn all melee styles" ) ) },
         { uilist_entry( debug_menu_index::UNLOCK_RECIPES, true, 'r', _( "Unlock all recipes" ) ) },
         { uilist_entry( debug_menu_index::FORGET_ALL_RECIPES, true, 'f', _( "Forget all recipes" ) ) },
         { uilist_entry( debug_menu_index::FORGET_ALL_ITEMS, true, 'F', _( "Forget all items" ) ) },
-        { uilist_entry( debug_menu_index::EDIT_PLAYER, true, 'p', _( "Edit player/NPC" ) ) },
+        { uilist_entry( debug_menu_index::EDIT_PLAYER, true, 'a', _( "Edit player/NPC" ) ) },
         { uilist_entry( debug_menu_index::DAMAGE_SELF, true, 'd', _( "Damage self" ) ) },
         { uilist_entry( debug_menu_index::BLEED_SELF, true, 'b', _( "Bleed self" ) ) },
-        { uilist_entry( debug_menu_index::SET_AUTOMOVE, true, 'a', _( "Set auto move route" ) ) },
+        { uilist_entry( debug_menu_index::SET_AUTOMOVE, true, 'r', _( "Set auto move route" ) ) },
         { uilist_entry( debug_menu_index::CONTROL_NPC, true, 'x', _( "Control NPC follower" ) ) },
         { uilist_entry( debug_menu_index::IMPORT_FOLLOWER, true, 'i', _( "Import follower" ) ) },
         { uilist_entry( debug_menu_index::EXPORT_FOLLOWER, true, 'e', _( "Export follower" ) ) },
@@ -1097,7 +1100,6 @@ static int quick_setup_uilist()
 {
     const std::vector<uilist_entry> uilist_initializer = {
         { uilist_entry( debug_menu_index::QUICK_SETUP, true, 'Q', _( "Quick setup…" ) ) },
-        { uilist_entry( debug_menu_index::QUICK_SETUP_FLAG_DIRTY, true, 'D', _( "Quick setup and flag save as dirty" ) ) },
         { uilist_entry( debug_menu_index::TOGGLE_SETUP_MUTATION, true, 't', _( "Toggle debug mutations" ) ) },
         { uilist_entry( debug_menu_index::NORMALIZE_BODY_STAT, true, 'n', _( "Normalize body stats" ) ) },
         { uilist_entry( debug_menu_index::SIX_MILLION_DOLLAR_SURVIVOR, true, 'B', _( "Install ALL bionics" ) ) },
@@ -1136,19 +1138,19 @@ static std::optional<debug_menu_index> debug_menu_uilist()
     };
 
     const std::vector<uilist_entry> debug_menu = {
+            { uilist_entry( D_MAP,         true, 'm', _( "Map…" ) ) },
+            { uilist_entry( D_PLAYER,      true, 'a', _( "Player…" ) ) },
+            { uilist_entry( D_TELEPORT,    true, 't', _( "Teleport…" ) ) },
+
         { uilist_entry( D_CONSOLE,     true, 'C', _( "Console…" ) ) },
         { uilist_entry( D_INFO,        true, 'i', _( "Info…" ) ) },
         { uilist_entry( D_GAME,        true, 'g', _( "Game…" ) ) },
-        { uilist_entry( D_SPAWNING,    true, 's', _( "Spawning…" ) ) },
-        { uilist_entry( D_PLAYER,      true, 'p', _( "Player…" ) ) },
-        { uilist_entry( D_MONSTER,     true, 'c', _( "Monster…" ) ) },
-        { uilist_entry( D_FACTION,     true, 'f', _( "Faction…" ) ) },
-        { uilist_entry( D_VEHICLE,     true, 'v', _( "Vehicle…" ) ) },
-        { uilist_entry( D_TELEPORT,    true, 't', _( "Teleport…" ) ) },
-        { uilist_entry( D_MAP,         true, 'm', _( "Map…" ) ) },
-        { uilist_entry( D_DIALOGUE,    true, 'd', _( "Dialogue…" ) ) },
-        { uilist_entry( D_QUICK_SETUP, true, 'q', _( "Quick setup…" ) ) },
-    };
+            { uilist_entry( D_SPAWNING,    true, 's', _( "Spawning…" ) ) },
+            { uilist_entry( D_MONSTER,     true, 'c', _( "Monster…" ) ) },
+            { uilist_entry( D_FACTION,     true, 'f', _( "Faction…" ) ) },
+            { uilist_entry( D_VEHICLE,     true, 'v', _( "Vehicle…" ) ) },
+            { uilist_entry( D_DIALOGUE,    true, 'd', _( "Dialogue…" ) ) },
+        };
 
     while( true ) {
         // TODO(db48x): go back to allowing a uilist to have both a
@@ -4090,7 +4092,7 @@ void export_save_archive_and_game_report()
     game_report();
 }
 
-void do_debug_quick_setup( bool flag_dirty )
+void do_debug_quick_setup(  )
 {
     // Turn on debug mode. Some debug information displays require just this to be on, so we want it on. Save a few keypresses.
     debug_mode = true;
@@ -4109,9 +4111,6 @@ void do_debug_quick_setup( bool flag_dirty )
     map_reveal( static_cast<int>( om_vision_level::full ) );
     dialogue d( get_talker_for( get_avatar() ), nullptr );
     effect_on_condition_EOC_DEBUG_QUICK_SETUP->activate( d );
-    if( flag_dirty ) {
-        g->save_is_dirty = true;
-    }
 }
 
 const std::vector<debug_action_entry> &all_actions()
@@ -4866,6 +4865,112 @@ const std::vector<debug_action_entry> &all_actions()
             {
                 end_screen_data new_instance;
                 new_instance.draw_end_screen_ui();
+            break;
+        case debug_menu_index::ACTIVATE_EOC: {
+            run_eoc_menu();
+        }
+        break;
+        case debug_menu_index::MAP_EXTRA:
+            map_extra();
+            break;
+        case debug_menu_index::NESTED_MAPGEN:
+            debug_menu::spawn_nested_mapgen();
+            break;
+        case debug_menu_index::DISPLAY_NPC_PATH:
+            g->debug_pathfinding = !g->debug_pathfinding;
+            break;
+        case debug_menu_index::PRINT_FACTION_INFO: {
+            int count = 0;
+            for( const auto &elem : g->faction_manager_ptr->all() ) {
+                std::cout << std::to_string( count ) << " Faction_id key in factions map = " << elem.first.str() <<
+                          std::endl;
+                std::cout << std::to_string( count ) << " Faction name associated with this id is " <<
+                          elem.second.get_name() << std::endl;
+                std::cout << std::to_string( count ) << " the id of that faction object is " << elem.second.id.str()
+                          << std::endl;
+                count++;
+            }
+            std::cout << "Player faction is " << player_character.get_faction()->id.str() << std::endl;
+            break;
+        }
+        case debug_menu_index::PRINT_NPC_MAGIC:
+            print_npc_magic();
+            break;
+        case debug_menu_index::QUIT_NOSAVE:
+            if( query_yn(
+                    _( "Quit without saving?  This may cause issues such as duplicated or missing items and vehicles!" ) ) ) {
+                player_character.set_moves( 0 );
+                g->uquit = QUIT_NOSAVED;
+            }
+            break;
+        case debug_menu_index::QUICKLOAD:
+            if( query_yn(
+                    _( "Quickload without saving?  This will mark save as 'dirty' and disable future saving to prevent accidental overwriting save.  Also this may cause issues such as duplicated or missing items and vehicles!" ) ) ) {
+                g->quickload();
+            }
+            break;
+        case debug_menu_index::TEST_WEATHER: {
+            get_weather().get_cur_weather_gen().test_weather( g->get_seed() );
+        }
+        break;
+        case debug_menu_index::WRITE_GLOBAL_EOCS: {
+            effect_on_conditions::write_global_eocs_to_file();
+            popup( _( "effect_on_condition list written to eocs.output" ) );
+        }
+        break;
+        case debug_menu_index::WRITE_GLOBAL_VARS:
+            write_global_vars();
+            break;
+        case debug_menu_index::WRITE_TIMED_EVENTS: {
+            write_to_file( "timed_event_list.output", [&]( std::ostream & testfile ) {
+                testfile << "|;when;type;key;string_id;strength;map_point;faction_id;" << std::endl;
+                for( const timed_event &te : get_timed_events().get_all() ) {
+                    testfile << "|;" << to_string( te.when ) << ";" << static_cast<int>( te.type ) << ";" << te.key <<
+                             ";" << te.string_id << ";" << te.strength << ";" << te.map_point << ";" << te.faction_id << ";" <<
+                             std::endl;
+                }
+
+            }, "timed_event_list" );
+
+            popup( _( "Var list written to timed_event_list.output" ) );
+        }
+        break;
+        case debug_menu_index::EDIT_GLOBAL_VARS:
+            edit_vars( _( "Edit global variables" ), get_globals().get_global_values() );
+            break;
+
+        case debug_menu_index::SAVE_SCREENSHOT:
+            g->queue_screenshot = true;
+            break;
+
+        case debug_menu_index::GAME_REPORT:
+            game_report();
+            break;
+
+        case debug_menu_index::GAME_MIN_ARCHIVE: {
+            export_save_archive_and_game_report();
+            break;
+        }
+        case debug_menu_index::CHANGE_SPELLS:
+            change_spells( player_character );
+            break;
+        case debug_menu_index::TEST_MAP_EXTRA_DISTRIBUTION:
+            MapExtras::debug_spawn_test();
+            break;
+
+        case debug_menu_index::GENERATE_EFFECT_LIST:
+            generate_effect_list();
+            break;
+
+        case debug_menu_index::VEHICLE_BATTERY_CHARGE:
+            vehicle_battery_charge();
+            break;
+
+        case debug_menu_index::VEHICLE_DELETE: {
+
+            if( const optional_vpart_position ovp = here.veh_at( player_picks_tile() ) ) {
+                here.destroy_vehicle( &ovp->vehicle() );
+                break;
             }
         },
         {
