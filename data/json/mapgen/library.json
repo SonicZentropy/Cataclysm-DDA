@@ -2,7 +2,7 @@
   {
     "type": "mapgen",
     "om_terrain": [ "s_library" ],
-    "weight": 500,
+    "weight": 5000,
     "object": {
       "fill_ter": "t_floor",
       "rows": [
@@ -37,7 +37,7 @@
   {
     "type": "mapgen",
     "om_terrain": [ "s_library" ],
-    "weight": 1000,
+    "weight": 0,
     "//": "vandalized variant.",
     "object": {
       "fill_ter": "t_floor",
@@ -164,7 +164,7 @@
   {
     "type": "mapgen",
     "om_terrain": [ "s_library_1" ],
-    "weight": 1000,
+    "weight": 0,
     "//": "vandalized variant.",
     "object": {
       "fill_ter": "t_floor",
@@ -297,7 +297,7 @@
   {
     "type": "mapgen",
     "om_terrain": [ "s_library_2" ],
-    "weight": 2000,
+    "weight": 0,
     "//": "vandalized variant.",
     "object": {
       "fill_ter": "t_floor",
@@ -429,7 +429,7 @@
   {
     "type": "mapgen",
     "om_terrain": [ "s_library_3" ],
-    "weight": 1000,
+    "weight": 0,
     "//": "vandalized variant.",
     "object": {
       "fill_ter": "t_floor",
