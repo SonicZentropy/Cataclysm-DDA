@@ -49,7 +49,9 @@
       { "group": "robofac_basic_grenades", "prob": 100 },
       { "group": "cop_armory", "prob": 100 },
       { "group": "ammo_any_batteries_full", "prob": 100 },
-      { "item": "jumpsuit", "variant": "robofac", "count": 10 }
+      { "item": "jumpsuit", "variant": "robofac", "count": 10 },
+			{ "group": "bionics_common", "prob": 80 },
+			{ "group": "bionics_mil", "prob": 10 }
     ]
   },
   {

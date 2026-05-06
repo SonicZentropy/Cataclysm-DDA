@@ -15,6 +15,7 @@
     "bleed_rate": 0,
     "vision_night": 3,
     "luminance": 16,
+    "dissect": "dissect_mon_zombie_bio_op2",
     "harvest": "zombie_humanoid_electric",
     "special_attacks": [
       [ "PARROT", 8 ],
@@ -63,6 +64,7 @@
       { "id": "mon_shocker_chargeup_attack" },
       { "id": "mon_shocker_chargeup_attack_grab" }
     ],
+    "dissect": "dissect_mon_zombie_scientist",
     "special_when_hit": [ "ZAPBACK", 100 ],
     "upgrades": { "half_life": 168, "into_group": "GROUP_ZOMBIE_ELECTRIC_UPGRADE" },
     "extend": { "flags": [ "ELECTRIC", "CLUMSY_ATTACKS" ] }
@@ -86,6 +88,7 @@
     "melee_damage": [ { "damage_type": "electric", "amount": 6 } ],
     "luminance": 16,
     "harvest": "zombie_humanoid_electric",
+    "dissect": "dissect_mon_zombie_bio_op2",
     "special_attacks": [ [ "PARROT", 5 ] ],
     "emit_fields": [ { "emit_id": "emit_shock_cloud", "delay": "1 s" } ],
     "special_when_hit": [ "ZAPBACK", 75 ],

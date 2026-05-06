@@ -88,7 +88,8 @@
         "v": { "item": "SUS_office_desk", "chance": 40, "repeat": [ 1, 2 ] },
         "X": [
           { "item": "harddrugs", "chance": 70, "repeat": [ 1, 2 ] },
-          { "item": "drugs_rare", "chance": 70, "repeat": [ 1, 2 ] }
+          { "item": "drugs_rare", "chance": 70, "repeat": [ 1, 2 ] },
+					{ "item": "bionics_retail", "chance": 7, "repeat": [ 1, 2 ] }
         ],
         "D": { "item": "softdrugs", "chance": 90, "repeat": [ 1, 2 ] },
         "O": { "item": "virology_lab_fridge", "chance": 80, "repeat": [ 1, 2 ] },
@@ -742,7 +743,7 @@
         "................................................"
       ],
       "palettes": [ "hospital_2" ],
-      "place_vehicles": [ { "vehicle": "2seater2", "x": 10, "y": 6, "chance": 50, "rotation": 270 } ],
+      "place_vehicles": [ { "vehicle": "helicopters_no_wreck", "x": 10, "y": 6, "chance": 50, "rotation": 270 } ],
       "furniture": { "7": "f_bed" },
       "items": {
         "p": [

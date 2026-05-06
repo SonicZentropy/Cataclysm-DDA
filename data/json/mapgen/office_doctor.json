@@ -336,7 +336,10 @@
         "T": { "item": "office_breakroom", "chance": 80 },
         "f": [ { "item": "SUS_office_filing_cabinet", "chance": 90 }, { "item": "record_patient", "chance": 80 } ],
         "H": [
-          { "item": "harddrugs", "chance": 60, "repeat": [ 1, 3 ] },
+          { "item": "harddrugs", "chance": 60 },
+					{ "item": "bionics_retail", "chance": 80 },
+					{ "item": "bionics_retail", "chance": 60 },
+					{ "item": "bionics_retail", "chance": 20 },
           { "item": "gear_medical", "chance": 60, "repeat": [ 1, 3 ] },
           { "item": "drugs_analgesic", "chance": 60, "repeat": [ 1, 3 ] },
           { "item": "drugs_rare", "chance": 60, "repeat": [ 1, 3 ] },
