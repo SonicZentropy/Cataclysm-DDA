@@ -515,51 +515,6 @@
     "replace": "waterproof_smart_phone_case"
   },
   {
-    "id": "schematics_eyebot",
-    "type": "MIGRATION",
-    "replace": "novel_scifi"
-  },
-  {
-    "id": "schematics_copbot",
-    "type": "MIGRATION",
-    "replace": "novel_scifi"
-  },
-  {
-    "id": "schematics_riotbot",
-    "type": "MIGRATION",
-    "replace": "novel_scifi"
-  },
-  {
-    "id": "bot_copbot",
-    "type": "MIGRATION",
-    "replace": "broken_science_bot"
-  },
-  {
-    "id": "bot_eyebot",
-    "type": "MIGRATION",
-    "replace": "broken_science_bot"
-  },
-  {
-    "id": "bot_riotbot",
-    "type": "MIGRATION",
-    "replace": "broken_science_bot"
-  },
-  {
-    "id": "broken_eyebot",
-    "type": "MIGRATION",
-    "replace": "broken_science_bot"
-  },
-  {
-    "id": "broken_copbot",
-    "type": "MIGRATION",
-    "replace": "broken_science_bot"
-  },
-  {
-    "id": "broken_riotbot",
-    "type": "MIGRATION",
-    "replace": "broken_science_bot"
-  },
-  {
     "id": "RPG",
     "type": "MIGRATION",
     "replace": "m3_carlgustav"
@@ -773,11 +728,6 @@
     "type": "MIGRATION",
     "replace": "modular_ump",
     "contents": [ { "id": "retool_ump_45", "count": 1 } ]
-  },
-  {
-    "id": "bio_trickle",
-    "type": "MIGRATION",
-    "replace": "burnt_out_bionic"
   },
   {
     "id": "ballistic_vest_heavy_arms",
@@ -2747,7 +2697,6 @@
     "id": "chips3",
     "replace": "chips"
   },
-
   {
     "type": "MIGRATION",
     "id": "cooking_oil2",
@@ -2763,20 +2712,5 @@
     "id": "sinister_dress",
     "replace": "long_dress_sleeved",
     "variant": "sinister"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "broken_molebot",
-    "replace": "pickaxe"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "schematics_molebot",
-    "replace": "textbook_electronics"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "bot_molebot",
-    "replace": "pickaxe"
   }
 ]
