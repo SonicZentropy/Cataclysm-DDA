@@ -1,0 +1,53 @@
+[
+  {
+    "result": "diamond_plate",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_PARTS",
+    "skill_used": "fabrication",
+    "difficulty": 10,
+    "activity_level": "LIGHT_EXERCISE",
+    "skills_required": [  ],
+    "time": "8 h 20 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "diamond_matrix", 1 ] ],
+      [ [ "glass_sheet", 2 ] ],
+      [ [ "diamond_cluster", 40 ] ]
+    ]
+  },
+  {
+    "result": "diamond_frame",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_PARTS",
+    "skill_used": "fabrication",
+    "activity_level": "LIGHT_EXERCISE",
+    "difficulty": 10,
+    "skills_required": [  ],
+    "time": "8 h 20 m",
+    "autolearn": true,
+    "qualities": [ { "id": "CUT", "level": 1 } ],
+    "components": [
+      [ [ "diamond_matrix", 1 ] ],
+      [ [ "xlframe", 1 ], [ "foldframe", 1 ] ],
+      [ [ "diamond_cluster", 40 ] ]
+    ]
+  },
+
+  {
+    "result": "diamond_matrix",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "activity_level": "LIGHT_EXERCISE",
+    "skill_used": "fabrication",
+    "difficulty": 10,
+    "time": "8 h 20 m",
+    "autolearn": true,
+    "using": [ [ "welding_standard", 1 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 3 }, { "id": "CHISEL", "level": 3 } ],
+    "components": [ [ [ "charcoal", 50 ] ], [ [ "plasma", 10 ] ], [ [ "spiral_stone", 1 ] ] ]
+  }
+]

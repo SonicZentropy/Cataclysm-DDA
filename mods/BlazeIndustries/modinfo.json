@@ -1,0 +1,14 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "blazeindustriesreborn",
+    "name": "Blaze Industries Reborn",
+    "authors": [ "Blaze-whatdoyoumeanitsalreadytaken" ],
+    "maintainers": [ "N/A" ],
+    "description": "Introduces the fictional corporation Blaze Industries, bringing advanced vehicle modification to the consumer.",
+    "//": "Spiritual successor to blazemod, do not use together with the legacy blazemod unless you know what you are doing.",
+    "category": "zen",
+    "obsolete": false,
+    "dependencies": [ "dda" ]
+  }
+]
