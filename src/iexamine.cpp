@@ -1999,14 +1999,14 @@ void iexamine::locked_object_pickable( Character &you, const tripoint_bub_ms &ex
         int required_moves = lockpick_activity_actor::lockpicking_moves( item_location{you, it}, you );
         time_duration required_time = time_duration::from_turns( required_moves / you.get_speed() );
         const std::string time_string = colorize( to_string( required_time, true ), c_light_gray );
-        std::string query = string_format( _( "Pick the lock of %1$s using your %2$s?" ),
-                                           target_name, it->tname() );
-        query += "\n";
-        query += _( "Time to attempt: " );
-        query += time_string;
-        if( !query_yn( query ) ) {
-            return;
-        }
+        // std::string query = string_format( _( "Pick the lock of %1$s using your %2$s?" ),
+        //                                    target_name, it->tname() );
+        // query += "\n";
+        // query += _( "Time to attempt: " );
+        // query += time_string;
+        // if( !query_yn( query ) ) {
+        //     return;
+        // }
         const use_function *iuse_fn = it->type->get_use( "PICK_LOCK" );
         you.add_msg_if_player( _( "You attempt to pick the lock of %1$s using your %2$s…" ),
                                target_name, it->tname() );
@@ -5670,12 +5670,12 @@ void iexamine::ledge( Character &you, const tripoint_bub_ms &examp )
                 you.gravity_check();
             } else {
                 // Just to highlight the trepidation
-                popup( _( "You decided to step back from the ledge." ) );
+                //popup( _( "You decided to step back from the ledge." ) );
             }
             break;
         }
         default:
-            popup( _( "You decided to step back from the ledge." ) );
+            //popup( _( "You decided to step back from the ledge." ) );
             break;
     }
 }

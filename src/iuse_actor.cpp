@@ -214,8 +214,8 @@ static item_location form_loc( Character &you, map *here, const tripoint_bub_ms 
         }
     }
 
-    debugmsg( "Couldn't find item %s to form item_location, forming dummy location to ensure minimum functionality",
-              it.display_name() );
+    //debugmsg( "Couldn't find item %s to form item_location, forming dummy location to ensure minimum functionality",
+    //          it.display_name() );
     return item_location( you, &it );
 }
 

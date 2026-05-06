@@ -200,10 +200,16 @@ void DynamicDataLoader::load_deferred( deferred_json &data )
         data.erase( data.begin(), it );
         if( data.size() == n ) {
             for( const auto &elem : data ) {
+
                 try {
                     elem.first.throw_error( "JSON contains circular dependency, this object is discarded" );
                 } catch( const JsonError &err ) {
-                    debugmsg( "(json-error)\n%s", err.what() );
+                    //debugmsg( "(json-error)\n%s", err.what() );
+                    std::string id = elem.first.has_string("id") ? elem.first.get_string("id") : "unknown";
+                    std::string type = elem.first.get_string("type");
+                    std::string copy_from = elem.first.has_string("copy-from") ? elem.first.get_string("copy-from") : "none";
+                    debugmsg("(json-error)\n%s: type=%s, id=%s, copy-from=%s, source=%s",
+                             err.what(), type.c_str(), id.c_str(), copy_from.c_str(), elem.second.c_str());
                 }
                 inp_mngr.pump_events();
             }
