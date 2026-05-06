@@ -1,3 +1,6 @@
+map_editor/
+/distributionWORKING/
+/distribution/
 !src/chkjson
 *.7z
 *.a
@@ -32,7 +35,6 @@
 !/gfx/tile_config_template.json
 /graveyard/
 /memorial/
-/mods/
 /obj/
 /objwin/
 /save/

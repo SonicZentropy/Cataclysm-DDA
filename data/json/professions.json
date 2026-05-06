@@ -2533,7 +2533,7 @@
           { "group": "starter_wallet_full" },
           { "group": "charged_flashlight" },
           { "item": "lighter", "charges": 100 },
-          { "group": "knife_rambo_full", "container-item": "sheath" },
+          { "group": "knife_rambo_full" },
           { "item": "tshirt", "variant": "generic_tshirt" }
         ]
       },
