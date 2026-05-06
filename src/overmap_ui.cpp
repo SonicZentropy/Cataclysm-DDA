@@ -1103,8 +1103,7 @@ static void draw_ascii( const catacurses::window &w, overmap_draw_data_t &data )
             nc_color ter_color = c_black;
             std::string ter_sym = " ";
 
-            const om_vision_level vision = has_debug_vision ? om_vision_level::full :
-                                           overmap_buffer.seen( omp );
+            const om_vision_level vision = om_vision_level::full; // ZEN: Remove this horribly annoying feature and return to seeing everything by default
             if( vision == om_vision_level::unseen ) {
                 // Only load terrain if we can actually see it
                 cur_ter = overmap_buffer.ter( omp );
@@ -2016,24 +2015,30 @@ static bool try_travel_to_destination( avatar &player_character, const tripoint_
         ui_manager::redraw();
     }
     std::string confirm_msg;
+    bool skip_confirm = false;
     if( !driving && player_character.weight_carried() > player_character.weight_capacity() ) {
         confirm_msg = _( "You are overburdened, are you sure you want to travel (it may be painful)?" );
+        skip_confirm = true;
     } else if( !driving && player_character.in_vehicle ) {
         confirm_msg = _( "You are in a vehicle but not driving.  Are you sure you want to walk?" );
     } else if( driving ) {
+        skip_confirm = true;
+
         if( dest_is_curs ) {
             confirm_msg = _( "Drive to this point?" );
         } else {
             confirm_msg = _( "Drive to your destination?" );
         }
     } else {
+        skip_confirm = true;
+
         if( dest_is_curs ) {
             confirm_msg = _( "Travel to this point?" );
         } else {
             confirm_msg = _( "Travel to your destination?" );
         }
     }
-    if( query_yn( confirm_msg ) ) {
+    if( skip_confirm || query_yn( confirm_msg ) ) {
         if( !path_changed ) {
             player_character.omt_path.swap( path );
         }

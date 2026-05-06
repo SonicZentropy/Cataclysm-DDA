@@ -887,7 +887,8 @@ om_vision_level overmapbuffer::seen( const tripoint_abs_omt &p )
 void overmapbuffer::set_seen( const tripoint_abs_omt &p, om_vision_level seen )
 {
     const overmap_with_local_coords om_loc = get_om_global( p );
-    om_loc.om->set_seen( om_loc.local, seen );
+    om_vision_level force_full = om_vision_level::full;
+    om_loc.om->set_seen( om_loc.local, force_full );
 }
 
 bool overmapbuffer::seen_more_than( const tripoint_abs_omt &p, om_vision_level test )
@@ -980,10 +981,12 @@ bool overmapbuffer::reveal( const tripoint_abs_omt &center, int radius,
                 continue;
             }
             if( trigdist && i * i + j * j > radius_squared ) {
-                continue;
+                //set_seen( p, om_vision_level::full );
+                //continue;
             }
             if( !filter( ter( p ) ) ) {
-                continue;
+                //set_seen( p, om_vision_level::full );
+                //continue;
             }
             result = true;
             set_seen( p, om_vision_level::full );
@@ -997,18 +1000,17 @@ overmap_path_params overmap_path_params::for_player()
     overmap_path_params ret;
     // 24 tiles = 24 seconds walking
     ret.set_cost( oter_travel_cost_type::highway, 24 );
-    ret.set_cost( oter_travel_cost_type::road, 24 );
+    ret.set_cost( oter_travel_cost_type::road, 36 );
     ret.set_cost( oter_travel_cost_type::dirt_road, 24 );
-    ret.set_cost( oter_travel_cost_type::field, 36 );
-    ret.set_cost( oter_travel_cost_type::crop_field, 54 );
+    ret.set_cost( oter_travel_cost_type::field, 28 );
     ret.set_cost( oter_travel_cost_type::trail, 43 );
     ret.set_cost( oter_travel_cost_type::shore, 48 );
-    ret.set_cost( oter_travel_cost_type::forest, 72 );
+    ret.set_cost( oter_travel_cost_type::forest, 45 );
     ret.set_cost( oter_travel_cost_type::swamp, 240 );
     ret.set_cost( oter_travel_cost_type::other, 72 );
-    ret.set_cost( oter_travel_cost_type::structure, 60 );
+    ret.set_cost( oter_travel_cost_type::structure, 80 );
     ret.set_cost( oter_travel_cost_type::roof, 36 );
-    ret.set_cost( oter_travel_cost_type::basement, 60 );
+    ret.set_cost( oter_travel_cost_type::basement, 80 );
     ret.set_cost( oter_travel_cost_type::tunnel, 30 );
     ret.allow_diagonal = true;
     return ret;
@@ -1028,7 +1030,7 @@ overmap_path_params overmap_path_params::for_land_vehicle( float offroad_coeff, 
     const bool can_offroad = offroad_coeff >= 0.05;
     overmap_path_params ret;
     ret.set_cost( oter_travel_cost_type::highway, 3 );
-    ret.set_cost( oter_travel_cost_type::road, 8 ); // limited by vehicle autodrive speed
+    ret.set_cost( oter_travel_cost_type::road, 24 ); // limited by vehicle autodrive speed
     const int field_cost = can_offroad ? std::lround( 12 / std::min( 1.0f, offroad_coeff ) ) : -1;
     ret.set_cost( oter_travel_cost_type::field, field_cost );
     ret.set_cost( oter_travel_cost_type::crop_field,
