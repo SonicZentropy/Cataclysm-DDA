@@ -84,7 +84,7 @@
     "id": "earthenware_firing",
     "type": "requirement",
     "//": "Firing various clay shapes to make earthenware",
-    "tools": [ [ [ "fire", -1 ], [ "fake_clay_kiln", 1 ], [ "kiln", 1 ] ] ]
+    "tools": [ [ [ "fire", -1 ], [ "brick_kiln", 1 ], [ "kiln", 1 ] ] ]
   },
   {
     "id": "forging_standard",
@@ -123,7 +123,6 @@
     "qualities": [ { "id": "ANVIL", "level": 3 }, { "id": "HAMMER", "level": 3 } ],
     "tools": [
       [ [ "forge", 4 ], [ "oxy_torch", 4 ] ],
-      [ [ "metal_file_any", 1, "LIST" ] ],
       [ [ "metalworking_tongs_any", 1, "LIST" ] ]
     ]
   },
@@ -182,8 +181,8 @@
     "//": "Crafting of steel/iron items or installation of vehicle parts, measured in 1 cm segments - assume roughly 360 cm per hour, 10 seconds per # of this quality",
     "//1": "Arc welding is about 85% efficient, acetylene welding is about 40% efficient",
     "qualities": [ { "id": "GLARE", "level": 1 } ],
-    "tools": [ [ [ "welder", 20 ], [ "welding_kit", 20 ], [ "welder_crude", 40 ], [ "integrated_welder", 30 ], [ "oxy_torch", 1 ] ] ],
-    "components": [ [ [ "welding_rod_steel", 1 ], [ "welding_wire_steel", 1 ], [ "brazing_rod_bronze", 1 ] ] ]
+    "tools": [ [ [ "welder", 20 ], [ "welding_kit", 20 ], [ "welder_crude", 40 ], [ "integrated_welder", 30 ], [ "oxy_torch", 1 ] ] ]
+
   },
   {
     "id": "welding_alloys",
@@ -192,8 +191,8 @@
     "//": "Crafting items made of aluminum alloy or installation of vehicle parts, currently making the same assumption for time/coverage as steel",
     "//1": "Arc welding is about 85% efficient, acetylene welding is about 40% efficient",
     "qualities": [ { "id": "GLARE", "level": 1 } ],
-    "tools": [ [ [ "welder", 20 ], [ "welding_kit", 20 ], [ "welder_crude", 40 ], [ "integrated_welder", 30 ], [ "oxy_torch", 1 ] ] ],
-    "components": [ [ [ "welding_rod_alloy", 1 ], [ "welding_wire_alloy", 1 ], [ "brazing_rod_alloy", 1 ] ] ]
+    "tools": [ [ [ "welder", 20 ], [ "welding_kit", 20 ], [ "welder_crude", 40 ], [ "integrated_welder", 30 ], [ "oxy_torch", 1 ] ] ]
+
   },
   {
     "id": "repair_welding_standard",
@@ -211,7 +210,6 @@
       ]
     ],
     "components": [
-      [ [ "welding_rod_steel", 10 ], [ "welding_wire_steel", 10 ], [ "brazing_rod_bronze", 10 ] ],
       [ [ "steel_chunk_any", 1, "LIST" ] ]
     ]
   },
@@ -231,7 +229,6 @@
       ]
     ],
     "components": [
-      [ [ "welding_rod_steel", 10 ], [ "welding_wire_steel", 10 ], [ "brazing_rod_bronze", 10 ] ],
       [ [ "lc_steel_chunk", 1 ] ]
     ]
   },
@@ -251,7 +248,6 @@
       ]
     ],
     "components": [
-      [ [ "welding_rod_alloy", 10 ], [ "welding_wire_alloy", 10 ], [ "brazing_rod_alloy", 10 ] ],
       [ [ "material_aluminium_ingot", 1 ] ]
     ]
   },
@@ -262,7 +258,7 @@
     "//1": "Arc welding is about 85% efficient, acetylene welding is about 40% efficient",
     "qualities": [ { "id": "GLARE", "level": 1 }, { "id": "SAW_M", "level": 2 } ],
     "tools": [ [ [ "welder", 800 ], [ "welding_kit", 800 ], [ "welder_crude", 1600 ], [ "oxy_torch", 40 ] ] ],
-    "components": [ [ [ "welding_rod_steel", 10 ], [ "welding_wire_steel", 10 ], [ "brazing_rod_bronze", 10 ] ], [ [ "rebar", 1 ] ] ]
+    "components": [ [ [ "rebar", 1 ] ] ]
   },
   {
     "id": "chainmail_standard",
