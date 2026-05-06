@@ -1392,13 +1392,13 @@ void vehicle::damage_wheel_on_item( vehicle_part *vp_wheel, const item &it,
         return;
     }
 
-    const double chance_to_damage = wheel_damage_chance_vs_item( it, *vp_wheel );
+    //const double chance_to_damage = wheel_damage_chance_vs_item( it, *vp_wheel );
 
-    if( chance_to_damage > 0.0 && chance_to_damage >= rng_float( 0.0, 1.0 ) ) {
-        apply_wheel_faults( vp_wheel, messages );
-        refresh_pivot( get_map() );
-        return;
-    }
+    //if( chance_to_damage > 0.0 && chance_to_damage >= rng_float( 0.0, 1.0 ) ) {
+    //    apply_wheel_faults( vp_wheel, messages );
+    //    refresh_pivot( get_map() );
+    //    return;
+    //}
 }
 
 void vehicle::handle_trap( map *here, const tripoint_bub_ms &p, vehicle_part &vp_wheel )
