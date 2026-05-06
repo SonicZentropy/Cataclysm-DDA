@@ -1,0 +1,123 @@
+[
+  {
+    "id": "bio_railgun",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": ["BIONIC_ITEM"],
+    "name": { "str": "Railgun CBM" },
+    "looks_like": "bio_int_enhancer",
+    "description": "EM field generators in the user's arms increase the range and damage of thrown magnetic objects at a cost of 1 bionic power per throw.  They will create a trail of electricity that can cause additional damage.",
+    "price": "2200 USD",
+    "price_postapoc": "10 USD",
+    "weight": "1000 g",
+    "difficulty": 3,
+    "installation_data": "AID_bio_railgun"
+  },
+  {
+    "id": "bio_trickle",
+    "copy-from": "bionic_general_npc_usable",
+    "type": "ITEM",
+    "subtypes": ["BIONIC_ITEM"],
+    "name": { "str": "Trickle Charger CBM" },
+    "description": "Ubiquitous in nearly every post atomic age dimension, betavoltaic nuclear battery implants were found by the Exodii powering pacemakers and nerve stimulators, devices that require very low power for many decades.  Stripped of its original medical purpose, the trickle charger CBM will provide a trickle of very low energy but requires no fuel source, and multiple copies can be installed.",
+    "weight": "500 g",
+    "price": "2200 USD",
+    "price_postapoc": "10 USD",
+    "difficulty": 3
+  },
+  {
+    "id": "bio_power_armor_interface",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": ["BIONIC_ITEM"],
+    "name": { "str": "Power Armor Interface CBM" },
+    "looks_like": "bio_int_enhancer",
+    "description": "Interfaces the user's bionic power system with the internal charging port on suits of power armor, allowing them to draw from the user's bionic power banks.",
+    "price": "1200 USD",
+    "price_postapoc": "10 USD",
+    "weight": "500 g",
+    "difficulty": 1,
+    "installation_data": "AID_bio_power_armor_interface"
+  },
+  {
+    "id": "bio_power_armor_interface_mkII",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": ["BIONIC_ITEM"],
+    "name": { "str": "Power Armor Interface Mk. II CBM" },
+    "looks_like": "bio_int_enhancer",
+    "description": "Interfaces the user's bionic power system with the internal charging port on suits of power armor, allowing them to draw from the user's bionic power banks.  Twice as efficient as the Mk. I model.  The Mk. II was designed by DoubleTech Inc., to meet the popularity of the Mk. II power armor series.",
+    "price": "10 kUSD",
+    "price_postapoc": "10 USD",
+    "weight": "400 g",
+    "difficulty": 8
+  },
+  {
+    "id": "bn_bio_solar",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": ["BIONIC_ITEM"],
+    "name": { "str": "Solar Panels CBM" },
+    "description": "Installed on your back is a set of retractable solar panels.  When in direct sunlight, they will automatically deploy and slowly recharge your power level.",
+    "price": "3 kUSD 500 USD",
+    "price_postapoc": "10 USD",
+    "difficulty": 4
+  },
+  {
+    "id": "bio_microgen",
+    "copy-from": "bionic_general_npc_usable",
+    "type": "ITEM",
+    "subtypes": ["BIONIC_ITEM"],
+    "name": { "str": "Microfusion Generator CBM" },
+    "description": "A miniaturized fusion reactor.  It has modest output, but will run continuously for over two hundred years thanks to its internal nuclear fuel reservoir.",
+    "weight": "500 g",
+    "price": "1 kUSD",
+    "price_postapoc": "10 USD",
+    "difficulty": 3
+  },
+  {
+    "id": "afs_bio_missiles",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": ["BIONIC_ITEM"],
+    "name": { "str": "Deployable Grenade Launcher CBM" },
+    "description": "A small, folding tube that attaches to your right arm.  Once implanted, it can serve as a portable, integrated tool for firing 40mm grenades and canisters.",
+    "price": "1 kUSD",
+    "difficulty": 5
+  },
+  {
+    "id": "afs_bio_linguistic_coprocessor",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": ["BIONIC_ITEM"],
+    "name": { "str": "Linguistic Coprocessor CBM" },
+    "description": "A microcomputer installed into the left hemisphere of your brain to increase the speed that it processes language.  When installed, it provides a passive boost to reading speed.",
+    "price": "1 kUSD",
+    "price_postapoc": "10 USD",
+    "difficulty": 5
+  },
+  {
+    "id": "bio_shock_absorber",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": ["BIONIC_ITEM"],
+    "name": { "str": "Kinetic Shock Absorbers CBM" },
+    "looks_like": "bio_int_enhancer",
+    "description": "A set of hydraulic springs and foldable padding that replaces most of the flesh in the limbs and upper torso.  While active, these absorbers will negate damage from severe impacts such as falling, at the cost of reducing the user's ability to move effectively.",
+    "price": "100 USD",
+    "price_postapoc": "10 USD",
+    "weight": "3000 g",
+    "difficulty": 4
+  },
+  {
+    "id": "afs_bio_dopamine_stimulators",
+    "copy-from": "bionic_general",
+    "type": "ITEM",
+    "subtypes": ["BIONIC_ITEM"],
+    "name": { "str": "Dopamine Stimulators CBM" },
+    "description": "A set of tiny bionic nerve stimulators that install into the reward center of your brain.  When run with bionic power, it periodically releases a hit of dopamine and other reward chemicals, inducing a state of euphoria and suppressing fear.",
+    "price": "1 kUSD",
+    "price_postapoc": "10 USD",
+    "difficulty": 8
+  }
+]

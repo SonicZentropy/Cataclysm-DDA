@@ -1,0 +1,9 @@
+[
+  {
+    "type": "item_group",
+    "id": "bed",
+    "subtype": "distribution",
+    "copy-from": "bed",
+    "extend": { "entries": [ { "item": "bodypillow", "prob": 200 } ] }
+  }
+]

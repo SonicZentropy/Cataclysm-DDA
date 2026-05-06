@@ -1,0 +1,47 @@
+[
+  {
+    "id": "book_martial",
+    "type": "item_group",
+    "copy-from": "book_martial",
+    "subtype": "distribution",
+    "extend": {
+      "entries": [{ "group": "dojo_manuals", "prob": 20 }]
+    }
+  },
+  {
+    "id": "mansion_books",
+    "type": "item_group",
+    "copy-from": "mansion_books",
+    "subtype": "distribution",
+    "extend": {
+      "entries": [{ "group": "dojo_manuals", "prob": 20 }]
+    }
+  },
+  {
+    "id": "dojo_manuals",
+    "type": "item_group",
+    "copy-from": "dojo_manuals",
+    "subtype": "distribution",
+    "extend": {
+      "entries": [
+        { "group": "book_martial_rare", "prob": 15 },
+        { "item": "manual_swordsmanship", "prob": 15 }
+      ]
+    }
+  },
+  {
+    "id": "book_martial_rare",
+    "type": "item_group",
+    "copy-from": "book_martial_rare",
+    "subtype": "distribution",
+    "extend": {
+      "entries": [
+        { "item": "manual_venom_snake", "prob": 1 },
+        { "item": "manual_toad", "prob": 1 },
+        { "item": "manual_scorpion", "prob": 1 },
+        { "item": "manual_lizard", "prob": 1 },
+        { "item": "manual_centipede", "prob": 1 }
+      ]
+    }
+  }
+]

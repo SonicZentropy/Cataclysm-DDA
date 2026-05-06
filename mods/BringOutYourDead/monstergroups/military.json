@@ -1,0 +1,16 @@
+[
+  {
+    "type": "monstergroup",
+    "id": "GROUP_MIL_STRONG",
+    "monsters": [
+      { "monster": "mon_zombie_bio_op2", "weight": 25, "cost_multiplier": 5, "starts": "60 days" }
+    ]
+  },
+  {
+    "type": "monstergroup",
+    "id": "GROUP_MIL_MASS_GRAVE",
+    "monsters": [
+      { "monster": "mon_feral_soldier_flamer", "weight": 10, "starts": "5 days" }
+    ]
+  }
+]

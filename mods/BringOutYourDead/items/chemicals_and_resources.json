@@ -1,0 +1,10 @@
+[
+  {
+    "type": "ITEM",
+    "subtypes": ["COMESTIBLE"],
+    "id": "bleach",
+    "name": { "str_sp": "bleach" },
+    "copy-from": "bleach",
+    "flags": ["DETERGENT"]
+  }
+]

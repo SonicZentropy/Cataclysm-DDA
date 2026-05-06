@@ -1,0 +1,12 @@
+[
+  {
+    "type": "item_group",
+    "id": "inactive_bots_milspec",
+    "copy-from": "inactive_bots_milspec",
+    "extend": {
+      "items": [
+        { "item": "fc_bot_mininuke_hack", "prob": 2 }
+      ]
+    }
+  }
+]
