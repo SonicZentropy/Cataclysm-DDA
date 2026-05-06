@@ -1,6 +1,12 @@
 [
   {
     "type": "keybinding",
+    "id": "toggle_npc_processing",
+    "category": "DEFAULTMODE",
+    "name": "Toggle NPC processing"
+  },
+  {
+    "type": "keybinding",
     "id": "UILIST.UP",
     "name": "Pan up",
     "bindings": [
@@ -1665,7 +1671,7 @@
     "id": "PRECISE_SHOT",
     "category": "TARGET",
     "name": "Precise shot",
-    "bindings": [ { "input_method": "keyboard_any", "key": "p" }, { "input_method": "gamepad", "key": "L_RADIAL_E" } ]
+    "bindings": [ { "input_method": "keyboard_any", "key": "p" },    { "input_method": "keyboard_any", "key": "KEYPAD_ENTER" } ]
   },
   {
     "type": "keybinding",
@@ -4878,8 +4884,9 @@
     "bindings": [
       { "input_method": "keyboard_char", "key": "I" },
       { "input_method": "keyboard_code", "key": "i", "mod": [ "shift" ] },
+      { "input_method": "keyboard_any", "key": "KEYPAD_ENTER" },
       { "input_method": "keyboard_any", "key": "i" },
-      { "input_method": "gamepad", "key": "L_RADIAL_E" }
+			{ "input_method": "gamepad", "key": "L_RADIAL_E" }
     ]
   },
   {
