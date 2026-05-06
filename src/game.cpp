@@ -236,6 +236,7 @@
 
 static const activity_id ACT_MOVE_LOOT( "ACT_MOVE_LOOT" );
 static const activity_id ACT_TRAVELLING( "ACT_TRAVELLING" );
+static const activity_id ACT_PICKUP( "ACT_PICKUP" );
 
 static const bionic_id bio_jointservo( "bio_jointservo" );
 static const bionic_id bio_probability_travel( "bio_probability_travel" );
@@ -457,7 +458,6 @@ game::game() :
     scent( *scent_ptr ),
     timed_events( *timed_event_manager_ptr ),
     uquit( QUIT_NO ),
-    save_is_dirty( false ),
     safe_mode( SAFE_MODE_ON ),
     u_shared_ptr( &u, null_deleter{} ),
     next_npc_id( 1 ),
@@ -1479,6 +1479,13 @@ bool game::cancel_activity_or_ignore_query( const distraction_type type, const s
     if( !u.activity || u.activity.is_distraction_ignored( type ) ) {
         return false;
     }
+
+    // Auto-cancel pickup activities without prompting
+    if( u.activity.id() == ACT_PICKUP ) {
+        u.cancel_activity();
+        return true;
+    }
+
     const bool force_uc = get_option<bool>( "FORCE_CAPITAL_YN" );
     const auto &allow_key = force_uc ? input_context::disallow_lower_case_or_non_modified_letters
                             : input_context::allow_all_keys;
@@ -2665,6 +2672,7 @@ input_context get_default_mode_input_context()
         ctxt.register_action( "toggle_auto_foraging" );
         ctxt.register_action( "toggle_auto_pickup" );
         ctxt.register_action( "toggle_thief_mode" );
+    ctxt.register_action( "toggle_npc_processing" );
         ctxt.register_action( "toggle_prevent_occlusion" );
         ctxt.register_action( "diary" );
         ctxt.register_action( "action_menu" );
@@ -4932,7 +4940,8 @@ bool game::revive_corpse( const tripoint_bub_ms &p, item &it, int radius )
     critter.add_effect( effect_source(), effect_revived_marker, calendar::INDEFINITELY_LONG_DURATION,
                         true );
 
-    return place_critter_around( newmon_ptr, tripoint_bub_ms( p ), radius );
+    //return place_critter_around( newmon_ptr, tripoint_bub_ms( p ), radius );
+    return false;
 }
 
 void game::assign_revive_form( item &it, tripoint_bub_ms p )
@@ -7422,7 +7431,7 @@ bool game::prompt_dangerous_tile( const tripoint_bub_ms &dest_loc,
         skip_confirmation = true;
     }
 
-    if( !harmful_stuff->empty() && !skip_confirmation &&
+    if( !harmful_stuff->empty() && here.is_open_air( dest_loc ) && !skip_confirmation  &&
         !query_yn( _( "Really step into %s?" ), enumerate_as_string( *harmful_stuff ) ) ) {
         return false;
     }
