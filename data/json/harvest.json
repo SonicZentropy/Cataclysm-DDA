@@ -1607,7 +1607,8 @@
         { "drop": "blood_tainted_human", "type": "blood", "mass_ratio": 0.1 },
         { "drop": "fat_tainted_human", "type": "flesh", "mass_ratio": 0.08 },
         { "drop": "tainted_innards_human", "type": "offal", "mass_ratio": 0.15 },
-        { "drop": "tainted_marrow_human", "type": "bone", "mass_ratio": 0.005 }
+        { "drop": "tainted_marrow_human", "type": "bone", "mass_ratio": 0.005 },
+        { "drop": "sinew", "type": "bone", "mass_ratio": 0.00035 }
       ]
     }
   },
@@ -1646,7 +1647,8 @@
         { "drop": "blood_tainted_human", "type": "blood", "mass_ratio": 0.1 },
         { "drop": "fat_tainted_human", "type": "flesh", "mass_ratio": 0.08 },
         { "drop": "tainted_innards_human", "type": "offal", "mass_ratio": 0.15 },
-        { "drop": "tainted_marrow_human", "type": "bone", "mass_ratio": 0.005 }
+        { "drop": "tainted_marrow_human", "type": "bone", "mass_ratio": 0.005 },
+        { "drop": "sinew", "type": "bone", "mass_ratio": 0.00035 }
       ]
     },
     "message": "<zombie_humanoid_headless_harvest>"
@@ -1670,7 +1672,8 @@
         { "drop": "blood_tainted_human", "type": "blood", "mass_ratio": 0.1 },
         { "drop": "fat_tainted_human", "type": "flesh", "mass_ratio": 0.08 },
         { "drop": "tainted_innards_human", "type": "offal", "mass_ratio": 0.15 },
-        { "drop": "tainted_marrow_human", "type": "bone", "mass_ratio": 0.005 }
+        { "drop": "tainted_marrow_human", "type": "bone", "mass_ratio": 0.005 },
+        { "drop": "sinew", "type": "bone", "mass_ratio": 0.00035 }
       ]
     }
   },
@@ -1841,7 +1844,8 @@
       { "drop": "fat_tainted_human", "type": "flesh", "mass_ratio": 0.06 },
       { "drop": "tainted_innards_human", "type": "offal", "mass_ratio": 0.08 },
       { "drop": "tainted_marrow_human", "type": "bone", "mass_ratio": 0.003 },
-      { "drop": "bone_tainted", "type": "bone", "mass_ratio": 0.07 }
+      { "drop": "bone_tainted", "type": "bone", "mass_ratio": 0.07 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.00035 }
     ]
   },
   {
@@ -1860,7 +1864,7 @@
   },
   {
     "id": "zombie_kevlar",
-    "//": "zombies with Kevlar infused into their skin. Gives unuseable scrap.",
+    "//": "zombies with Kevlar infused into their skin",
     "type": "harvest",
     "message": "<zombie_humanoid_kevlar_harvest>",
     "entries": [
@@ -1872,13 +1876,15 @@
       { "drop": "tainted_marrow_human", "type": "bone", "mass_ratio": 0.005 },
       { "drop": "sinew", "type": "bone", "mass_ratio": 0.00035 },
       { "drop": "blood_tainted_human", "type": "blood", "mass_ratio": 0.1 },
-      { "drop": "tainted_kevlar", "type": "skin", "mass_ratio": 0.04, "flags": [ "FILTHY" ] },
+      { "drop": "kevlar_patch", "type": "skin", "mass_ratio": 0.02, "flags": [ "FILTHY" ] },
+      { "drop": "sheet_kevlar", "type": "skin", "mass_ratio": 0.01, "flags": [ "FILTHY" ] },
+      { "drop": "sheet_kevlar_layered", "type": "skin", "mass_ratio": 0.01, "flags": [ "FILTHY" ] },
       { "drop": "raw_tainted_leather", "type": "skin", "mass_ratio": 0.04 }
     ]
   },
   {
     "id": "zombie_kevlar_hulk",
-    "//": "hulks with Kevlar infused into their skin. Gives unuseable scrap.",
+    "//": "hulks with Kevlar infused into their skin",
     "type": "harvest",
     "message": "<zombie_kevlar_hulk_harvest>",
     "entries": [
@@ -1888,14 +1894,17 @@
       { "drop": "tainted_innards_human", "type": "offal", "mass_ratio": 0.15 },
       { "drop": "bone_tainted", "type": "bone", "mass_ratio": 0.1 },
       { "drop": "tainted_marrow_human", "type": "bone", "mass_ratio": 0.005 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.00035 },
       { "drop": "blood_tainted_human", "type": "blood", "mass_ratio": 0.1 },
-      { "drop": "tainted_kevlar", "type": "skin", "mass_ratio": 0.04, "flags": [ "FILTHY" ] },
+      { "drop": "kevlar_patch", "type": "skin", "mass_ratio": 0.02, "flags": [ "FILTHY" ] },
+      { "drop": "sheet_kevlar", "type": "skin", "mass_ratio": 0.01, "flags": [ "FILTHY" ] },
+      { "drop": "sheet_kevlar_layered", "type": "skin", "mass_ratio": 0.01, "flags": [ "FILTHY" ] },
       { "drop": "raw_tainted_leather", "type": "skin", "mass_ratio": 0.04 }
     ]
   },
   {
     "id": "zombie_nomex",
-    "//": "zombies with Nomex infused into their skin. Gives unuseable scrap.",
+    "//": "zombies with Nomex infused into their skin",
     "type": "harvest",
     "entries": [
       { "drop": "skull_human_tainted", "type": "bone", "scale_num": [ 1, 1 ], "max": 1 },
@@ -1904,8 +1913,10 @@
       { "drop": "tainted_innards_human", "type": "offal", "mass_ratio": 0.15 },
       { "drop": "bone_tainted", "type": "bone", "mass_ratio": 0.1 },
       { "drop": "tainted_marrow_human", "type": "bone", "mass_ratio": 0.005 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.00035 },
       { "drop": "blood_tainted_human", "type": "blood", "mass_ratio": 0.1 },
-      { "drop": "tainted_nomex", "type": "skin", "mass_ratio": 0.03, "flags": [ "FILTHY" ] },
+      { "drop": "nomex", "type": "skin", "mass_ratio": 0.02, "flags": [ "FILTHY" ] },
+      { "drop": "sheet_nomex", "type": "skin", "mass_ratio": 0.01, "flags": [ "FILTHY" ] },
       { "drop": "raw_tainted_leather", "type": "skin", "mass_ratio": 0.04 }
     ]
   },
@@ -2141,6 +2152,124 @@
       { "drop": "veggy_tainted", "base_num": [ 16, 25 ], "scale_num": [ 0.6, 0.8 ], "max": 50, "type": "flesh" },
       { "drop": "plant_sac", "base_num": [ 3, 6 ], "scale_num": [ 0.7, 0.9 ], "max": 10, "type": "offal" },
       { "drop": "stick_fiber", "base_num": [ 4, 8 ], "scale_num": [ 0.5, 0.7 ], "max": 10, "type": "bone" }
+    ]
+  },
+  {
+    "id": "CBM_SCI",
+    "type": "harvest",
+    "entries": [
+      {
+        "drop": "bionics_sci",
+        "type": "bionic_group",
+        "flags": [ "FILTHY", "NO_STERILE", "NO_PACKED" ],
+        "faults": [ "fault_bionic_salvaged" ]
+      },
+      { "drop": "meat_tainted", "type": "flesh", "mass_ratio": 0.25 },
+      { "drop": "fat_tainted", "type": "flesh", "mass_ratio": 0.08 },
+      { "drop": "bone_tainted", "type": "bone", "mass_ratio": 0.1 }
+    ]
+  },
+  {
+    "id": "CBM_SCI_FERAL",
+    "type": "harvest",
+    "entries": [
+      {
+        "drop": "bionics_sci",
+        "type": "bionic_group",
+        "flags": [ "NO_STERILE", "NO_PACKED" ],
+        "faults": [ "fault_bionic_salvaged" ]
+      },
+      { "drop": "human_flesh", "type": "flesh", "mass_ratio": 0.2 },
+      { "drop": "hstomach", "scale_num": [ 1, 1 ], "max": 1, "type": "offal" },
+      { "drop": "human_fat", "type": "flesh", "mass_ratio": 0.1 },
+      { "drop": "blood", "type": "blood", "mass_ratio": 0.1 },
+      { "drop": "bone_human", "type": "bone", "mass_ratio": 0.12 },
+      { "drop": "sinew", "type": "bone", "mass_ratio": 0.001 },
+      { "drop": "raw_hleather", "type": "skin", "mass_ratio": 0.01 }
+    ]
+  },
+  {
+    "id": "CBM_TECH",
+    "type": "harvest",
+    "entries": [
+      {
+        "drop": "bio_power_storage",
+        "type": "bionic",
+        "flags": [ "FILTHY", "NO_STERILE", "NO_PACKED" ],
+        "faults": [ "fault_bionic_salvaged" ]
+      },
+      {
+        "drop": "bionics_tech",
+        "type": "bionic_group",
+        "flags": [ "FILTHY", "NO_STERILE", "NO_PACKED" ],
+        "faults": [ "fault_bionic_salvaged" ]
+      },
+      { "drop": "meat_tainted", "type": "flesh", "mass_ratio": 0.25 },
+      { "drop": "fat_tainted", "type": "flesh", "mass_ratio": 0.08 },
+      { "drop": "bone_tainted", "type": "bone", "mass_ratio": 0.1 }
+    ]
+  },
+  {
+    "id": "CBM_OP",
+    "type": "harvest",
+    "entries": [
+      {
+        "drop": "bio_power_storage_mkII",
+        "type": "bionic",
+        "flags": [ "FILTHY", "NO_STERILE", "NO_PACKED" ],
+        "faults": [ "fault_bionic_salvaged" ]
+      },
+      {
+        "drop": "bionics_op",
+        "type": "bionic_group",
+        "flags": [ "FILTHY", "NO_STERILE", "NO_PACKED" ],
+        "faults": [ "fault_bionic_salvaged" ]
+      },
+      { "drop": "meat_tainted", "type": "flesh", "mass_ratio": 0.25 },
+      { "drop": "fat_tainted", "type": "flesh", "mass_ratio": 0.08 },
+      { "drop": "bone_tainted", "type": "bone", "mass_ratio": 0.1 }
+    ]
+  },
+  {
+    "id": "CBM_OP2",
+    "type": "harvest",
+    "entries": [
+      {
+        "drop": "bionics_op2_off",
+        "type": "bionic_group",
+        "flags": [ "FILTHY", "NO_STERILE", "NO_PACKED" ],
+        "faults": [ "fault_bionic_salvaged" ]
+      },
+      {
+        "drop": "bionics_op2_def",
+        "type": "bionic_group",
+        "flags": [ "FILTHY", "NO_STERILE", "NO_PACKED" ],
+        "faults": [ "fault_bionic_salvaged" ]
+      },
+      {
+        "drop": "bionics_op2_utl",
+        "type": "bionic_group",
+        "flags": [ "FILTHY", "NO_STERILE", "NO_PACKED" ],
+        "faults": [ "fault_bionic_salvaged" ]
+      },
+      { "drop": "meat_tainted", "type": "flesh", "mass_ratio": 0.25 },
+      { "drop": "fat_tainted", "type": "flesh", "mass_ratio": 0.08 },
+      { "drop": "bone_tainted", "type": "bone", "mass_ratio": 0.1 }
+    ]
+  },
+  {
+    "id": "CBM_POWER",
+    "type": "harvest",
+    "entries": [
+      {
+        "drop": "bio_power_storage",
+        "type": "bionic",
+        "flags": [ "FILTHY", "NO_STERILE", "NO_PACKED" ],
+        "faults": [ "fault_bionic_salvaged" ]
+      },
+      { "drop": "meat_tainted", "type": "flesh", "mass_ratio": 0.25 },
+      { "drop": "fat_tainted", "type": "flesh", "mass_ratio": 0.08 },
+      { "drop": "bone_tainted", "type": "bone", "mass_ratio": 0.1 }
     ]
   },
   {

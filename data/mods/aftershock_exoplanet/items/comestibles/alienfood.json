@@ -135,7 +135,7 @@
     "type": "ITEM",
     "subtypes": [ "COMESTIBLE" ],
     "id": "frost_human_tallow",
-    "name": { "str_sp": "freezerburned human tallow" },
+    "name": { "str_sp": "freezerburned human lard" },
     "weight": "220 g",
     "color": "pink",
     "spoils_in": "60 days",

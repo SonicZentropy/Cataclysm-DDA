@@ -2180,7 +2180,7 @@
   {
     "id": "stillsuit",
     "type": "MIGRATION",
-    "replace": "wetsuit"
+    "replace": "h20survivor_jumpsuit"
   },
   {
     "id": "m1911-460",
@@ -2747,31 +2747,7 @@
     "id": "chips3",
     "replace": "chips"
   },
-  {
-    "type": "MIGRATION",
-    "id": "lard",
-    "replace": "tallow"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "mutant_human_lard",
-    "replace": "mutant_human_tallow"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "mutant_lard",
-    "replace": "mutant_tallow"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "demihuman_lard",
-    "replace": "demihuman_tallow"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "human_lard",
-    "replace": "human_tallow"
-  },
+
   {
     "type": "MIGRATION",
     "id": "cooking_oil2",
