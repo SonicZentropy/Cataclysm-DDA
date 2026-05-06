@@ -1,0 +1,48 @@
+[
+  {
+    "result": "vortex_engine",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "skill_used": "fabrication",
+    "activity_level": "LIGHT_EXERCISE",
+    "difficulty": 6,
+    "skills_required": [ [ "mechanics", 6 ] ],
+    "time": "30 h",
+    "reversible": false,
+    "autolearn": true,
+    "using": [ [ "forging_standard", 3 ], [ "steel_standard", 3 ], [ "welding_standard", 6 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 }, { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "tongs", -1 ] ], [ [ "swage", -1 ] ] ],
+    "components": [
+      [ [ "vortex_stone", 1 ] ],
+      [ [ "chain", 6 ] ],
+      [ [ "foot_crank", 6 ] ],
+      [ [ "metal_tank", 1 ] ],
+      [ [ "plastic_chunk", 30 ] ]
+    ]
+  },
+  {
+    "result": "vortex_generator",
+    "type": "recipe",
+    "category": "CC_OTHER",
+    "subcategory": "CSC_OTHER_MATERIALS",
+    "activity_level": "LIGHT_EXERCISE",
+    "skill_used": "fabrication",
+    "difficulty": 5,
+    "skills_required": [ [ "mechanics", 5 ], [ "electronics", 3 ] ],
+    "time": "30 h",
+    "autolearn": true,
+    "using": [ [ "forging_standard", 3 ], [ "steel_standard", 3 ], [ "welding_standard", 6 ] ],
+    "qualities": [ { "id": "HAMMER", "level": 2 }, { "id": "SAW_M", "level": 1 }, { "id": "CHISEL", "level": 3 } ],
+    "tools": [ [ [ "tongs", -1 ] ], [ [ "swage", -1 ] ] ],
+    "components": [
+      [ [ "vortex_stone", 1 ] ],
+      [ [ "chain", 6 ] ],
+      [ [ "foot_crank", 3 ] ],
+      [ [ "metal_tank", 1 ] ],
+      [ [ "plastic_chunk", 30 ] ],
+      [ [ "alternator_truck", 6 ], [ "alternator_car", 6 ], [ "alternator_motorbike", 6 ] ]
+    ]
+  }
+]
