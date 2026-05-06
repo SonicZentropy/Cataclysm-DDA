@@ -305,7 +305,8 @@ static float stamina_move_cost_modifier( const Character &c, const skill_id & )
 {
     // Both walk and run speed drop to half their maximums as stamina approaches 0.
     // Convert stamina to a float first to allow for decimal place carrying
-    return ( static_cast<float>( c.get_stamina() ) / c.get_stamina_max() + 1 ) / 2;
+    //return ( static_cast<float>( c.get_stamina() ) / c.get_stamina_max() + 1 ) / 2;
+    return 1.0;
 }
 
 static float limb_run_cost_modifier( const Character &c, const skill_id & )
