@@ -270,7 +270,7 @@
     "id": "zenfs_sleepiness_bar_label",
     "type": "widget",
     "style": "text",
-    "string": "Sleepiness",
+    "string": "Sleep     ",
     "width": 10
   },
   {
