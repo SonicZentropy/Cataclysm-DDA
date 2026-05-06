@@ -1,0 +1,247 @@
+[
+	{
+		"id": "dream_spear",
+		"type": "SPELL",
+		"name": "Dream Spear",
+		"description": "This ephemeral spear allows you to defend yourself with dreams brought out of your mind!",
+		"valid_targets": [ "self" ],
+		"flags": [ "VERBAL", "NO_LEGS" ],
+		"min_damage": 1,
+		"max_damage": 1,
+		"effect": "spawn_item",
+		"effect_str": "spear_dreamdross",
+		"shape": "blast",
+		"base_casting_time": 350,
+		"base_energy_cost": 375,
+		"min_duration": { "math": [ "spell_time(time(' 4 m'))" ] },
+		"max_duration": { "math": [ "spell_time(time(' 6 h'))" ] },
+		"duration_increment": { "math": [ "spell_time(time(' 4 m'))" ] },
+		"skill": "deduction",
+		"difficulty": 5,
+		"max_level": { "math": [ "dreamer_level(1)" ] },
+		"magic_type": "xedra_dream_magic",
+		"spell_class": "DREAMER"
+	},
+	{
+		"id": "morpheus_curtain_rod",
+		"type": "ITEM",
+		"category": "artifacts",
+		"looks_like": "spear_steel",
+		"name": { "str": "Morpheus' Curtain Rod", "str_pl": "Morpheus' Curtain Rods" },
+		"description": "This appears to be a simple, wrought-iron curtain rod, cold to the touch and topped with a tarnished, fleur-de-lis finial. When held, a faint, rhythmic sound like the slow breathing of a deep sleeper can be heard emanating from it. It feels unnaturally balanced in your hand, and its pointed tip seems to subtly guide your gaze towards the darkest corner of the room, promising to pin down fleeting shadows.",
+		"weight": "40 g",
+		"volume": "150 ml",
+		"longest_side": "12 cm",
+		"price": "10 USD",
+		"price_postapoc": "10 cent",
+		"material": [ "forged_dreamstuff" ],
+		"symbol": "C",
+		"color": "red_white",
+		"use_action": { "type": "learn_spell", "spells": [ "dream_spear" ] }
+	},
+	{
+		"id": "spear_dreamdross",
+		"type": "ITEM",
+		"subtypes": [ "TOOL" ],
+		"name": { "str": "dreamdross spear" },
+		"looks_like": "spear_steel",
+		"description": "This is a thin ephemeral sword with an ornate shaft.  It looks like the preferred weapon of gentlemen and swashbucklers.  Light and quick, it makes any battle a stylish one.",
+		"weight": "1500 g",
+		"volume": "1500 ml",
+		"longest_side": "150 cm",
+		"price": "980 USD",
+		"price_postapoc": "25 USD",
+		"to_hit": { "grip": "weapon", "length": "long", "surface": "line", "balance": "good" },
+		"material": [ "dreamstuff" ],
+		"symbol": "/",
+		"color": "light_gray",
+		"techniques": [ "PENETRATE", "WBLOCK_2" ],
+		"qualities": [ [ "CUT", 1 ], [ "BUTCHER", 9 ] ],
+		"flags": [
+			"UNBREAKABLE_MELEE",
+			"NONCONDUCTIVE",
+			"NO_REPAIR",
+			"NO_SALVAGE",
+			"MAGIC_FOCUS",
+			"TRADER_AVOID",
+			"SPEAR",
+			"REACH_ATTACK",
+			"SHEATH_SPEAR",
+			"RELIC_PINK"
+		],
+		"weapon_category": [ "SPEARS" ],
+		"category": "weapons",
+		"melee_damage": { "bash": 6, "stab": 30, "cold": 1 }
+	},
+	{
+		"type": "item_group",
+		"id": "xe_dreamer_spell_tier2",
+		"copy-from": "xe_dreamer_spell_tier2",
+		"subtype": "distribution",
+		"extend": {
+			"entries": [
+				{ "item": "morpheus_curtain_rod", "prob": 50 }
+			]
+		}
+	},
+	{
+		"type": "mutation",
+		"id": "HOMULLUS_ASCEND_THE_SPIRE",
+		"name": { "str": "Ascend the Spire" },
+		"points": 10,
+		"description": "Humanity has always reached for the heavens through their towers and spires. You embody this aspiration, able to levitate through sheer force of will and human ingenuity. While active, you will not fall and may walk on air. Requires 3 mana per turn, or 2 kJ bionic power per turn if you have bionic storage.",
+		"prereqs": [ "HOMULLUS_CITY_STRIDER" ],
+		"category": [ "HOMULLUS" ],
+		"threshreq": [ "THRESH_HOMULLUS" ],
+		"active": true,
+		"activated_is_setup": true,
+		"activated_eocs": [ "EOC_HOMULLUS_ASCEND_THE_SPIRE" ],
+		"processed_eocs": [ "EOC_HOMULLUS_ASCEND_THE_SPIRE" ],
+		"time": "1 s"
+	},
+	{
+		"type": "effect_on_condition",
+		"id": "EOC_HOMULLUS_ASCEND_THE_SPIRE",
+		"condition": {
+			"or": [
+				{ "math": [ "u_val('mana') >= 3" ] },
+				{
+					"and": [
+						{ "math": [ "u_val('power') >= 2000000" ] },
+						{ "u_has_trait": "HOMULLUS_PASSIVE_BIONIC_POWER" }
+					]
+				},
+				{
+					"and": [
+						{ "test_eoc": "EOC_HOMULLUS_IN_CIVILIZATION_CHECKER_CONDITION" },
+						{ "math": [ "u_val('mana') >= 2" ] }
+					]
+				},
+				{
+					"and": [
+						{ "test_eoc": "EOC_HOMULLUS_IN_CIVILIZATION_CHECKER_CONDITION" },
+						{ "math": [ "u_val('power') >= 1500000" ] },
+						{ "u_has_trait": "HOMULLUS_PASSIVE_BIONIC_POWER" }
+					]
+				}
+			]
+		},
+		"effect": [
+			{
+				"run_eocs": [
+					{
+						"id": "EOC_HOMULLUS_ASCEND_MANA_COST",
+						"condition": {
+							"or": [
+								{ "math": [ "u_val('mana') >= 3" ] },
+								{
+									"and": [
+										{ "test_eoc": "EOC_HOMULLUS_IN_CIVILIZATION_CHECKER_CONDITION" },
+										{ "math": [ "u_val('mana') >= 2" ] }
+									]
+								}
+							]
+						},
+						"effect": [
+							{
+								"if": { "test_eoc": "EOC_HOMULLUS_IN_CIVILIZATION_CHECKER_CONDITION" },
+								"then": [
+									{ "math": [ "u_val('mana') -= 2" ] },
+									{ "u_message": "The ambient energy of civilization fuels your ascent!", "type": "good" }
+								],
+								"else": [ { "math": [ "u_val('mana') -= 3" ] } ]
+							},
+							{ "u_add_effect": "effect_homullus_levitation", "duration": "2 s" }
+						]
+					},
+					{
+						"id": "EOC_HOMULLUS_ASCEND_POWER_COST",
+						"condition": {
+							"or": [
+								{ "math": [ "u_val('power') >= 2000000" ] },
+								{
+									"and": [
+										{ "test_eoc": "EOC_HOMULLUS_IN_CIVILIZATION_CHECKER_CONDITION" },
+										{ "math": [ "u_val('power') >= 1500000" ] }
+									]
+								}
+							]
+						},
+						"effect": [
+							{
+								"if": { "test_eoc": "EOC_HOMULLUS_IN_CIVILIZATION_CHECKER_CONDITION" },
+								"then": [
+									{ "math": [ "u_val('power') -= 1500000" ] },
+									{ "u_message": "The power grid of the city bolsters your flight!", "type": "good" }
+								],
+								"else": [ { "math": [ "u_val('power') -= 2000000" ] } ]
+							},
+							{ "u_add_effect": "effect_homullus_levitation", "duration": "2 s" }
+						]
+					}
+				]
+			}
+		],
+		"false_effect": [
+			{ "u_message": "You lack the power to ascend!", "type": "bad" },
+			{ "u_lose_effect": "effect_homullus_levitation" }
+		]
+	},
+	{
+		"type": "effect_on_condition",
+		"id": "EOC_HOMULLUS_FLIGHT_SPELL_EXPERIENCE_INCREASER",
+		"recurrence": [ "6 hours", "36 hours" ],
+		"condition": {
+			"and": [
+				{
+					"u_has_any_trait": [
+						"HOMULLUS_ASCEND_THE_SPIRE"
+					]
+				},
+				{ "test_eoc": "EOC_HOMULLUS_IN_CIVILIZATION_CHECKER_CONDITION" }
+			]
+		},
+		"effect": [ { "run_eocs": "EOC_HOMULLUS_FLIGHT_SPELL_EXPERIENCE_INCREASER_SELECTOR" } ]
+	},
+	{
+		"type": "effect_on_condition",
+		"id": "EOC_HOMULLUS_FLIGHT_SPELL_EXPERIENCE_INCREASER_SELECTOR",
+		"effect": [
+			{
+				"weighted_list_eocs": [
+					[ "EOC_LEVELER_HOMULLUS_ASCEND_THE_SPIRE", 5 ]
+				]
+			}
+		]
+	},
+	{
+		"type": "effect_on_condition",
+		"id": "EOC_LEVELER_HOMULLUS_ASCEND_THE_SPIRE",
+		"condition": {
+			"and": [
+				{ "math": [ "u_spell_level('homullus_ascend_the_spire_spell') >= 0" ] },
+				{ "math": [ "u_spell_level('homullus_ascend_the_spire_spell') < int_to_level(1)" ] }
+			]
+		},
+		"effect": [
+			{
+				"u_message": "Your time spent surrounded by the remnants of civilization has increased your facility with your fae magicks.",
+				"type": "good"
+			},
+			{ "math": [ "u_spell_exp('homullus_ascend_the_spire_spell') += paraclesian_passive_spell_exp(1)" ] }
+		],
+		"false_effect": [ { "run_eocs": "EOC_HOMULLUS_FLIGHT_SPELL_EXPERIENCE_INCREASER_SELECTOR" } ]
+	},
+	{
+		"type": "effect_type",
+		"id": "effect_homullus_levitation",
+		"name": [ "Ascending the Spire" ],
+		"desc": [ "You are levitating through human ingenuity and will." ],
+		"rating": "good",
+		"max_duration": "2 s",
+		"show_in_info": false,
+		"apply_message": "You begin to ascend.",
+		"remove_message": "You descend back to earth.",
+		"flags": [ "LEVITATION", "CLIMB_FLYING" ]
+	}
+]

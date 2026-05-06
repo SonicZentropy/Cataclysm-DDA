@@ -1,0 +1,24 @@
+﻿[
+	{
+		"id": "integrated_holdout_pocket",
+		"copy-from": "integrated_holdout_pocket",
+		"type": "ITEM",
+		"subtypes": [ "ARMOR" ],
+		"category": "armor",
+		"name": { "str_sp": "holdout pocket" },
+		"volume": "1 L",
+		"pocket_data": [
+			{
+				"pocket_type": "CONTAINER",
+				"holster": true,
+				"min_item_volume": "300 ml",
+				"max_contains_volume": "100 L",
+				"max_contains_weight": "500 kg",
+				"max_item_length": "2500 cm",
+				"moves": 80,
+				"volume_encumber_modifier": 0.1
+			}
+		],
+		"armor": [ { "covers": [ "torso" ], "coverage": 0, "encumbrance": 0 } ]
+	}
+]
