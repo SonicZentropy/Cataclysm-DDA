@@ -178,7 +178,8 @@
       "office_tower_2_b2_roof",
       "office_tower_2_b3_roof",
       "office_tower_collapse_a1",
-      "office_tower_collapse_b_a1"
+      "office_tower_collapse_b_a1",
+			"office_tower_2_a1_tower_lab"
     ],
     "name": "office tower",
     "vision_levels": "large_city_building",
@@ -188,6 +189,15 @@
     "mondensity": 2,
     "flags": [ "SIDEWALK" ]
   },
+	{
+		"type": "overmap_terrain",
+		"id": "office_tower_open_air_corner",
+		"vision_levels": "roof_or_air",
+		"see_cost": "none",
+		"name": "open air",
+		"sym": ".",
+		"color": "blue"
+	},
   {
     "type": "overmap_terrain",
     "id": "office_tower_2_a3",
@@ -363,7 +373,7 @@
     "id": "s_liquor",
     "name": "liquor store",
     "copy-from": "generic_city_building",
-    "color": "magenta",
+    "color": "i_cyan",
     "extend": { "flags": [ "SOURCE_DRINK", "SOURCE_LUXURY" ] }
   },
   {
@@ -371,7 +381,7 @@
     "id": "s_liquor_roof",
     "name": "liquor store roof",
     "copy-from": "generic_city_building_roof",
-    "color": "magenta"
+    "color": "i_cyan"
   },
   {
     "type": "overmap_terrain",
@@ -508,7 +518,7 @@
     "copy-from": "generic_city_building",
     "looks_like": "s_restaurant_fast",
     "name": "fast food restaurant",
-    "color": "yellow_magenta",
+    "color": "i_cyan",
     "extend": { "flags": [ "SOURCE_FOOD", "SOURCE_DRINK", "SOURCE_COOKING" ] }
   },
   {
@@ -526,7 +536,7 @@
     "copy-from": "generic_city_building_roof",
     "looks_like": "s_restaurant_fast_roof",
     "name": "fast food restaurant roof",
-    "color": "yellow_magenta"
+    "color": "i_cyan"
   },
   {
     "type": "overmap_terrain",
@@ -534,7 +544,7 @@
     "copy-from": "generic_city_building",
     "looks_like": "s_restaurant_coffee",
     "name": "coffee shop",
-    "color": "white_magenta",
+    "color": "i_cyan",
     "extend": { "flags": [ "SOURCE_FOOD", "SOURCE_DRINK" ] }
   },
   {
@@ -543,7 +553,7 @@
     "copy-from": "generic_city_building_roof",
     "looks_like": "s_restaurant_coffee_roof",
     "name": "coffee shop",
-    "color": "white_magenta"
+    "color": "i_cyan"
   },
   {
     "type": "overmap_terrain",
@@ -551,7 +561,7 @@
     "copy-from": "generic_city_building",
     "looks_like": "s_teashop",
     "name": "teashop",
-    "color": "light_cyan_magenta",
+    "color": "i_cyan",
     "extend": { "flags": [ "SOURCE_FOOD", "SOURCE_DRINK" ] }
   },
   {
@@ -560,7 +570,7 @@
     "copy-from": "generic_city_building_roof",
     "looks_like": "s_teashop_roof",
     "name": "teashop roof",
-    "color": "light_cyan_magenta"
+    "color": "i_cyan"
   },
   {
     "type": "overmap_terrain",
@@ -568,7 +578,7 @@
     "copy-from": "generic_city_building",
     "looks_like": "bar",
     "name": "bar",
-    "color": "i_magenta",
+    "color": "i_cyan",
     "extend": { "flags": [ "SOURCE_FOOD", "SOURCE_DRINK", "SOURCE_LUXURY" ] }
   },
   {
@@ -577,7 +587,7 @@
     "copy-from": "generic_city_building_roof",
     "looks_like": "bar_roof",
     "name": "bar roof",
-    "color": "i_magenta"
+    "color": "i_cyan"
   },
   {
     "type": "overmap_terrain",
@@ -620,7 +630,7 @@
     "copy-from": "generic_city_building",
     "looks_like": "s_pizza_parlor",
     "name": "pizza parlor",
-    "color": "pink_magenta",
+    "color": "i_cyan",
     "extend": { "flags": [ "SOURCE_FOOD", "SOURCE_COOKING" ] }
   },
   {
@@ -629,7 +639,7 @@
     "copy-from": "generic_city_building_roof",
     "looks_like": "s_pizza_parlor_roof",
     "name": "pizza parlor roof",
-    "color": "pink_magenta"
+    "color": "i_cyan"
   },
   {
     "type": "overmap_terrain",
@@ -1694,7 +1704,7 @@
     "copy-from": "generic_city_building",
     "looks_like": "abstorefront",
     "name": "abandoned storefront",
-    "color": "h_dark_gray"
+    "color": "h_light_gray"
   },
   {
     "type": "overmap_terrain",
