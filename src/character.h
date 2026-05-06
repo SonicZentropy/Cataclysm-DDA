@@ -1162,7 +1162,6 @@ class Character : public Creature, public visitable
                                     bool allow_unarmed = true, int forced_movecost = -1 );
 
         /** Handles reach melee attacks */
-        bool can_reach_attack( const Creature &target ) const;
         void reach_attack( const tripoint_bub_ms &p, int forced_movecost = -1 );
 
         /**
@@ -2892,7 +2891,8 @@ class Character : public Creature, public visitable
         void randomize( bool random_scenario, bool play_now = false );
         void randomize_cosmetics();
         int get_focus() const {
-            return std::max( 1, focus_pool / 1000 );
+            //return std::max( 1, focus_pool / 1000 );
+            return 100;
         }
         int get_effective_focus() const;
         void mod_focus( int amount ) {
