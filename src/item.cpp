@@ -2643,7 +2643,8 @@ bool item::ready_to_revive( map &here, const tripoint_bub_ms &pos ) const
             }
         }
 
-        return true;
+        //return true;
+        return false;
     }
     return false;
 }
