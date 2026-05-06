@@ -1309,8 +1309,8 @@ int Character::fire_gun( map &here, const tripoint_bub_ms &target, int shots, it
                                body_part_name_accusative( bodypart_id( hurt_part.first ) ) );
     }
 
-    // Preventing using a trapped creature as an infinite training dummy.
-    if( times_shot_target < 100 ) {
+    // UNPreventing using a trapped creature as an infinite training dummy.
+    //if( times_shot_target < 100 ) {
         // Practice the base gun skill proportionally to number of hits, but always by one.
         if( !gun.has_flag( flag_WONT_TRAIN_MARKSMANSHIP ) ) {
             practice( skill_gun, ( hits + 1 ) * 5 );
@@ -1318,7 +1318,7 @@ int Character::fire_gun( map &here, const tripoint_bub_ms &target, int shots, it
         // launchers train weapon skill for both hits and misses.
         int practice_units = gun_skill == skill_launcher ? curshot : hits;
         practice( gun_skill, ( practice_units + 1 ) * 5 );
-    }
+    //}
 
     if( !gun.is_gun() ) {
         // If we lose our gun as a side effect of firing it, skip the rest of the function.
