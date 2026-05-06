@@ -820,12 +820,16 @@
     "description": "While activated, your muscles will be greatly enhanced, setting your strength to 20.",
     "occupied_bodyparts": [ [ "torso", 10 ], [ "arm_l", 8 ], [ "arm_r", 8 ], [ "leg_l", 10 ], [ "leg_r", 10 ] ],
     "flags": [ "BIONIC_TOGGLED", "BIONIC_NPC_USABLE" ],
-    "enchantments": [ { "condition": "ACTIVE", "ench_effects": [ { "effect": "bio_hydraulics_eff", "intensity": 1 } ] } ],
+    "enchantments": [
+      {
+        "condition": "ACTIVE",
+        "ench_effects": [ { "effect": "bio_hydraulics_eff", "intensity": 1 } ],
+        "values": [ { "value": "STRENGTH", "add": 20 } ]
+      }
+    ],
     "act_cost": "10 kJ",
     "react_cost": "10 kJ",
-    "time": "1 s",
-    "activated_eocs": [ "EOC_bio_hydraulics_activated" ],
-    "deactivated_eocs": [ "EOC_bio_hydraulics_deactivated" ]
+    "time": "1 s"
   },
   {
     "id": "bio_infrared",
@@ -1308,8 +1312,8 @@
     "name": { "str": "Autonomous Surgical Scalpels" },
     "description": "A system of surgical grade scalpels is implanted in your forearms, extending from just above your wrists.  They allow you to make automated precise cuts and can also be used as a high-quality butchering tool.",
     "occupied_bodyparts": [ [ "arm_r", 2 ], [ "arm_l", 2 ] ],
-    "fake_weapon": "bio_scalpel",
-    "flags": [ "BIONIC_TOGGLED", "BIONIC_WEAPON" ]
+    "passive_pseudo_items": [ "bio_scalpel" ],
+    "flags": [ "BIONIC_TOGGLED"]
   },
   {
     "id": "bio_sunglasses",
