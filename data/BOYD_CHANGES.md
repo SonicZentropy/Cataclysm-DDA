@@ -1,0 +1,54 @@
+- Toggle NPC processing
+- Survivor stuff brought back
+- Spears from rooftops are a thing again
+- Gutters climbable
+- Readded old labs - i've reapplied a bunch on 2/14/2026 that i need to bring back
+- Cata++ mod ported and added
+- Arcana mod ported and added
+- Tankmod mod ported and added
+- Blaze Industries mod ported and added
+- BOYD mod added - returning lots of old removed stuff
+- Blocking doesn't cost stamina
+- Dermatiks don't instakill you
+- Traps unnerfed
+- Zombies are attracted to burning buildings
+- Remove a couple annoying confirmations
+- TLG's sane melee/armor degradation
+- Helicopter pilot NPC (TLG)
+- Lots of world options brought back
+- Fiction books are worth a lot again
+- Made some GLOBALLY_UNIQUE places into OVERMAP_UNIQUE with rarer chances
+- Xedra homulus gets to fly eventually
+- New martial art for spears based on Qiangfa
+- Augmentation clinics return
+- Added VERY_DURABLE_MELEE flag that's 2x as durable [Why does my crowbar lose to a zombie's skull?]
+- Added packaging/moving to some Magiclysm crafting things
+- Summonable Dreamer Spear
+- Solar panels on cars again
+- Always see container items from range [QOL After hundreds of hours, I'm tired of walking through rooms tile-by-tile hoping to spot some loot]
+- Readd trickle charger CBM
+- Zui Quan returned to its former glory
+- RM13 can be powered by bionics
+- Overmap "vision levels" removed, back to binary yes/no unveiling
+- Zombies can no longer rip APCs apart with their bare hands
+- No riot fires [I don't like them in general + with Hordes 2.0 and the reversion of fires attracting zombies, you end up with empty towns fast]
+- No wheel/tire damage
+- Misc QoL item changes (h2o pouch can hold a 2.5L Canteen now, molle belts can handle halligan bars, etc)
+- Superalloy is now actually super
+- Lard.
+- Weariness does basically nothing
+- Focus does do nothing
+- Old atomic stuff returned
+- No Hope purifier returns
+- Vehicle degradation/repair works the old way
+- Made dissection much faster since CBMs are back and it gets tedious
+- Nanofab stuff returned
+- Athletics effects improved so you actually want to train it
+- Bionic penalty to max mana removed 
+- Faster vender restock
+- Put any tool on your workshop or kitchen
+- CBM prep can't fail [time-wasting annoyance]
+- Integrated toolset back to prior awesomeness
+- No dust
+- Increase amount NPCs will let you owe them
+- Control laptop returns
