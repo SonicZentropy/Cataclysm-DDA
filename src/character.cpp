@@ -1867,7 +1867,20 @@ void Character::on_dodge( Creature *source, float difficulty, float training_lev
 
     if( source && source->times_combatted_player <= 100 ) {
         source->times_combatted_player++;
-        practice( skill_dodge, difficulty * 2, difficulty );
+        //practice( skill_dodge, difficulty * 2, difficulty );
+        float skill_diff = get_skill_level(skill_dodge) - difficulty;
+        float training_multiplier;
+
+        if (skill_diff <= 2) {
+            // Full training for opponents 1-2 levels below or equal
+            training_multiplier = 1.0f;
+        } else {
+            // Logarithmic reduction for larger skill gaps
+            training_multiplier = std::exp(-(skill_diff - 2) * 0.5f);
+        }
+
+        int adjusted_amount = std::max(1, static_cast<int>(difficulty * 2 * training_multiplier));
+        practice(skill_dodge, adjusted_amount, MAX_SKILL);
     }
     martial_arts_data->ma_ondodge_effects( *this );
 
@@ -2837,7 +2850,7 @@ units::mass Character::weight_capacity() const
     // Not using get_str() so pain and other temporary effects won't decrease carrying capacity;
     // transiently reducing carry weight is unlikely to have any play impact besides being very annoying.
     /** @EFFECT_STR increases carrying capacity */
-    ret += ( get_str_base() + get_str_bonus() ) * 4_kilogram;
+    ret += ( get_str_base() + get_str_bonus() ) * 8_kilogram;
 
     ret = enchantment_cache->modify_value( enchant_vals::mod::CARRY_WEIGHT, ret );
 
@@ -6325,10 +6338,6 @@ std::vector<Creature *> Character::get_targetable_creatures( const int range, bo
             }
         }
         bool in_range = std::round( rl_dist_exact( pos_abs(), critter.pos_abs() ) ) <= range;
-        if( melee && !can_reach_attack( critter ) )
-        {
-            in_range = false;
-        }
         bool valid_target = this != &critter && pos_abs() != critter.pos_abs() && attitude_to( critter ) != Creature::Attitude::FRIENDLY;
         return valid_target && in_range && can_see;
     } );

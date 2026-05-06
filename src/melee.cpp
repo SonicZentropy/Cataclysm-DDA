@@ -162,6 +162,7 @@ static const skill_id skill_unarmed( "unarmed" );
 static const trait_id trait_ARM_TENTACLES( "ARM_TENTACLES" );
 static const trait_id trait_ARM_TENTACLES_4( "ARM_TENTACLES_4" );
 static const trait_id trait_ARM_TENTACLES_8( "ARM_TENTACLES_8" );
+static const trait_id trait_BEAK_PECK( "BEAK_PECK" );
 static const trait_id trait_CLAWS_TENTACLE( "CLAWS_TENTACLE" );
 static const trait_id trait_CLUMSY( "CLUMSY" );
 static const trait_id trait_DEBUG_NIGHTVISION( "DEBUG_NIGHTVISION" );
@@ -169,6 +170,8 @@ static const trait_id trait_DEFT( "DEFT" );
 static const trait_id trait_POISONOUS( "POISONOUS" );
 static const trait_id trait_POISONOUS2( "POISONOUS2" );
 static const trait_id trait_PROF_SKATER( "PROF_SKATER" );
+static const trait_id trait_VINES2( "VINES2" );
+static const trait_id trait_VINES3( "VINES3" );
 
 static const weapon_category_id weapon_category_UNARMED( "UNARMED" );
 
@@ -285,6 +288,9 @@ bool Character::handle_melee_wear( item_location shield, float wear_multiplier )
     // Sturdy armor (such as a pair of steel gauntlets) are considered durable too.
     if( shield->has_flag( flag_DURABLE_MELEE ) || shield->has_flag( flag_STURDY ) ) {
         damage_chance *= 4;
+    }
+    if( shield->has_flag( flag_VERY_DURABLE_MELEE ) ) {
+        damage_chance *= 8;
     }
 
     if( damage_chance > 0 && !one_in( damage_chance ) ) {
@@ -494,10 +500,28 @@ void Character::roll_all_damage( bool crit, damage_instance &di, bool average,
     }
 }
 
-static void melee_train( Character &you, int lo, int hi, const item &weap,
-                         const attack_vector_id vector )
+static void melee_train(Character &you, int lo, int hi, const item &weap,
+                        const attack_vector_id vector, int monster_skill)
 {
-    you.practice( skill_melee, std::ceil( rng( lo, hi ) / 2.0 ), hi );
+    // you.practice( skill_melee, std::ceil( rng( lo, hi ) / 2.0 ), hi );
+    // Calculate skill difference and apply logarithmic reduction
+    float skill_diff = you.get_skill_level(skill_melee) - monster_skill;
+    float training_multiplier;
+
+    if (skill_diff <= 2) {
+        // Full training for opponents 1-2 levels below or equal
+        training_multiplier = 1.0f;
+    } else {
+        // Logarithmic reduction for larger skill gaps
+        training_multiplier = std::exp(-(skill_diff - 2) * 0.23f);
+    }
+
+    // Adjust training amounts
+    int adjusted_lo = std::max(1, static_cast<int>(lo * training_multiplier));
+    int adjusted_hi = std::max(1, static_cast<int>(hi * training_multiplier));
+
+    you.practice(skill_melee, std::ceil(rng(adjusted_lo, adjusted_hi) / 2.0), MAX_SKILL);
+
 
     float total = 0.f;
 
@@ -577,8 +601,7 @@ bool Character::melee_attack( Creature &t, bool allow_special, const matec_id &f
         add_msg_if_player( m_info, _( "You lack the substance to affect anything." ) );
         return false;
     }
-    if( !is_adjacent( &t, false ) &&
-        !get_map().on_matching_stairs( pos_bub(), t.pos_bub() ) ) {
+    if( !is_adjacent( &t, true ) ) {
         return false;
     }
 
@@ -747,7 +770,9 @@ bool Character::melee_attack_abstract( Creature &t, bool allow_special,
 
         if( can_train_melee ) {
             t.times_combatted_player++;
-            melee_train( *this, 2, std::min( 5, skill_training_cap ), cur_weap, attack_vector_id::NULL_ID() );
+            //melee_train( *this, 2, std::min( 5, skill_training_cap ), cur_weap, attack_vector_id::NULL_ID(), TODO);
+            melee_train(*this, 2, 5, cur_weap, attack_vector_id::NULL_ID(),
+              t.is_monster() ? t.as_monster()->get_melee() : 0);
         }
 
         // Cap stumble penalty, heavy weapons are quite weak already
@@ -816,7 +841,7 @@ bool Character::melee_attack_abstract( Creature &t, bool allow_special,
         // lacks the room to build up momentum on a slash.
         // In the case of a pike, the mass of the pole behind the wielder
         // should they choose to employ it up close will unbalance them.
-        if( cur_weap.reach_range( *this ).first > 1 && !reach_attacking &&
+        if( cur_weap.reach_range( *this ) > 1 && !reach_attacking &&
             cur_weap.has_flag( flag_POLEARM ) ) {
             d.mult_damage( 0.7 );
         }
@@ -927,7 +952,9 @@ bool Character::melee_attack_abstract( Creature &t, bool allow_special,
 
             if( can_train_melee ) {
                 t.times_combatted_player++;
-                melee_train( *this, 5, std::min( 10, skill_training_cap ), cur_weap, vector_id );
+                //melee_train( *this, 5, std::min( 10, skill_training_cap ), cur_weap, vector_id, TODO);
+                melee_train(*this, 5, 10, cur_weap, vector_id,
+                    t.is_monster() ? t.as_monster()->get_melee() : 0);
             }
 
             // Treat monster as seen if we see it before or after the attack
@@ -959,7 +986,7 @@ bool Character::melee_attack_abstract( Creature &t, bool allow_special,
         }
     }
 
-    if( !t.is_hallucination() ) {
+    if( hits && !t.is_hallucination() ) {
         handle_melee_wear( cur_weapon );
     }
 
@@ -1026,29 +1053,6 @@ int Character::get_total_melee_stamina_cost( const item *weap ) const
     }
 
     return std::min<int>( -50, proficiency_multiplier * ( mod_sta + melee - stance_malus ) );
-}
-
-bool Character::can_reach_attack( const Creature &target ) const
-{
-    if( pos_bub().z() == target.pos_bub().z() ) {
-        return true;
-    }
-    if( get_map().on_matching_stairs( pos_bub(), target.pos_bub() ) ) {
-        return true;
-    }
-
-    item_location maybe_weapon = get_wielded_item();
-    int vert_reach = 0;
-    if( maybe_weapon ) {
-        vert_reach = maybe_weapon->current_reach_range( *this ).second;
-    } else {
-        vert_reach = null_item_reference().current_reach_range( *this ).second;
-    }
-
-    if( std::abs( pos_bub().z() - target.pos_bub().z() ) > vert_reach ) {
-        return false;
-    }
-    return true;
 }
 
 void Character::reach_attack( const tripoint_bub_ms &p, int forced_movecost )
@@ -2049,22 +2053,6 @@ bool Character::block_hit( Creature *source, bodypart_id &bp_hit, damage_instanc
         return false;
     }
 
-    // Now that blocks cost stamina, break out if stamina is too low
-    // TODO: More complicated calculation. Dodge checks your dodge chance
-    // which is affected by stamina, pain, and so on and when it hits
-    // zero, that's when you get the message that you can't dodge, but
-    // currently none of that affects blocking
-    if( get_stamina() < 2000 ) {
-        add_msg_if_player( m_warning,
-                           _( "You're close to exhaustion and cannot block effectively." ) );
-        return false;
-    }
-
-    // Can't block attacks from attackers two sizes greater than you
-    if( ( get_size() + 1 < source->get_size() ) && !has_flag( json_flag_BLOCK_HUGE_ATTACKS ) ) {
-        return false;
-    }
-
     // Melee skill and reaction score governs if you can react in time
     // Skill of 5 without relevant encumbrance guarantees a block attempt
     float melee_skill = has_active_bionic( bio_cqb ) ? 5 : get_skill_level( skill_melee );
@@ -2253,16 +2241,6 @@ bool Character::block_hit( Creature *source, bodypart_id &bp_hit, damage_instanc
                            damage_blocked_description, thing_blocked_with );
     add_msg_debug( debugmode::DF_MELEE, "Blocked damage %.1f / %.1f", total_damage, damage_blocked );
 
-    // stamina cost for blocking, based on dodge
-    // TODO: account for enemy melee scale, add diminishing returns.
-    const int base_burn_rate = get_option<int>( player_base_stamina_burn_rate );
-    const float block_skill_modifier = ( 20.0f - get_skill_level( skill_melee ) ) / 20.0f;
-    const float block_stamina_cost = static_cast<float>( base_burn_rate )  * 6.0f *
-                                     block_skill_modifier;
-    burn_energy_legs( -block_stamina_cost );
-    set_activity_level( EXTRA_EXERCISE );
-    add_msg_debug( debugmode::DF_MELEE, "Blocking stamina cost %.1f", block_stamina_cost );
-
     // fire martial arts block-triggered effects
     martial_arts_data->ma_onblock_effects( *this );
 
@@ -2407,6 +2385,19 @@ std::string Character::melee_special_effects( Creature &t, damage_instance &d, i
 
 static damage_instance hardcoded_mutation_attack( const Character &u, const trait_id &id )
 {
+    if( id == trait_BEAK_PECK ) {
+        // method open to improvement, please feel free to suggest
+        // a better way to simulate target's anti-peck efforts
+        /** @EFFECT_DEX increases number of hits with BEAK_PECK */
+
+        /** @EFFECT_UNARMED increases number of hits with BEAK_PECK */
+        int num_hits = std::max( 1, std::min<int>( 6,
+                                 u.get_dex() + u.get_skill_level( skill_unarmed ) - rng( 4, 10 ) ) );
+        damage_instance di = damage_instance();
+        di.add_damage( damage_stab, num_hits * 10 );
+        return di;
+    }
+
     if( id == trait_ARM_TENTACLES || id == trait_ARM_TENTACLES_4 || id == trait_ARM_TENTACLES_8 ) {
         int num_attacks = 1;
         if( id == trait_ARM_TENTACLES_4 ) {
@@ -2434,6 +2425,14 @@ static damage_instance hardcoded_mutation_attack( const Character &u, const trai
             ret.add_damage( damage_bash, u.get_str() / 3.0f + 1.0f, 0, 1.0f, num_attacks );
         }
 
+        return ret;
+    }
+
+    if( id == trait_VINES2 || id == trait_VINES3 ) {
+        const int num_attacks = id == trait_VINES2 ? 2 : 3;
+        /** @EFFECT_STR increases damage with VINES* */
+        damage_instance ret;
+        ret.add_damage( damage_bash, u.get_str() / 2.0f, 0, 1.0f, num_attacks );
         return ret;
     }
 
@@ -2845,7 +2844,7 @@ double Character::melee_value( const item &weap ) const
     // start with average effective dps against a range of enemies
     double my_value = weap.average_dps( *this );
 
-    float reach = weap.reach_range( *this ).first;
+    float reach = weap.reach_range( *this );
     // value reach weapons more
     if( reach > 1.0f ) {
         my_value *= 1.0f + 0.5f * ( std::sqrt( reach ) - 1.0f );
