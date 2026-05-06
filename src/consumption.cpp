@@ -1449,22 +1449,20 @@ void Character::modify_morale( item &food, const int nutr )
         const int maximum_stacked_morale_penalty = -400;
         if( sapiovore && spiritual ) {
             add_msg_if_player( m_good, _( "You eat the human flesh, and in doing so, devour their spirit." ) );
-            add_morale( morale_cannibal, minor_morale_bonus, minor_morale_bonus * 5 );
+            //add_morale( morale_cannibal, minor_morale_bonus, minor_morale_bonus * 5 );
         } else if( sapiovore ) {
             add_msg_if_player( _( "Mmh.  Tastes like venison." ) );
         } else if( cannibal && spiritual ) {
             add_msg_if_player( m_good,
                                _( "Even as you indulge your darkest impulses, you dread what judgement may come." ) );
             // Reduced penalties
-            add_morale( morale_cannibal, moderate_morale_penalty, maximum_stacked_morale_penalty,
-                        7_days, 4_days );
-        } else if( has_trait( trait_BLOOD_DRINKER ) ) {
-            add_msg_if_player( m_good, _( "Blood.  Just what you need.  You want more." ) );
+            //add_morale( morale_cannibal, moderate_morale_penalty, maximum_stacked_morale_penalty,
+            //            7_days, 4_days );
         } else if( cannibal && psycho ) {
             add_msg_if_player( m_good,
                                _( "You worry that your hunger for human flesh is going to be a liability one of these days." ) );
             // Reduced penalties
-            add_morale( morale_cannibal, minor_morale_penalty, minor_morale_penalty * 5, 6_hours, 3_hours );
+            //add_morale( morale_cannibal, minor_morale_penalty, minor_morale_penalty * 5, 6_hours, 3_hours );
         } else if( cannibal ) {
             add_msg_if_player( m_good, _( "You indulge your shameful hunger." ) );
             // No morale added, but lack of morale penalty is a huge bonus already.
