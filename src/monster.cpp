@@ -2147,7 +2147,7 @@ bool monster::melee_attack( Creature &target, float accuracy )
         return false;
     }
     if( !sees( here, target ) && !target.is_hallucination() ) {
-        debugmsg( "Z-Level view violation: %s tried to attack %s.", disp_name(), target.disp_name() );
+        //debugmsg( "Z-Level view violation: %s tried to attack %s.", disp_name(), target.disp_name() );
         return false;
     }
     // Prevent monsters from attacking THROUGH terrain if they are submerged under it & target isn't.
@@ -4018,29 +4018,9 @@ void monster::hear_sound( const tripoint_bub_ms &source, const int vol, const in
         return;
     }
 
-    // Kind of nasty, but this prevents zombies from being attracted to collapsing on-fire buildings.
-    // The rationale for this is simple: Without it, one burning building would wipe out every zed in several blocks. So how did any of them survive the riots?
-    bool probably_a_fire = false;
-    map &here = get_map();
-    for( const tripoint_bub_ms &pt : here.points_in_radius( source, 1, 1 ) ) {
-        const field_entry *fire_fld = here.get_field( pt, fd_fire );
-        // Only large, uncontained fires cause sounds to be ignored.
-        if( fire_fld && fire_fld->get_field_intensity() > 1 &&
-            !here.has_flag_ter_or_furn( ter_furn_flag::TFLAG_FIRE_CONTAINER, pt ) ) {
-            probably_a_fire = true;
-            break;
-        }
-    }
-
-    int tmp_provocative = !probably_a_fire && ( provocative || volume >= normal_roll( 30, 5 ) );
-
-    // Not interesting sound, nothing to do here
-    if( !tmp_provocative ) {
-        return;
-    }
-    // already following a more interesting sound,
-    // so 50% will try to stick to it, and 50% will move in direction of a new sound
-    if( provocative_sound && wandf > 0 && rng( 0, 1 ) ) {
+    int tmp_provocative = provocative || volume >= normal_roll( 30, 5 );
+    // already following a more interesting sound
+    if( provocative_sound && !tmp_provocative && wandf > 0 ) {
         return;
     }
 
@@ -4060,7 +4040,7 @@ void monster::hear_sound( const tripoint_bub_ms &source, const int vol, const in
     // target_z will require some special check due to soil muffling sounds
 
     const int wander_turns = volume * ( goodhearing ? 6 : 1 );
-    // The sound was interesting, but not interesting enough to *want* to follow it.
+    // again, already following a more interesting sound
     if( wander_turns < wandf ) {
         return;
     }
