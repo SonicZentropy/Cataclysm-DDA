@@ -503,24 +503,24 @@ static void execute_add_fire( map &md,
 {
     const int percent_chance = std::max( sg.scaling_days_end - days_since_cataclysm, 0 );
 
-    for( int i = 0; i < sg.attempts; i++ ) {
-        if( !x_in_y( percent_chance, 100 ) ) {
-            continue;
-        }
-        const tripoint_bub_ms current_tile = random_entry( all_points_in_map );
-        if( md.has_flag_ter( ter_furn_flag::TFLAG_NATURAL_UNDERGROUND, current_tile ) ) {
-            continue;
-        }
-
-        if( md.has_flag_ter_or_furn( ter_furn_flag::TFLAG_FLAMMABLE, current_tile ) ||
-            md.has_flag_ter_or_furn( ter_furn_flag::TFLAG_FLAMMABLE_ASH, current_tile ) ||
-            md.has_flag_ter_or_furn( ter_furn_flag::TFLAG_FLAMMABLE_HARD, current_tile ) ||
-            days_since_cataclysm < 3 ) {
-            md.add_field( current_tile, field_fd_fire,
-                          rng( sg.min_intensity, sg.max_intensity ) );
-        }
-
-    }
+    // for( int i = 0; i < sg.attempts; i++ ) {
+    //     if( !x_in_y( percent_chance, 100 ) ) {
+    //         continue;
+    //     }
+    //     const tripoint_bub_ms current_tile = random_entry( all_points_in_map );
+    //     if( md.has_flag_ter( ter_furn_flag::TFLAG_NATURAL_UNDERGROUND, current_tile ) ) {
+    //         continue;
+    //     }
+    //
+    //     if( md.has_flag_ter_or_furn( ter_furn_flag::TFLAG_FLAMMABLE, current_tile ) ||
+    //         md.has_flag_ter_or_furn( ter_furn_flag::TFLAG_FLAMMABLE_ASH, current_tile ) ||
+    //         md.has_flag_ter_or_furn( ter_furn_flag::TFLAG_FLAMMABLE_HARD, current_tile ) ||
+    //         days_since_cataclysm < 3 ) {
+    //         md.add_field( current_tile, field_fd_fire,
+    //                       rng( sg.min_intensity, sg.max_intensity ) );
+    //     }
+    //
+    // }
 
 }
 
