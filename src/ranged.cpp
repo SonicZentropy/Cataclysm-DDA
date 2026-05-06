@@ -1355,7 +1355,7 @@ int Character::fire_gun( map &here, const tripoint_bub_ms &target, int shots, it
         // launchers train weapon skill for both hits and misses.
         int practice_units = gun_skill == skill_launcher ? curshot : hits;
         practice( gun_skill, ( practice_units + 1 ) * 5 );
-    }
+    //}
 
     if( !gun.is_gun() ) {
         // If we lose our gun as a side effect of firing it, skip the rest of the function.
