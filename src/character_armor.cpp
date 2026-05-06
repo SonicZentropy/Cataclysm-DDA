@@ -214,12 +214,23 @@ const weakpoint *Character::absorb_hit( const weakpoint_attack &, const bodypart
 void Character::armor_use_power_when_hit( damage_unit &du, item &armor ) const
 {
     const auto amount = units::from_kilojoule( du.amount );
-    if( amount > armor.energy_remaining( nullptr, true ) ) {
-        armor.deactivate( nullptr, false );
-        add_msg_if_player( _( "Your %s doesn't have enough power to absorb the blow and shuts down!" ),
-                           armor.tname() );
+    if( amount > armor.energy_remaining( this, true ) ) {
+        // Check for UPS bionic and deduct energy from player's bionic stores
+        const units::energy shortfall = amount - armor.energy_remaining( this, true );
+        if( get_power_level() >= shortfall ) {
+            // Use bionic power to make up the difference
+            const_cast<Character*>(this)->mod_power_level( -shortfall );
+            armor.energy_consume( armor.energy_remaining( this, true ), pos_bub(),
+                                const_cast<Character*>(this) );
+            add_msg_if_player( _( "Your %s draws power from your bionics to absorb the blow!" ),
+                             armor.tname() );
+        } else {
+            armor.deactivate( nullptr, false );
+            add_msg_if_player( _( "Your %s doesn't have enough power to absorb the blow and shuts down!" ),
+                             armor.tname() );
+        }
     } else {
-        armor.energy_consume( amount, pos_bub(), nullptr );
+        armor.energy_consume( amount, pos_bub(), const_cast<Character*>(this) );
     }
 }
 
