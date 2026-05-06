@@ -17,6 +17,7 @@
     "diameter": 8,
     "width": 4,
     "looks_like": "foldframe",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 3 }
   },
   {
@@ -38,6 +39,7 @@
     "diameter": 8,
     "width": 4,
     "looks_like": "yoke_harness",
+    "degradation_multiplier": 0.0,
     "melee_damage": { "bash": 15 }
   }
 ]

@@ -6,6 +6,7 @@
     "category": "veh_parts",
     "material": [ "lc_steel", "copper" ],
     "symbol": ",",
+    "degradation_multiplier": 0.0,
     "color": "light_cyan"
   },
   {
@@ -17,6 +18,7 @@
     "weight": "4000 g",
     "volume": "2500 ml",
     "price": "90 USD",
+    "degradation_multiplier": 0.0,
     "price_postapoc": "5 USD"
   },
   {
@@ -28,6 +30,7 @@
     "weight": "1100 g",
     "volume": "1 L",
     "price": "80 USD",
+    "degradation_multiplier": 0.0,
     "price_postapoc": "3 USD"
   },
   {
@@ -41,6 +44,7 @@
     "weight": "420 g",
     "volume": "133 ml",
     "price": "80 USD",
+    "degradation_multiplier": 0.0,
     "price_postapoc": "2 USD 50 cent"
   },
   {
@@ -52,6 +56,7 @@
     "weight": "5800 g",
     "volume": "3 L",
     "price": "120 USD",
+    "degradation_multiplier": 0.0,
     "price_postapoc": "10 USD"
   }
 ]
