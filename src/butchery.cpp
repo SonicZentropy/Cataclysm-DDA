@@ -449,7 +449,7 @@ int butcher_time_to_cut( Character &you, const item &corpse_item, const butcher_
             }
             break;
         case butcher_type::DISSECT:
-            time_to_cut *= 6;
+            time_to_cut /= 2;
             break;
         case butcher_type::NUM_TYPES:
             debugmsg( "ERROR: Invalid butcher_type" );
@@ -1323,6 +1323,19 @@ std::optional<butcher_type> butcher_submenu( const std::vector<map_stack::iterat
     smenu.desc_enabled = true;
     smenu.title = _( "Choose type of butchery:" );
 
+    smenu.addentry_col( static_cast<int>( butcher_type::DISSECT ),
+                    is_enabled( butcher_type::DISSECT ),
+                    'd', _( "Dissect corpse" )
+                    + progress_str( butcher_type::DISSECT ),
+                    time_or_disabledreason( butcher_type::DISSECT ),
+                    wrap60( string_format( "%s  %s%s",
+                            _( "By careful dissection of the corpse, you will examine it for "
+                               "possible bionic implants, or discrete organs and harvest them "
+                               "if possible.  Requires scalpel-grade cutting tools, ruins "
+                               "corpse, and consumes a lot of time.  Your medical knowledge "
+                               "is most useful here." ),
+                            msgFactorD, dissect_wp_hint ) ) );
+
     smenu.addentry_col( static_cast<int>( butcher_type::QUICK ), is_enabled( butcher_type::QUICK ),
                         'B', _( "Quick butchery" )
                         + progress_str( butcher_type::QUICK ),
@@ -1403,18 +1416,7 @@ std::optional<butcher_type> butcher_submenu( const std::vector<map_stack::iterat
                                    "care about harvesting it, dismembering it will hack it apart "
                                    "in a very short amount of time but yields little to no usable flesh." ),
                                 msgFactor ) ) );
-    smenu.addentry_col( static_cast<int>( butcher_type::DISSECT ),
-                        is_enabled( butcher_type::DISSECT ),
-                        'd', _( "Dissect corpse" )
-                        + progress_str( butcher_type::DISSECT ),
-                        time_or_disabledreason( butcher_type::DISSECT ),
-                        wrap60( string_format( "%s  %s%s",
-                                _( "By careful dissection of the corpse, you will examine it for "
-                                   "possible bionic implants, or discrete organs and harvest them "
-                                   "if possible.  Requires scalpel-grade cutting tools, ruins "
-                                   "corpse, and consumes a lot of time.  Your medical knowledge "
-                                   "is most useful here." ),
-                                msgFactorD, dissect_wp_hint ) ) );
+
     smenu.query();
     switch( smenu.ret ) {
         case static_cast<int>( butcher_type::QUICK ):
