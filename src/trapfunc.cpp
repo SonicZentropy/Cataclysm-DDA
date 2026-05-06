@@ -358,9 +358,9 @@ bool trapfunc::board( const tripoint_bub_ms &p, Creature *c, item * )
     }
     map &here = get_map();
     // Only a chance to step on the board, dependent on size
-    if( !x_in_y( occupied_tile_fraction( c->get_size() ), 1.0f ) ) {
-        return false;
-    }
+    //if( !x_in_y( occupied_tile_fraction( c->get_size() ), 1.0f ) ) {
+    //    return false;
+    //}
     c->add_msg_if_player( m_bad, _( "You step on a %s!" ), here.tr_at( p ).name() );
     c->add_msg_if_npc( _( "%s steps on a %s!" ), c->disp_name( false, true ), here.tr_at( p ).name() );
     if( c->has_effect( effect_ridden ) ) {
@@ -375,19 +375,19 @@ bool trapfunc::board( const tripoint_bub_ms &p, Creature *c, item * )
     try_apply_tetanus( c->as_character(), dd.type_damage( damage_cut ) );
     c->check_dead_state( &here );
     // Weight of 100kg+ is guaranteed to break the trap, linear chance as weight increases
-    if( x_in_y( c->get_weight() / 1_kilogram, 100 ) ) {
-        // destroy trap
-        here.remove_trap( p );
-        if( !c->is_avatar() ) {
-            add_msg_if_player_sees( p, _( "%s destroys a %s as they move over it!" ),
-                                    c->disp_name( false, true ), here.tr_at( p ).name() );
-        } else {
-            add_msg( _( "You destroy the %s as you step on it!" ), here.tr_at( p ).name() );
-        }
-    } else if( x_in_y( 40, 100 ) ) {
-        // 40% chance disarm trap
-        here.tr_at( p ).on_disarmed( here, p );
-    }
+    // if( x_in_y( c->get_weight() / 1_kilogram, 100 ) ) {
+    //     // destroy trap
+    //     here.remove_trap( p );
+    //     if( !c->is_avatar() ) {
+    //         add_msg_if_player_sees( p, _( "%s destroys a %s as they move over it!" ),
+    //                                 c->disp_name( false, true ), here.tr_at( p ).name() );
+    //     } else {
+    //         add_msg( _( "You destroy the %s as you step on it!" ), here.tr_at( p ).name() );
+    //     }
+    // } else if( x_in_y( 40, 100 ) ) {
+    //     // 40% chance disarm trap
+    //     here.tr_at( p ).on_disarmed( here, p );
+    // }
     return true;
 }
 
@@ -398,9 +398,9 @@ bool trapfunc::caltrops( const tripoint_bub_ms &p, Creature *c, item * )
     }
     map &here = get_map();
     // Only a chance to step on the caltrop, dependent on size
-    if( !x_in_y( occupied_tile_fraction( c->get_size() ), 1.0f ) ) {
-        return false;
-    }
+    // if( !x_in_y( occupied_tile_fraction( c->get_size() ), 1.0f ) ) {
+    //     return false;
+    // }
     c->add_msg_if_player( m_bad, _( "You step on a sharp %s!" ), here.tr_at( p ).name() );
     c->add_msg_if_npc( _( "%s steps on a sharp %s!" ), c->disp_name( false, true ),
                        here.tr_at( p ).name() );
@@ -416,19 +416,19 @@ bool trapfunc::caltrops( const tripoint_bub_ms &p, Creature *c, item * )
     try_apply_tetanus( c->as_character(), dd.type_damage( damage_cut ) );
     // Weight of 200kg+ is guaranteed to break the trap, linear chance as weight increases
     // Arbitrary value, picked from hulk's weight value.
-    if( x_in_y( c->get_weight() / 1_kilogram, 200 ) ) {
-        // destroy trap
-        here.remove_trap( p );
-        if( !c->is_avatar() ) {
-            add_msg_if_player_sees( p, _( "%s destroys a %s as they move over it!" ),
-                                    c->disp_name( false, true ), here.tr_at( p ).name() );
-        } else {
-            add_msg( _( "You destroy the %s as you step on it!" ), here.tr_at( p ).name() );
-        }
-    } else if( x_in_y( 20, 100 ) ) {
-        // 20% chance disarm trap
-        here.tr_at( p ).on_disarmed( here, p );
-    }
+    // if( x_in_y( c->get_weight() / 1_kilogram, 200 ) ) {
+    //     // destroy trap
+    //     here.remove_trap( p );
+    //     if( !c->is_avatar() ) {
+    //         add_msg_if_player_sees( p, _( "%s destroys a %s as they move over it!" ),
+    //                                 c->disp_name( false, true ), here.tr_at( p ).name() );
+    //     } else {
+    //         add_msg( _( "You destroy the %s as you step on it!" ), here.tr_at( p ).name() );
+    //     }
+    // } else if( x_in_y( 20, 100 ) ) {
+    //     // 20% chance disarm trap
+    //     here.tr_at( p ).on_disarmed( here, p );
+    // }
     c->check_dead_state( &here );
     return true;
 }
@@ -440,9 +440,9 @@ bool trapfunc::caltrops_glass( const tripoint_bub_ms &p, Creature *c, item * )
     }
     map &here = get_map();
     // Only a chance to step on the caltrop, dependent on size
-    if( !x_in_y( occupied_tile_fraction( c->get_size() ), 1.0f ) ) {
-        return false;
-    }
+    // if( !x_in_y( occupied_tile_fraction( c->get_size() ), 1.0f ) ) {
+    //     return false;
+    // }
     c->add_msg_if_player( m_bad, _( "You step on a sharp %s!" ), here.tr_at( p ).name() );
     c->add_msg_if_npc( _( "%s steps on a sharp %s!" ), c->disp_name( false, true ),
                        here.tr_at( p ).name() );
@@ -458,7 +458,7 @@ bool trapfunc::caltrops_glass( const tripoint_bub_ms &p, Creature *c, item * )
     add_msg_if_player_sees( p, _( "The shards shatter!" ) );
     sounds::sound( p, 8, sounds::sound_t::combat, _( "glass cracking!" ), false, "trap",
                    "glass_caltrops" );
-    here.remove_trap( p );
+   // here.remove_trap( p );
     return true;
 }
 
