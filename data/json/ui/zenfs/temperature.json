@@ -120,5 +120,53 @@
     "var": "bp_warmth",
     "bodypart": "leg_r",
     "copy-from": "zenfs_temperature_num"
+  },
+  {
+    "id": "zenfs_temperature_graph_1",
+    "type": "widget",
+    "style": "graph",
+    "symbols": "Cc.wW",
+    "fill": "bucket",
+    "var": "bp_warmth",
+    "width": 1,
+    "text_align": "right",
+    "colors": [ "c_blue", "c_light_blue", "c_green", "c_yellow", "c_red" ],
+    "flags": [ "W_LABEL_NONE" ]
+  },
+  {
+    "id": "zenfs_temperature_head_graph_1",
+    "type": "widget",
+    "bodypart": "head",
+    "copy-from": "zenfs_temperature_graph_1"
+  },
+  {
+    "id": "zenfs_temperature_torso_graph_1",
+    "type": "widget",
+    "bodypart": "torso",
+    "copy-from": "zenfs_temperature_graph_1"
+  },
+  {
+    "id": "zenfs_temperature_larm_graph_1",
+    "type": "widget",
+    "bodypart": "arm_l",
+    "copy-from": "zenfs_temperature_graph_1"
+  },
+  {
+    "id": "zenfs_temperature_rarm_graph_1",
+    "type": "widget",
+    "bodypart": "arm_r",
+    "copy-from": "zenfs_temperature_graph_1"
+  },
+  {
+    "id": "zenfs_temperature_lleg_graph_1",
+    "type": "widget",
+    "bodypart": "leg_l",
+    "copy-from": "zenfs_temperature_graph_1"
+  },
+  {
+    "id": "zenfs_temperature_rleg_graph_1",
+    "type": "widget",
+    "bodypart": "leg_r",
+    "copy-from": "zenfs_temperature_graph_1"
   }
 ]

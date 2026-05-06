@@ -93,14 +93,14 @@
     "id": "zenfs_hp_bar_labels",
     "type": "widget",
     "style": "text",
-    "string": "<color_dark_gray>State  Hit points   Wet Temp Encum</color>",
+    "string": "<color_dark_gray>State  Hit points   Stat Temp Encum</color>",
     "flags": [ "W_LABEL_NONE", "W_NO_PADDING" ]
   },
   {
     "id": "zenfs_hp_bar_labels_compact",
     "type": "widget",
     "style": "text",
-    "string": "<color_dark_gray>State  HPs  Wet  Temp Enc</color> ",
+    "string": "<color_dark_gray>State  HPs  Stat Temp Enc</color> ",
     "flags": [ "W_LABEL_NONE", "W_NO_PADDING" ]
   },
   {
