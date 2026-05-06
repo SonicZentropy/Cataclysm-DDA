@@ -28,7 +28,7 @@ constexpr int EXPLOSION_MULTIPLIER = 7;
 constexpr int fov_3d_z_range = 10;
 
 // Really just a sanity check for functions not tested beyond this. in theory 4096 works (`InvletInvlet).
-constexpr int MAX_ITEM_IN_SQUARE = 4096;
+constexpr int MAX_ITEM_IN_SQUARE = 32767;
 // no reason to differ.
 constexpr int MAX_ITEM_IN_VEHICLE_STORAGE = MAX_ITEM_IN_SQUARE;
 // Sanity checks for volume
@@ -41,7 +41,7 @@ constexpr int MAX_WORN_PER_TYPE = 2;
  * Items on the map with at most this distance to the player are considered available for crafting,
  * see inventory::form_from_map
 */
-constexpr int PICKUP_RANGE = 6;
+constexpr int PICKUP_RANGE = 9;
 
 // Maximum move cost when handling an item.
 constexpr int MAX_HANDLING_COST = 400;
@@ -86,7 +86,10 @@ constexpr int MAX_AIM_COST = 10;
 // Minimum (effective) level for a skill.
 constexpr int MIN_SKILL = 0;
 // Maximum (effective) level for a skill.
-constexpr int MAX_SKILL = 10;
+constexpr int MAX_SKILL = 15;
+
+// Maximum (effective) level for a stat.
+constexpr int MAX_STAT = 25;
 
 // Accuracy levels which a shot's tangent must be below.
 constexpr double accuracy_headshot = 0.1;
