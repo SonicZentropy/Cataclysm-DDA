@@ -1,0 +1,10 @@
+﻿[
+  {
+    "type": "item_group",
+    "id": "EXODII_CBM_tier1_power",
+    "copy-from": "EXODII_CBM_tier1_power",
+    "extend": {
+      "items": [ [ "bio_trickle", 1 ] ]
+    }
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "mon_zombie_brute_shocker",
+    "type": "MONSTER",
+    "name": { "str": "shocker brute" },
+    "copy-from": "mon_zombie_brute_shocker",
+    "extend": {
+      "flags": [ "RANGED_ATTACKER" ],
+      "special_attacks": [ [ "SHOCKSTORM", 15 ] ]
+    },
+    "harvest": "CBM_SUBS"
+  },
+  {
+    "id": "mon_zombie_electric",
+    "type": "MONSTER",
+    "name": { "str": "shocker zombie" },
+    "copy-from": "mon_zombie_electric",
+    "extend": {
+      "flags": [ "RANGED_ATTACKER" ],
+      "special_attacks": [ [ "SHOCKSTORM", 25 ] ]
+    },
+    "harvest": "CBM_SUBS"
+  },
+  {
+    "id": "mon_zombie_nullfield",
+    "type": "MONSTER",
+    "name": { "str": "incandescent husk" },
+    "copy-from": "mon_zombie_nullfield",
+    "harvest": "CBM_SUBS"
+  },
+  {
+    "id": "mon_skeleton_electric",
+    "type": "MONSTER",
+    "name": { "str": "skeletal shocker" },
+    "copy-from": "mon_skeleton_electric",
+    "extend": {
+      "flags": [ "RANGED_ATTACKER" ],
+      "special_attacks": [ [ "SHOCKSTORM", 25 ] ]
+    },
+    "harvest": "CBM_SUBS"
+  }
+]

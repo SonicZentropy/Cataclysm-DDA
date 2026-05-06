@@ -1,0 +1,35 @@
+[
+  {
+    "id": "science",
+    "type": "item_group",
+    "copy-from": "science",
+    "extend": {
+      "items": [
+        [ "portal", 2 ]
+      ]
+    }
+  },
+  {
+    "id": "schematics",
+    "type": "item_group",
+    "copy-from": "schematics",
+    "extend": {
+      "items": [
+        [ "schematics_copbot", 50 ],
+        [ "schematics_eyebot", 50 ],
+        [ "schematics_riotbot", 50 ]
+      ]
+    }
+  },
+  {
+    "id": "afs_lab_mechanics_books",
+    "type": "item_group",
+    "items": [
+      [ "manual_mechanics", 6 ],
+      [ "textbook_mechanics", 3 ],
+      [ "textbook_biodiesel", 3 ],
+      [ "mag_fieldrepair", 4 ],
+      [ "book_icef", 4 ]
+    ]
+  }
+]

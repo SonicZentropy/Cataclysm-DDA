@@ -1,0 +1,26 @@
+[
+  {
+    "type": "construction",
+    "id": "constr_place_autodoc",
+    "group": "place_autodoc",
+    "category": "FURN",
+    "required_skills": [ [ "fabrication", 0 ] ],
+    "time": "30 m",
+    "components": [ [ [ "autodoc", 1 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_autodoc",
+    "activity_level": "LIGHT_EXERCISE"
+  },
+  {
+    "type": "construction",
+    "id": "constr_place_autodoc_couch",
+    "group": "place_autodoc_couch",
+    "category": "FURN",
+    "required_skills": [ [ "fabrication", 0 ] ],
+    "time": "2 m",
+    "components": [ [ [ "autodoc_couch", 1 ] ] ],
+    "pre_special": "check_empty",
+    "post_terrain": "f_autodoc_couch",
+    "activity_level": "LIGHT_EXERCISE"
+  }
+]

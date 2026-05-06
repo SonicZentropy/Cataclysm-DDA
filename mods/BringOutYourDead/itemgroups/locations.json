@@ -1,0 +1,46 @@
+[
+  {
+    "type": "item_group",
+    "id": "hospital_medical_items",
+    "subtype": "distribution",
+    "copy-from": "hospital_medical_items",
+    "extend": { "entries": [ { "group": "bionics_common", "prob": 5 } ] }
+  },
+  {
+    "type": "item_group",
+    "id": "robofac_basic_trade",
+    "subtype": "distribution",
+    "copy-from": "robofac_basic_trade",
+    "extend": { "entries": [ { "group": "bionics_common", "prob": 100 } ] }
+  },
+  {
+    "id": "recycle_electronic",
+    "type": "item_group",
+    "copy-from": "recycle_electronic",
+    "extend": {
+      "items": [
+        { "group": "powerbanks", "prob": 2 }
+      ]
+    }
+  },
+  {
+    "id": "subway",
+    "type": "item_group",
+    "copy-from": "subway",
+    "extend": {
+      "items": [
+        { "group": "powerbanks", "prob": 10 }
+      ]
+    }
+  },
+  {
+    "id": "lab_dorm",
+    "type": "item_group",
+    "copy-from": "lab_dorm",
+    "extend": {
+      "items": [
+        { "group": "powerbanks", "prob": 10 }
+      ]
+    }
+  }
+]

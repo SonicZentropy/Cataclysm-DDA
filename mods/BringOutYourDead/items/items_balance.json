@@ -1,0 +1,26 @@
+[
+  {
+    "id": "welder",
+    "copy-from": "welder",
+    "type": "ITEM",
+    "subtypes": ["TOOL"],
+    "name": { "str": "arc welder" },
+    "charges_per_use": 1
+  },
+  {
+    "id": "welder_crude",
+    "copy-from": "welder_crude",
+    "type": "ITEM",
+    "subtypes": ["TOOL"],
+    "name": { "str": "makeshift arc welder" },
+    "charges_per_use": 2
+  },
+  {
+    "id": "welding_kit",
+    "copy-from": "welding_kit",
+    "type": "ITEM",
+    "subtypes": ["TOOL"],
+    "name": { "str": "high-temperature welding kit" },
+    "charges_per_use": 1
+  }
+]
