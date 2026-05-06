@@ -1,4 +1,9 @@
 [
+	{
+		"type": "monstergroup",
+		"id": "GROUP_CENTRAL_LAB",
+		"monsters": [ { "monster": "mon_zombie_bio_op", "weight": 20, "cost_multiplier": 50 } ]
+	},
   {
     "type": "monstergroup",
     "id": "GROUP_LAB",

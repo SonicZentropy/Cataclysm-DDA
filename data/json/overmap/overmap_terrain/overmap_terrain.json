@@ -508,6 +508,12 @@
     "see_cost": "full_high",
     "color": "light_green"
   },
+	{
+		"type": "overmap_terrain",
+		"id": [ "lodge_basement_laboratory_entrance" ],
+		"copy-from": "lodge_basement_residential1",
+		"flags": [ "SHOULD_NOT_SPAWN" ]
+	},
   {
     "type": "overmap_terrain",
     "id": "dirtroad1_aban1",

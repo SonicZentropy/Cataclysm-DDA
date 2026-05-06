@@ -12,6 +12,12 @@
     "blacklist_professions": true,
     "extend": { "professions": [ "bionic_patient" ] }
   },
+	{
+		"type": "scenario",
+		"copy-from": "lab_chal",
+		"id": "lab_chal",
+		"extend": { "professions": [ "broken_cyborg" ] }
+	},
   {
     "type": "scenario",
     "copy-from": "heli_crash",
