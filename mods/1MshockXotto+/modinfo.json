@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "MSXOttoLayerMod",
+    "name": "1MSXOtto Mod",
+    "authors": [ "soniczentropy" ],
+    "description": "Adds the tiles from Chibi to be used as a mod.",
+    "category": "zen",
+    "dependencies": [ "dda" ]
+  }
+]

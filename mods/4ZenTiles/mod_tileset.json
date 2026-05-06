@@ -1,0 +1,60 @@
+[
+  {
+    "type": "mod_tileset",
+    "compatibility": [
+      "UNDEAD_PEOPLE_BASE",
+      "UNDEAD_PEOPLE",
+      "MshockRealXotto",
+      "MSX++DEAD_PEOPLE",
+      "MSXotto+",
+      "Chibi_Ultica"
+    ],
+    "tiles-new": [
+      {
+        "file": "tiles.png",
+        "//": "range 1 to 1",
+        "sprite_width": 32,
+        "sprite_height": 32,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": 0,
+        "tiles": [
+          {
+            "id": "f_everburning_torch_candelabra",
+            "fg": 0,
+            "rotates": false
+          },
+          {
+            "id": "billboard_0",
+            "fg": 1,
+            "rotates": false
+          },
+          {
+            "id": "billboard_1",
+            "fg": 1,
+            "rotates": false
+          },
+          {
+            "id": "billboard_2",
+            "fg": 1,
+            "rotates": false
+          }
+        ]
+      },
+      {
+        "file": "bonespear.png",
+        "//": "range 1 to 1",
+        "sprite_width": 64,
+        "sprite_height": 64,
+        "sprite_offset_x": 0,
+        "sprite_offset_y": 0,
+        "tiles": [
+          {
+            "id": "bonespear",
+            "fg": 0,
+            "rotates": false
+          }
+        ]
+      }
+    ]
+  }
+]

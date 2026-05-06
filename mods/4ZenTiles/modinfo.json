@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "ZenTiles",
+    "name": "Zen Tiles Mod",
+    "authors": [ "SonicZentropy" ],
+    "description": "Personal tile additions",
+    "category": "zen",
+    "dependencies": [ "dda" ]
+  }
+]
