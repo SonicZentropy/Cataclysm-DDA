@@ -330,6 +330,7 @@
     "material": [ "plastic", "aluminum" ],
     "symbol": ";",
     "color": "light_gray",
+    "degradation_multiplier": 0.0,
     "use_action": {
       "type": "manualnoise",
       "moves": 100,
@@ -352,6 +353,7 @@
     "volume": "1500 ml",
     "price": "120 USD",
     "price_postapoc": "10 cent",
+    "degradation_multiplier": 0.0,
     "material": [ "steel", "plastic" ],
     "symbol": ";",
     "color": "light_gray"
@@ -367,6 +369,7 @@
     "volume": "500 ml",
     "price": "90 USD",
     "price_postapoc": "10 cent",
+    "degradation_multiplier": 0.0,
     "material": [ "steel", "plastic" ],
     "symbol": ";",
     "color": "light_gray"
