@@ -62,7 +62,6 @@ void item_category::load( const JsonObject &jo, std::string_view )
     optional( jo, was_loaded, "priority_zones", zone_priority_ );
     optional( jo, was_loaded, "zone", zone_, std::nullopt );
     float spawn_rate = 1.0f;
-    optional( jo, was_loaded, "spawn_rate", spawn_rate, 1.0f );
     set_spawn_rate( spawn_rate );
 }
 
@@ -134,11 +133,6 @@ int item_category::sort_rank() const
 void item_category::set_spawn_rate( const float &rate ) const
 {
     item_category_spawn_rates::get_item_category_spawn_rates().set_spawn_rate( id, rate );
-}
-
-float item_category::get_spawn_rate() const
-{
-    return item_category_spawn_rates::get_item_category_spawn_rates().get_spawn_rate( id );
 }
 
 void item_category_spawn_rates::set_spawn_rate( const item_category_id &id, const float &rate )
