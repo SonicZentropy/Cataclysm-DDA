@@ -1,0 +1,5 @@
+NAME: ZenTiles
+VIEW: ZenTiles
+JSON: mod_tileset.json
+TILESET: tiles.png
+
