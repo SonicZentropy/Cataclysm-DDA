@@ -2011,9 +2011,9 @@ bool map::furn_set( const tripoint_bub_ms &p, const furn_id &new_furniture, cons
         !new_f.has_flag( ter_furn_flag::TFLAG_FLOATS_IN_AIR ) &&
         new_target_furniture != furn_str_id::NULL_ID() ) {
         const ter_id &current_ter = current_submap->get_ter( l );
-        debugmsg( "Setting furniture %s at %s where terrain is %s (which is_open_air)\n"
-                  "If this is intentional, set the ALLOW_ON_OPEN_AIR flag on the furniture",
-                  new_target_furniture.id().str(), p.to_string(), current_ter.id().str() );
+        //debugmsg( "Setting furniture %s at %s where terrain is %s (which is_open_air)\n"
+        //          "If this is intentional, set the ALLOW_ON_OPEN_AIR flag on the furniture",
+        //          new_target_furniture.id().str(), p.to_string(), current_ter.id().str() );
         result = false;
     }
 
@@ -2522,9 +2522,9 @@ bool map::ter_set( const tripoint_bub_ms &p, const ter_id &new_terrain, bool avo
         const furn_id &current_furn = current_submap->get_furn( l );
         if( current_furn != furn_str_id::NULL_ID() &&
             !current_furn->has_flag( ter_furn_flag::TFLAG_ALLOW_ON_OPEN_AIR ) ) {
-            debugmsg( "Setting terrain %s at %s where furniture is %s.  Terrain is_open_air\n"
-                      "If this is intentional, set the ALLOW_ON_OPEN_AIR flag on the furniture",
-                      new_terrain.id().str(), p.to_string(), current_furn.id().str() );
+            //debugmsg( "Setting terrain %s at %s where furniture is %s.  Terrain is_open_air\n"
+            //          "If this is intentional, set the ALLOW_ON_OPEN_AIR flag on the furniture",
+            //          new_terrain.id().str(), p.to_string(), current_furn.id().str() );
         }
     }
 
@@ -4491,9 +4491,9 @@ void map::bash_ter_furn( const tripoint_bub_ms &p, bash_params &params, bool rep
         }
 
         // add here because early return, otherwise they're added at the end
-        if( !bash->hit_field.first.is_null() ) {
-            add_field( p, bash->hit_field.first, bash->hit_field.second );
-        }
+        //if( !bash->hit_field.first.is_null() ) {
+        //    add_field( p, bash->hit_field.first, bash->hit_field.second );
+        //}
 
         return;
     }
@@ -4657,12 +4657,12 @@ void map::bash_ter_furn( const tripoint_bub_ms &p, bash_params &params, bool rep
         collapse_at( tripoint_bub_ms( p ), params.silent, true, bash->explosive > 0 );
     }
 
-    if( !bash->hit_field.first.is_null() ) {
-        add_field( p, bash->hit_field.first, bash->hit_field.second );
-    }
-    if( !bash->destroyed_field.first.is_null() ) {
-        add_field( p, bash->destroyed_field.first, bash->destroyed_field.second );
-    }
+    // if( !bash->hit_field.first.is_null() ) {
+    //     add_field( p, bash->hit_field.first, bash->hit_field.second );
+    // }
+    // if( !bash->destroyed_field.first.is_null() ) {
+    //     add_field( p, bash->destroyed_field.first, bash->destroyed_field.second );
+    // }
 
     params.did_bash = true;
     params.success |= success; // Not always true, so that we can tell when to stop destroying
@@ -5790,8 +5790,8 @@ item &map::add_item_or_charges( const tripoint_bub_ms &pos, item obj, int &copie
 
 float map::item_category_spawn_rate( const item &itm )
 {
-    const item_category_id &cat = itm.get_category_of_contents().id;
-    const float spawn_rate = cat.obj().get_spawn_rate();
+    const std::string &cat = itm.get_category_of_contents().id.c_str();
+    const float spawn_rate = get_option<float>( "SPAWN_RATE_" + cat );
 
     return spawn_rate > 1.0f ? roll_remainder( spawn_rate ) : spawn_rate;
 }
@@ -6529,13 +6529,13 @@ bool map::could_see_items( const tripoint_bub_ms &p, const tripoint_bub_ms &from
         // never see inside of sealed containers
         return false;
     }
-    if( container ) {
-        // can see inside of containers if adjacent or
-        // on top of the container
-        return std::abs( p.x() - from.x() ) <= 1 &&
-               std::abs( p.y() - from.y() ) <= 1 &&
-               std::abs( p.z() - from.z() ) <= 1;
-    }
+    // if( container ) {
+    //     // can see inside of containers if adjacent or
+    //     // on top of the container
+    //     return std::abs( p.x() - from.x() ) <= 1 &&
+    //            std::abs( p.y() - from.y() ) <= 1 &&
+    //            std::abs( p.z() - from.z() ) <= 1;
+    // }
     return true;
 }
 
