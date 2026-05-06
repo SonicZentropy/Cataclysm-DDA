@@ -116,7 +116,7 @@
     "name": "NO_NPC_FOOD",
     "//": "Disables tracking food, thirst and ( partially ) fatigue for NPCs.  If true, NPCs won't need to eat or drink and will only get tired enough to sleep, not to get penalties.",
     "stype": "bool",
-    "value": false
+    "value": true
   },
   {
     "type": "EXTERNAL_OPTION",
@@ -221,7 +221,7 @@
     "name": "PORTAL_STORM_IGNORE_NPC",
     "//": "Portal storm enemies will ignore NPCs no matter what.",
     "stype": "bool",
-    "value": false
+    "value": true
   },
   {
     "type": "EXTERNAL_OPTION",
@@ -347,7 +347,7 @@
     "name": "CAPITALISM",
     "//": "NPCs will accept your bank balance as payment in trades.",
     "stype": "bool",
-    "value": false
+    "value": true
   },
   {
     "type": "EXTERNAL_OPTION",
@@ -396,7 +396,7 @@
     "name": "SHOW_MUTATION_SELECTOR",
     "//": "When mutating, displays a menu which allows players to pick from a list of possible mutations.",
     "stype": "bool",
-    "value": false
+    "value": true
   },
   {
     "type": "EXTERNAL_OPTION",
@@ -482,7 +482,7 @@
     "//": "Sets the time of construction in percents.  '50' is two times faster than default, '200' is two times longer.  '0' automatically scales construction time to match the world's season length.",
     "stub": true,
     "stype": "int",
-    "value": 100
+    "value": 50
   },
   {
     "type": "EXTERNAL_OPTION",

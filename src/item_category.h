@@ -73,7 +73,6 @@ class item_category
         std::optional<zone_type_id> zone() const;
         int sort_rank() const;
         void set_spawn_rate( const float &rate ) const;
-        float get_spawn_rate() const;
 
         /**
          * Comparison operators
