@@ -1,0 +1,98 @@
+[
+	{
+		"type": "furniture",
+		"id": "f_magic_bench",
+		"copy-from": "f_magic_bench",
+		"deployed_item": "magic_workbench_item",
+		"examine_action": "workbench",
+		"description": "A magical workbench imbued with arcane energy, perfect for enchanting and magical crafting.  It can be taken down and moved."
+	},
+	{
+		"id": "magic_workbench_item",
+		"type": "ITEM",
+		"subtypes": [ "TOOL" ],
+		"name": { "str": "folded enchanter's workbench" },
+		"description": "A magical workbench that has been folded for transportation.  It still hums with arcane energy.  Activate it to deploy.",
+		"weight": "15 kg",
+		"volume": "20 L",
+		"longest_side": "120 cm",
+		"price": "500 USD",
+		"price_postapoc": "50 USD",
+		"to_hit": { "grip": "bad", "length": "long", "surface": "any", "balance": "clumsy" },
+		"material": [ "wood", "steel" ],
+		"symbol": "=",
+		"color": "light_blue",
+		"use_action": { "type": "deploy_furn", "furn_type": "f_magic_bench" },
+		"melee_damage": { "bash": 6 }
+	},
+	{
+		"type": "furniture",
+		"id": "f_alembic",
+		"copy-from": "f_alembic",
+		"deployed_item": "standing_alembic_item",
+		"examine_action": "deployed_furniture",
+		"description": "A large glass and copper alembic for distilling alchemical concoctions.  It consists of a copper pot with rising spires of twisted glass draining into various removable bottles.  It can be taken down and moved."
+	},
+	{
+		"id": "standing_alembic_item",
+		"type": "ITEM",
+		"subtypes": [ "TOOL" ],
+		"name": { "str": "packed standing alembic" },
+		"description": "A large glass and copper alembic that has been carefully disassembled for transportation.  The glass components are wrapped in cloth for protection.  Activate it to deploy.",
+		"weight": "8 kg",
+		"volume": "12 L",
+		"longest_side": "80 cm",
+		"price": "300 USD",
+		"price_postapoc": "40 USD",
+		"to_hit": { "grip": "bad", "length": "long", "surface": "any", "balance": "clumsy" },
+		"material": [ "copper", "glass" ],
+		"symbol": "&",
+		"color": "light_blue",
+		"use_action": { "type": "deploy_furn", "furn_type": "f_alembic" },
+		"melee_damage": { "bash": 4 }
+	},
+	{
+		"type": "ITEM",
+		"id": "pike_plus_one",
+		"copy-from": "pike_plus_one",
+		"name": { "str": "pike +1", "str_pl": "pikes +1" },
+		"extend": { "flags": [ "SHEATH_SPEAR" ] }
+	},
+	{
+		"type": "ITEM",
+		"id": "pike_plus_two",
+		"copy-from": "pike_plus_two",
+		"name": { "str": "pike +2", "str_pl": "pikes +2" },
+		"extend": { "flags": [ "SHEATH_SPEAR" ] }
+	},
+	{
+		"id": "msocks_haste",
+		"type": "ITEM",
+		"subtypes": [ "ARMOR", "ARTIFACT" ],
+		"copy-from": "socks",
+		"name": { "str": "socks of haste", "str_pl": "pairs of socks of haste" },
+		"looks_like": "socks",
+		"price_postapoc": "950 USD",
+		"description": "Rugged yet extremely comfortable and well fitting socks of worn leather and steel, they look like they've seen a lot of use and will likely see a lot more.  They make your movement a lot less work.",
+		"warmth": 5,
+		"material_thickness": 3,
+		"environmental_protection": 3,
+		"flags": [ "WATERPROOF", "STURDY" ],
+		"material": [ "leather" ],
+		"passive_effects": [
+			{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "MOVE_COST", "add": -20 } ] },
+			{ "has": "WORN", "condition": "ALWAYS", "values": [ { "value": "SPEED", "add": 10 } ] }
+		]
+	},
+	{
+		"id": "enchanted_boots",
+		"type": "item_group",
+		"copy-from": "enchanted_boots",
+		"subtype": "collection",
+		"extend": {
+			"items": [
+				{ "item": "msocks_haste", "prob": 10 }
+			]
+		}
+	}
+]

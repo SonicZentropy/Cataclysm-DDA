@@ -1,0 +1,541 @@
+[
+	{
+		"id": "1st_aid_box_large",
+		"type": "ITEM",
+		"category": "container",
+		"name": { "str": "large first aid kit box", "str_pl": "large first aid kit boxes" },
+		"looks_like": "ifak_pouch",
+		"description": "A large plastic box designed to contain a first aid kit.",
+		"ascii_picture": "1st_aid_box",
+		"weight": "300 g",
+		"volume": "5500 ml",
+		"price": "0 cent",
+		"price_postapoc": "0 cent",
+		"material": [ "plastic" ],
+		"flags": [ "COLLAPSE_CONTENTS", "TARDIS" ],
+		"pocket_data": [
+			{
+				"pocket_type": "CONTAINER",
+				"max_contains_volume": "10000 ml",
+				"max_contains_weight": "8 kg",
+				"max_item_length": "40 cm",
+				"rigid": true,
+				"transparent": true,
+				"moves": 100
+			}
+		],
+		"symbol": ")",
+		"color": "red"
+	},
+	{
+		"type": "item_group",
+		"id": "full_1st_aid",
+		"subtype": "collection",
+		"copy-from": "full_1st_aid",
+		"container-item": "1st_aid_box_large"
+	},
+	{
+		"id": "spring_plate_superalloy",
+		"//": "Improved shock absorber, gives some value to finding superalloy",
+		"type": "ITEM",
+		"category": "veh_parts",
+		"name": { "str": "superalloy shock absorber" },
+		"description": "A precise combination of springs and superalloy that protects a particular section of a vehicle from the shock of impacts.  The springs can absorb a surprising amount of damage.",
+		"weight": "11540 g",
+		"volume": "3 L",
+		"price": "1300 USD",
+		"price_postapoc": "70 USD 50 cent",
+		"to_hit": { "grip": "solid", "length": "short", "surface": "any", "balance": "clumsy" },
+		"material": [ "hc_steel", "lc_steel" ],
+		"symbol": "]",
+		"color": "light_cyan",
+		"degradation_multiplier": 0.0,
+		"melee_damage": { "bash": 8 }
+	},
+	{
+		"id": "spring_plate_superalloy",
+		"type": "vehicle_part",
+		"item": "spring_plate_superalloy",
+		"description": "A precise combination of springs and superalloy  that protects a particular section of a vehicle from the shock of impacts.  The springs can absorb a surprising amount of damage.",
+		"location": "armor",
+		"categories": [ "warfare" ],
+		"color": "dark_gray",
+		"broken_color": "dark_gray",
+		"durability": 800,
+		"bonus": 50,
+		"//": "1 m x 1 m sq metal plate + 3 9 cm springs ~= 400 cm weld or so, 50 cm per damage quadrant to repair",
+		"breaks_into": [ { "item": "alloy_plate", "count": [ 1, 1 ] }, { "item": "spring", "count": [ 0, 4 ] } ],
+		"requirements": {
+			"install": { "skills": [ [ "mechanics", 7 ] ], "time": "70 m", "using": [ [ "welding_standard", 400 ] ] },
+			"removal": { "skills": [ [ "mechanics", 2 ] ], "time": "20 m", "using": [ [ "vehicle_weld_removal", 1 ] ] },
+			"repair": { "skills": [ [ "mechanics", 8 ] ], "time": "10 m", "using": [ [ "repair_welding_standard", 5 ] ] }
+		},
+		"flags": [ "SHOCK_ABSORBER" ],
+		"damage_reduction": { "all": 65 },
+		"variants": [ { "symbols": "X", "symbols_broken": "*" } ]
+	},
+	{
+		"result": "spring_plate_superalloy",
+		"type": "recipe",
+		"activity_level": "MODERATE_EXERCISE",
+		"category": "CC_OTHER",
+		"subcategory": "CSC_OTHER_VEHICLE",
+		"skill_used": "fabrication",
+		"difficulty": 8,
+		"time": "45 m",
+		"reversible": true,
+		"autolearn": true,
+		"//": "75cm weld",
+		"using": [ [ "welding_standard", 75 ] ],
+		"components": [ [ [ "alloy_plate", 1 ] ], [ [ "spring_plate", 1 ] ] ]
+	},
+	{
+		"id": "hardened_enhanced_nvg",
+		"type": "ITEM",
+		"//": "NVGs that aren't susceptible to electrical shortage",
+		"subtypes": [ "TOOL", "ARMOR", "ARTIFACT" ],
+		"category": "armor",
+		"name": { "str_sp": "hardened enhanced night vision goggles" },
+		"description": "New and rare high-resolution thermal NVG device, designed to be mounted on a compatible helmet.  Lets you see in the dark, and detects heat signatures emitted by (un)living organisms.  Currently raised up and out of the way.",
+		"weight": "720 g",
+		"volume": "1400 ml",
+		"price": "10000 USD",
+		"price_postapoc": "350 USD",
+		"material": [ "plastic", "steel", "glass" ],
+		"symbol": "[",
+		"color": "dark_gray",
+		"charges_per_use": 1,
+		"use_action": {
+			"type": "transform",
+			"msg": "You activate your %s.",
+			"target": "hardened_enhanced_nvg_on",
+			"need_charges": 1,
+			"need_charges_msg": "The %s's batteries are dead."
+		},
+		"material_thickness": 1,
+		"pocket_data": [
+			{
+				"pocket_type": "MAGAZINE_WELL",
+				"rigid": true,
+				"flag_restriction": [ "BATTERY_MEDIUM", "BATTERY_HEAVY" ],
+				"default_magazine": "medium_battery_cell"
+			}
+		],
+		"flags": [ "HELMET_FRONT_ATTACHMENT", "CANT_WEAR", "OUTER", "ELECTRONIC", "MUNDANE", "EMP_IMMUNE", "ELECTRIC_IMMUNE" ],
+		"faults": [ { "fault_group": "electronic_general" } ],
+		"armor": [
+			{ "covers": [ "eyes" ], "coverage": 10, "encumbrance": 0, "rigid_layer_only": true },
+			{
+				"covers": [ "head" ],
+				"encumbrance": 10,
+				"coverage": 30,
+				"specifically_covers": [ "head_forehead", "head_crown" ]
+			}
+		],
+		"tool_ammo": "battery",
+		"passive_effects": [ { "id": "nvg_good" }, { "id": "THERMAL_VISION_GOOD" } ]
+	},
+	{
+		"id": "hardened_enhanced_nvg_on",
+		"type": "ITEM",
+		"subtypes": [ "TOOL", "ARMOR" ],
+		"copy-from": "hardened_enhanced_nvg",
+		"name": { "str_sp": "hardened enhanced night vision goggles (on)" },
+		"description": "New and rare high-resolution thermal NVG device, designed to be mounted on a compatible helmet.  Lets you see in the dark, and detects heat signatures emitted by (un)living organisms.  It is turned on, and continually draining batteries.  Use it to turn it off.",
+		"//": "AN/PSQ-42",
+		"power_draw": "320 mW",
+		"revert_to": "hardened_enhanced_nvg",
+		"use_action": {
+			"ammo_scale": 0,
+			"type": "transform",
+			"menu_text": "Turn off",
+			"msg": "Your %s deactivates.",
+			"target": "hardened_enhanced_nvg"
+		},
+		"armor": [
+			{ "covers": [ "eyes" ], "coverage": 100, "encumbrance": 10, "rigid_layer_only": true },
+			{ "covers": [ "head" ], "encumbrance": 3, "coverage": 80, "specifically_covers": [ "head_crown" ] }
+		]
+	},
+	{
+		"type": "recipe",
+		"activity_level": "LIGHT_EXERCISE",
+		"result": "hardened_enhanced_nvg",
+		"category": "CC_ARMOR",
+		"subcategory": "CSC_ARMOR_HEAD",
+		"skill_used": "electronics",
+		"skills_required": [ "fabrication", 5 ],
+		"difficulty": 5,
+		"time": "2 h",
+		"book_learn": [
+			[ "textbook_electronics", 5 ],
+			[ "advanced_electronics", 4 ],
+			[ "textbook_fabrication", 4 ]
+		],
+		"using": [
+			[ "soldering_standard", 30 ],
+			[ "welding_standard", 10 ]
+		],
+		"proficiencies": [
+			{ "proficiency": "prof_elec_soldering" },
+			{ "proficiency": "prof_metalworking" }
+		],
+		"qualities": [
+			{ "id": "SCREW", "level": 1 }
+		],
+		"components": [
+			[ [ "enhanced_nvg", 1 ] ],
+			[ [ "betavoltaic", 1 ] ]
+		]
+	},
+	{
+		"id": "foldable_eternity_space",
+		"type": "ITEM",
+		"subtypes": [ "TOOL" ],
+		"category": "veh_parts",
+		"name": { "str": "foldable eternity space" },
+		"description": "You're not sure where the items go, but it sure makes a great handcart",
+		"weight": "32071 g",
+		"volume": "56250 ml",
+		"price": "100 USD",
+		"price_postapoc": "100 USD",
+		"material": [ "steel" ],
+		"symbol": ",",
+		"color": "magenta"
+	},
+	{
+		"type": "vehicle_part",
+		"id": "foldable_eternity_space",
+		"name": { "str": "foldable eternity space" },
+		"looks_like": "box",
+		"categories": [ "cargo" ],
+		"broken_color": "dark_gray",
+		"durability": 1250,
+		"size": "100000 L",
+		"folded_volume": "10250 ml",
+		"item": "foldable_eternity_space",
+		"location": "center",
+		"requirements": {
+			"install": {
+				"skills": [ [ "mechanics", 1 ] ],
+				"time": "40 m",
+				"using": [ [ "welding_standard", 240 ], [ "vehicle_bolt_install", 4 ] ]
+			},
+			"removal": {
+				"skills": [ [ "mechanics", 2 ] ],
+				"time": "30 m",
+				"using": [ [ "vehicle_weld_removal", 1 ], [ "vehicle_wrench_2", 1 ] ]
+			},
+			"repair": { "skills": [ [ "mechanics", 2 ] ], "time": "20 m", "using": [ [ "repair_welding_standard", 12 ] ] }
+		},
+		"flags": [ "FOLDABLE", "BOARDABLE", "CARGO", "COVERED", "HUGE_OK", "FURNITURE_TIEDOWN" ],
+		"breaks_into": [
+			{ "item": "mc_steel_lump", "count": [ 12, 19 ] },
+			{ "item": "mc_steel_chunk", "count": [ 7, 12 ] },
+			{ "item": "scrap", "charges": [ 14, 25 ] },
+			{ "item": "rope_6", "count": [ 0, 2 ] },
+			{ "item": "string_36", "count": [ 10, 25 ] },
+			{ "item": "string_6", "count": [ 15, 28 ] }
+		],
+		"damage_reduction": { "all": 28 },
+		"variants": [ { "symbols": "=", "symbols_broken": "#" } ]
+	},
+	{
+		"type": "recipe",
+		"activity_level": "MODERATE_EXERCISE",
+		"result": "foldable_eternity_space",
+		"category": "CC_OTHER",
+		"subcategory": "CSC_OTHER_VEHICLE",
+		"skill_used": "fabrication",
+		"skills_required": [ "mechanics", 2 ],
+		"difficulty": 5,
+		"time": "120 m",
+		"reversible": true,
+		"autolearn": false,
+		"book_learn": [
+			[ "textbook_fabrication", 6 ],
+			[ "advanced_electronics", 5 ]
+		],
+		"//": "240cm weld to match install requirements",
+		"using": [ [ "welding_standard", 240 ] ],
+		"proficiencies": [
+			{ "proficiency": "prof_welding_basic" },
+			{ "proficiency": "prof_welding" }
+		],
+		"qualities": [
+			{ "id": "HAMMER", "level": 2 },
+			{ "id": "SAW_M", "level": 1 },
+			{ "id": "WRENCH", "level": 1 }
+		],
+		"components": [
+			[ [ "vortex_stone", 1 ] ],
+			[ [ "scrap", 35 ], [ "steel_chunk_any", 12, "LIST" ], [ "steel_lump_any", 4, "LIST" ] ],
+			[ [ "pipe", 8 ] ],
+			[ [ "nuts_bolts", 8 ] ]
+		]
+	},
+	{
+		"type": "recipe",
+		"activity_level": "NO_EXERCISE",
+		"result": "software_hacking",
+		"container": "usb_drive",
+		"category": "CC_ELECTRONIC",
+		"subcategory": "CSC_ELECTRONIC_TOOLS",
+		"skill_used": "computer",
+		"difficulty": 7,
+		"skills_required": [ [ "computer", 6 ] ],
+		"time": "4 h",
+		"autolearn": false,
+		"book_learn": [ [ "manual_electronics", 2 ], [ "textbook_robots", 2 ] ],
+		"tools": [ [ [ "laptop", 240 ] ] ],
+		"components": [ [ [ "usb_drive", 1 ] ] ]
+	},
+	{
+		"type": "ITEM",
+		"id": "spearsling_pike",
+		"subtypes": [ "ARMOR" ],
+		"name": { "str": "long spear strap" },
+		"description": "A long leather strap tied around the torso for toting spears while keeping your hands free.  You have to duck to get through doors while one's in it, though.  Activate to holster/draw a weapon.",
+		"weight": "160 g",
+		"volume": "500 ml",
+		"price": "52 USD",
+		"price_postapoc": "2 USD 50 cent",
+		"material": [ "leather" ],
+		"symbol": "[",
+		"looks_like": "bscabbard",
+		"color": "brown",
+		"material_thickness": 1,
+		"pocket_data": [
+			{
+				"holster": true,
+				"moves": 30,
+				"flag_restriction": [ "SHEATH_SPEAR" ],
+				"max_contains_volume": "4000 ml",
+				"max_contains_weight": "7 kg",
+				"max_item_length": "350 cm",
+				"volume_encumber_modifier": 0.25
+			}
+		],
+		"use_action": { "type": "holster", "holster_prompt": "Holster spear", "holster_msg": "You holster your %s." },
+		"flags": [ "BELTED", "OVERSIZE", "ALLOWS_NATURAL_ATTACKS", "WATER_FRIENDLY" ],
+		"armor": [ { "encumbrance": 1, "coverage": 10, "covers": [ "torso" ], "specifically_covers": [ "torso_hanging_back" ] } ]
+	},
+	{
+		"result": "spearsling_pike",
+		"type": "recipe",
+		"activity_level": "LIGHT_EXERCISE",
+		"category": "CC_ARMOR",
+		"subcategory": "CSC_ARMOR_STORAGE",
+		"skill_used": "tailor",
+		"difficulty": 3,
+		"skills_required": [ "melee", 2 ],
+		"time": "60 m",
+		"autolearn": true,
+		"reversible": true,
+		"using": [ [ "tailoring_canvas_patchwork", 2 ] ],
+		"proficiencies": [ { "proficiency": "prof_closures" } ],
+		"components": [ [ [ "strap_large", 2, "LIST" ] ], [ [ "clasps", 2, "LIST" ] ] ]
+	},
+	{
+		"type": "ITEM",
+		"id": "pike",
+		"copy-from": "pike",
+		"name": { "ctxt": "weapon", "str": "pike REAL" },
+		"extend": { "flags": [ "SHEATH_SPEAR" ] }
+	},
+	{
+		"id": "survivor_belt_notools",
+		"copy-from": "survivor_belt_notools",
+		"type": "ITEM",
+		"subtypes": [ "ARMOR" ],
+		"name": { "str": "survivor belt" },
+		"pocket_data": [
+			{
+				"holster": true,
+				"max_contains_volume": "2 L",
+				"max_contains_weight": "5 kg",
+				"max_item_length": "70 cm",
+				"moves": 20,
+				"flag_restriction": [ "SHEATH_KNIFE" ]
+			},
+			{
+				"pocket_type": "CONTAINER",
+				"max_contains_volume": "2950 ml",
+				"max_contains_weight": "5000 g",
+				"max_item_length": "30 cm",
+				"moves": 50
+			},
+			{
+				"pocket_type": "CONTAINER",
+				"max_contains_volume": "950 ml",
+				"max_contains_weight": "5000 g",
+				"max_item_length": "20 cm",
+				"moves": 50
+			},
+			{
+				"pocket_type": "CONTAINER",
+				"max_contains_volume": "950 ml",
+				"max_contains_weight": "5000 g",
+				"max_item_length": "20 cm",
+				"moves": 50
+			},
+			{
+				"pocket_type": "CONTAINER",
+				"max_contains_volume": "950 ml",
+				"max_contains_weight": "5000 g",
+				"max_item_length": "20 cm",
+				"moves": 50
+			},
+			{
+				"pocket_type": "CONTAINER",
+				"max_contains_volume": "950 ml",
+				"max_contains_weight": "5000 g",
+				"max_item_length": "20 cm",
+				"moves": 50
+			},
+			{
+				"pocket_type": "CONTAINER",
+				"max_contains_volume": "950 ml",
+				"max_contains_weight": "5000 g",
+				"max_item_length": "20 cm",
+				"moves": 50
+			},
+			{
+				"magazine_well": "350 ml",
+				"pocket_type": "CONTAINER",
+				"holster": true,
+				"min_item_volume": "3 ml",
+				"max_contains_volume": "2000 ml",
+				"max_contains_weight": "5 kg",
+				"max_item_length": "50 cm",
+				"moves": 50
+			},
+			{
+				"max_contains_volume": "2 L",
+				"max_contains_weight": "6 kg",
+				"max_item_length": "90 cm",
+				"moves": 50,
+				"flag_restriction": [ "BELT_CLIP" ],
+				"transparent": true
+			},
+			{
+				"holster": true,
+				"volume_encumber_modifier": 0.5,
+				"min_item_volume": "50 ml",
+				"max_contains_volume": "2000 ml",
+				"max_contains_weight": "2500 g",
+				"max_item_length": "70 cm",
+				"moves": 60,
+				"description": "Clipped directly to the belt.",
+				"flag_restriction": [ "BELT_CLIP" ],
+				"transparent": true
+			},
+			{
+				"holster": true,
+				"volume_encumber_modifier": 0.5,
+				"min_item_volume": "50 ml",
+				"max_contains_volume": "2000 ml",
+				"max_contains_weight": "2500 g",
+				"max_item_length": "70 cm",
+				"moves": 60,
+				"description": "Clipped directly to the belt.",
+				"flag_restriction": [ "BELT_CLIP" ],
+				"transparent": true
+			},
+			{
+				"holster": true,
+				"volume_encumber_modifier": 0.5,
+				"min_item_volume": "50 ml",
+				"max_contains_volume": "2000 ml",
+				"max_contains_weight": "2500 g",
+				"max_item_length": "70 cm",
+				"moves": 60,
+				"description": "Clipped directly to the belt.",
+				"flag_restriction": [ "BELT_CLIP" ],
+				"transparent": true
+			}
+		]
+	},
+	{
+		"id": "hose",
+		"copy-from": "hose",
+		"type": "ITEM",
+		"subtypes": [ "TOOL" ],
+		"//": "Make longest side respect the fact it can be coiled",
+		"name": { "str": "rubber hose" },
+		"longest_side": "4 cm"
+	},
+	{
+		"id": "debug_killa_gun",
+		"looks_like": "laser_rifle",
+		"type": "ITEM",
+		"subtypes": [ "ARTIFACT", "GUN" ],
+		"reload_noise_volume": 10,
+		"name": { "str": "Debug Killa Gun" },
+		"description": "Murderize Everything",
+		"weight": "3350 g",
+		"volume": "3 L",
+		"longest_side": "965 mm",
+		"price": "16 kUSD",
+		"price_postapoc": "65 USD",
+		"to_hit": -1,
+		"melee_damage": { "bash": 1200 },
+		"material": [ "steel", "plastic", "nether_crystal" ],
+		"symbol": "(",
+		"color": "cyan",
+		"skill": "rifle",
+		"range": 35,
+		"dispersion": 1,
+		"overheat_threshold": 100000,
+		"cooling_value": 4000,
+		"heat_per_shot": 1,
+		"recoil": 0,
+		"modes": [ [ "DEFAULT", "semi-auto", 1 ] ],
+		"loudness": 0,
+		"reload": 0,
+		"clip_size": 200,
+		"valid_mod_locations": [
+			[ "emitter", 1 ],
+			[ "grip", 1 ],
+			[ "rail", 1 ],
+			[ "sights", 1 ],
+			[ "sling", 1 ],
+			[ "stock", 1 ],
+			[ "stock accessory", 1 ],
+			[ "underbarrel", 1 ]
+		],
+		"ammo": [ "debug_killa_rifle_ammo" ],
+		"ammo_effects": [ "LASER", "IGNITE" ],
+		"flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE", "UNBREAKABLE_MELEE", "OVERHEATS" ],
+		"pocket_data": [ { "pocket_type": "MAGAZINE", "ammo_restriction": { "debug_killa_rifle_ammo": 200 } } ],
+		"//": "Recharge time is 8 seconds due to bug #48019, making it actually 4 seconds. Reduce to 4 seconds if that ever gets fixed.",
+		"charge_info": { "recharge_type": "periodic", "time": "1 s", "regenerate_ammo": true }
+	},
+	{
+		"type": "ammunition_type",
+		"id": "debug_killa_rifle_ammo",
+		"name": "Debug Killa rifle charge",
+		"default": "debug_killa_rifle_ammo"
+	},
+	{
+	"id": "debug_killa_rifle_ammo",
+	"type": "ITEM",
+	"subtypes": [ "AMMO" ],
+	"name": { "str_sp": "Debug Killa Rifle Ammo" },
+	"description": "A charge for the Debug Killa Rifle.",
+	"weight": "1 g",
+	"volume": "1 ml",
+	"price": "1 USD 60 cent",
+	"price_postapoc": "8 USD",
+	"material": [ "superalloy", "steel" ],
+	"symbol": "=",
+	"color": "red",
+	"count": 1,
+	"stack_size": 200,
+	"ammo_type": "debug_killa_rifle_ammo",
+	"range": 60,
+	"dispersion": 0,
+	"recoil": 0,
+	"damage": { "damage_type": "psi_photokinetic_damage", "amount": 9999, "armor_penetration": 400 }
+	}
+]

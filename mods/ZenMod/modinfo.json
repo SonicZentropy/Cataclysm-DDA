@@ -1,0 +1,12 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "ZenMod",
+    "name": "ZenMod",
+    "authors": [ "Zentropy" ],
+    "description": "Misc JSON mods I made",
+    "version": "DDA version, update 11/1/2025",
+		"category": "zen",
+    "dependencies": [ "dda" ]
+  }
+]
