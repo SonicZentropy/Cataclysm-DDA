@@ -1468,6 +1468,11 @@ void options_manager::add_options_general()
          "", 30
        );
 
+    add( "DISABLE_NPC_PROCESSING", "debug",
+     to_translation( "Disable NPC processing" ),
+     to_translation( "Completely disables NPC AI updates for performance testing. NPCs will not move, think, or act." ),
+     false, COPT_NO_HIDE );
+
     add_empty_line();
     add_option_group( "general", Group( "auto_pick_opts", to_translation( "Auto pickup options" ),
                                         to_translation( "Options regarding auto pickup." ) ),
@@ -1700,6 +1705,11 @@ void options_manager::add_options_general()
     add_option_group( "general", Group( "misc_general_opts", to_translation( "Misc Options" ),
                                         to_translation( "Miscellaneous options." ) ),
     [&]( const std::string & page_id ) {
+
+        add( "BLACK_ROAD", page_id, to_translation( "Surrounded start" ),
+            to_translation( "If true, spawn zombies at shelters.  Makes the starting game a lot harder." ),
+            false
+          );
         add( "CIRCLEDIST", page_id, to_translation( "Circular distances" ),
              to_translation( "If true, the game will calculate range in a realistic way: light sources will be circles, diagonal movement will cover more ground and take longer.  If false, everything is square: moving to the northwest corner of a building takes as long as moving to the north wall." ),
              true
@@ -2779,10 +2789,6 @@ void options_manager::add_options_world_default()
          COPT_ALWAYS_HIDE
        );
 
-    add( "ITEM_SPAWNRATE", "world_default", translation(), translation(), 0.01, 10.0, 1.0, 0.01,
-         COPT_ALWAYS_HIDE
-       );
-
     add( "NPC_SPAWNTIME", "world_default", translation(), translation(), 0.0, 100.0, 4.0, 0.01,
          COPT_ALWAYS_HIDE
        );
@@ -2810,14 +2816,152 @@ void options_manager::add_options_world_default()
     add( "ETERNAL_TIME_OF_DAY", "world_default", translation(), translation(), "normal", 8,
          COPT_ALWAYS_HIDE );
 
-    add_option_group( "world_default", Group( "misc_worlddef_opts", to_translation( "Misc options" ),
-                      to_translation( "Miscellaneous options." ) ),
+    add_empty_line();
+
+    add( "CHARACTER_POINT_POOLS", "world_default", to_translation( "Character point pools" ),
+         to_translation( "Allowed point pools for character generation." ),
+    { { "any", to_translation( "Any" ) }, { "multi_pool", to_translation( "Legacy Multipool" ) }, { "story_teller", to_translation( "Survivor" ) } },
+    "story_teller"
+       );
+
+    add_empty_line();
+
+     add( "ITEM_SPAWNRATE", "world_default", to_translation( "Item spawn scaling factor" ),
+         to_translation( "A scaling factor that determines density of item spawns.  A higher number means more items." ),
+         0.01, 10.0, 1.0, 0.01
+       );
+
+    add_option_group( "world_default", Group( "item_category_spawn_rate",
+                      to_translation( "Item category spawn rate" ),
+                      to_translation( "Spawn rate for item categories.  Values less than or equal to 1.0 represent a chance for items from category in question to spawn at all.  Values more than 1.0 represent amount of additional items from category in question to spawn.  Set to 0.0 to forbid spawning items from category in question." ) ),
     [&]( const std::string & page_id ) {
-        add( "BLACK_ROAD", page_id, to_translation( "Surrounded start" ),
-             to_translation( "If true, spawn zombies at shelters.  Makes the starting game a lot harder." ),
-             false
+
+        add( "SPAWN_RATE_guns", page_id, to_translation( "Guns" ),
+             to_translation( "Spawn rate for items from GUNS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_magazines", page_id, to_translation( "Magazines" ),
+             to_translation( "Spawn rate for items from MAGAZINES category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_ammo", page_id, to_translation( "Ammo" ),
+             to_translation( "Spawn rate for items from AMMO category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_weapons", page_id, to_translation( "Weapons" ),
+             to_translation( "Spawn rate for items from WEAPONS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_tools", page_id, to_translation( "Tools" ),
+             to_translation( "Spawn rate for items from TOOLS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_clothing", page_id, to_translation( "Clothing" ),
+             to_translation( "Spawn rate for items from CLOTHING category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_armor", page_id, to_translation( "Armor" ),
+             to_translation( "Spawn rate for items from ARMOR category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_food", page_id, to_translation( "Food" ),
+             to_translation( "Spawn rate for items from FOOD category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_drugs", page_id, to_translation( "Drugs" ),
+             to_translation( "Spawn rate for items from DRUGS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_manuals", page_id, to_translation( "Manuals" ),
+             to_translation( "Spawn rate for items from MANUALS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_books", page_id, to_translation( "Books" ),
+             to_translation( "Spawn rate for items from BOOKS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_maps", page_id, to_translation( "Maps" ),
+             to_translation( "Spawn rate for items from MAPS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_mods", page_id, to_translation( "Mods" ),
+             to_translation( "Spawn rate for items from MODS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_mutagen", page_id, to_translation( "Mutagens" ),
+             to_translation( "Spawn rate for items from MUTAGENS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_bionics", page_id, to_translation( "Bionics" ),
+             to_translation( "Spawn rate for items from BIONICS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_currency", page_id, to_translation( "Currency" ),
+             to_translation( "Spawn rate for items from CURRENCY category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_veh_parts", page_id, to_translation( "Vehicle parts" ),
+             to_translation( "Spawn rate for items from VEHICLE PARTS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_fuel", page_id, to_translation( "Fuel" ),
+             to_translation( "Spawn rate for items from FUEL category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_seeds", page_id, to_translation( "Seeds" ),
+             to_translation( "Spawn rate for items from SEEDS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_chems", page_id, to_translation( "Chemicals" ),
+             to_translation( "Spawn rate for items from CHEMICAL STUFF category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_spare_parts", page_id, to_translation( "Spare parts" ),
+             to_translation( "Spawn rate for items from SPARE PARTS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_container", page_id, to_translation( "Containers" ),
+             to_translation( "Spawn rate for items from CONTAINERS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_artifacts", page_id, to_translation( "Artifacts" ),
+             to_translation( "Spawn rate for items from ARTIFACTS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_keys", page_id, to_translation( "Keys" ),
+             to_translation( "Spawn rate for items from KEYS category." ),
+             0.0, 10.0, 1.0, 0.01
+           );
+
+        add( "SPAWN_RATE_other", page_id, to_translation( "Other items" ),
+             to_translation( "Spawn rate for items from OTHER category." ),
+             0.0, 10.0, 1.0, 0.01
            );
     } );
+
 
     add_empty_line();
 
@@ -2829,7 +2973,7 @@ void options_manager::add_options_world_default()
              "uninitiated, and some professions skip portions of the game's content.  If "
              "new to the game, meta progression will help you be introduced to mechanics at "
              "a reasonable pace." ),
-         true
+         false
        );
 }
 
@@ -4109,10 +4253,19 @@ bool options_manager::has_option( const std::string &name ) const
 options_manager::cOpt &options_manager::get_option( const std::string &name )
 {
     std::unordered_map<std::string, cOpt>::iterator opt = options.find( name );
-    if( opt == options.end() ) {
-        debugmsg( "requested non-existing option %s", name );
-        static cOpt nullopt;
-        return nullopt;
+    if( opt == options.end() )
+    {
+        if (name._Starts_with("SPAWN_RATE_"))
+        {
+            opt = options.find( "SPAWN_RATE_other" );
+        }
+
+        if ( opt == options.end() )
+        {
+            debugmsg( "requested non-existing option %s", name );
+            static cOpt nullopt;
+            return nullopt;
+        }
     }
     if( !world_options.has_value() ) {
         // Global options contains the default for new worlds, which is good enough here.
