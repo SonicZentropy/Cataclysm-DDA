@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "ChibiUlticaLayerMod",
+    "name": "Chibi Ultica Mod",
+    "authors": [ "ampersand55" ],
+    "description": "Adds the tiles from Chibi to be used as a mod.",
+    "category": "zen",
+    "dependencies": [ "dda" ]
+  }
+]
