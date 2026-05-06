@@ -258,27 +258,27 @@ bool Character::try_remove_grab( bool attacking )
                 continue;
             }
 
-            bool torn_pocket = false;
-            std::vector<item_pocket *> pd = worn.grab_drop_pockets( eff.get_bp() );
-            if( !pd.empty() ) {
-                // choose an item to be ripped off
-                int index = rng( 0, pd.size() - 1 );
-                int chance = rng( 0, get_effect_int( eff.get_id(), eff.get_bp() ) );
-                int sturdiness = rng( 0, pd[index]->get_pocket_data()->ripoff * 10 );
-                add_msg_debug( debugmode::DF_MATTACK, "Tearoff pocket %s chosen, sturdiness %d, tearing chance %d",
-                               pd[index]->get_name(), sturdiness, chance );
-                // the item is ripped off your character
-                if( sturdiness < chance ) {
-                    pd[index]->spill_contents( adjacent_tile() );
-                    add_msg_player_or_npc( m_bad,
-                                           _( "As you struggle to escape the grab something comes loose and falls to the ground!" ),
-                                           _( "As <npcname> struggles to escape the grab something comes loose and falls to the ground!" ) );
-                    if( is_avatar() ) {
-                        popup( _( "As you struggle to escape the grab something comes loose and falls to the ground!" ) );
-                    }
-                    torn_pocket = true;
-                }
-            }
+            // bool torn_pocket = false;
+            // std::vector<item_pocket *> pd = worn.grab_drop_pockets( eff.get_bp() );
+            // if( !pd.empty() ) {
+            //     // choose an item to be ripped off
+            //     int index = rng( 0, pd.size() - 1 );
+            //     int chance = rng( 0, get_effect_int( eff.get_id(), eff.get_bp() ) );
+            //     int sturdiness = rng( 0, pd[index]->get_pocket_data()->ripoff * 10 );
+            //     add_msg_debug( debugmode::DF_MATTACK, "Tearoff pocket %s chosen, sturdiness %d, tearing chance %d",
+            //                    pd[index]->get_name(), sturdiness, chance );
+            //     // the item is ripped off your character
+            //     if( sturdiness < chance ) {
+            //         pd[index]->spill_contents( adjacent_tile() );
+            //         add_msg_player_or_npc( m_bad,
+            //                                _( "As you struggle to escape the grab something comes loose and falls to the ground!" ),
+            //                                _( "As <npcname> struggles to escape the grab something comes loose and falls to the ground!" ) );
+            //         if( is_avatar() ) {
+            //             popup( _( "As you struggle to escape the grab something comes loose and falls to the ground!" ) );
+            //         }
+            //         torn_pocket = true;
+            //     }
+            // }
 
             // Limb factor we check directly
             // Stats might get modified by certain grabby effects, check them to be safe
@@ -302,12 +302,12 @@ bool Character::try_remove_grab( bool attacking )
                            eff.get_bp()->name, grabber_roll, skill_factor, limb_factor, stat_factor, grab_break_factor,
                            escape_chance,
                            escape_chance * 100 / grabber_roll );
-            if( torn_pocket ) {
-                escape_chance *= 1.5f;
-                add_msg_debug( debugmode::DF_MATTACK,
-                               "Pocket torn off in the attempt, escape chance increased to %.1f",
-                               escape_chance * 100 / eff.get_intensity() );
-            }
+            // if( torn_pocket ) {
+            //     escape_chance *= 1.5f;
+            //     add_msg_debug( debugmode::DF_MATTACK,
+            //                    "Pocket torn off in the attempt, escape chance increased to %.1f",
+            //                    escape_chance * 100 / eff.get_intensity() );
+            // }
 
             // Every attempt burns some stamina - maybe some moves?
             burn_energy_arms( -5 * eff.get_intensity() );
