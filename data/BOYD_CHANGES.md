@@ -19,11 +19,13 @@
 - Fiction books are worth a lot again
 - Made some GLOBALLY_UNIQUE places into OVERMAP_UNIQUE with rarer chances
 - Xedra homulus gets to fly eventually
-- New martial art for spears based on Qiangfa
+- New martial art for spears based on Qiangfa (I wanted more than one martial art to choose from and wanted to learn how MAs worked)
 - Augmentation clinics return
+- Bionics are again dissectable from certain enemies (the same ones)
+- Zombie bio operators return
 - Added VERY_DURABLE_MELEE flag that's 2x as durable [Why does my crowbar lose to a zombie's skull?]
 - Added packaging/moving to some Magiclysm crafting things
-- Summonable Dreamer Spear
+- Summonable Dreamer Spear for Xedra, same weapon stats tier as the other Dreamer weapons
 - Solar panels on cars again
 - Always see container items from range [QOL After hundreds of hours, I'm tired of walking through rooms tile-by-tile hoping to spot some loot]
 - Readd trickle charger CBM
@@ -33,18 +35,20 @@
 - Zombies can no longer rip APCs apart with their bare hands
 - No riot fires [I don't like them in general + with Hordes 2.0 and the reversion of fires attracting zombies, you end up with empty towns fast]
 - No wheel/tire damage
-- Misc QoL item changes (h2o pouch can hold a 2.5L Canteen now, molle belts can handle halligan bars, etc)
+Fire fucks up zombies again
+- Burning buildings attract zombies again
+- Misc QoL item changes (h2o pouch can hold a 2.5L Canteen now, etc)
 - Superalloy is now actually super
 - Lard.
 - Weariness does basically nothing
-- Focus does do nothing
+- Focus does do absolutely nothing
 - Old atomic stuff returned
 - No Hope purifier returns
 - Vehicle degradation/repair works the old way
+- Welding rod requirements removed
 - Made dissection much faster since CBMs are back and it gets tedious
 - Nanofab stuff returned
 - Athletics effects improved so you actually want to train it
-- Bionic penalty to max mana removed 
 - Faster vender restock
 - Put any tool on your workshop or kitchen
 - CBM prep can't fail [time-wasting annoyance]
@@ -52,3 +56,7 @@
 - No dust
 - Increase amount NPCs will let you owe them
 - Control laptop returns
+- Jackhammers can dig walls again
+- Mining times unnerfed
+- Dismembering times unnerfed
+- Betavoltaic cells price unnerfed
