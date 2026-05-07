@@ -84,6 +84,8 @@
 #include "vpart_position.h"
 #include "weather.h"
 
+struct use_function;
+
 static const activity_id ACT_FETCH_REQUIRED( "ACT_FETCH_REQUIRED" );
 static const activity_id ACT_MOVE_LOOT( "ACT_MOVE_LOOT" );
 static const activity_id ACT_MULTIPLE_BUTCHER( "ACT_MULTIPLE_BUTCHER" );
@@ -99,8 +101,12 @@ static const activity_id ACT_MULTIPLE_MOP( "ACT_MULTIPLE_MOP" );
 static const activity_id ACT_MULTIPLE_STUDY( "ACT_MULTIPLE_STUDY" );
 static const activity_id ACT_VEHICLE_DECONSTRUCTION( "ACT_VEHICLE_DECONSTRUCTION" );
 static const activity_id ACT_VEHICLE_REPAIR( "ACT_VEHICLE_REPAIR" );
+static const activity_id ACT_JACKHAMMER( "ACT_JACKHAMMER" );
+static const activity_id ACT_PICKAXE( "ACT_PICKAXE" );
 
 static const addiction_id addiction_alcohol( "alcohol" );
+
+static const efftype_id effect_incorporeal( "incorporeal" );
 
 static const flag_id json_flag_CUT_HARVEST( "CUT_HARVEST" );
 static const flag_id json_flag_MOP( "MOP" );
@@ -3390,7 +3396,7 @@ static bool mine_activity( Character &you, const tripoint_bub_ms &src_loc )
     const bool is_wall_mining = here.has_flag_ter_or_furn( ter_furn_flag::TFLAG_WALL, src_loc );
     std::vector<item *> mining_inv = you.items_with( [&you, is_wall_mining]( const item & itm ) {
         return ( itm.has_flag( flag_DIG_TOOL ) && !itm.type->can_use( "JACKHAMMER" ) ) ||
-               ( !is_wall_mining && ( itm.type->can_use( "JACKHAMMER" ) && itm.ammo_sufficient( &you ) ) );
+               (( itm.type->can_use( "JACKHAMMER" ) && itm.ammo_sufficient( &you ) ) );
     } );
     // All other failure conditions are handled in subsequent calls to dig_tool() with specific messaging for the player. This is just an early short circuit.
     if( mining_inv.empty() ) {

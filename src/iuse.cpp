@@ -3133,11 +3133,11 @@ static std::optional<int> dig_tool( Character *p, item *it, const tripoint_bub_m
         return std::nullopt;
     }
 
-    const bool using_jackhammer = it->type->can_use( "JACKHAMMER" );
-    if( using_jackhammer && here.has_flag_ter( ter_furn_flag::TFLAG_WALL, pnt ) ) {
-        p->add_msg_if_player( _( "You can't mine a wall with a %s!" ), it->tname() );
-        return std::nullopt;
-    }
+    // const bool using_jackhammer = it->type->can_use( "JACKHAMMER" );
+    // if( using_jackhammer && here.has_flag_ter( ter_furn_flag::TFLAG_WALL, pnt ) ) {
+    //     p->add_msg_if_player( _( "You can't mine a wall with a %s!" ), it->tname() );
+    //     return std::nullopt;
+    // }
 
     // FIXME: Activity is interruptable but progress is not saved!
     time_duration digging_time = 30_minutes;
@@ -3165,6 +3165,12 @@ static std::optional<int> dig_tool( Character *p, item *it, const tripoint_bub_m
 
 std::optional<int> iuse::jackhammer( Character *p, item *it, const tripoint_bub_ms &pos )
 {
+    // use has_enough_charges to check for UPS availability
+    // p is assumed to exist for iuse cases
+    if( !it->ammo_sufficient( p ) ) {
+        return std::nullopt;
+    }
+
     return dig_tool( p, it, pos, ACT_JACKHAMMER,
                      _( "Drill where?" ), _( "You can't drill there." ),
                      _( "You start drilling into the %1$s with your %2$s." ) );
