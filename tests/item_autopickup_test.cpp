@@ -26,7 +26,6 @@
 #include "rng.h"
 #include "type_id.h"
 
-static const itype_id itype_1l_bronze( "1l_bronze" );
 static const itype_id itype_aspirin( "aspirin" );
 static const itype_id itype_backpack( "backpack" );
 static const itype_id itype_bag_body_bag( "bag_body_bag" );
@@ -53,6 +52,7 @@ static const itype_id itype_money_ten( "money_ten" );
 static const itype_id itype_paper( "paper" );
 static const itype_id itype_pebble( "pebble" );
 static const itype_id itype_rolling_paper( "rolling_paper" );
+static const itype_id itype_steel_lump( "steel_lump" );
 static const itype_id itype_storage_battery( "storage_battery" );
 static const itype_id itype_wallet_leather( "wallet_leather" );
 static const itype_id itype_water_clean( "water_clean" );
@@ -470,20 +470,21 @@ TEST_CASE( "auto_pickup_should_respect_volume_and_weight_limits", "[autopickup][
     item &backpack = *backpack_iter;
     REQUIRE( they.has_item( backpack ) );
 
-    // backpack > 1L bronze ingot (WL), cigrarette (WL), paper (WL)
+    // backpack > lump of steel (WL), cigrarette (WL), paper (WL)
     GIVEN( "there is a container with some items that exceed volume or weight limit" ) {
         options_manager &options = get_options();
         options_manager::cOpt &ap_weight_limit = options.get_option( "AUTO_PICKUP_WEIGHT_LIMIT" );
         options_manager::cOpt &ap_volume_limit = options.get_option( "AUTO_PICKUP_VOLUME_LIMIT" );
 
-        unique_item item_ingot_deadweight = unique_item( itype_1l_bronze );
+        // Note: This relies on charge-spawning behavior for steel lumps
+        unique_item item_lump_of_steel = unique_item( itype_steel_lump, 5 );
         unique_item item_cigarette = unique_item( itype_cig );
         unique_item item_paper = unique_item( itype_paper );
         unique_item item_backpack = unique_item( itype_backpack, {
-            &item_ingot_deadweight, &item_cigarette, &item_paper
+            &item_lump_of_steel, &item_cigarette, &item_paper
         } );
         REQUIRE( item_backpack.spawn_item( ground ) );
-        add_autopickup_rules( { &item_ingot_deadweight, &item_cigarette, &item_paper }, true );
+        add_autopickup_rules( { &item_lump_of_steel, &item_cigarette, &item_paper }, true );
         WHEN( "auto pickup limit game options are disabled" ) {
             ap_weight_limit.setValue( "0" );
             ap_volume_limit.setValue( "0" );
@@ -491,7 +492,7 @@ TEST_CASE( "auto_pickup_should_respect_volume_and_weight_limits", "[autopickup][
                 simulate_auto_pickup( ground, they );
                 expect_to_find( backpack, { &item_backpack } );
                 expect_to_find( *item_backpack.find_in_container( backpack ), {
-                    &item_ingot_deadweight, &item_cigarette, &item_paper
+                    &item_lump_of_steel, &item_cigarette, &item_paper
                 } );
             }
         }
@@ -504,9 +505,9 @@ TEST_CASE( "auto_pickup_should_respect_volume_and_weight_limits", "[autopickup][
             THEN( "only items that do not exceed volume and weight limit should be picked up" ) {
                 simulate_auto_pickup( ground, they );
                 expect_to_find( backpack, { &item_cigarette, &item_paper } );
-                expect_to_find( *item_backpack.find_on_ground( ground ), { &item_ingot_deadweight } );
+                expect_to_find( *item_backpack.find_on_ground( ground ), { &item_lump_of_steel } );
                 // make sure excluded items were not dropped on the ground
-                REQUIRE_FALSE( item_ingot_deadweight.is_on_ground( ground ) );
+                REQUIRE_FALSE( item_lump_of_steel.is_on_ground( ground ) );
             }
         }
     }
