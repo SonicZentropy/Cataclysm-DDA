@@ -92,6 +92,8 @@
           },
           {
             "collection": [
+              { "item": "detergent", "count": [ 0, 2 ] },
+              { "item": "chem_borax", "prob": 15, "charges": [ 100, 500 ] },
               { "group": "detergent_small_box_part", "prob": 15 },
               { "group": "borax_box_part", "prob": 15 },
               { "item": "brush", "prob": 85 },
