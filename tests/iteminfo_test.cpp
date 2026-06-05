@@ -51,6 +51,7 @@ static const itype_id itype_battery( "battery" );
 static const itype_id itype_bio_ethanol( "bio_ethanol" );
 static const itype_id itype_bio_nostril( "bio_nostril" );
 static const itype_id itype_bio_power_storage( "bio_power_storage" );
+static const itype_id itype_bio_purifier( "bio_purifier" );
 static const itype_id itype_candle( "candle" );
 static const itype_id itype_candle_wax( "candle_wax" );
 static const itype_id itype_dress_shirt( "dress_shirt" );
