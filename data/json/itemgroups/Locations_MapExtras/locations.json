@@ -1013,7 +1013,7 @@
       { "item": "towel", "prob": 40 },
       { "item": "scorecard", "prob": 10 },
       { "item": "golf_club", "prob": 75 },
-      { "item": "pencil", "prob": 20 }
+      { "item": "pencil", "prob": 20, "charges": [ 0, 100 ] }
     ]
   },
   {
