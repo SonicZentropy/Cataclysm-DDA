@@ -703,7 +703,6 @@ bool game::do_turn()
             {
                 mon_info_update();
             }
-
             // If player is performing a task, a monster is dangerously close,
             // and monster can reach to the player or it has some sort of a ranged attack,
             // warn them regardless of previous safemode warnings
@@ -788,9 +787,11 @@ bool game::do_turn()
         u.update_morale();
         if( !get_option<bool>( "DISABLE_NPC_PROCESSING" ) )
         {
-            for( npc &guy : all_npcs() ) {
-                guy.update_morale();
-                guy.check_and_recover_morale();
+
+                for( npc &guy : all_npcs() ) {
+                    guy.update_morale();
+                    guy.check_and_recover_morale();
+                }
             }
         }
     }
