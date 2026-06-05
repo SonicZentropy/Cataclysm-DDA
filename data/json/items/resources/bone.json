@@ -249,7 +249,6 @@
     "name": { "str": "tainted human skull" },
     "description": "The stained skull of what was once a human being.  It is rotted and noticeably warped from its lively form.  Carrying this around probably isn't going to win you any friends.",
     "copy-from": "skull_human",
-    "material": [ "tainted_bone" ],
     "color": "light_gray",
     "use_action": [ "POISON" ],
     "//": "No longer human, no longer cannibalism",
