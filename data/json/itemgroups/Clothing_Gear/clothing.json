@@ -3060,11 +3060,6 @@
   },
   {
     "type": "item_group",
-    "id": "loincloth",
-    "items": [ [ "loincloth", 2 ], [ "loincloth_wool", 1 ], [ "loincloth_fur", 1 ], [ "loincloth_leather", 1 ] ]
-  },
-  {
-    "type": "item_group",
     "id": "fireman_torso",
     "items": [ [ "bunker_coat", 80 ], [ "vest", 30 ] ]
   },
@@ -3417,9 +3412,9 @@
       [ "machete_gimmick", 3 ],
       [ "fungicide", 10 ],
       { "group": "insecticide_bag_plastic", "prob": 10 },
-      { "prob": 1, "group": "antifungal_bottle_plastic_pill_prescription_0_10" },
-      { "prob": 5, "group": "antiparasitic_bottle_plastic_pill_prescription_0_10" },
-      { "prob": 1, "group": "diazepam_bottle_plastic_pill_prescription_0_10" },
+      { "prob": 1, "group": "antifungal_bottle_plastic_pill_prescription_1_10" },
+      { "prob": 5, "group": "antiparasitic_bottle_plastic_pill_prescription_1_10" },
+      { "prob": 1, "group": "diazepam_bottle_plastic_pill_prescription_1_10" },
       [ "throw_extinguisher", 2 ],
       { "item": "small_repairkit", "prob": 14, "charges": [ 0, 500 ] },
       [ "grapnel", 6 ],

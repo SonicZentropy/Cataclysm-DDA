@@ -245,11 +245,14 @@ static const std::string cook_recipe_group_string = "COOK";
 static const std::string farm_recipe_group_string = "FARM";
 static const std::string smith_recipe_group_string = "SMITH";
 
+namespace
+{
 struct mass_volume {
     units::mass wgt = 0_gram;
     units::volume vol = 0_ml;
     int count = 0;
 };
+} // namespace
 
 namespace base_camps
 {
@@ -1310,7 +1313,7 @@ void basecamp::get_available_missions( mission_data &mission_key, map &here )
         {
             const mission_id miss_id = { Camp_Distribute_Food, "", {}, base_dir };
             entry = string_format( _( "Notes:\n"
-                                      "Distribute food to your follower and fill your larders.  "
+                                      "Distribute food to your followers and fill your larders.  "
                                       "Place the food you wish to distribute in the camp food zone.  "
                                       "You must have a camp food zone, and a camp storage zone, "
                                       "or you will be prompted to create them using the zone manager.\n"

@@ -2,6 +2,26 @@
 map_editor/
 /distributionWORKING/
 /distribution/
+# Ignore all dotfiles and dot-directories at the repo root by default,
+# then explicitly keep the ones that are part of the tree.
+/.*
+!/.astylerc
+!/.clang-tidy
+!/.cmake-format.yml
+!/.devcontainer/
+!/.editorconfig
+!/.flake8
+!/.gitattributes
+!/.github/
+!/.gitignore
+!/.gitmessage
+!/.tx/
+!/.vscode/
+/.vscode/**
+!/.vscode/settings.json
+!/.vscode/extensions.json
+!/.vscode/msbuild.ps1
+
 !src/chkjson
 *.7z
 *.a
@@ -25,6 +45,10 @@ map_editor/
 /data/*.template
 /data/cache/
 /data/mods/user-default-mods.json
+/data/shaders/*.spv
+/data/shaders/*.dxil
+/data/shaders/*.msl
+/data/shaders/build-*.stamp
 /dep/
 /doxygen_doc/html/*
 /doxygen_doc/latex/*
@@ -76,7 +100,6 @@ zzip
 *.user
 *.vcxproj.filters
 *.lastbuildstate
-.vs/
 Directory.Build.props
 Directory.Build.targets
 
@@ -152,8 +175,6 @@ __pycache__
 # vim files
 *.vim
 *.session
-.ycm_extra_conf.py
-.vimrc
 
 # taskwarrior files
 *.task*

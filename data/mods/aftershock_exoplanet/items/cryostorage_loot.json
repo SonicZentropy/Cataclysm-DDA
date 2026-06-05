@@ -33,7 +33,7 @@
     "id": "afs_cryo_goop",
     "copy-from": "cryo_storage_loot",
     "color": "red",
-    "name": { "str": "luminous fluid" },
+    "name": { "str_sp": "luminous fluid" },
     "description": "Strange, glowing goop?  Someone will pay for this, probably.",
     "price": "200 USD"
   },
@@ -79,7 +79,7 @@
     "copy-from": "cryo_storage_loot",
     "color": "red",
     "name": { "str": "interface organoid" },
-    "description": "You recognize this disgusting clump of flesh and tendrils as one of Mercurial's abortive attempts at creating biomechanical interfaces for human implantation.  Although Mercurial would likely pay you for its recovery, as would any of its competitors.",
+    "description": "You recognize this disgusting clump of flesh and tendrils as one of Mercurial's abortive attempts at creating biomechanical interfaces for human implantation.  Mercurial would likely pay you for its recovery, as would any of its competitors.",
     "price": "15000 USD"
   }
 ]

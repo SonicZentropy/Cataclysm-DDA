@@ -61,7 +61,6 @@
 #include "iexamine.h"
 #include "inventory.h"
 #include "item.h"
-#include "item_factory.h"
 #include "item_location.h"
 #include "item_transformation.h"
 #include "itype.h"
@@ -2663,6 +2662,8 @@ int npc::evaluate_sleep_spot( tripoint_bub_ms p )
     return sleep_eval;
 }
 
+// TODO(multimag): NPC reload desirability still consults legacy scalar
+// helpers and may misclassify multimag weapons.
 static bool wants_to_reload( const npc &guy, const item &candidate )
 {
     if( !candidate.is_reloadable() ) {
@@ -3509,9 +3510,9 @@ bool npc::enough_time_to_reload( const item &gun ) const
 {
     const map &here = get_map();
 
+    const std::optional<ammotype> at = item::ammotype_of( gun.ammo_default() );
     int rltime = item_reload_cost( gun, item( gun.ammo_default() ),
-                                   gun.ammo_capacity(
-                                       item_controller->find_template( gun.ammo_default() )->ammo->type ) );
+                                   at ? gun.ammo_capacity( *at ) : 0 );
     const float turns_til_reloaded = static_cast<float>( rltime ) / get_speed();
 
     const Creature *target = current_target();
@@ -4573,7 +4574,7 @@ void npc::pick_up_item()
 }
 
 template <typename T>
-std::list<item> npc_pickup_from_stack( npc &who, T &items )
+static std::list<item> npc_pickup_from_stack( npc &who, T &items )
 {
     std::list<item> picked_up;
 
