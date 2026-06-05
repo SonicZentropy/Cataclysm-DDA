@@ -787,11 +787,12 @@ bool game::do_turn()
     if( calendar::once_every( 1_minutes ) ) {
         u.update_morale();
         for( npc &guy : all_npcs() ) {
-        if( !get_option<bool>( "DISABLE_NPC_PROCESSING" ) )
-        {
-            for( npc &guy : all_npcs() ) {
-                guy.update_morale();
-                guy.check_and_recover_morale();
+            if( !get_option<bool>( "DISABLE_NPC_PROCESSING" ) )
+            {
+                for( npc &guy : all_npcs() ) {
+                    guy.update_morale();
+                    guy.check_and_recover_morale();
+                }
             }
         }
     }

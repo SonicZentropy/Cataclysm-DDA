@@ -4109,9 +4109,9 @@ void do_debug_quick_setup( bool flag_dirty )
     map_reveal( static_cast<int>( om_vision_level::full ) );
     dialogue d( get_talker_for( get_avatar() ), nullptr );
     effect_on_condition_EOC_DEBUG_QUICK_SETUP->activate( d );
-    if( flag_dirty ) {
-        g->save_is_dirty = true;
-    }
+    //if( flag_dirty ) {
+    //    g->save_is_dirty = true;
+    //
 }
 
 const std::vector<debug_action_entry> &all_actions()
@@ -4829,9 +4829,9 @@ const std::vector<debug_action_entry> &all_actions()
             debug_menu_index::QUICKLOAD, translate_marker( "Quickload" ), "quickload load", "Game", []()
             {
                 if( query_yn(
-                        _( "Quickload without saving?  This will mark save as 'dirty' and disable future saving to prevent accidental overwriting save.  Also this may cause issues such as duplicated or missing items and vehicles!" ) ) ) {
+                        _( "Quickload without saving?  This will NOT mark save as 'dirty' or disable future saving to prevent accidental overwriting save.  Also this may cause issues such as duplicated or missing items and vehicles!" ) ) ) {
                     g->quickload();
-                    g->save_is_dirty = true;
+                    //g->save_is_dirty = true;
                 }
             }
         },
