@@ -52,7 +52,7 @@
       { "item": "frame", "prob": 10, "count": [ 1, 10 ] },
       { "item": "frame", "prob": 10, "count": [ 1, 5 ] },
       { "item": "pipe", "prob": 20, "count": [ 2, 8 ] },
-      { "item": "nuts_bolts", "prob": 50, "count": [ 5, 4000 ] },
+      { "item": "nuts_bolts", "prob": 50, "count": [ 5, 70 ], "charges": [ 1, 100 ] },
       { "item": "bolt_steel", "prob": 10, "count": [ 1, 10 ], "charges": [ 1, 10 ] },
       { "item": "spike", "prob": 10, "count": [ 3, 40 ] },
       { "item": "hinge", "prob": 20, "count": [ 1, 30 ] },
