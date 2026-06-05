@@ -2055,7 +2055,11 @@
     "id": "farm_supply_soil_and_sand",
     "type": "item_group",
     "subtype": "collection",
-    "items": [ { "group": "sandbag", "prob": 50 }, { "group": "earthbag", "prob": 50 } ]
+    "items": [
+      { "item": "material_sand", "prob": 50, "charges": 500, "container-item": "bag_canvas" },
+      { "group": "sandbag", "prob": 50 },
+      { "item": "material_soil", "prob": 50, "charges": 500, "container-item": "bag_canvas" }
+    ]
   },
   {
     "id": "farm_supply_rocks",
