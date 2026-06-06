@@ -6,7 +6,7 @@
     "authors": [ "KorGgenT", "GuardianDll", "Aptronym", "LaVeyanFiend", "Maleclypse", "Standing-Storm" ],
     "maintainers": [ "Maleclypse", "Standing-Storm" ],
     "description": "Cataclysm but with magic spells!",
-    "category": "content",
+    "category": "zen",
     "dependencies": [ "dda" ]
   },
   {

@@ -1,8 +1,8 @@
 [
   {
     "type": "MOD_INFO",
-    "id": "MSXOttoLayerMod",
-    "name": "1MSXOtto Mod",
+    "id": "1MSXOttoLayerMod",
+    "name": "1 - MSXOtto Tileset Layer Mod",
     "authors": [ "soniczentropy" ],
     "description": "Adds the tiles from Chibi to be used as a mod.",
     "category": "zen",
