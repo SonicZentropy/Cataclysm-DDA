@@ -2989,7 +2989,7 @@ void options_manager::add_options_world_default()
              "uninitiated, and some professions skip portions of the game's content.  If "
              "new to the game, meta progression will help you be introduced to mechanics at "
              "a reasonable pace." ),
-         false
+         true
        );
 }
 
