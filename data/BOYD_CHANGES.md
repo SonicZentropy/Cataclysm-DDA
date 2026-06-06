@@ -1,49 +1,49 @@
-- Toggle NPC processing
-- Survivor stuff brought back
-- Spears from rooftops are a thing again
-- Gutters climbable
-- Readded old labs - i've reapplied a bunch on 2/14/2026 that i need to bring back
+PF - Changes marked with PF are intended to be Player Friendly changes that remove/revert/change things that were clearly introduced just to annoy players, especially ones that go against the spirit of "Realism" just to screw over the player 
+
+- Toggle NPC processing - Ever built your base above a lab?  Now you can!  The perf difference from turning off NPCs is insane.
+- Survivor stuff brought back - PF There's few enough endgame options even WITH the survivor stuff, plus it's a really fun goal in-game
+- Spears from rooftops are a thing again - PF Of course you can stab a Pike from a rooftop, this is already countered by the fact zombies will rapidly destroy the roof under you
+- Gutters climbable PF
+- Readded old labs 
 - Cata++ mod ported and added
 - Arcana mod ported and added
 - Tankmod mod ported and added
 - Blaze Industries mod ported and added
 - BOYD mod added - returning lots of old removed stuff
-- Blocking doesn't cost stamina
-- Dermatiks don't instakill you
-- Traps unnerfed
-- Zombies are attracted to burning buildings
+- Dermatiks don't instakill you PF
+- Traps unnerfed PF
+- Zombies are attracted to burning buildings PF
 - Remove a couple annoying confirmations
 - TLG's sane melee/armor degradation
 - Helicopter pilot NPC (TLG)
-- Lots of world options brought back
-- Fiction books are worth a lot again
-- Made some GLOBALLY_UNIQUE places into OVERMAP_UNIQUE with rarer chances
+- Lots of world options brought back PF
+- Fiction books are worth a lot again PF
+- Made some GLOBALLY_UNIQUE places into OVERMAP_UNIQUE with rarer chances QOL
 - Xedra homulus gets to fly eventually
-- New martial art for spears based on Qiangfa (I wanted more than one martial art to choose from and wanted to learn how MAs worked)
-- Augmentation clinics return
-- Bionics are again dissectable from certain enemies (the same ones)
-- Zombie bio operators return
-- Added VERY_DURABLE_MELEE flag that's 2x as durable [Why does my crowbar lose to a zombie's skull?]
-- Added packaging/moving to some Magiclysm crafting things
+- New martial art for spears based on Qiangfa - I wanted more than one martial art to choose from and wanted to learn how MAs worked
+- Augmentation clinics return PF
+- Bionics are again dissectable from certain enemies (the same ones) PF
+- Zombie bio operators return PF
+- Added VERY_DURABLE_MELEE flag that's 2x as durable - PF Why does my crowbar lose to a zombie's skull?
+- Added packaging/moving to some Magiclysm crafting things - QOL
 - Summonable Dreamer Spear for Xedra, same weapon stats tier as the other Dreamer weapons
 - Solar panels on cars again
-- Always see container items from range [QOL After hundreds of hours, I'm tired of walking through rooms tile-by-tile hoping to spot some loot]
+- Always see container items from range -QOL After hundreds of hours, I'm tired of walking through rooms tile-by-tile hoping to spot some loot
 - Readd trickle charger CBM
 - Zui Quan returned to its former glory
 - RM13 can be powered by bionics
 - Overmap "vision levels" removed, back to binary yes/no unveiling
 - Zombies can no longer rip APCs apart with their bare hands
-- No riot fires [I don't like them in general + with Hordes 2.0 and the reversion of fires attracting zombies, you end up with empty towns fast]
-- No wheel/tire damage
-Fire fucks up zombies again
-- Burning buildings attract zombies again
+- No riot fires - I don't like them in general + with Hordes 2.0 and the reversion of fires attracting zombies, you end up with empty towns fast
+- No wheel/tire damage - I'd rather watch paint dry
+- Fire fucks up zombies again - It's fire, man.
+- Burning buildings attract zombies again - Note that with Hordes 2.0, you can kill a ridiculous amount of zombies with a single burning building and remove TOO much challenge
 - Misc QoL item changes (h2o pouch can hold a 2.5L Canteen now, etc)
 - Superalloy is now actually super
 - Lard.
-- Weariness does basically nothing
-- Focus does do absolutely nothing
+- Weariness does basically nothing - This game has far too many number bars for the same thing.  Stamina and Sleep are quite enough on their own
+- Focus does do absolutely nothing - This is the dumbest mechanic in the game, to the point the devs themselves will tell you to ignore it because there's no counterplay to it
 - Old atomic stuff returned
-- No Hope purifier returns
 - Vehicle degradation/repair works the old way
 - Welding rod requirements removed
 - Made dissection much faster since CBMs are back and it gets tedious
@@ -51,12 +51,21 @@ Fire fucks up zombies again
 - Athletics effects improved so you actually want to train it
 - Faster vender restock
 - Put any tool on your workshop or kitchen
-- CBM prep can't fail [time-wasting annoyance]
-- Integrated toolset back to prior awesomeness
-- No dust
-- Increase amount NPCs will let you owe them
+- CBM prep can't fail -time-wasting annoyance
+- Integrated toolset back to prior awesomeness - god forbid I get excited to find a CBM
+- No dust - Who did this horrible thing
+- Increase amount NPCs will let their debts to you reach - Why the fuck would they care 
 - Control laptop returns
-- Jackhammers can dig walls again
-- Mining times unnerfed
-- Dismembering times unnerfed
-- Betavoltaic cells price unnerfed
+- Jackhammers can dig walls again PF
+- Mining times unnerfed PF
+- Dismembering times unnerfed PF
+- Betavoltaic cells price unnerfed PF
+- Brought back old Packrat (kinda) by having it summon a bespoke pocket with 5L of space
+- NPC Chat option to switch controlled character
+- Fungal terrain spreads fire again PF
+- Gold is valuable again PF
+- Unnerf joint torsion ratchet CBM 
+- Revert window movement cost reduction
+- Revert all 328493849566 of the charges to count changes, this is simply a terrible change in every way as it stands.  Please send help my CPU is on fire
+- Revert Psychopaths not being able to swap to other NPCs
+- Revert the removal of bundles
