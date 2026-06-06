@@ -5,7 +5,7 @@
     "name": "Bionic Professions",
     "authors": [ "Erk/Everyone" ],
     "description": "Numerous bionic starting professions.",
-    "category": "content",
+    "category": "zen",
     "dependencies": [ "dda" ]
   }
 ]
