@@ -403,8 +403,8 @@
     "starting_trait": true,
     "valid": false,
     "vitamin_cost": 60,
-    "enchantments": [ { "values": [ { "value": "OBTAIN_COST_MULTIPLIER", "multiply": -0.1 } ] } ]
-  },
+		"integrated_armor": [ "packmule_storage" ]
+	},
   {
     "type": "mutation",
     "id": "DISORGANIZED",
