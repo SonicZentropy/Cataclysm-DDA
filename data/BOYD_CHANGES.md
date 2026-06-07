@@ -16,16 +16,16 @@ PF - Changes marked with PF are intended to be Player Friendly changes that remo
 QOL - Pure quality of life, shouldn't affect difficulty or anything
 TLG - Awesome ideas ported from TLG, a much finer fork than this one
 
+- Noct's Cata++ mod ported and added
+- Arcana mod ported and added
+- Tankmod mod ported and added - Yes, they're not real treads, they're just wheels.  So what.  It is really fun driving a tank even if it has wheels
+- Blaze Industries mod ported and added
+- BOYD mod added - returning lots of old removed stuff.  This is in mod format but it's not optional.  At least some small pieces of the base game now depend on things this adds.  In hindsight I should've put none of it into a mod, but oh well, live and learn!  Has its own README that describes the revivals in more depth
 - Toggle NPC processing - Ever built your base above a lab?  Now you can!  The perf difference from turning off NPCs is insane.  Bind it in-game to some hotkey
 - Survivor stuff brought back - PF There's few enough endgame options even WITH the survivor stuff, plus it's a really fun goal in-game
 - Spears from rooftops are a thing again - PF Of course you can stab a Pike from a rooftop, this is already countered by the fact zombies will rapidly destroy the roof under you.  One of those weird changes where CDDA spits in the face of its own realism and takes away a useful and realistic strategy because it benefits the player
 - Gutters climbable PF
 - Readded old labs of all sorts and sizes - If you don't like them, just don't go in them?  Why remove them
-- Noct's Cata++ mod ported and added
-- Arcana mod ported and added
-- Tankmod mod ported and added
-- Blaze Industries mod ported and added
-- BOYD mod added - returning lots of old removed stuff.  This is in mod format but it's not optional.  At least some small pieces of the base game now depend on things this adds.  In hindsight I should've put none of it into a mod, but oh well, live and learn!  Has its own README that describes the revivals in more depth
 - Dermatiks don't instakill you PF This is just awful who okayed this.  There's a whole alternate game mode for people who want RNG death on every swing
 - Traps unnerfed PF - Sure it's cheese but it's really fun, don't do it if you don't like it
 - Zombies are attracted to burning buildings PF - Another non-realistic change to add artificial difficulty, just don't set houses on fire if you don't want zombies to roll in and burn.  Note that with Hordes 2.0, you can kill a ridiculous amount of zombies with a single burning building and remove TOO much challenge
