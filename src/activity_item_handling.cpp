@@ -3359,19 +3359,29 @@ static int chop_moves( Character &you, item &it )
 
 static bool mine_activity( Character &you, const tripoint_bub_ms &src_loc )
 {
-    map &here = get_map();
-    // We pre-exclude jackhammers for wall mining here, just in case the character is carrying both a jackhammer and a pickaxe.
-    // If we don't then our iteration will preferentially select the (powered) jackhammer and always fail in subsequent calls to dig_tool(). Very troublesome!
-    const bool is_wall_mining = here.has_flag_ter_or_furn( ter_furn_flag::TFLAG_WALL, src_loc );
-    std::vector<item *> mining_inv = you.items_with( [&you, is_wall_mining]( const item & itm ) {
+    // map &here = get_map();
+    // // We pre-exclude jackhammers for wall mining here, just in case the character is carrying both a jackhammer and a pickaxe.
+    // // If we don't then our iteration will preferentially select the (powered) jackhammer and always fail in subsequent calls to dig_tool(). Very troublesome!
+    // const bool is_wall_mining = here.has_flag_ter_or_furn( ter_furn_flag::TFLAG_WALL, src_loc );
+    // std::vector<item *> mining_inv = you.items_with( [&you, is_wall_mining]( const item & itm ) {
+    //     return ( itm.has_flag( flag_DIG_TOOL ) && !itm.type->can_use( "JACKHAMMER" ) ) ||
+    //            (( itm.type->can_use( "JACKHAMMER" ) && itm.ammo_sufficient( &you ) ) );
+    // } );
+    // // All other failure conditions are handled in subsequent calls to dig_tool() with specific messaging for the player. This is just an early short circuit.
+    // if( mining_inv.empty() ) {
+    //     return false;
+    // }
+    std::vector<item *> mining_inv = you.items_with( [&you]( const item & itm ) {
         return ( itm.has_flag( flag_DIG_TOOL ) && !itm.type->can_use( "JACKHAMMER" ) ) ||
-               (( itm.type->can_use( "JACKHAMMER" ) && itm.ammo_sufficient( &you ) ) );
-    } );
-    // All other failure conditions are handled in subsequent calls to dig_tool() with specific messaging for the player. This is just an early short circuit.
-    if( mining_inv.empty() ) {
-        return false;
-    }
+              ( itm.type->can_use( "JACKHAMMER" ) && itm.ammo_sufficient( &you ) );
+    });
 
+    map &here = get_map();
+    if( mining_inv.empty() || you.is_mounted() || you.is_underwater() || here.veh_at( src_loc ) ||
+     !here.has_flag( ter_furn_flag::TFLAG_MINEABLE, src_loc ) || you.has_effect( effect_incorporeal ) ||
+     here.impassable_field_at( src_loc ) ) {
+        return false;
+     }
 
     item *chosen_item = nullptr;
     bool powered = false;
