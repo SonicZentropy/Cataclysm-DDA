@@ -107,9 +107,6 @@
 #include "weighted_list.h"
 #include "magic_teleporter_list.h"
 
-
-void science_room(map *m, const point_bub_ms &p1, const point_bub_ms &p2, int z, int rotate);
-
 static const field_type_str_id field_fd_blood( "fd_blood" );
 static const field_type_str_id field_fd_fire( "fd_fire" );
 
@@ -216,6 +213,7 @@ static const oter_str_id oter_tower_lab_stairs("tower_lab_stairs");
 static const pp_generator_id pp_generator_aftershock_ruin( "aftershock_ruin" );
 static const pp_generator_id pp_generator_riot_damage( "riot_damage" );
 static const pp_generator_id pp_generator_riot_damage_road( "riot_damage_road" );
+
 static const oter_type_str_id oter_type_road("road");
 static const oter_type_str_id oter_type_sewer("sewer");
 

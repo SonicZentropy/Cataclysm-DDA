@@ -963,6 +963,7 @@
   {
     "type": "city_building",
     "id": "house_31",
+		"//": "The generic basement of this house is a target for the hidden lab map special",
     "locations": [ "land" ],
     "overmaps": [
       { "point": [ 0, 0, 0 ], "overmap": "house_31_north" },
@@ -973,6 +974,7 @@
   {
     "type": "city_building",
     "id": "house_32",
+		"//": "The generic basement of this house is a target for the hidden lab map special",
     "locations": [ "land" ],
     "overmaps": [
       { "point": [ 0, 0, 0 ], "overmap": "house_32_north" },
