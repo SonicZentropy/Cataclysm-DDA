@@ -90,6 +90,11 @@
     "id": "subterranean_subway",
     "terrains": [ "empty_rock", "subway" ]
   },
+	{
+		"type": "overmap_location",
+		"id": "lab_subway",
+		"terrains": [ "deep_rock" ]
+	},
   {
     "type": "overmap_location",
     "id": "road",
