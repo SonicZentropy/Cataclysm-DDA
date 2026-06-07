@@ -2,6 +2,7 @@
   {
     "type": "mapgen",
     "om_terrain": "house_32",
+		"//": "used by lab basements.",
     "object": {
       "fill_ter": "t_floor",
       "rows": [
