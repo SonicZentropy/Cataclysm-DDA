@@ -2,7 +2,7 @@
 
 ## Overview
 
-Bring Out Your Dead is a Cataclysm: Dark Days Ahead mod that adds futuristic technology, bionics, robotic enemies, and high-tech locations to the game. 
+Bring Out Your Dead is a Cataclysm: Dark Days Ahead mod that adds futuristic technology, bionics, robotic enemies, and high-tech locations to the game.
 
 ## Key Features
 
@@ -37,10 +37,6 @@ Special harvest actions allow players to recover bionics from specific zombie ty
 - Military zombies yield military bionics
 - Bio-operators yield elite bio-operator bionics (offense, defense, utility)
 
-### Techniques
-
-- **Pressure Crunch**: Unarmed/melee technique that deals 1.5x bash damage with stun and knockback (crit only)
-
 ### Vehicles
 
 Atomic-powered vehicles featuring mini-reactors:
@@ -65,8 +61,6 @@ New robotic and zombie enemies:
 
 ### Recipes
 
-New crafting recipes include:
-
 - Control Laptop: For commanding robots via ultra-high frequencies
 - Acid Bomb: Throwable acid container
 - Superglue: Bone-based adhesive
@@ -90,7 +84,7 @@ New structures and locations:
 Extensive new item additions:
 
 - **Batteries**: Various atomic and ultra-light battery types with different capacities
-- **Electronics**: Atomic smartphones (with flashlight/music modes), powerbanks (UPS)
+- **Electronics**: Atomic smartphones (with flashlight/music modes), powerbanks (UPS), waterproof smartphone cases
 - **Tools**: Atompot (self-heating kitchen appliance), bionic power port mod
 - **Weapons**: Futuristic firearms (FN FSC2000, Colt Lightning), energy swords, titanium bats, deployed grenade launchers, alien plasma bows, hydraulic gauntlets
 - **Books**: Martial arts manuals (Centipede, Lizard, Scorpion, Toad, Viper Kung Fu) and robot schematics
@@ -112,10 +106,6 @@ Numerous item groups for loot distribution, including:
 - New overmap terrains for augmentation clinics and basement bionics
 - Regional settings that add augmentation clinics to city shops
 - Map extras like XEDRA trucks on roads
-
-### Migration
-
-Updates entity IDs from older versions (e.g., `bot_eyebot` → `afs_bot_eyebot`)
 
 ### Construction Groups
 
