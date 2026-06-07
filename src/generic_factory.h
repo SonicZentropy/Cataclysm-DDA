@@ -504,6 +504,7 @@ class generic_factory
          * Note: If the id was valid, the returned object can be modified (after
          * casting the const away).
          */
+#pragma optimize("", off)
         const T &obj( const string_id<T> &id ) const {
             int_id<T> i_id;
             if( !find_id( id, i_id ) ) {
@@ -512,6 +513,8 @@ class generic_factory
             }
             return list[i_id.to_i()];
         }
+#pragma optimize("", on)
+
         /**
          * Checks whether the factory contains an object with the given id.
          * This function can be used to implement @ref int_id::is_valid().
