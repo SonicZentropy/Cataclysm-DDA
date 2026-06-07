@@ -31,12 +31,11 @@
   {
     "type": "overmap_connection",
     "id": "sewer_tunnel",
-    "subtypes": [ { "terrain": "sewer", "locations": [ "subterranean" ], "flags": [ "ORTHOGONAL" ] } ]
+		"subtypes": [
+			{ "terrain": "subway", "locations": [ "subterranean_subway" ], "flags": [ "ORTHOGONAL" ] },
+			{ "terrain": "lab_subway", "locations": [ "lab_subway" ], "flags": [ "ORTHOGONAL" ] }
+		]
   },
-	"subtypes": [
-	{ "terrain": "subway", "locations": [ "subterranean_subway" ], "flags": [ "ORTHOGONAL" ] },
-	{ "terrain": "lab_subway", "locations": [ "lab_subway" ], "flags": [ "ORTHOGONAL" ] }
-]
   {
     "type": "overmap_connection",
     "id": "forest_trail",
