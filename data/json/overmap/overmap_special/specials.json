@@ -880,7 +880,7 @@
 		"connections": [ { "point": [ 0, -1, 0 ], "terrain": "road", "connection": "local_road" } ],
 		"locations": [ "field", "forest_without_trail" ],
 		"city_distance": [ 10, -1 ],
-		"occurrences": [ 2, 100 ],
+		"occurrences": [ 5, 100 ],
 		"flags": [ "LAB", "OVERMAP_UNIQUE", "MAN_MADE" ]
 	},
 	{
