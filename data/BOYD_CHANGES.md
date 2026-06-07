@@ -4,8 +4,8 @@ PF - Changes marked with PF are intended to be Player Friendly changes that remo
 - Survivor stuff brought back - PF There's few enough endgame options even WITH the survivor stuff, plus it's a really fun goal in-game
 - Spears from rooftops are a thing again - PF Of course you can stab a Pike from a rooftop, this is already countered by the fact zombies will rapidly destroy the roof under you
 - Gutters climbable PF
-- Readded old labs 
-- Cata++ mod ported and added
+- Readded old labs of all sorts and sizes - If you don't like them, just don't go in them?  Why remove them
+- Noct's Cata++ mod ported and added
 - Arcana mod ported and added
 - Tankmod mod ported and added
 - Blaze Industries mod ported and added
