@@ -3464,6 +3464,7 @@ bool overmap::place_special_attempt(
                 continue;
             }
             // See if we can actually place the special there.
+            DebugLog( D_INFO, D_MAIN ) << "CURRENT: Scoring special: " << special.id.str() << " at " << p.to_string();
             const om_direction::type rotation = random_special_rotation(special, p, must_be_unexplored);
             if (rotation == om_direction::type::invalid) {
                 continue;

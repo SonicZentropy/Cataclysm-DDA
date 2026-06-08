@@ -154,6 +154,11 @@ void fixed_overmap_special_data::check( const std::string &context ) const
 
     for( const overmap_special_connection &elem : connections ) {
         const overmap_special_terrain &oter = get_terrain_at( elem.p );
+        if( elem.connection.is_null() ) {
+            debugmsg( "In %s, connection at %s has no valid connection type "
+                      "(neither 'connection' was specified nor could it be guessed from 'terrain').",
+                      context, elem.p.to_string() );
+        }
         if( !elem.terrain ) {
             debugmsg( "In %s, connection %s doesn't have a terrain.",
                       context, elem.p.to_string() );
@@ -250,6 +255,7 @@ int fixed_overmap_special_data::score_rotation_at( const overmap &om, const trip
         if( ( oter->get_type_id() == oter_type_str_id( con.terrain.str() ) ) ) {
             ++score; // Found another one satisfied connection.
         } else if( !oter || con.existing || !con.connection->pick_subtype_for( oter ) ) {
+            //printf("Testing special: %s\n", this->id.c_str());
             return -1;
         }
     }
