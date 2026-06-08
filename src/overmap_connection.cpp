@@ -72,15 +72,15 @@ const overmap_connection::subtype *overmap_connection::pick_subtype_for(
     }
 
     const size_t cache_index = ground.to_i();
-    //cata_assert( cache_index < cached_subtypes.size() );
+    cata_assert( cache_index < cached_subtypes.size() );
 
-    if( cache_index >= cached_subtypes.size() ) {
-        debugmsg( "pick_subtype_for: terrain \"%s\" (int_id %zu) is out of bounds "
-                  "for connection \"%s\" (cache size: %zu). "
-                  "Was this terrain added after connections were finalized?",
-                  ground.id().c_str(), cache_index, id.c_str(), cached_subtypes.size() );
-        return nullptr;
-    }
+    // if( cache_index >= cached_subtypes.size() ) {
+    //     debugmsg( "pick_subtype_for: terrain \"%s\" (int_id %zu) is out of bounds "
+    //               "for connection \"%s\" (cache size: %zu). "
+    //               "Was this terrain added after connections were finalized?",
+    //               ground.id().c_str(), cache_index, id.c_str(), cached_subtypes.size() );
+    //     return nullptr;
+    // }
 
     if( cached_subtypes[cache_index] ) {
         return cached_subtypes[cache_index].value;
