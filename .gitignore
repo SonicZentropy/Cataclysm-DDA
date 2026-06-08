@@ -220,8 +220,15 @@ stage
 # Snapcraft build file
 *.snap
 
+# Eclipse IDE
+.cproject
+.settings/
+
 # Apple Xcode IDE
 Xcode/
+
+# gdb
+.gdb_history
 
 # Flatpak build artifacts
 /repo/
