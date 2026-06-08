@@ -42,7 +42,6 @@ map_editor/
 /ccache/
 /cache/
 /cmake-build-debug/
-/config/
 /data/*.template
 /data/cache/
 /data/mods/user-default-mods.json
@@ -54,11 +53,6 @@ map_editor/
 /doxygen_doc/html/*
 /doxygen_doc/latex/*
 /font/
-/gfx/*
-!/gfx/ASCIITileset
-!/gfx/loading_screens
-!/gfx/Larwick_Overmap
-!/gfx/tile_config_template.json
 /graveyard/
 /memorial/
 /obj/
