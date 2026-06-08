@@ -1,4 +1,5 @@
 #pragma once
+#pragma optimize("", off)
 #ifndef CATA_SRC_GENERIC_FACTORY_H
 #define CATA_SRC_GENERIC_FACTORY_H
 
@@ -504,16 +505,44 @@ class generic_factory
          * Note: If the id was valid, the returned object can be modified (after
          * casting the const away).
          */
-#pragma optimize("", off)
+        // const T &obj( const string_id<T> &id ) const {
+        //     int_id<T> i_id;
+        //     if( !find_id( id, i_id ) ) {
+        //         DebugLog( D_ERROR, D_MAIN ) << "Missing " << type_name << "
+        //         id: " << id.c_str(); debugmsg( "invalid %s id \"%s\"",
+        //         type_name, id.c_str() ); return dummy_obj;
+        //     }
+        //     return list[i_id.to_i()];
+        // }
         const T &obj( const string_id<T> &id ) const {
             int_id<T> i_id;
             if( !find_id( id, i_id ) ) {
-                debugmsg( "invalid %s id \"%s\"", type_name, id.c_str() );
+                // Basic info
+                DebugLog( D_ERROR, D_MAIN )
+                    << "Missing " << type_name
+                    << " id: \"" << id.c_str() << "\""
+                    << " (C++ type: " << demangle( typeid( T ).name() ) << ")"
+                    << " (JSON id field: \"" << id_member_name << "\")"
+                    << " (total loaded: " << list.size() << ")";
+
+                // Print all valid IDs if the list is small enough to be useful
+                if( !map.empty() && map.size() <= 50 ) {
+                    DebugLog( D_ERROR, D_MAIN ) << "Valid " << type_name << " ids:";
+                    for( const auto &entry : map ) {
+                        DebugLog( D_ERROR, D_MAIN ) << "  " << entry.first.c_str();
+                    }
+                } else {
+                    DebugLog( D_ERROR, D_MAIN ) << "(too many valid ids to list: " << map.size() << ")";
+                }
+
+                debugmsg( "invalid %s id \"%s\" (C++ type: %s, %zu loaded)",
+                          type_name, id.c_str(),
+                          demangle( typeid( T ).name() ).c_str(),
+                          list.size() );
                 return dummy_obj;
             }
             return list[i_id.to_i()];
         }
-#pragma optimize("", on)
 
         /**
          * Checks whether the factory contains an object with the given id.
@@ -2278,3 +2307,4 @@ class activity_level_reader : public generic_typed_reader<activity_level_reader>
 };
 
 #endif // CATA_SRC_GENERIC_FACTORY_H
+#pragma optimize("", on)

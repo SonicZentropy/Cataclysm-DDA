@@ -799,8 +799,8 @@
       { "point": [-1, 0, 0], "locations": ["land", "road"] }
     ],
     "connections": [
-      { "point": [-1, 0, 0], "terrain": "road", "from": [0, 0, 0] }
-    ],
+			{ "point": [-1, 0, 0], "terrain": "road", "connection": "local_road", "from": [0, 0, 0] }
+		],
     "locations": ["forest"],
     "city_distance": [30, -1],
     "city_sizes": [0, 12],
@@ -822,8 +822,8 @@
       { "point": [-1, 0, 0], "locations": ["land", "road"] }
     ],
     "connections": [
-      { "point": [-1, 0, 0], "terrain": "road", "from": [0, 0, 0] }
-    ],
+			{ "point": [-1, 0, 0], "terrain": "road", "connection": "local_road", "from": [0, 0, 0] }
+		],
     "locations": ["forest"],
     "city_distance": [30, -1],
     "city_sizes": [0, 12],
@@ -845,7 +845,7 @@
       { "point": [-1, 0, 0], "locations": ["land", "road"] }
     ],
     "connections": [
-      { "point": [-1, 0, 0], "terrain": "road", "from": [0, 0, 0] }
+			{ "point": [-1, 0, 0], "terrain": "road", "connection": "local_road", "from": [0, 0, 0] }
     ],
     "locations": ["forest"],
     "city_distance": [30, -1],
@@ -9446,7 +9446,7 @@
       {
         "point": [4, 8, -2],
         "terrain": "subway",
-        "connection": "0",
+        "connection": "subway_tunnel",
         "from": [4, 7, -2]
       }
     ],
