@@ -4,7 +4,7 @@
     "id": "GROUP_POLICE",
     "monsters": [
       {
-        "monster": "mon_afs_copbot",
+        "monster": "mon_copbot",
         "weight": 10,
         "cost_multiplier": 3,
         "ends": "5 days"

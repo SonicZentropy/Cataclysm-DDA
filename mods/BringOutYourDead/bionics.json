@@ -74,18 +74,18 @@
     "flags": ["BIONIC_POWER_SOURCE", "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF"]
   },
   {
-    "id": "afs_bio_missiles",
+    "id": "bio_missiles",
     "type": "bionic",
     "//": "Watch those wrist rockets!",
     "name": { "str": "Deployable Grenade Launcher" },
     "description": "Your right hand can fold inward to reveal a mechanism capable of igniting and firing 40mm grenades across medium distances.",
     "occupied_bodyparts": [["hand_r", 3]],
-    "fake_weapon": "afs_bionic_rocket",
+    "fake_weapon": "bionic_rocket",
     "flags": ["BIONIC_TOGGLED", "BIONIC_WEAPON", "NO_UNWIELD"],
     "act_cost": "35 J"
   },
   {
-    "id": "afs_bio_linguistic_coprocessor",
+    "id": "bio_linguistic_coprocessor",
     "type": "bionic",
     "name": { "str": "Linguistic Coprocessor" },
     "description": "The left hemisphere of your brain has been augmented with a microcomputer that moderately increases the speed that language and written words are processed, granting a 15% increase to reading speed.",
@@ -115,7 +115,7 @@
     "time": "10 s"
   },
   {
-    "id": "afs_bio_dopamine_stimulators",
+    "id": "bio_dopamine_stimulators",
     "type": "bionic",
     "name": { "str": "Dopamine Stimulators" },
     "description": "Tiny cybernetic stimulators have been installed throughout your ventral tegmental area, and trigger at set intervals using bionic power.  This slowly releases a stream of reward chemicals and hormones into your brain, inducing a state of euphoria that notably elevates mood.",

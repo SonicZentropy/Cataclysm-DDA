@@ -4,7 +4,7 @@
     "id": "GROUP_YOUR_FEARS",
     "monsters": [
       { "monster": "mon_zombie_bio_op2" },
-      { "monster": "mon_afs_riotbot" }
+      { "monster": "mon_riotbot" }
     ]
   }
 ]

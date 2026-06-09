@@ -22,7 +22,7 @@
     }
   },
   {
-    "id": "afs_lab_mechanics_books",
+    "id": "lab_mechanics_books",
     "type": "item_group",
     "items": [
       [ "manual_mechanics", 6 ],

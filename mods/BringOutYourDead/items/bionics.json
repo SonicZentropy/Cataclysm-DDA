@@ -76,7 +76,7 @@
     "difficulty": 3
   },
   {
-    "id": "afs_bio_missiles",
+    "id": "bio_missiles",
     "copy-from": "bionic_general",
     "type": "ITEM",
     "subtypes": ["BIONIC_ITEM"],
@@ -86,7 +86,7 @@
     "difficulty": 5
   },
   {
-    "id": "afs_bio_linguistic_coprocessor",
+    "id": "bio_linguistic_coprocessor",
     "copy-from": "bionic_general",
     "type": "ITEM",
     "subtypes": ["BIONIC_ITEM"],
@@ -110,7 +110,7 @@
     "difficulty": 4
   },
   {
-    "id": "afs_bio_dopamine_stimulators",
+    "id": "bio_dopamine_stimulators",
     "copy-from": "bionic_general",
     "type": "ITEM",
     "subtypes": ["BIONIC_ITEM"],

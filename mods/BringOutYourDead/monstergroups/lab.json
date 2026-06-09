@@ -24,13 +24,6 @@
     "type": "monstergroup",
     "id": "GROUP_MICROLAB",
     "monsters": [
-      { "monster": "mon_zombie_bio_op2", "weight": 25, "cost_multiplier": 5, "starts": "60 days" }
-    ]
-  },
-  {
-    "type": "monstergroup",
-    "id": "GROUP_MICROLAB",
-    "monsters": [
       { "monster": "mon_zombie_bio_op2", "weight": 10, "cost_multiplier": 10 }
     ]
   }

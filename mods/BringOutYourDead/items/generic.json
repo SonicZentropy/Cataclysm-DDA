@@ -1,7 +1,7 @@
 [
   {
     "type": "ITEM",
-    "id": "afs_broken_eyebot",
+    "id": "broken_eyebot",
     "symbol": ",",
     "color": "green",
     "name": { "str": "broken eyebot" },
@@ -18,7 +18,7 @@
   },
   {
     "type": "ITEM",
-    "id": "afs_broken_copbot",
+    "id": "broken_copbot",
     "symbol": ",",
     "color": "green",
     "name": { "str": "broken police bot" },
@@ -35,7 +35,7 @@
   },
   {
     "type": "ITEM",
-    "id": "afs_broken_riotbot",
+    "id": "broken_riotbot",
     "symbol": ",",
     "color": "green",
     "name": { "str": "broken riot control bot" },
