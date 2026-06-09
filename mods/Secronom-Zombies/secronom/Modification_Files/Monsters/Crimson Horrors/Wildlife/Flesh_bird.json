@@ -9,7 +9,6 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -23,7 +22,6 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -37,7 +35,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "EATS", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -51,7 +49,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "EATS", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -65,7 +63,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -79,7 +77,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -93,7 +91,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -107,7 +105,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -121,7 +119,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -135,7 +133,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -149,7 +147,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -163,7 +161,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -178,7 +176,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -193,7 +191,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -208,7 +206,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -223,7 +221,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -238,7 +236,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -253,7 +251,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -268,7 +266,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -283,7 +281,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -298,7 +296,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -313,7 +311,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -328,7 +326,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -343,7 +341,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -358,7 +356,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -373,7 +371,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -388,7 +386,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -403,7 +401,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -418,7 +416,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -433,7 +431,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -448,7 +446,7 @@
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "SWARMS", "CAN_BE_CULLED", "CANPLAY", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
 		"upgrades": {},
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -462,7 +460,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "FLIES", "EATS", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -489,7 +487,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -503,7 +501,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -517,7 +515,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -531,7 +529,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -545,7 +543,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -559,7 +557,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -573,7 +571,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -587,7 +585,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "PATH_AVOID_DANGER", "WARM", "FLIES", "SWARMS", "CANPLAY", "CAN_BE_CULLED", "PET_WONT_FOLLOW", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "BIRD" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	}
