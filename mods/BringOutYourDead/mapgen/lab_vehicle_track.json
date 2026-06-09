@@ -41,7 +41,7 @@
           "items": [
             { "item": "mechanics", "chance": 30, "repeat": [ 0, 2 ] },
             { "item": "hardware", "chance": 30 },
-            { "item": "afs_lab_mechanics_books", "chance": 10 }
+            { "item": "lab_mechanics_books", "chance": 10 }
           ]
         }
       },
@@ -54,9 +54,9 @@
         }
       },
       "place_vehicles": [
-        { "chance": 100, "fuel": 50, "rotation": 180, "status": 0, "vehicle": "afs_lab_cars", "x": [ 11, 14 ], "y": [ 12, 17 ] },
-        { "chance": 75, "fuel": 80, "status": 0, "vehicle": "afs_lab_utility", "x": [ 3, 7 ], "y": [ 2, 5 ] },
-        { "chance": 75, "fuel": 80, "vehicle": "afs_lab_utility", "x": [ 19, 22 ], "y": [ 2, 5 ] }
+        { "chance": 100, "fuel": 50, "rotation": 180, "status": 0, "vehicle": "lab_cars", "x": [ 11, 14 ], "y": [ 12, 17 ] },
+        { "chance": 75, "fuel": 80, "status": 0, "vehicle": "lab_utility", "x": [ 3, 7 ], "y": [ 2, 5 ] },
+        { "chance": 75, "fuel": 80, "vehicle": "lab_utility", "x": [ 19, 22 ], "y": [ 2, 5 ] }
       ]
     }
   }

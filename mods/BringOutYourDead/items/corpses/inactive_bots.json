@@ -1,7 +1,7 @@
 [
   {
-    "id": "afs_bot_eyebot",
-    "looks_like": "afs_broken_eyebot",
+    "id": "bot_eyebot",
+    "looks_like": "broken_eyebot",
     "type": "ITEM",
     "subtypes": ["TOOL"],
     "name": { "str": "inactive eyebot" },
@@ -55,8 +55,8 @@
     "melee_damage": { "bash": 8 }
   },
   {
-    "id": "afs_bot_copbot",
-    "looks_like": "afs_broken_copbot",
+    "id": "bot_copbot",
+    "looks_like": "broken_copbot",
     "type": "ITEM",
     "subtypes": ["TOOL"],
     "name": { "str": "inactive police bot" },
@@ -83,8 +83,8 @@
     "melee_damage": { "bash": 8 }
   },
   {
-    "id": "afs_bot_riotbot",
-    "looks_like": "afs_broken_riotbot",
+    "id": "bot_riotbot",
+    "looks_like": "broken_riotbot",
     "type": "ITEM",
     "subtypes": ["TOOL"],
     "name": { "str": "inactive riot control bot" },
