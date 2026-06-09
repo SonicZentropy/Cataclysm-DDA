@@ -15,8 +15,7 @@
       { "monster": "mon_secubot", "weight": 5, "cost_multiplier": 10 },
       { "monster": "mon_talon_m202a1", "weight": 3, "cost_multiplier": 10 },
       { "monster": "mon_zombie_hazmat", "weight": 100, "cost_multiplier": 0 },
-      { "monster": "mon_zombie_bio_op", "weight": 20, "cost_multiplier": 50 },
-			{ "monster": "mon_chickenbot", "weight": 1, "cost_multiplier": 50 },
+      
       { "monster": "mon_zombie_armored", "weight": 5, "cost_multiplier": 5 },
       { "monster": "mon_zombie_technician", "weight": 50, "cost_multiplier": 3 },
       { "monster": "mon_feral_human_tool", "weight": 25, "cost_multiplier": 3 },

@@ -7,10 +7,7 @@
       { "monster": "mon_flashbang_hack", "weight": 150, "cost_multiplier": 0 },
       { "monster": "mon_skitterbot", "weight": 220, "cost_multiplier": 0 },
       { "monster": "mon_secubot", "weight": 150, "cost_multiplier": 0 },
-      { "monster": "mon_talon_m202a1", "weight": 75, "cost_multiplier": 0 },
-			{ "monster": "mon_tripod", "weight": 110, "cost_multiplier": 0 },
-			{ "monster": "mon_chickenbot", "weight": 60, "cost_multiplier": 0 },
-			{ "monster": "mon_tankbot", "weight": 20, "cost_multiplier": 0 }
+      { "monster": "mon_talon_m202a1", "weight": 75, "cost_multiplier": 0 }
     ]
   },
   {
