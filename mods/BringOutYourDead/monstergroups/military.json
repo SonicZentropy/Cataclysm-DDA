@@ -3,9 +3,52 @@
     "type": "monstergroup",
     "id": "GROUP_MIL_STRONG",
     "monsters": [
-      { "monster": "mon_zombie_bio_op2", "weight": 25, "cost_multiplier": 5, "starts": "60 days" }
+      { "monster": "mon_zombie_bio_op2", "weight": 25, "cost_multiplier": 5, "starts": "60 days" },
+			{ "monster": "mon_zombie_bio_op", "weight": 50, "cost_multiplier": 5 },
+			{ "monster": "mon_tripod", "weight": 5, "cost_multiplier": 0 },
+			{ "monster": "mon_chickenbot", "weight": 50, "cost_multiplier": 0 },
+			{ "monster": "mon_tankbot", "weight": 5, "cost_multiplier": 0 },
     ]
   },
+	{
+		"type": "monstergroup",
+		"id": "GROUP_MAYBE_MIL",
+		"monsters": [
+			{ "monster": "mon_chickenbot", "weight": 5, "cost_multiplier": 0 },
+			{ "monster": "mon_tripod", "weight": 5, "cost_multiplier": 0 },
+			{ "monster": "mon_chickenbot", "weight": 5, "cost_multiplier": 0 },
+			{ "monster": "mon_tankbot", "weight": 5, "cost_multiplier": 0 },
+			{ "monster": "mon_zombie_bio_op", "weight": 20, "cost_multiplier": 50 }
+		]
+	},
+	{
+		"type": "monstergroup",
+		"id": "GROUP_MIL_BASE",
+		"monsters": [
+			{ "monster": "mon_tripod", "weight": 5, "cost_multiplier": 0 },
+			{ "monster": "mon_chickenbot", "weight": 5, "cost_multiplier": 0 },
+			{ "monster": "mon_tankbot", "weight": 5, "cost_multiplier": 0 },
+			{ "monster": "mon_zombie_bio_op", "weight": 15, "cost_multiplier": 5 },
+			{ "monster": "mon_zombie_bio_op2", "weight": 15, "cost_multiplier": 5 }
+		]
+	},
+	{
+		"type": "monstergroup",
+		"id": "GROUP_CENTRAL_LAB",
+		"monsters": [
+			{ "monster": "mon_zombie_bio_op", "weight": 20, "cost_multiplier": 50 },
+			{ "monster": "mon_chickenbot", "weight": 1, "cost_multiplier": 50 },
+		]
+	},
+	{
+		"type": "monstergroup",
+		"id": "GROUP_ROBOT",
+		"monsters": [
+			{ "monster": "mon_tripod", "weight": 110, "cost_multiplier": 0 },
+			{ "monster": "mon_chickenbot", "weight": 60, "cost_multiplier": 0 },
+			{ "monster": "mon_tankbot", "weight": 20, "cost_multiplier": 0 }
+		]
+	},
   {
     "type": "monstergroup",
     "id": "GROUP_MIL_MASS_GRAVE",
