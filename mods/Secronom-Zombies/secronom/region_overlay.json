@@ -119,6 +119,14 @@
 		]
 	},
 	{
+		"type": "region_settings_city",
+		"id": "default",
+		"copy-from": "default",
+		"extend": {
+			"houses": [ [ "secro_house_flesh_cb", 50 ] ]
+		}
+	},
+	{
 		"type": "region_settings_map_extras",
 		"id": "default",
 		"copy-from": "default",
