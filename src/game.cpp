@@ -2906,8 +2906,8 @@ bool game::is_game_over()
 
 void game::bury_screen() const
 {
-    end_screen_data new_instance;
-    new_instance.draw_end_screen_ui();
+    //end_screen_data new_instance;
+    //new_instance.draw_end_screen_ui();
 
     sfx::do_player_death_hurt( get_player_character(), true );
     sfx::fade_audio_group( sfx::group::weather, 2000 );
@@ -2919,11 +2919,11 @@ void game::bury_screen() const
 void game::death_screen()
 {
     gamemode->game_over();
-    Messages::display_messages();
-    u.get_avatar_diary()->death_entry();
+    //Messages::display_messages();
+    //u.get_avatar_diary()->death_entry();
     show_scores_ui();
-    disp_NPC_epilogues();
-    display_faction_epilogues();
+    //disp_NPC_epilogues();
+    //display_faction_epilogues();
 }
 
 // A timestamp that can be used to make unique file names
