@@ -7,7 +7,7 @@
     "sym": "$",
     "color": "green_red",
     "see_cost": "high",
-    "extras": "build",
+    "extras": "secro_build",
     "mondensity": 3,
     "flags": [ "SIDEWALK", "GENERIC_LOOT" ]
   },
@@ -666,7 +666,7 @@
     "color": "red_red",
     "see_cost": "high",
     "land_use_code": "secro_flesh_biome",
-    "extras": "build",
+    "extras": "secro_build",
     "mondensity": 2,
     "flags": [ "SIDEWALK", "GENERIC_LOOT" ]
   },
@@ -679,7 +679,7 @@
     "color": "red_red",
     "see_cost": "high",
     "land_use_code": "secro_flesh_biome",
-    "extras": "build",
+    "extras": "secro_build",
     "mondensity": 3,
     "flags": [ "SIDEWALK", "GENERIC_LOOT" ]
   },
@@ -692,7 +692,7 @@
     "color": "red_red",
     "see_cost": "high",
     "land_use_code": "secro_flesh_biome",
-    "extras": "build",
+    "extras": "secro_build",
     "mondensity": 3,
     "flags": [ "SIDEWALK", "GENERIC_LOOT" ]
   },
