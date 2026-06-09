@@ -1,9 +1,8 @@
 [
-  {
-    "type": "region_overlay",
-    "regions": [ "all" ],
-    "map_extras": {
-      "field": { "extras": { "mx_secro_vesselexp_spawn": 0 } }
-    }
-  }
+	{
+		"type": "map_extra_collection",
+		"id": "field",
+		"copy-from": "field",
+		"extend": { "extras": [ [ "mx_secro_vesselexp_spawn", 1 ] ] }
+	}
 ]

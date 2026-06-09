@@ -26,11 +26,10 @@
       "target": "secro_power_armor_atk_on",
       "msg": "\"Vessel\" module - <color_light_green>online",
       "type": "transform",
-      "active": true,
       "menu_text": "Activate \"Vessel\" module"
     },
     "tool_ammo": "battery",
-    "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "WATCH", "THERMOMETER", "SUN_GLASSES", "OVERSIZE" ],
+    "flags": [ "WATERPROOF", "STURDY", "ELECTRIC_IMMUNE", "NO_UNLOAD", "WATCH", "THERMOMETER", "SUN_GLASSES", "OVERSIZE", "SPAWN_ACTIVE" ],
     "armor": [
       {
         "encumbrance": 40,

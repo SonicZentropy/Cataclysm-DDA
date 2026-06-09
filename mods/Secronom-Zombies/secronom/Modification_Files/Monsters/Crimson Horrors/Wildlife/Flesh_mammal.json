@@ -9,7 +9,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "SMELLS", "HEARS", "WARM", "PATH_AVOID_DANGER", "EATS", "SMALL_HIDER", "CORNERED_FIGHTER", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -23,7 +23,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "BASHES", "PUSH_MON", "CORNERED_FIGHTER", "EATS", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -37,7 +37,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "BASHES", "PUSH_MON", "CORNERED_FIGHTER", "EATS", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -51,7 +51,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "GOODHEARING", "SMELLS", "PATH_AVOID_DANGER", "WARM", "HIT_AND_RUN", "KEENNOSE", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -65,7 +65,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "SMELLS", "PET_MOUNTABLE", "PATH_AVOID_DANGER", "WARM", "CORNERED_FIGHTER", "EATS", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -79,7 +79,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "WATER_CAMOUFLAGE", "CORNERED_FIGHTER", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -93,7 +93,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "KEENNOSE", "EATS", "SMALL_HIDER", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -107,7 +107,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "SMELLS", "PET_MOUNTABLE", "PATH_AVOID_DANGER", "WARM", "KEENNOSE", "CORNERED_FIGHTER", "EATS", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -121,7 +121,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "GOODHEARING", "SMELLS", "CANPLAY", "PATH_AVOID_DANGER", "WARM", "HIT_AND_RUN", "CORNERED_FIGHTER", "SMALL_HIDER", "CAN_BE_CULLED", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -135,7 +135,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "GOODHEARING", "SMELLS", "CANPLAY", "PATH_AVOID_DANGER", "WARM", "HIT_AND_RUN", "CORNERED_FIGHTER", "SMALL_HIDER", "CAN_BE_CULLED", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -149,7 +149,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "SMELLS", "HEARS", "WARM", "PATH_AVOID_DANGER", "SMALL_HIDER", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -163,7 +163,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "CANPLAY", "PET_WONT_FOLLOW", "CAN_BE_CULLED", "EATS", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -177,7 +177,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "SMELLS", "PET_MOUNTABLE", "PATH_AVOID_DANGER", "PATH_AVOID_FIRE", "WARM", "CANPLAY", "PET_WONT_FOLLOW", "MILKABLE", "CAN_BE_CULLED", "CORNERED_FIGHTER", "EATS", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -191,7 +191,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "HIT_AND_RUN", "KEENNOSE", "EATS", "GRABS", "GROUP_MORALE", "CORNERED_FIGHTER", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -205,7 +205,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -219,7 +219,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "EATS", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -233,7 +233,7 @@
 "regen_morale": true,
 "flags": [ "DOGFOOD", "CANPLAY", "CAN_BE_CULLED", "GROUP_MORALE", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS", "WARM", "CORNERED_FIGHTER", "EATS", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -247,7 +247,7 @@
 "regen_morale": true,
 "flags": [ "DOGFOOD", "CANPLAY", "CAN_BE_CULLED", "GROUP_MORALE", "HEARS", "PET_MOUNTABLE", "HIT_AND_RUN", "KEENNOSE", "PATH_AVOID_DANGER", "SEES", "SMELLS", "SWARMS", "WARM", "EATS", "NO_BREED", "SMALL_HIDER" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -261,7 +261,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "HIT_AND_RUN", "KEENNOSE", "SMALL_HIDER", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -275,7 +275,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "GOODHEARING", "SMELLS", "PATH_AVOID_DANGER", "WARM", "EATS", "SMALL_HIDER", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -289,7 +289,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "SMELLS", "PET_WONT_FOLLOW", "PET_MOUNTABLE", "PATH_AVOID_DANGER", "WARM", "MILKABLE", "EATS", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -303,7 +303,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "SMELLS", "HEARS", "WARM", "PATH_AVOID_DANGER", "EATS", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -317,7 +317,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "HIT_AND_RUN", "KEENNOSE", "SMALL_HIDER", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -331,7 +331,7 @@
 "regen_morale": true,
 "flags": [ "SEES", "SMELLS", "HEARS", "WARM", "PATH_AVOID_DANGER", "SMALL_HIDER", "NO_BREED" ],
 "extend": { "species": [ "SFLESH" ] },
-"delete": { "species": [ "MAMMAL" ] },
+
 "fear_triggers": [],
 "placate_triggers": []
 },
@@ -345,7 +345,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "KEENNOSE", "EATS", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -359,7 +359,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "WATER_CAMOUFLAGE", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -373,7 +373,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "PET_WONT_FOLLOW", "WARM", "KEENNOSE", "CAN_BE_CULLED", "EATS", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -387,7 +387,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PET_MOUNTABLE", "PATH_AVOID_DANGER", "WARM", "KEENNOSE", "CAN_BE_CULLED", "CORNERED_FIGHTER", "EATS", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -401,7 +401,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "PET_WONT_FOLLOW", "WARM", "CAN_BE_CULLED", "GOODHEARING", "EATS", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -415,7 +415,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "KEENNOSE", "EATS", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -429,7 +429,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "CAN_BE_CULLED", "EATS", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -443,7 +443,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "PET_WONT_FOLLOW", "MILKABLE", "CAN_BE_CULLED", "EATS", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -457,7 +457,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "STUMBLES", "WARM", "EATS", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -471,7 +471,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -485,7 +485,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "KEENNOSE", "CORNERED_FIGHTER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -499,7 +499,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "CORNERED_FIGHTER", "EATS", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -513,7 +513,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "SMELLS", "HEARS", "GOODHEARING", "WARM", "FLIES", "PATH_AVOID_DANGER", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -527,7 +527,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "GOODHEARING", "SMELLS", "PATH_AVOID_DANGER", "WARM", "HIT_AND_RUN", "KEENNOSE", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -541,7 +541,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "PET_WONT_FOLLOW", "EATS", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -555,7 +555,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "CORNERED_FIGHTER", "EATS", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -569,7 +569,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "PET_WONT_FOLLOW", "EATS", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -583,7 +583,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "CAN_BE_CULLED", "EATS", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -597,7 +597,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "PET_WONT_FOLLOW", "MILKABLE", "CAN_BE_CULLED", "EATS", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -611,7 +611,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "KEENNOSE", "CORNERED_FIGHTER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -625,7 +625,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "CORNERED_FIGHTER", "EATS", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -639,7 +639,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "EATS", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -653,7 +653,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "PET_WONT_FOLLOW", "MILKABLE", "CAN_BE_CULLED", "CORNERED_FIGHTER", "EATS", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -667,7 +667,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PATH_AVOID_DANGER", "WARM", "CANPLAY", "CAN_BE_CULLED", "SMALL_HIDER", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -681,7 +681,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "CANPLAY", "PATH_AVOID_DANGER", "WARM", "HIT_AND_RUN", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -695,7 +695,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PET_WONT_FOLLOW", "PET_MOUNTABLE", "PATH_AVOID_DANGER", "WARM", "MILKABLE", "EATS", "COMBAT_MOUNT", "NO_BREED" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	},
@@ -709,7 +709,7 @@
 		"regen_morale": true,
 		"flags": [ "SEES", "HEARS", "SMELLS", "PET_WONT_FOLLOW", "PATH_AVOID_DANGER", "WARM", "NO_BREED", "CAN_BE_CULLED", "EATS" ],
 		"extend": { "species": [ "SFLESH" ] },
-		"delete": { "species": [ "MAMMAL" ] },
+		
 		"fear_triggers": [],
 		"placate_triggers": []
 	}
