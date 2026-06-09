@@ -7,12 +7,12 @@
       "items": [
         ["bn_bio_solar", 10],
         [ "bio_trickle", 10 ],
-        ["afs_bio_linguistic_coprocessor", 8]
+        ["bio_linguistic_coprocessor", 8]
       ]
     }
   },
   {
-    "id": "afs_bionics_power",
+    "id": "bionics_power",
     "type": "item_group",
     "items": [
       ["bio_power_storage_mkII", 2],
@@ -28,8 +28,8 @@
     "extend": {
       "items": [
         ["bn_bio_solar", 15],
-        ["afs_bio_missiles", 10],
-        ["afs_bio_dopamine_stimulators", 10]
+        ["bio_missiles", 10],
+        ["bio_dopamine_stimulators", 10]
       ]
     }
   },
@@ -44,10 +44,10 @@
         ["bio_power_armor_interface_mkII", 5],
         ["bn_bio_solar", 10],
         ["bio_microgen", 5],
-        ["afs_bio_missiles", 10],
-        ["afs_bio_linguistic_coprocessor", 10],
+        ["bio_missiles", 10],
+        ["bio_linguistic_coprocessor", 10],
         ["bio_shock_absorber", 2],
-        ["afs_bio_dopamine_stimulators", 10]
+        ["bio_dopamine_stimulators", 10]
       ]
     }
   },
@@ -176,9 +176,9 @@
       ["bio_shotgun", 10],
       ["bn_bio_solar", 15],
       ["bio_microgen", 3],
-      ["afs_bio_missiles", 10],
+      ["bio_missiles", 10],
       ["bio_shock_absorber", 2],
-      ["afs_bio_dopamine_stimulators", 10]
+      ["bio_dopamine_stimulators", 10]
     ]
   },
   {
@@ -200,7 +200,7 @@
       ["bio_shotgun", 10],
       ["bio_shock", 10],
       ["bio_targeting", 10],
-      ["afs_bio_missiles", 10]
+      ["bio_missiles", 10]
     ]
   },
   {

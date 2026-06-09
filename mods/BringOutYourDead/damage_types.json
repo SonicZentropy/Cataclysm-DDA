@@ -1,13 +1,13 @@
 [
   {
-    "id": "afs_plasma",
+    "id": "plasma",
     "type": "damage_type",
     "magic_color": "pink",
     "name": "plasma",
     "derived_from": [ "heat", 0.4 ]
   },
   {
-    "id": "afs_plasma",
+    "id": "plasma",
     "type": "damage_info_order",
     "info_display": "basic",
     "verb": "plasma",
@@ -18,7 +18,7 @@
     "ablative_info": { "order": 307, "show_type": true }
   },
   {
-    "id": "afs_heat_melee",
+    "id": "heat_melee",
     "type": "damage_type",
     "melee_only": true,
     "physical": true,
@@ -31,7 +31,7 @@
     "immune_flags": { "character": [ "CUT_IMMUNE" ] }
   },
   {
-    "id": "afs_heat_melee",
+    "id": "heat_melee",
     "type": "damage_info_order",
     "info_display": "detailed",
     "verb": { "ctxt": "damage_type", "str": "melting" },
@@ -42,7 +42,7 @@
     "ablative_info": { "order": 200, "show_type": false }
   },
   {
-    "id": "afs_toxin_pierce",
+    "id": "toxin_pierce",
     "type": "damage_type",
     "physical": true,
     "edged": true,
@@ -52,21 +52,21 @@
     "skill": "stabbing",
     "derived_from": [ "stab", 1 ],
     "immune_flags": { "character": [ "STAB_IMMUNE" ] },
-    "ondamage_eocs": [ "AFS_TOXIN_DAMAGE_EFFECTS" ]
+    "ondamage_eocs": [ "TOXIN_DAMAGE_EFFECTS" ]
   },
   {
-    "id": "afs_toxin_bullet",
+    "id": "toxin_bullet",
     "type": "damage_type",
     "physical": true,
     "magic_color": "light_green",
     "name": "toxic ballistic",
     "derived_from": [ "bullet", 1 ],
     "immune_flags": { "character": [ "BULLET_IMMUNE" ] },
-    "ondamage_eocs": [ "AFS_TOXIN_DAMAGE_EFFECTS" ]
+    "ondamage_eocs": [ "TOXIN_DAMAGE_EFFECTS" ]
   },
   {
     "type": "effect_on_condition",
-    "id": "AFS_TOXIN_DAMAGE_EFFECTS",
+    "id": "TOXIN_DAMAGE_EFFECTS",
     "eoc_type": "ACTIVATION",
     "condition": {
       "and": [
@@ -74,10 +74,10 @@
         { "math": [ "_damage_taken", ">", "0" ] }
       ]
     },
-    "effect": [ { "npc_add_effect": "afs_badpoison", "duration": "5 m", "target_part": "torso" } ]
+    "effect": [ { "npc_add_effect": "badpoison", "duration": "5 m", "target_part": "torso" } ]
   },
   {
-    "id": "afs_toxin_pierce",
+    "id": "toxin_pierce",
     "type": "damage_info_order",
     "info_display": "detailed",
     "verb": "toxic piercing",
@@ -88,7 +88,7 @@
     "ablative_info": { "order": 307, "show_type": false }
   },
   {
-    "id": "afs_toxin_bullet",
+    "id": "toxin_bullet",
     "type": "damage_info_order",
     "info_display": "detailed",
     "verb": "shooting",

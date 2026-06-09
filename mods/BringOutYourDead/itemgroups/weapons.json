@@ -73,25 +73,25 @@
     "id": "weapons",
     "type": "item_group",
     "copy-from": "weapons",
-    "extend": { "items": [["afs_titanium_bat", 40]] }
+    "extend": { "items": [["titanium_bat", 40]] }
   },
   {
     "id": "allsporting",
     "type": "item_group",
     "copy-from": "allsporting",
-    "extend": { "items": [["afs_titanium_bat", 40]] }
+    "extend": { "items": [["titanium_bat", 40]] }
   },
   {
     "id": "sports",
     "type": "item_group",
     "copy-from": "sports",
-    "extend": { "items": [["afs_titanium_bat", 40]] }
+    "extend": { "items": [["titanium_bat", 40]] }
   },
   {
     "id": "college_sports",
     "type": "item_group",
     "copy-from": "college_sports",
-    "extend": { "items": [["afs_titanium_bat", 60]] }
+    "extend": { "items": [["titanium_bat", 60]] }
   },
   {
     "type": "item_group",
@@ -108,9 +108,9 @@
     "extend": {
       "items": [
         ["mininuke", 1],
-        ["afs_energy_saber_off", 30],
-        ["afs_hardlight_longbow", 10],
-        ["afs_hydraulic_gauntlet", 10]
+        ["energy_saber_off", 30],
+        ["hardlight_longbow", 10],
+        ["hydraulic_gauntlet", 10]
       ]
     }
   }

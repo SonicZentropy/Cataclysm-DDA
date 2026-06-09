@@ -1,6 +1,6 @@
 [
   {
-    "id": "afs_atomic_smartphone",
+    "id": "atomic_smartphone",
     "type": "ITEM",
     "subtypes": ["TOOL"],
     "name": { "str": "atomic smartphone" },
@@ -19,13 +19,13 @@
     "color": "light_green",
     "use_action": [
       {
-        "target": "afs_atomic_smartphone_flashlight",
+        "target": "atomic_smartphone_flashlight",
         "msg": "You activate the flashlight app.",
         "type": "transform"
       },
       {
         "type": "mp3",
-        "transform": "afs_atomic_smartphone_music",
+        "transform": "atomic_smartphone_music",
         "message": "You put in the earbuds and start listening to music.",
         "activate": true
       },
@@ -56,8 +56,8 @@
     ]
   },
   {
-    "id": "afs_atomic_smartphone_music",
-    "copy-from": "afs_atomic_smartphone",
+    "id": "atomic_smartphone_music",
+    "copy-from": "atomic_smartphone",
     "type": "ITEM",
     "subtypes": ["TOOL"],
     "name": {
@@ -65,14 +65,14 @@
       "str_pl": "atomic smartphones - music"
     },
     "description": "This phone is playing music, steadily raising your morale.  You can't hear anything else while you're listening.",
-    "revert_to": "afs_atomic_smartphone",
+    "revert_to": "atomic_smartphone",
     "use_action": [
       "PORTABLE_GAME",
       "E_FILE_DEVICE",
       "EBOOKSAVE",
       {
         "type": "mp3",
-        "transform": "afs_atomic_smartphone_music",
+        "transform": "atomic_smartphone_music",
         "message": "The phone turns off.",
         "activate": false
       }
@@ -81,21 +81,21 @@
     "extend": { "flags": ["TRADER_AVOID"] }
   },
   {
-    "id": "afs_atomic_smartphone_flashlight",
-    "copy-from": "afs_atomic_smartphone",
+    "id": "atomic_smartphone_flashlight",
+    "copy-from": "atomic_smartphone",
     "type": "ITEM",
     "subtypes": ["TOOL"],
     "name": {
       "str": "atomic smartphone - Flashlight",
       "str_pl": "atomic smartphones - Flashlight"
     },
-    "revert_to": "afs_atomic_smartphone",
+    "revert_to": "atomic_smartphone",
     "use_action": [
       "PORTABLE_GAME",
       "EBOOKSAVE",
       "E_FILE_DEVICE",
       {
-        "target": "afs_atomic_smartphone",
+        "target": "atomic_smartphone",
         "msg": "You deactivate the flashlight app.",
         "menu_text": "Turn off flashlight",
         "type": "transform"
@@ -119,12 +119,12 @@
 				"watertight": true,
 				"rigid": true,
 				"transparent": true,
-				"item_restriction": [ "afs_atomic_smartphone", "afs_atomic_smartphone_flashlight", "afs_atomic_smartphone_music", "smart_phone", "smart_phone_flashlight", "smartphone_music", "smart_phone_locked", "smart_phone_locked_flashlight" ]
+				"item_restriction": [ "atomic_smartphone", "atomic_smartphone_flashlight", "atomic_smartphone_music", "smart_phone", "smart_phone_flashlight", "smartphone_music", "smart_phone_locked", "smart_phone_locked_flashlight" ]
 			}
 		]
 	},
   {
-    "id": "afs_atompot",
+    "id": "atompot",
     "type": "ITEM",
     "subtypes": ["TOOL"],
     "name": { "str": "atompot" },
@@ -140,7 +140,7 @@
     "flags": ["ALLOWS_REMOTE_USE"]
   },
   {
-    "id": "afs_bionic_power_mod",
+    "id": "bionic_power_mod",
     "copy-from": "mod_battery",
     "type": "ITEM",
     "subtypes": ["TOOLMOD"],

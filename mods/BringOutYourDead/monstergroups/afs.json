@@ -1,7 +1,7 @@
 [
   {
     "type": "monstergroup",
-    "id": "AFS_GROUP_AUG_CLINIC",
+    "id": "GROUP_AUG_CLINIC",
     "monsters": [
       { "monster": "mon_broken_cyborg", "weight": 100 },
       { "monster": "mon_zombie_electric", "weight": 450 },

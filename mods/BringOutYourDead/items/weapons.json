@@ -105,7 +105,7 @@
   },
   {
     "type": "ITEM",
-    "id": "afs_titanium_bat",
+    "id": "titanium_bat",
     "copy-from": "bat_metal",
     "looks_like": "bat_metal",
     "name": { "str": "titanium bat" },
@@ -120,7 +120,7 @@
     "weapon_category": ["MACES"]
   },
   {
-    "id": "afs_bionic_rocket",
+    "id": "bionic_rocket",
     "type": "ITEM",
     "subtypes": ["GUN"],
     "name": { "str": "deployed grenade launcher" },
@@ -145,7 +145,7 @@
     "melee_damage": { "bash": 9 }
   },
   {
-    "id": "afs_energy_saber_off",
+    "id": "energy_saber_off",
     "type": "ITEM",
     "subtypes": ["TOOL"],
     "name": { "str": "energy saber" },
@@ -166,7 +166,7 @@
     "use_action": {
       "menu_text": "Activate",
       "type": "transform",
-      "target": "afs_energy_saber_on",
+      "target": "energy_saber_on",
       "msg": "You activate the energy saber, and its bludgeoning surface slowly flattens into an edge as it begins to glow red-hot",
       "need_charges": 1,
       "need_charges_msg": "The energy saber is out of charge."
@@ -192,10 +192,10 @@
     "melee_damage": { "bash": 22 }
   },
   {
-    "id": "afs_energy_saber_on",
+    "id": "energy_saber_on",
     "type": "ITEM",
     "subtypes": ["TOOL"],
-    "copy-from": "afs_energy_saber_off",
+    "copy-from": "energy_saber_off",
     "name": { "str": "energy saber" },
     "description": "An energy saber.  Made from a cylinder of heat activated memory-alloy, the flick of a switch allows it to morph between a less-lethal bludgeon form and a sharpened, super heated blade.  Currently, it is in its lethal configuration, and looks like a sleek sword, humming softly as its blade glows from heat.",
     "weight": "760 g",
@@ -206,17 +206,17 @@
     "turns_per_charge": 4,
     "flags": ["DURABLE_MELEE"],
     "techniques": ["WBLOCK_2"],
-    "revert_to": "afs_energy_saber_off",
+    "revert_to": "energy_saber_off",
     "use_action": {
       "menu_text": "Deactivate",
       "type": "transform",
-      "target": "afs_energy_saber_off",
+      "target": "energy_saber_off",
       "msg": "The blade stops humming, and its edge dissipates into a smooth curve as it cools."
     },
-    "melee_damage": { "bash": 8, "cut": 18, "afs_heat_melee": 35 }
+    "melee_damage": { "bash": 8, "cut": 18, "heat_melee": 35 }
   },
   {
-    "id": "afs_hardlight_longbow",
+    "id": "hardlight_longbow",
     "type": "ITEM",
     "subtypes": ["GUN"],
     "symbol": "(",
@@ -266,7 +266,7 @@
     "melee_damage": { "bash": 8 }
   },
   {
-    "id": "afs_hydraulic_gauntlet",
+    "id": "hydraulic_gauntlet",
     "type": "ITEM",
     "subtypes": ["ARMOR"],
     "name": { "str": "hydraulic gauntlet" },
@@ -286,7 +286,7 @@
       "DURABLE_MELEE",
       "LEAK_DAM"
     ],
-    "techniques": ["BRUTAL", "AFS_PRESSURE_CRUNCH"],
+    "techniques": ["BRUTAL", "PRESSURE_CRUNCH"],
     "armor": [{ "encumbrance": 5, "coverage": 100, "covers": ["hand_r"] }],
     "melee_damage": { "bash": 50 }
   }

@@ -1,7 +1,7 @@
 [
   {
     "type": "mapgen",
-    "om_terrain": [ "afs_augmentation_clinic_n1" ],
+    "om_terrain": [ "augmentation_clinic_n1" ],
     "object": {
       "fill_ter": "t_strconc_floor",
       "rows": [
@@ -64,7 +64,7 @@
   },
   {
     "type": "mapgen",
-    "om_terrain": [ "afs_augmentation_clinic_n2" ],
+    "om_terrain": [ "augmentation_clinic_n2" ],
     "object": {
       "fill_ter": "t_strconc_floor",
       "rows": [
@@ -112,7 +112,7 @@
         "C": { "item": "dresser", "chance": 75 },
         "$": [
           { "item": "bionics", "chance": 70, "repeat": [ 1, 2 ] },
-          { "item": "afs_bionics_power", "repeat": [ 1, 2 ] }
+          { "item": "bionics_power", "repeat": [ 1, 2 ] }
         ],
         "f": { "item": "office", "chance": 90 },
         "d": { "item": "office", "chance": 60 },
@@ -129,7 +129,7 @@
         "H": [
           { "item": "harddrugs", "chance": 60 },
           { "item": "gear_medical", "chance": 60, "repeat": [ 1, 3 ] },
-          { "item": "afs_bionics_power", "repeat": [ 1, 2 ], "chance": 60 },
+          { "item": "bionics_power", "repeat": [ 1, 2 ], "chance": 60 },
           { "item": "drugs_analgesic", "chance": 60, "repeat": [ 1, 3 ] },
           { "item": "drugs_rare", "chance": 60 },
           { "item": "surgery", "chance": 60 }
@@ -140,7 +140,7 @@
   },
   {
     "type": "mapgen",
-    "om_terrain": "afs_augmentation_clinic_n3",
+    "om_terrain": "augmentation_clinic_n3",
     "object": {
       "fill_ter": "t_floor",
       "rows": [
@@ -214,7 +214,7 @@
   },
   {
     "type": "mapgen",
-    "om_terrain": "afs_augmentation_clinic_n4",
+    "om_terrain": "augmentation_clinic_n4",
     "object": {
       "fill_ter": "t_flat_roof",
       "rows": [
