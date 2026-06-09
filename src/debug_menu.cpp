@@ -172,6 +172,7 @@ static const mtype_id mon_generator( "mon_generator" );
 
 static const trait_id trait_ASTHMA( "ASTHMA" );
 static const trait_id trait_DEBUG_BIONICS( "DEBUG_BIONICS" );
+static const trait_id trait_DEBUG_PHASE_MOVEMENT( "DEBUG_PHASE_MOVEMENT" );
 static const trait_id trait_DEBUG_CLAIRVOYANCE( "DEBUG_CLAIRVOYANCE" );
 static const trait_id trait_DEBUG_CLOAK( "DEBUG_CLOAK" );
 static const trait_id trait_DEBUG_HS( "DEBUG_HS" );
@@ -544,7 +545,7 @@ class mission_debug
 
 // Used for quick setup
 static std::vector<trait_id> setup_traits{trait_DEBUG_BIONICS, trait_DEBUG_CLAIRVOYANCE, trait_DEBUG_CLOAK,
-           trait_DEBUG_HS, trait_DEBUG_LIGHT, trait_DEBUG_LS, trait_DEBUG_MANA, trait_DEBUG_MIND_CONTROL,
+           trait_DEBUG_HS, trait_DEBUG_LIGHT, trait_DEBUG_LS, trait_DEBUG_MANA, trait_DEBUG_MIND_CONTROL, trait_DEBUG_PHASE_MOVEMENT,
            trait_DEBUG_NODMG, trait_DEBUG_NOTEMP, trait_DEBUG_STAMINA, trait_DEBUG_SPEED};
 
 static std::string first_word( const std::string &str )
