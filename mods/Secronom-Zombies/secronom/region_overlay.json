@@ -1,0 +1,147 @@
+[
+	{
+		"type": "map_extra_collection",
+		"id": "secro_agricultural",
+		"copy-from": "agricultural",
+		"extend": {
+			"extras": [ [ "mx_secro_flesh_random", 45 ] ]
+		}
+	},
+	{
+		"type": "map_extra_collection",
+		"id": "secro_forest",
+		"copy-from": "forest",
+		"extend": {
+			"extras": [
+				[ "mx_secro_saddler_victims_spawn", 7 ],
+				[ "mx_secro_carrion_spawn", 10 ],
+				[ "mx_secro_flesh_random", 30 ],
+				[ "mx_secro_carrion_massacre_spawn", 3 ],
+				[ "mx_secro_carrion_massacre_smol_spawn", 10 ]
+			]
+		}
+	},
+	{
+		"type": "map_extra_collection",
+		"id": "secro_forest_thick",
+		"copy-from": "forest_thick",
+		"extend": {
+			"extras": [
+				[ "mx_secro_saddler_victims_spawn", 7 ],
+				[ "mx_secro_carrion_spawn", 10 ],
+				[ "mx_secro_flesh_random", 40 ],
+				[ "mx_secro_carrion_massacre_spawn", 5 ],
+				[ "mx_secro_carrion_massacre_smol_spawn", 13 ]
+			]
+		}
+	},
+	{
+		"type": "map_extra_collection",
+		"id": "secro_forest_water",
+		"copy-from": "forest_water",
+		"extend": {
+			"extras": [
+				[ "mx_secro_saddler_victims_spawn", 12 ],
+				[ "mx_secro_carrion_spawn", 15 ],
+				[ "mx_secro_flesh_random", 25 ],
+				[ "mx_secro_carrion_massacre_spawn", 5 ],
+				[ "mx_secro_carrion_massacre_smol_spawn", 12 ]
+			]
+		}
+	},
+	{
+		"type": "map_extra_collection",
+		"id": "secro_road",
+		"copy-from": "road",
+		"extend": {
+			"extras": [
+				[ "mx_secro_ssf_carrier", 66 ],
+				[ "mx_secro_ssb_carrier", 22 ],
+				[ "mx_secro_carrion_massacre_spawn", 25 ],
+				[ "mx_secro_carrion_massacre_smol_spawn", 45 ]
+			]
+		}
+	},
+	{
+		"type": "map_extra_collection",
+		"id": "secro_field",
+		"copy-from": "field",
+		"extend": {
+			"extras": [
+				[ "mx_secro_saddler_victims_spawn", 10 ],
+				[ "mx_secro_flesh_random", 55 ]
+			]
+		}
+	},
+	{
+		"type": "map_extra_collection",
+		"id": "secro_road_nesw_manhole",
+		"copy-from": "road_nesw_manhole",
+		"extend": {
+			"extras": [ [ "mx_secro_flesh_core", 1 ] ]
+		}
+	},
+	{
+		"type": "map_extra_collection",
+		"id": "secro_sewer",
+		"chance": 1,
+		"extras": [ [ "mx_secro_flesh_random", 100 ] ]
+	},
+	{
+		"type": "map_extra_collection",
+		"id": "secro_subway",
+		"copy-from": "subway",
+		"extend": {
+			"extras": [
+				[ "mx_secro_flesh_random", 5 ],
+				[ "mx_secro_saddler_infest_spawn", 8 ]
+			]
+		}
+	},
+	{
+		"type": "map_extra_collection",
+		"id": "secro_build",
+		"copy-from": "build",
+		"extend": {
+			"extras": [
+				[ "mx_secro_fleshbuilding_spawn", 15 ],
+				[ "mx_secro_saddler_infest_spawn", 5 ]
+			]
+		}
+	},
+	{
+		"type": "map_extra_collection",
+		"id": "secro_flesh_extras",
+		"chance": 15,
+		"extras": [
+			[ "mx_flesh_biome_extra_spawn", 555 ],
+			[ "mx_helicopter", 55 ]
+		]
+	},
+	{
+		"type": "region_settings_map_extras",
+		"id": "default",
+		"copy-from": "default",
+		"delete": {
+			"extras": [
+				"agricultural", "forest", "forest_thick", "forest_water",
+				"road", "field", "road_nesw_manhole", "subway", "build"
+			]
+		},
+		"extend": {
+			"extras": [
+				"secro_agricultural",
+				"secro_forest",
+				"secro_forest_thick",
+				"secro_forest_water",
+				"secro_road",
+				"secro_field",
+				"secro_road_nesw_manhole",
+				"secro_sewer",
+				"secro_subway",
+				"secro_build",
+				"secro_flesh_extras"
+			]
+		}
+	}
+]
