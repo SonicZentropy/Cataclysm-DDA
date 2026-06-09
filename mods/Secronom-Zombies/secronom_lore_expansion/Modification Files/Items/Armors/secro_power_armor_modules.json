@@ -21,7 +21,6 @@
       "target": "secro_power_armor_module_core_act",
       "msg": "\"Vessel\" module - <color_light_green>ONLINE",
       "type": "transform",
-      "active": true,
       "menu_text": "Activate \"Core\" module",
       "need_charges": 1,
       "need_charges_msg": "\"Core\" module - <color_yellow>LOW POWER"
@@ -37,7 +36,7 @@
         "item_restriction": [ "secro_power_armor_battery_cell" ]
       }
     ],
-    "flags": [ "WATERPROOF", "OUTER", "STURDY", "POWERARMOR_COMPATIBLE", "NO_UNLOAD" ],
+    "flags": [ "WATERPROOF", "OUTER", "STURDY", "POWERARMOR_COMPATIBLE", "NO_UNLOAD", "SPAWN_ACTIVE" ],
     "armor": [ { "covers": [ "torso" ], "encumbrance": 10, "coverage": 10, "material": [ "superalloy" ], "material_thickness": 1 } ]
   },
   {
@@ -81,12 +80,11 @@
       "target": "secro_power_armor_module_vessel_act",
       "msg": "\"Vessel\" module - <color_light_green>online",
       "type": "transform",
-      "active": true,
       "menu_text": "Activate \"Vessel\" module"
     },
     "tool_ammo": "battery",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 500 } } ],
-    "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "POWERARMOR_COMPATIBLE" ],
+    "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "POWERARMOR_COMPATIBLE", "SPAWN_ACTIVE" ],
     "armor": [ { "covers": [ "torso" ], "encumbrance": 10, "coverage": 10, "material": [ "superalloy" ], "material_thickness": 1 } ]
   },
   {
@@ -151,12 +149,11 @@
       "target": "secro_power_armor_module_electric_act",
       "msg": "\"Shock\" module - <color_light_green>online",
       "type": "transform",
-      "active": true,
       "menu_text": "Activate \"Shock\" module"
     },
     "tool_ammo": "battery",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 500 } } ],
-    "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "POWERARMOR_COMPATIBLE" ],
+    "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "POWERARMOR_COMPATIBLE", "SPAWN_ACTIVE" ],
     "armor": [ { "covers": [ "torso" ], "encumbrance": 10, "coverage": 10, "material": [ "superalloy" ], "material_thickness": 1 } ]
   },
   {
@@ -234,12 +231,11 @@
       "target": "secro_power_armor_module_pulsar_act",
       "msg": "\"Pulsar\" module - <color_light_green>online",
       "type": "transform",
-      "active": true,
       "menu_text": "Activate \"Pulsar\" module"
     },
     "tool_ammo": "battery",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 500 } } ],
-    "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "POWERARMOR_COMPATIBLE" ],
+    "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "POWERARMOR_COMPATIBLE", "SPAWN_ACTIVE" ],
     "armor": [ { "covers": [ "torso" ], "encumbrance": 10, "coverage": 10, "material": [ "superalloy" ], "material_thickness": 1 } ]
   },
   {
@@ -310,12 +306,11 @@
       "target": "secro_power_armor_module_optics_act",
       "msg": "\"Optics\" module - <color_light_green>online",
       "type": "transform",
-      "active": true,
       "menu_text": "Activate \"Optics\" module"
     },
     "tool_ammo": "battery",
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 500 } } ],
-    "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "POWERARMOR_COMPATIBLE" ],
+    "flags": [ "WATERPROOF", "OUTER", "STURDY", "ELECTRIC_IMMUNE", "POWERARMOR_COMPATIBLE", "SPAWN_ACTIVE" ],
     "armor": [ { "covers": [ "torso" ], "encumbrance": 10, "coverage": 10, "material": [ "superalloy" ], "material_thickness": 1 } ]
   },
   {
