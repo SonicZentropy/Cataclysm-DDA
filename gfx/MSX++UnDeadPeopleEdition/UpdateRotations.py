@@ -6,7 +6,10 @@ def fix_json(text):
     return re.sub(r',(\s*[}\]])', r'\1', text)
 
 def swap_fg(fg):
-    if isinstance(fg, list) and len(fg) >= 2 and fg[-1] > fg[1]:
+    if (isinstance(fg, list) and len(fg) >= 2
+            and isinstance(fg[1], (int, float))
+            and isinstance(fg[-1], (int, float))
+            and fg[-1] > fg[1]):
         result = fg[:]
         result[1], result[-1] = result[-1], result[1]
         return result
@@ -26,7 +29,7 @@ if not text.startswith('['):
 data = json.loads(fix_json(text))
 result = process(data)
 
-output = json.dumps(result, indent=2)
+output = json.dumps(result, indent=2, ensure_ascii=False)
 # Strip the outer [] wrapper if we added it
 if not sys.stdin.isatty():
     output = output[1:-1].strip()
