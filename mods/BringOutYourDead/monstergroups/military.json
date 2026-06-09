@@ -7,7 +7,7 @@
 			{ "monster": "mon_zombie_bio_op", "weight": 50, "cost_multiplier": 5 },
 			{ "monster": "mon_tripod", "weight": 5, "cost_multiplier": 0 },
 			{ "monster": "mon_chickenbot", "weight": 50, "cost_multiplier": 0 },
-			{ "monster": "mon_tankbot", "weight": 5, "cost_multiplier": 0 },
+			{ "monster": "mon_tankbot", "weight": 5, "cost_multiplier": 0 }
     ]
   },
 	{
@@ -37,7 +37,7 @@
 		"id": "GROUP_CENTRAL_LAB",
 		"monsters": [
 			{ "monster": "mon_zombie_bio_op", "weight": 20, "cost_multiplier": 50 },
-			{ "monster": "mon_chickenbot", "weight": 1, "cost_multiplier": 50 },
+			{ "monster": "mon_chickenbot", "weight": 3, "cost_multiplier": 50 }
 		]
 	},
 	{
