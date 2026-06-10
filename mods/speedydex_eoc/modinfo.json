@@ -3,12 +3,12 @@
     "type": "MOD_INFO",
     "id": "speedydex_eoc",
     "name": "SpeedyDex but EoC",
-    "authors": [ "Cef" ],
-    "maintainers": [ "Cef" ],
+    "authors": ["Cef"],
+    "maintainers": ["Cef"],
     "description": "Through the power of EoC, your dex shall increases your speed... and also decrease it ;)",
-    "category": "zen",
-    "dependencies": [ "dda" ],
-    "conflicts": [ "speedydex_eoc_no_slowdown" ]
+    "category": "boyd",
+    "dependencies": ["dda"],
+    "conflicts": ["speedydex_eoc_no_slowdown"]
   },
   {
     "type": "effect_on_condition",
@@ -16,7 +16,7 @@
     "recurrence": 1,
     "condition": { "not": { "u_has_trait": "SPEEDYDEX_MUTATION" } },
     "deactivate_condition": { "u_has_trait": "SPEEDYDEX_MUTATION" },
-    "effect": [ { "u_add_trait": "SPEEDYDEX_MUTATION" } ]
+    "effect": [{ "u_add_trait": "SPEEDYDEX_MUTATION" }]
   },
   {
     "type": "mutation",
@@ -33,9 +33,7 @@
           {
             "value": "SPEED",
             "add": {
-              "math": [
-                "(u_val('dexterity') - 8) * 2"
-              ]
+              "math": ["(u_val('dexterity') - 8) * 2"]
             }
           }
         ]

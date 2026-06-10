@@ -1,0 +1,15 @@
+[
+    {
+        "type": "MOD_INFO",
+        "id": "simplified-transport",
+        "name": "compack: Simplified Transport",
+        "authors": [
+            "comportnx"
+        ],
+        "description": "Adds a large crate for transporting furniture items too big for cargo compartments.",
+        "category": "misc",
+        "dependencies": [
+            "dda"
+        ]
+    }
+]

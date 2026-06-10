@@ -2,8 +2,8 @@
   {
     "type": "profession",
     "id": "berserk",
-    "name": "Берсерк",
-    "description": "Ты — громила, выкованная в мясорубке мира, где зомби — лишь повод размять кулаки и огромный меч. Неграмотный, зато с руками, что рубят мертвецов как дрова, ты нацепил проклятую броню, которая пьёт твою кровь быстрее, чем ты успеваешь проливать чужую. Как ты сюда попал? Неясно, но в этом аду сила — твой пропуск в следующий день.",
+    "name": "Berserk",
+    "description": "You are a brute forged in the meat grinder of a world where zombies are just an excuse to flex your fists and a huge sword. Illiterate, but with hands that chop down the dead like firewood, you put on cursed armor that drinks your blood faster than you can spill others'. How did you get here? Unclear, but in this hell, strength is your ticket to tomorrow.",
     "points": 8,
     "traits": [
       "ILLITERATE",
@@ -35,8 +35,8 @@
   {
     "type": "profession",
     "id": "berserk_fan",
-    "name": "Фанат Берсерка",
-    "description": "Ты перечитал все тома 'Берсерка', пока зомби ломились в дверь твоей квартиры, и решил: 'Если Гатс смог, то и я смогу!' Сила? Ну, не совсем, зато у тебя есть самодельная копия его меча и стильный худи с банданой — идеально, чтобы притвориться крутым. В этом апокалипсисе ты фанат с МЕЧТОЙ, а не с шансами, когда нибудь и ты станешь свободным.",
+    "name": "Berserk Fan",
+    "description": "You read every volume of 'Berserk' while zombies broke down your apartment door, and decided: 'If Guts could do it, so can I!' Strength? Well, not exactly, but you have a homemade copy of his sword and a stylish hoodie with a bandana — perfect for pretending to be cool. In this apocalypse, you are a fan with a DREAM, not with chances, that someday you might become free.",
     "points": 4,
     "skills": [
       { "level": 2, "name": "cutting" }

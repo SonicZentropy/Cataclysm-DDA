@@ -2,11 +2,11 @@
   {
     "type": "scenario",
     "id": "berserk_skull_knight_encounter",
-    "name": "(БЕРСЕРК)Встреча с Рыцарем Скелета",
-    "description": "Вы оказываетесь на пустоши, окружённой мраком и обломками древнего замка. Вдалеке слышится тяжёлое дыхание и звон металла — перед вами предстаёт Рыцарь Скелета, воин в доспехах, излучающий тёмную силу. Его магические атаки и конный наскок угрожают вашей жизни. Готовьтесь к эпической битве с этим легендарным существом, полагаясь на свою силу и смекалку в этом разрушенном мире.",
+    "name": "(BERSERK) Encounter with the Skull Knight",
+    "description": "You find yourself on a wasteland surrounded by darkness and debris of an ancient castle. In the distance you hear heavy breathing and the clanging of metal — before you appears the Skull Knight, a warrior in armor radiating dark power. His magical attacks and cavalry charge threaten your life. Prepare for an epic battle with this legendary being, relying on strength and wits in this ruined world.",
     "points": -2,
     "allowed_locs": ["sloc_forest", "sloc_field"],
-    "start_name": "Разрушенная пустошь",
+    "start_name": "Ruined Wasteland",
     "eoc": ["EOC_BERSERK_SKULL_KNIGHT_ENCOUNTER"],
     "flags": ["CHALLENGE", "LONE_START"]
   }

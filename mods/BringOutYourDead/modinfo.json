@@ -3,9 +3,9 @@
     "type": "MOD_INFO",
     "id": "boyd",
     "name": "<color_cyan>Bring Out Your Dead</color>",
-    "authors": [ "SonicZentropy" ],
+    "authors": ["SonicZentropy"],
     "description": "For when you don't hate fun",
-    "category": "zen",
-    "dependencies": [ "dda" ]
+    "category": "BOYD",
+    "dependencies": ["dda"]
   }
 ]

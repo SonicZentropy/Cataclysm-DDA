@@ -1,8 +1,8 @@
 {
   "type": "MONSTER",
   "id": "mon_skull_knight",
-  "name": { "str": "Рыцарь Скелета", "str_pl": "Рыцари Скелета" },
-  "description": "Таинственный воин в доспехах, напоминающих череп, с магической силой и верным конём. Атакует с мрачной решимостью.",
+  "name": { "str": "Skull Knight", "str_pl": "Skull Knights" },
+  "description": "A mysterious warrior in skull-like armor, wielding magical power and a trusty steed. Attacks with grim determination.",
   "default_faction": "nether",
   "bodytype": "humanoid",
   "species": ["NETHER"],

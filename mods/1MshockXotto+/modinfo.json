@@ -3,9 +3,9 @@
     "type": "MOD_INFO",
     "id": "1MSXOttoLayerMod",
     "name": "1 - MSXOtto Tileset Layer Mod",
-    "authors": [ "soniczentropy" ],
+    "authors": ["soniczentropy"],
     "description": "Adds the tiles from Chibi to be used as a mod.",
-    "category": "zen",
-    "dependencies": [ "dda" ]
+    "category": "BOYD",
+    "dependencies": ["dda"]
   }
 ]
