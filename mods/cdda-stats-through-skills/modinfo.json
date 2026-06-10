@@ -6,7 +6,7 @@
     "authors": ["StandingStorm"],
     "maintainers": ["StandingStorm"],
     "description": "Remakes Stats Through Skills using EoCs.",
-    "category": "BOYD",
+    "category": "boyd",
     "dependencies": ["dda"]
   },
   {
