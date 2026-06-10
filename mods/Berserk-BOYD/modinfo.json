@@ -6,6 +6,7 @@
     "authors": ["0985"],
     "description": "Adds content from the legendary anime Berserk. Discover dark beings of the Hand, battle legendary demons, or forge and try out Guts's legendary sword.",
     "version": "1.4",
+    "category": "boyd",
     "dependencies": ["dda"]
   }
 ]

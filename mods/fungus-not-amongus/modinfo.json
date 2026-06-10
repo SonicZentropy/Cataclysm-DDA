@@ -5,7 +5,7 @@
     "name": "compack: Reduced Fungal Radius",
     "authors": ["comportnx"],
     "description": "Keeps fungal creatures closer to their blooms.",
-    "category": "BOYD",
+    "category": "boyd",
     "dependencies": ["dda"]
   },
   {

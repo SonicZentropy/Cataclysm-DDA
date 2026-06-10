@@ -5,7 +5,7 @@
     "name": "Zen Tiles Mod",
     "authors": ["SonicZentropy"],
     "description": "Personal tile additions",
-    "category": "BOYD",
+    "category": "boyd",
     "dependencies": ["dda"]
   }
 ]

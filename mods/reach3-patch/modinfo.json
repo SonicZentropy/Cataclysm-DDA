@@ -5,7 +5,7 @@
     "name": "compack: Reach Patch",
     "authors": ["comportnx"],
     "description": "Re-enables cross-z-level attacks for very long weapons like pikes.",
-    "category": "BOYD",
+    "category": "boyd",
     "dependencies": ["dda"]
   }
 ]

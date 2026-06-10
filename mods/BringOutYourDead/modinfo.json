@@ -5,7 +5,7 @@
     "name": "<color_cyan>Bring Out Your Dead</color>",
     "authors": ["SonicZentropy"],
     "description": "For when you don't hate fun",
-    "category": "BOYD",
+    "category": "boyd",
     "dependencies": ["dda"]
   }
 ]
