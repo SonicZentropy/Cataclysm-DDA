@@ -11,7 +11,7 @@
         "outdoor_only": true
       },
       {
-        "u_message": "Тьма Нечто окружает вас, и монстры появляются из теней!",
+        "u_message": "Darkness surrounds you and monsters emerge from the shadows!",
         "type": "warning",
         "popup": true
       }
@@ -29,7 +29,7 @@
         "outdoor_only": true
       },
       {
-        "u_message": "Из тени появляется Рыцарь Скелета, его доспехи гремят, а аура пугает!",
+        "u_message": "A Skull Knight emerges from the shadows, its armor clanging and aura terrifying!",
         "type": "warning",
         "popup": true
       }

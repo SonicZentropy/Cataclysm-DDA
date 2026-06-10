@@ -1,8 +1,8 @@
 {
   "type": "MONSTER",
   "id": "mon_beast_of_darkness_1",
-  "name": { "str": "Демон Тьмы", "str_pl": "Демоны Тьмы" },
-  "description": "Чёрная теневая сущность с горящими глазами, воплощение тёмной силы брони Берсерка. Она жаждет крови своего носителя.",
+  "name": { "str": "Darkness Demon", "str_pl": "Darkness Demons" },
+  "description": "Black shadowy entity with burning eyes, personification of the Berserk armor's dark power. It thirsts for its wearer's blood.",
   "default_faction": "nether",
   "bodytype": "humanoid",
   "species": ["NETHER"],

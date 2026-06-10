@@ -3,10 +3,10 @@
     "type": "MOD_INFO",
     "id": "Valhalla",
     "name": "Valhalla",
-    "authors": [ "Zentropy" ],
+    "authors": ["Zentropy"],
     "description": "Return of the bikers",
     "version": "DDA version, update 11/1/2025",
-		"category": "zen",
-    "dependencies": [ "dda" ]
+    "category": "BOYD",
+    "dependencies": ["dda"]
   }
 ]

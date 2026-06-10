@@ -1,8 +1,8 @@
 {
   "type": "MONSTER",
   "id": "mon_nosferatu_zodd",
-  "name": { "str": "Носферату Зодд", "str_pl": "Носферату Зодды" },
-  "description": "Огромный демон в доспехах, известный как Носферату Зодд. Этот апостол обладает нечеловеческой силой и жаждой битвы. Его тело покрыто шрамами сражений, а глаза горят огнем войны.",
+  "name": { "str": "Nosferatu Zodd", "str_pl": "Nosferatu Zodds" },
+  "description": "A huge demon in armor, known as Nosferatu Zodd. This apostle possesses inhuman strength and thirst for battle. His body is covered with scars of fights, and his eyes burn with fire.",
   "default_faction": "nether",
   "bodytype": "humanoid",
   "species": ["NETHER"],

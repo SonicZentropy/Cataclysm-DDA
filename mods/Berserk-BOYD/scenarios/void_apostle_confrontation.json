@@ -2,11 +2,11 @@
   {
     "type": "scenario",
     "id": "berserk_void_apostle_confrontation",
-    "name": "(БЕРСЕРК)Противостояние Апостолу Войду",
-    "description": "Вы стоите в тёмном, искажённом измерении, где воздух дрожит от психической энергии. Перед вами появляется Апостол Войд — существо с открытым мозгом, чья сила манипулирует реальностью. Его взгляд проникает в душу, а аура подавляет волю. Готовьтесь к битве с этим демоническим лидером, полагаясь на стойкость и хитрость в этом кошмарном мире.",
+    "name": "(BERSERK) Confrontation with the Void Apostle",
+    "description": "You stand in a dark, distorted dimension where the air trembles with psychic energy. Before you appears the Void Apostle — a creature with an exposed brain whose power manipulates reality. Its gaze penetrates the soul, and its aura suppresses the will. Prepare for battle with this demonic leader, relying on endurance and cunning in this nightmarish world.",
     "points": -2,
     "allowed_locs": ["sloc_forest", "sloc_field"],
-    "start_name": "Искажённое измерение",
+    "start_name": "Distorted Dimension",
     "eoc": ["EOC_BERSERK_VOID_APOSTLE_CONFRONTATION"],
     "flags": ["CHALLENGE", "LONE_START"]
   }
