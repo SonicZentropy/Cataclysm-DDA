@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cards_enchanted_suits_pristine_low",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "cards_enchanted_hearts_pristine_low", "prob": 8 },
+      { "group": "cards_enchanted_diamonds_pristine_low", "prob": 8 },
+      { "group": "cards_enchanted_clubs_pristine_low", "prob": 8 },
+      { "group": "cards_enchanted_spades_pristine_low", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_suits_pristine_mid",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "cards_enchanted_hearts_pristine_mid", "prob": 8 },
+      { "group": "cards_enchanted_diamonds_pristine_mid", "prob": 8 },
+      { "group": "cards_enchanted_clubs_pristine_mid", "prob": 8 },
+      { "group": "cards_enchanted_spades_pristine_mid", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_suits_pristine_high",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "cards_enchanted_hearts_pristine_high", "prob": 8 },
+      { "group": "cards_enchanted_diamonds_pristine_high", "prob": 8 },
+      { "group": "cards_enchanted_clubs_pristine_high", "prob": 8 },
+      { "group": "cards_enchanted_spades_pristine_high", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_suits_pristine_any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "cards_enchanted_hearts_pristine_any", "prob": 8 },
+      { "group": "cards_enchanted_diamonds_pristine_any", "prob": 8 },
+      { "group": "cards_enchanted_clubs_pristine_any", "prob": 8 },
+      { "group": "cards_enchanted_spades_pristine_any", "prob": 8 }
+    ]
+  }
+]

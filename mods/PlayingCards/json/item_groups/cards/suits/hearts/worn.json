@@ -1,0 +1,60 @@
+[
+  {
+    "id": "cards_enchanted_hearts_worn_low",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_hearts_ace_worn", "prob": 8 },
+      { "item": "card_hearts_2_worn", "prob": 8 },
+      { "item": "card_hearts_3_worn", "prob": 8 },
+      { "item": "card_hearts_4_worn", "prob": 8 },
+      { "item": "card_hearts_5_worn", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_hearts_worn_mid",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_hearts_6_worn", "prob": 8 },
+      { "item": "card_hearts_7_worn", "prob": 8 },
+      { "item": "card_hearts_8_worn", "prob": 8 },
+      { "item": "card_hearts_9_worn", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_hearts_worn_high",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_hearts_10_worn", "prob": 8 },
+      { "item": "card_hearts_jack_worn", "prob": 8 },
+      { "item": "card_hearts_queen_worn", "prob": 8 },
+      { "item": "card_hearts_king_worn", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_hearts_worn_any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_hearts_ace_worn", "prob": 8 },
+      { "item": "card_hearts_2_worn", "prob": 8 },
+      { "item": "card_hearts_3_worn", "prob": 8 },
+      { "item": "card_hearts_4_worn", "prob": 8 },
+      { "item": "card_hearts_5_worn", "prob": 8 },
+      { "item": "card_hearts_6_worn", "prob": 8 },
+      { "item": "card_hearts_7_worn", "prob": 8 },
+      { "item": "card_hearts_8_worn", "prob": 8 },
+      { "item": "card_hearts_9_worn", "prob": 8 },
+      { "item": "card_hearts_10_worn", "prob": 8 },
+      { "item": "card_hearts_jack_worn", "prob": 8 },
+      { "item": "card_hearts_queen_worn", "prob": 8 },
+      { "item": "card_hearts_king_worn", "prob": 8 }
+    ]
+  }
+]

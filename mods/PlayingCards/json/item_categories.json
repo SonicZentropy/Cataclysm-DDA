@@ -1,0 +1,12 @@
+[
+  {
+    "id": "cards",
+    "type": "ITEM_CATEGORY",
+
+    "name_header": { "str": "Cards" },
+    "name_noun": { "str_sp": "cards", "ctxt": "item_category" },
+
+    "//sort_rank": "same level as Books",
+    "sort_rank": -15
+  }
+]

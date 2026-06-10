@@ -1,0 +1,20 @@
+[
+  {
+    "id": "bugout_extras",
+    "copy-from": "bugout_extras",
+    "type": "item_group",
+
+    "extend": {
+      "items": [{ "group": "cards_enchanted_suits_worn_any", "prob": 1 }]
+    }
+  },
+  {
+    "id": "bugout_memento",
+    "copy-from": "bugout_memento",
+    "type": "item_group",
+
+    "extend": {
+      "items": [{ "group": "cards_enchanted_suits_worn_any", "prob": 1 }]
+    }
+  }
+]

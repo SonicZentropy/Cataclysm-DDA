@@ -1,0 +1,60 @@
+[
+  {
+    "id": "cards_enchanted_clubs_pristine_low",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_clubs_ace", "prob": 8 },
+      { "item": "card_clubs_2", "prob": 8 },
+      { "item": "card_clubs_3", "prob": 8 },
+      { "item": "card_clubs_4", "prob": 8 },
+      { "item": "card_clubs_5", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_clubs_pristine_mid",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_clubs_6", "prob": 8 },
+      { "item": "card_clubs_7", "prob": 8 },
+      { "item": "card_clubs_8", "prob": 8 },
+      { "item": "card_clubs_9", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_clubs_pristine_high",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_clubs_10", "prob": 8 },
+      { "item": "card_clubs_jack", "prob": 8 },
+      { "item": "card_clubs_queen", "prob": 8 },
+      { "item": "card_clubs_king", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_clubs_pristine_any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_clubs_ace", "prob": 8 },
+      { "item": "card_clubs_2", "prob": 8 },
+      { "item": "card_clubs_3", "prob": 8 },
+      { "item": "card_clubs_4", "prob": 8 },
+      { "item": "card_clubs_5", "prob": 8 },
+      { "item": "card_clubs_6", "prob": 8 },
+      { "item": "card_clubs_7", "prob": 8 },
+      { "item": "card_clubs_8", "prob": 8 },
+      { "item": "card_clubs_9", "prob": 8 },
+      { "item": "card_clubs_10", "prob": 8 },
+      { "item": "card_clubs_jack", "prob": 8 },
+      { "item": "card_clubs_queen", "prob": 8 },
+      { "item": "card_clubs_king", "prob": 8 }
+    ]
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "SUS_tailoring_bookcase",
+    "copy-from": "SUS_tailoring_bookcase",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [{ "group": "cards_enchanted_spades_worn_mid", "prob": 1 }]
+    }
+  },
+  {
+    "id": "SUS_engineering_bookcase",
+    "copy-from": "SUS_engineering_bookcase",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [{ "group": "cards_enchanted_clubs_worn_any", "prob": 1 }]
+    }
+  },
+  {
+    "id": "SUS_crafts_bookcase",
+    "copy-from": "SUS_crafts_bookcase",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [{ "group": "cards_enchanted_clubs_worn_low", "prob": 1 }]
+    }
+  },
+  {
+    "id": "SUS_historical_manufacturing_bookcase",
+    "copy-from": "SUS_historical_manufacturing_bookcase",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [{ "group": "cards_enchanted_clubs_worn_mid", "prob": 1 }]
+    }
+  },
+  {
+    "id": "SUS_electronics_bookcase",
+    "copy-from": "SUS_electronics_bookcase",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [{ "group": "cards_enchanted_clubs_worn_any", "prob": 1 }]
+    }
+  },
+  {
+    "id": "SUS_computers_bookcase",
+    "copy-from": "SUS_computers_bookcase",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [{ "group": "cards_enchanted_spades_worn_low", "prob": 1 }]
+    }
+  },
+  {
+    "id": "SUS_chemistry_bookcase",
+    "copy-from": "SUS_chemistry_bookcase",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [{ "group": "cards_enchanted_clubs_worn_any", "prob": 1 }]
+    }
+  },
+  {
+    "id": "SUS_cooking_bookcase",
+    "copy-from": "SUS_cooking_bookcase",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [{ "group": "cards_enchanted_hearts_worn_any", "prob": 1 }]
+    }
+  },
+  {
+    "id": "SUS_medicine_bookcase",
+    "copy-from": "SUS_medicine_bookcase",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [{ "group": "cards_enchanted_hearts_worn_any", "prob": 1 }]
+    }
+  },
+  {
+    "id": "SUS_business_bookcase",
+    "copy-from": "SUS_business_bookcase",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [{ "group": "cards_enchanted_diamonds_worn_any", "prob": 1 }]
+    }
+  },
+  {
+    "id": "SUS_bushcraft_bookcase",
+    "copy-from": "SUS_bushcraft_bookcase",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [{ "group": "cards_enchanted_spades_worn_any", "prob": 1 }]
+    }
+  },
+  {
+    "id": "SUS_book_sports",
+    "copy-from": "SUS_book_sports",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "extend": {
+      "entries": [{ "group": "cards_enchanted_hearts_worn_low", "prob": 1 }]
+    }
+  }
+]

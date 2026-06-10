@@ -1,0 +1,60 @@
+[
+  {
+    "id": "cards_enchanted_clubs_worn_low",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_clubs_ace_worn", "prob": 8 },
+      { "item": "card_clubs_2_worn", "prob": 8 },
+      { "item": "card_clubs_3_worn", "prob": 8 },
+      { "item": "card_clubs_4_worn", "prob": 8 },
+      { "item": "card_clubs_5_worn", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_clubs_worn_mid",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_clubs_6_worn", "prob": 8 },
+      { "item": "card_clubs_7_worn", "prob": 8 },
+      { "item": "card_clubs_8_worn", "prob": 8 },
+      { "item": "card_clubs_9_worn", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_clubs_worn_high",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_clubs_10_worn", "prob": 8 },
+      { "item": "card_clubs_jack_worn", "prob": 8 },
+      { "item": "card_clubs_queen_worn", "prob": 8 },
+      { "item": "card_clubs_king_worn", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_clubs_worn_any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_clubs_ace_worn", "prob": 8 },
+      { "item": "card_clubs_2_worn", "prob": 8 },
+      { "item": "card_clubs_3_worn", "prob": 8 },
+      { "item": "card_clubs_4_worn", "prob": 8 },
+      { "item": "card_clubs_5_worn", "prob": 8 },
+      { "item": "card_clubs_6_worn", "prob": 8 },
+      { "item": "card_clubs_7_worn", "prob": 8 },
+      { "item": "card_clubs_8_worn", "prob": 8 },
+      { "item": "card_clubs_9_worn", "prob": 8 },
+      { "item": "card_clubs_10_worn", "prob": 8 },
+      { "item": "card_clubs_jack_worn", "prob": 8 },
+      { "item": "card_clubs_queen_worn", "prob": 8 },
+      { "item": "card_clubs_king_worn", "prob": 8 }
+    ]
+  }
+]

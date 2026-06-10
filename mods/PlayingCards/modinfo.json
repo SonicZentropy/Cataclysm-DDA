@@ -1,0 +1,15 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "playing_cards",
+
+    "name": "Playing Cards",
+    "description": "Adds enchanted playing cards that give bonuses when collected",
+
+    "authors": ["Hyperseeker"],
+
+    "category": "items",
+
+    "dependencies": ["dda"]
+  }
+]

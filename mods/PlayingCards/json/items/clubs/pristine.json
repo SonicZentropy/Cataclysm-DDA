@@ -1,0 +1,197 @@
+[
+  {
+    "id": "card_clubs_2",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♣</color> 2 of clubs",
+      "str_pl": "of <color_blue>♣</color> 2s of clubs"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a head struck by a simplistic depiction of a lightning, with an arrow pointing down in a corner next to the scene.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_PAIN_REMOVAL" }]
+  },
+  {
+    "id": "card_clubs_3",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♣</color> 3 of clubs",
+      "str_pl": "of <color_blue>♣</color> 3s of clubs"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a pillow with \"zZz\" over it and two pluses next to it in a corner.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_EASE_OF_SLEEP" }]
+  },
+  {
+    "id": "card_clubs_4",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♣</color> 4 of clubs",
+      "str_pl": "of <color_blue>♣</color> 4s of clubs"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a head with a large arrow pointing down laid over it, with a shield in a corner next to the scene.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_SKILL_RUST" }]
+  },
+  {
+    "id": "card_clubs_5",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♣</color> 5 of clubs",
+      "str_pl": "of <color_blue>♣</color> 5s of clubs"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a head with an open book laid over it, with a magnifying glass in a corner next to the scene.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_LEARNING_FOCUS" }]
+  },
+  {
+    "id": "card_clubs_6",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♣</color> 6 of clubs",
+      "str_pl": "of <color_blue>♣</color> 6s of clubs"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a head with an open book laid over it, with an arrow pointing up in a corner next to the scene.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_READING_EXP" }]
+  },
+  {
+    "id": "card_clubs_7",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♣</color> 7 of clubs",
+      "str_pl": "of <color_blue>♣</color> 7s of clubs"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a picture of the lower half of a head, with a focus on the lips; a fist and a feather framing the head from the sides.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_CHARISMA" }]
+  },
+  {
+    "id": "card_clubs_8",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♣</color> 8 of clubs",
+      "str_pl": "of <color_blue>♣</color> 8s of clubs"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a muscle cuirass with a knife laid over it.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_EXTRA_ARMOR_CUT" }]
+  },
+  {
+    "id": "card_clubs_9",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♣</color> 9 of clubs",
+      "str_pl": "of <color_blue>♣</color> 9s of clubs"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a muscle cuirass with a large droplet laid over it.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_EXTRA_ARMOR_ACID" }]
+  },
+  {
+    "id": "card_clubs_10",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♣</color> 10 of clubs",
+      "str_pl": "of <color_blue>♣</color> 10s of clubs"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a picture of the lower half of a head, with a focus on the lips; a handshake is below the chin.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_PERSUASION" }]
+  },
+  {
+    "id": "card_clubs_jack",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♣</color> jack of clubs",
+      "str_pl": "of <color_blue>♣</color> jacks of clubs"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of three humans; the one on the left is holding an assault rifle; the one on the right is holding a knife and charging left; and the one in the middle facing the knife wielder, with a shield behind their back, from where the bullets are coming.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_FRIENDLY_FIRE" }]
+  },
+  {
+    "id": "card_clubs_queen",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♣</color> queen of clubs",
+      "str_pl": "of <color_blue>♣</color> queens of clubs"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a muscle cuirass with a simplified bolt of lightning laid over it.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_EXTRA_ARMOR_ELECTRIC" }]
+  },
+  {
+    "id": "card_clubs_king",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♣</color> king of clubs",
+      "str_pl": "of <color_blue>♣</color> kings of clubs"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the 4d back.  Instead of the suits in the center of the face, there's a pictogram of a heart with a shield next to it.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_HEALTH" }]
+  },
+  {
+    "id": "card_clubs_ace",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♣</color> ace of clubs",
+      "str_pl": "of <color_blue>♣</color> aces of clubs"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suit or the capital A in the center of the face, there's a pictogram of a human brain.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_INTELLIGENCE" }]
+  }
+]
