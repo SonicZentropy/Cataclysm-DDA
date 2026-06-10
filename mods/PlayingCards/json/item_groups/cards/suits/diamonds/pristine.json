@@ -1,0 +1,60 @@
+[
+  {
+    "id": "cards_enchanted_diamonds_pristine_low",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_diamonds_ace", "prob": 8 },
+      { "item": "card_diamonds_2", "prob": 8 },
+      { "item": "card_diamonds_3", "prob": 8 },
+      { "item": "card_diamonds_4", "prob": 8 },
+      { "item": "card_diamonds_5", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_diamonds_pristine_mid",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_diamonds_6", "prob": 8 },
+      { "item": "card_diamonds_7", "prob": 8 },
+      { "item": "card_diamonds_8", "prob": 8 },
+      { "item": "card_diamonds_9", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_diamonds_pristine_high",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_diamonds_10", "prob": 8 },
+      { "item": "card_diamonds_jack", "prob": 8 },
+      { "item": "card_diamonds_queen", "prob": 8 },
+      { "item": "card_diamonds_king", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_diamonds_pristine_any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_diamonds_ace", "prob": 8 },
+      { "item": "card_diamonds_2", "prob": 8 },
+      { "item": "card_diamonds_3", "prob": 8 },
+      { "item": "card_diamonds_4", "prob": 8 },
+      { "item": "card_diamonds_5", "prob": 8 },
+      { "item": "card_diamonds_6", "prob": 8 },
+      { "item": "card_diamonds_7", "prob": 8 },
+      { "item": "card_diamonds_8", "prob": 8 },
+      { "item": "card_diamonds_9", "prob": 8 },
+      { "item": "card_diamonds_10", "prob": 8 },
+      { "item": "card_diamonds_jack", "prob": 8 },
+      { "item": "card_diamonds_queen", "prob": 8 },
+      { "item": "card_diamonds_king", "prob": 8 }
+    ]
+  }
+]

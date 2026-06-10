@@ -1,0 +1,196 @@
+[
+  {
+    "id": "CARD_ENCHANTMENT_COMBAT_CATCHUP",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "COMBAT_CATCHUP", "multiply": 0.66 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_EXTRA_ARMOR_BULLET",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "incoming_damage_mod": [{ "type": "bullet", "add": -10 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_SIGHT_ELECTRONIC",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "special_vision": [
+      {
+        "condition": { "npc_has_flag": "ELECTRONIC" },
+        "distance": 14,
+        "descriptions": [
+          {
+            "id": "electronic_creature_sense",
+            "symbol": "?",
+            "color": "c_cyan",
+            "text": "You sense an electronic presence here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_ATTACK_NOISE",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "ATTACK_NOISE", "multiply": -0.1 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_PAIN_REDUCTION",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "PAIN", "multiply": -0.2 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_SIGHT_NETHER",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "special_vision": [
+      {
+        "condition": { "npc_has_flag": "NETHER" },
+        "distance": 14,
+        "descriptions": [
+          {
+            "id": "nether_creature_sense",
+            "symbol": "?",
+            "color": "c_cyan",
+            "text": "You sense a nether presence here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_HUNGER",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "HUNGER", "multiply": -0.15 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_SIGHT_MINDS",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "special_vision": [
+      {
+        "condition": {
+          "and": [
+            {
+              "or": [
+                {
+                  "and": [
+                    { "not": { "npc_has_species": "PSI_NULL" } },
+                    { "npc_has_flag": "HAS_MIND" }
+                  ]
+                },
+                {
+                  "and": [
+                    { "not": { "npc_has_species": "PSI_NULL" } },
+                    { "not": { "npc_has_species": "ZOMBIE" } },
+                    { "npc_has_flag": "HUMAN" }
+                  ]
+                },
+                "npc_is_npc"
+              ]
+            },
+            { "not": { "npc_has_effect": "eff_monster_immune_to_telepathy" } },
+            { "not": { "npc_has_flag": "TEEP_IMMUNE" } }
+          ]
+        },
+        "distance": 14,
+        "descriptions": [
+          {
+            "id": "sense_minds",
+            "symbol": "@",
+            "color": "c_white",
+            "text": "You sense something sapient here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_RESISTANCE_COLD",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "incoming_damage_mod": [{ "type": "cold", "add": -10 }],
+    "values": [{ "value": "CLIMATE_CONTROL_HEAT", "add": 10 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_RESISTANCE_HEAT",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "incoming_damage_mod": [{ "type": "heat", "add": -10 }],
+
+    "values": [{ "value": "CLIMATE_CONTROL_CHILL", "add": 10 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_THIRST",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "THIRST", "multiply": -0.15 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_SIGHT_MOTION",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "special_vision": [
+      {
+        "distance": 14,
+        "descriptions": [
+          {
+            "id": "moving_creature",
+            "symbol": "?",
+            "color": "c_white",
+            "text": "You sense something moving here."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_PERCEPTION",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "PERCEPTION", "add": 2 }]
+  }
+]

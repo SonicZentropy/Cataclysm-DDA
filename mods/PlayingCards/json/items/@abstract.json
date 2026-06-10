@@ -1,0 +1,62 @@
+[
+  {
+    "abstract": "card_playing_enchanted",
+    "type": "ITEM",
+    "category": "other",
+
+    "//sources": [
+      [
+        "https://automaticpoker.com/lifestyle/playing-card-dimensions-by-game-size-and-weight/",
+        "dimensions",
+        "weight reference (g/m2)"
+      ]
+    ],
+
+    "name": {
+      "str": "enchanted playing card"
+    },
+
+    "//weight": "5667.52 mm2 [area of the card] × 310 g/m2 = 1.75693 g ≈ 1757 mg",
+    "weight": "1757 mg",
+    "//dimensions": {
+      "length": "0.1775 mm",
+      "width": "64 mm",
+      "height": "89 mm",
+      "raw": "1.01 ml",
+      "trim": 0.005,
+      "notes": [
+        "trim for the volume of rounded corners",
+        "volume of the 4 rounded corners is calculated as 4 × (1/4 × π × 3^2) mm2 × 0.2 mm [thickness] = 5.65 mm3"
+      ]
+    },
+    "volume": "1 ml",
+    "longest_side": "89 mm",
+
+    "material": ["cardboard"],
+
+    "symbol": "▮",
+    "color": "red",
+    "looks_like": "deck_of_cards",
+
+    "flags": ["NO_REPAIR", "FRAGILE_MELEE"],
+
+    "price": "1 cent",
+    "//price_postapoc": [
+      "high price as a point of temptation to the player",
+      "plus, it's literal magic"
+    ],
+    "price_postapoc": "10 USD"
+  },
+  {
+    "abstract": "card_playing_enchanted_blue",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "category": "other",
+
+    "name": {
+      "str": "enchanted playing card (blue)"
+    },
+
+    "color": "blue"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "id": "SUS_gunstore_gear",
+  "copy-from": "SUS_gunstore_gear",
+  "type": "item_group",
+  "subtype": "distribution",
+
+  "extend": {
+    "entries": [
+      {
+        "distribution": [
+          { "group": "cards_enchanted_hearts_pristine_mid", "prob": 200 },
+          { "group": "cards_enchanted_hearts_pristine_high", "prob": 200 },
+          { "group": "cards_enchanted_diamonds_pristine_mid", "prob": 200 },
+          { "group": "cards_enchanted_diamonds_pristine_high", "prob": 200 },
+          { "group": "cards_enchanted_spades_pristine_mid", "prob": 200 },
+          { "group": "cards_enchanted_spades_pristine_high", "prob": 200 }
+        ],
+        "prob": 200
+      }
+    ]
+  }
+}

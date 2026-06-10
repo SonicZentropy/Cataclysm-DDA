@@ -1,0 +1,105 @@
+[
+  {
+    "id": "SUS_junk_drawer",
+    "copy-from": "SUS_junk_drawer",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [
+        {
+          "distribution": [
+            { "group": "cards_enchanted_suits_worn_low", "prob": 4 },
+            { "group": "cards_enchanted_suits_worn_mid", "prob": 2 },
+            { "group": "cards_enchanted_suits_pristine_low", "prob": 1 }
+          ],
+          "prob": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "SUS_junk_drawer_messy",
+    "copy-from": "SUS_junk_drawer_messy",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [
+        {
+          "distribution": [
+            { "group": "cards_enchanted_suits_worn_low", "prob": 2 },
+            { "group": "cards_enchanted_suits_worn_mid", "prob": 1 }
+          ],
+          "prob": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "SUS_junk_drawer_artsy",
+    "copy-from": "SUS_junk_drawer_artsy",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [
+        {
+          "distribution": [
+            { "group": "cards_enchanted_suits_worn_low", "prob": 4 },
+            { "group": "cards_enchanted_suits_worn_mid", "prob": 3 },
+            { "group": "cards_enchanted_suits_pristine_low", "prob": 2 },
+            { "group": "cards_enchanted_suits_pristine_mid", "prob": 1 }
+          ],
+          "prob": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "SUS_spice_collection",
+    "copy-from": "SUS_spice_collection",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [
+        {
+          "distribution": [
+            { "group": "cards_enchanted_suits_worn_low", "prob": 2 },
+            { "group": "cards_enchanted_suits_pristine_low", "prob": 1 }
+          ],
+          "prob": 1
+        }
+      ]
+    }
+  },
+  {
+    "id": "SUS_bathroom_cabinet",
+    "copy-from": "SUS_bathroom_cabinet",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [{ "group": "cards_enchanted_suits_pristine_any", "prob": 1 }]
+    }
+  },
+  {
+    "id": "SUS_desks_bedroom_unisex",
+    "copy-from": "SUS_desks_bedroom_unisex",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [
+        {
+          "distribution": [
+            { "group": "cards_enchanted_suits_worn_any", "prob": 1 },
+            { "group": "cards_enchanted_suits_pristine_any", "prob": 1 }
+          ],
+          "prob": 1
+        }
+      ]
+    }
+  }
+]

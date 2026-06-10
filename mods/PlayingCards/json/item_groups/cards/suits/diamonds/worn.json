@@ -1,0 +1,60 @@
+[
+  {
+    "id": "cards_enchanted_diamonds_worn_low",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_diamonds_ace_worn", "prob": 8 },
+      { "item": "card_diamonds_2_worn", "prob": 8 },
+      { "item": "card_diamonds_3_worn", "prob": 8 },
+      { "item": "card_diamonds_4_worn", "prob": 8 },
+      { "item": "card_diamonds_5_worn", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_diamonds_worn_mid",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_diamonds_6_worn", "prob": 8 },
+      { "item": "card_diamonds_7_worn", "prob": 8 },
+      { "item": "card_diamonds_8_worn", "prob": 8 },
+      { "item": "card_diamonds_9_worn", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_diamonds_worn_high",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_diamonds_10_worn", "prob": 8 },
+      { "item": "card_diamonds_jack_worn", "prob": 8 },
+      { "item": "card_diamonds_queen_worn", "prob": 8 },
+      { "item": "card_diamonds_king_worn", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_diamonds_worn_any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "item": "card_diamonds_ace_worn", "prob": 8 },
+      { "item": "card_diamonds_2_worn", "prob": 8 },
+      { "item": "card_diamonds_3_worn", "prob": 8 },
+      { "item": "card_diamonds_4_worn", "prob": 8 },
+      { "item": "card_diamonds_5_worn", "prob": 8 },
+      { "item": "card_diamonds_6_worn", "prob": 8 },
+      { "item": "card_diamonds_7_worn", "prob": 8 },
+      { "item": "card_diamonds_8_worn", "prob": 8 },
+      { "item": "card_diamonds_9_worn", "prob": 8 },
+      { "item": "card_diamonds_10_worn", "prob": 8 },
+      { "item": "card_diamonds_jack_worn", "prob": 8 },
+      { "item": "card_diamonds_queen_worn", "prob": 8 },
+      { "item": "card_diamonds_king_worn", "prob": 8 }
+    ]
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "id": "CARD_ENCHANTMENT_PAIN_REMOVAL_MINOR",
+    "type": "enchantment",
+    "has": "HELD",
+    "condition": "ALWAYS",
+    "values": [{ "value": "PAIN_REMOVE", "multiply": 0.33 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_EASE_OF_SLEEP_MINOR",
+    "type": "enchantment",
+    "has": "HELD",
+    "condition": "ALWAYS",
+    "values": [{ "value": "SLEEPY", "multiply": 0.15 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_SKILL_RUST_MINOR",
+    "type": "enchantment",
+    "has": "HELD",
+    "condition": "ALWAYS",
+    "values": [{ "value": "SKILL_RUST_RESIST", "add": 0.125 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_LEARNING_FOCUS_MINOR",
+    "type": "enchantment",
+    "has": "HELD",
+    "condition": "ALWAYS",
+    "values": [{ "value": "LEARNING_FOCUS", "multiply": 0.1 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_READING_EXP_MINOR",
+    "type": "enchantment",
+    "has": "HELD",
+    "condition": "ALWAYS",
+    "values": [{ "value": "READING_EXP", "multiply": 0.1 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_CHARISMA_MINOR",
+    "type": "enchantment",
+    "has": "HELD",
+    "condition": "ALWAYS",
+    "values": [
+      { "value": "SOCIAL_INTIMIDATE", "multiply": 0.075 },
+      { "value": "SOCIAL_LIE", "multiply": 0.075 }
+    ]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_EXTRA_ARMOR_CUT_MINOR",
+    "type": "enchantment",
+    "has": "HELD",
+    "condition": "ALWAYS",
+    "incoming_damage_mod": [{ "type": "cut", "add": -5 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_EXTRA_ARMOR_ACID_MINOR",
+    "type": "enchantment",
+    "has": "HELD",
+    "condition": "ALWAYS",
+    "incoming_damage_mod": [{ "type": "acid", "add": -5 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_PERSUASION_MINOR",
+    "type": "enchantment",
+    "has": "HELD",
+    "condition": "ALWAYS",
+    "values": [{ "value": "SOCIAL_PERSUADE", "multiply": 0.1 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_FRIENDLY_FIRE_MINOR",
+    "type": "enchantment",
+    "has": "HELD",
+    "condition": "ALWAYS",
+    "values": [{ "value": "AVOID_FRIENDRY_FIRE", "add": 0.49 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_EXTRA_ARMOR_ELECTRIC_MINOR",
+    "type": "enchantment",
+    "has": "HELD",
+    "condition": "ALWAYS",
+    "incoming_damage_mod": [{ "type": "electric", "add": -5 }],
+    "values": [{ "value": "EXTRA_ELEC_PAIN", "add": -5 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_HEALTH_MINOR",
+    "type": "enchantment",
+    "has": "HELD",
+    "condition": "ALWAYS",
+    "values": [
+      { "value": "MOD_HEALTH", "add": 1 },
+      { "value": "MOD_HEALTH_CAP", "add": 10 }
+    ]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_INTELLIGENCE_MINOR",
+    "type": "enchantment",
+    "has": "HELD",
+    "condition": "ALWAYS",
+    "values": [{ "value": "INTELLIGENCE", "add": 1 }]
+  }
+]

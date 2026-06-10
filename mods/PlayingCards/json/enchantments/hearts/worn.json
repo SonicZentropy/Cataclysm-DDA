@@ -1,0 +1,119 @@
+[
+  {
+    "id": "CARD_ENCHANTMENT_CARRY_WEIGHT_MINOR",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "CARRY_WEIGHT", "add": 5000 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_STAMINA_REGEN_MINOR",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "REGEN_STAMINA", "multiply": 0.05 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_SLEEPINESS_REDUCTION_MINOR",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "SLEEPINESS", "multiply": -0.05 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_EXTRA_BLOCKS_MINOR",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "BONUS_BLOCK", "add": 1 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_EXTRA_ARMOR_BASH_MINOR",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "incoming_damage_mod": [{ "type": "bash", "add": -5 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_HP_REGEN_MINOR",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "REGEN_HP", "multiply": 0.05 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_KNOCKBACK_RESISTANCE_MINOR",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "KNOCKBACK_RESIST", "add": 10 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_FALL_DAMAGE_REDUCTION_MINOR",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "FALL_DAMAGE", "multiply": -0.05 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_MAX_HP_BONUS_MINOR",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "MAX_HP", "multiply": 0.05 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_MELEE_DAMAGE_MINOR",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "MELEE_DAMAGE", "multiply": 0.05 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_BLOCK_DAMAGE_MINOR",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "FORCEFIELD", "add": 0.05 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_EXTRA_ARMOR_BIO_MINOR",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "incoming_damage_mod": [{ "type": "biological", "add": -5 }]
+  },
+  {
+    "id": "CARD_ENCHANTMENT_STRENGTH_MINOR",
+    "type": "enchantment",
+
+    "has": "HELD",
+    "condition": "ALWAYS",
+
+    "values": [{ "value": "STRENGTH", "add": 1 }]
+  }
+]

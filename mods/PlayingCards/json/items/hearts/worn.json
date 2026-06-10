@@ -1,0 +1,199 @@
+[
+  {
+    "id": "card_hearts_2_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♥</color> 2 of hearts (worn)",
+      "str_pl": "of <color_red>♥</color> 2s of hearts (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's picture of a closed rucksack, with a small arrow pointing up next to it.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_CARRY_WEIGHT_MINOR" }]
+  },
+  {
+    "id": "card_hearts_3_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♥</color> 3 of hearts (worn)",
+      "str_pl": "of <color_red>♥</color> 3s of hearts (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's picture of a running person, and next to them, a small arrow pointing up and a plus sign.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_MAX_STAMINA_MINOR" }]
+  },
+  {
+    "id": "card_hearts_4_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♥</color> 4 of hearts (worn)",
+      "str_pl": "of <color_red>♥</color> 4s of hearts (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a mostly-charged battery laying horizontally, with \"zZz\" floating over one corner and an arrow pointing up in the opposite.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_SLEEPINESS_REDUCTION_MINOR" }]
+  },
+  {
+    "id": "card_hearts_5_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♥</color> 5 of hearts (worn)",
+      "str_pl": "of <color_red>♥</color> 5s of hearts (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a shield held by a strong, muscular arm.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_EXTRA_BLOCKS_MINOR" }]
+  },
+  {
+    "id": "card_hearts_6_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♥</color> 6 of hearts (worn)",
+      "str_pl": "of <color_red>♥</color> 6s of hearts (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of an ancient muscle cuirass with a mace laid over it.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_EXTRA_ARMOR_BASH_MINOR" }]
+  },
+  {
+    "id": "card_hearts_7_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♥</color> 7 of hearts (worn)",
+      "str_pl": "of <color_red>♥</color> 7s of hearts (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a six-sided Star of Life, with an arrow pointing up in a corner next to it.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_HP_REGEN_MINOR" }]
+  },
+  {
+    "id": "card_hearts_8_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♥</color> 8 of hearts (worn)",
+      "str_pl": "of <color_red>♥</color> 8s of hearts (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a heavy counterweight seemingly growing roots.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_KNOCKBACK_RESISTANCE_MINOR" }]
+  },
+  {
+    "id": "card_hearts_9_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♥</color> 9 of hearts (worn)",
+      "str_pl": "of <color_red>♥</color> 9s of hearts (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a feather bent slightly towards the ground.  <well_worn>",
+
+    "passive_effects": [
+      { "id": "CARD_ENCHANTMENT_FALL_DAMAGE_REDUCTION_MINOR" }
+    ]
+  },
+  {
+    "id": "card_hearts_10_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♥</color> 10 of hearts (worn)",
+      "str_pl": "of <color_red>♥</color> 10s of hearts (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a heart with a large plus next to it.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_MAX_HP_BONUS_MINOR" }]
+  },
+  {
+    "id": "card_hearts_jack_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♥</color> jack of hearts (worn)",
+      "str_pl": "of <color_red>♥</color> jacks of hearts (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a picture of a heavy-looking axe leaving a trail, seemingly moving rapidly.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_MELEE_DAMAGE_MINOR" }]
+  },
+  {
+    "id": "card_hearts_queen_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♥</color> queen of hearts (worn)",
+      "str_pl": "of <color_red>♥</color> queens of hearts (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a shield repelling three thick lines away.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_BLOCK_DAMAGE_MINOR" }]
+  },
+  {
+    "id": "card_hearts_king_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♥</color> king of hearts (worn)",
+      "str_pl": "of <color_red>♥</color> kings of hearts (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a muscle cuirass with a biohazard symbol laid over it.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_EXTRA_ARMOR_BIO_MINOR" }]
+  },
+  {
+    "id": "card_hearts_ace_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♥</color> ace of hearts (worn)",
+      "str_pl": "of <color_red>♥</color> aces of hearts (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suit or the capital A in the center of the face, there's a pictogram of a strong, muscular arm flexing.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_STRENGTH_MINOR" }]
+  }
+]

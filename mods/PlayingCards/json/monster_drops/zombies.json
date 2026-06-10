@@ -1,0 +1,36 @@
+[
+  {
+    "id": "default_zombie_items_pockets",
+    "copy-from": "default_zombie_items_pockets",
+    "type": "item_group",
+    "subtype": "collection",
+
+    "extend": {
+      "entries": [
+        {
+          "distribution": [
+            {
+              "group": "cards_enchanted_suits_worn_any",
+              "container-item": "card_playing_box",
+              "prob": 1
+            },
+            {
+              "group": "cards_enchanted_suits_pristine_any",
+              "container-item": "card_playing_box",
+              "prob": 1
+            },
+            {
+              "group": "cards_enchanted_suits_worn_any",
+              "prob": 1
+            },
+            {
+              "group": "cards_enchanted_suits_pristine_any",
+              "prob": 1
+            }
+          ],
+          "prob": 1
+        }
+      ]
+    }
+  }
+]

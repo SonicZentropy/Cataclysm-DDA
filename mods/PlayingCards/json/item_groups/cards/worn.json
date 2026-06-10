@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cards_enchanted_suits_worn_low",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "cards_enchanted_hearts_worn_low", "prob": 8 },
+      { "group": "cards_enchanted_diamonds_worn_low", "prob": 8 },
+      { "group": "cards_enchanted_clubs_worn_low", "prob": 8 },
+      { "group": "cards_enchanted_spades_worn_low", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_suits_worn_mid",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "cards_enchanted_hearts_worn_mid", "prob": 8 },
+      { "group": "cards_enchanted_diamonds_worn_mid", "prob": 8 },
+      { "group": "cards_enchanted_clubs_worn_mid", "prob": 8 },
+      { "group": "cards_enchanted_spades_worn_mid", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_suits_worn_high",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "cards_enchanted_hearts_worn_high", "prob": 8 },
+      { "group": "cards_enchanted_diamonds_worn_high", "prob": 8 },
+      { "group": "cards_enchanted_clubs_worn_high", "prob": 8 },
+      { "group": "cards_enchanted_spades_worn_high", "prob": 8 }
+    ]
+  },
+  {
+    "id": "cards_enchanted_suits_worn_any",
+    "type": "item_group",
+    "subtype": "distribution",
+
+    "entries": [
+      { "group": "cards_enchanted_hearts_worn_any", "prob": 8 },
+      { "group": "cards_enchanted_diamonds_worn_any", "prob": 8 },
+      { "group": "cards_enchanted_clubs_worn_any", "prob": 8 },
+      { "group": "cards_enchanted_spades_worn_any", "prob": 8 }
+    ]
+  }
+]
