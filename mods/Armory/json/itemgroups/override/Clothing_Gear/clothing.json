@@ -1,0 +1,45 @@
+[
+	{
+		"id": "mil_accessories",
+		"type": "item_group",
+		"subtype": "collection",
+		
+		"entries": [
+			{ "item": "mask_gas", "prob": 10, "charges": [0, 100] },
+			{ "item": "duffelbag", "prob": 15 },
+			{ "item": "goggles_nv", "prob": 1, "charges": [0, 100] },
+			{ "item": "goggles_ir", "prob": 1, "charges": [0, 100] },
+			{ "item": "optical_cloak", "prob": 1 },
+			{ "item": "holo_cloak", "prob": 1, "charges": [0, 1000] },
+			{ "item": "mess_kit", "prob": 9, "charges": [0, 500] },
+			{ "item": "mil_mess_kit", "prob": 1, "charges": [0, 500] },
+			{ "item": "backpack", "prob": 38 },
+			{ "item": "briefcase", "prob": 10 },
+			{ "item": "UPS_off", "prob": 8, "charges": [0, 1000] },
+			{ "item": "chestguard_hard", "prob": 20 },
+			{ "item": "armguard_hard", "prob": 20 },
+			{ "item": "legguard_hard", "prob": 15 },
+			{ "item": "power_armor_frame", "prob": 4 },
+			{ "item": "power_armor_generator", "prob": 4 },
+			{ "item": "elbow_pads", "prob": 40 },
+			{ "item": "knee_pads", "prob": 40 },
+			{ "item": "mask_bal", "prob": 5 },
+			{ "item": "e_tool", "prob": 10 },
+			{ "item": "waterproof_gunmod", "prob": 8 },
+			{ "item": "grapnel", "prob": 3 },
+			{ "item": "glasses_bal", "prob": 30 },
+			{ "item": "sheath", "prob": 10 },
+			{ "item": "bootsheath", "prob": 8 },
+			{ "group": "thigh_strap_with_holster", "prob": 15 },
+			{ "item": "sholster", "prob": 10 },
+			{ "item": "shoulder_holster", "prob": 1 },
+			{ "item": "bandolier_shotgun", "prob": 8 },
+			{ "item": "torso_bandolier_grenade", "prob": 8 },
+			{ "item": "solarpack", "prob": 5 },
+			{ "item": "chem_hexamine", "prob": 3 },
+			{ "item": "esbit_stove", "prob": 6, "charges": [0, 50] },
+			{ "item": "mess_tin", "prob": 4 },
+			{ "group": "full_survival_kit", "prob": 4 }
+		]
+	}
+]
