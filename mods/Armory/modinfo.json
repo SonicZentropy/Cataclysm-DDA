@@ -8,7 +8,7 @@
 
     "authors": ["Hyperseeker"],
 
-    "category": "BOYD",
+    "category": "boyd",
 
     "dependencies": ["dda"]
   }

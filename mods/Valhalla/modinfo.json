@@ -6,7 +6,7 @@
     "authors": ["Zentropy"],
     "description": "Return of the bikers",
     "version": "DDA version, update 11/1/2025",
-    "category": "BOYD",
+    "category": "boyd",
     "dependencies": ["dda"]
   }
 ]

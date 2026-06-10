@@ -7,7 +7,7 @@
     "maintainers": ["Chaosvolt"],
     "description": "The intended successor of my older, obsoleted Tanks and Other Vehicles mod.",
     "version": "DDA version, update 3/24/2025",
-    "category": "BOYD",
+    "category": "boyd",
     "dependencies": ["dda"]
   }
 ]
