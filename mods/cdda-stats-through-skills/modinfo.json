@@ -3,19 +3,23 @@
     "type": "MOD_INFO",
     "id": "stats_through_skills_eoc",
     "name": "Stats Through Skills: EoCified",
-    "authors": [ "StandingStorm" ],
-    "maintainers": [ "StandingStorm" ],
+    "authors": ["StandingStorm"],
+    "maintainers": ["StandingStorm"],
     "description": "Remakes Stats Through Skills using EoCs.",
-    "category": "zen",
-    "dependencies": [ "dda" ]
+    "category": "BOYD",
+    "dependencies": ["dda"]
   },
   {
     "type": "effect_on_condition",
     "id": "EOC_GIVE_ALL_CHARACTERS_STATS_THROUGH_SKILLS",
     "recurrence": 1,
-    "condition": { "not": { "u_has_trait": "STATS_THROUGH_SKILLS_CONTAINER_MUTATION" } },
-    "deactivate_condition": { "u_has_trait": "STATS_THROUGH_SKILLS_CONTAINER_MUTATION" },
-    "effect": [ { "u_add_trait": "STATS_THROUGH_SKILLS_CONTAINER_MUTATION" } ]
+    "condition": {
+      "not": { "u_has_trait": "STATS_THROUGH_SKILLS_CONTAINER_MUTATION" }
+    },
+    "deactivate_condition": {
+      "u_has_trait": "STATS_THROUGH_SKILLS_CONTAINER_MUTATION"
+    },
+    "effect": [{ "u_add_trait": "STATS_THROUGH_SKILLS_CONTAINER_MUTATION" }]
   },
   {
     "type": "mutation",

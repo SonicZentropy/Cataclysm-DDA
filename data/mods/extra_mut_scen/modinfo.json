@@ -3,9 +3,9 @@
     "type": "MOD_INFO",
     "id": "extra_mut_scens",
     "name": "Extra Mutated Scenarios",
-    "authors": [ "Saicchi" ],
+    "authors": ["Saicchi"],
     "description": "Extra scenarios with all possible mutation traits and thresholds.",
-    "category": "zen",
-    "dependencies": [ "dda" ]
+    "category": "boyd",
+    "dependencies": ["dda"]
   }
 ]

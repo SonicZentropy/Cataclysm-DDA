@@ -3,9 +3,9 @@
     "type": "MOD_INFO",
     "id": "ZenTiles",
     "name": "Zen Tiles Mod",
-    "authors": [ "SonicZentropy" ],
+    "authors": ["SonicZentropy"],
     "description": "Personal tile additions",
-    "category": "zen",
-    "dependencies": [ "dda" ]
+    "category": "BOYD",
+    "dependencies": ["dda"]
   }
 ]

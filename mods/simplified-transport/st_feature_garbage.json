@@ -1,0 +1,20 @@
+[
+  {
+    "id": "integrated_trashcan",
+    "copy-from": "integrated_trashcan",
+    "type": "vehicle_part",
+    "flags": ["CARGO", "BOARDABLE", "COVERED", "LOCKABLE_CARGO" ],    
+    "requirements": {
+      "install": { 
+        "skills": [ [ "mechanics", 1 ] ],
+        "time": "25 m",
+        "using": [ [ "drilling_standard", 60 ], [ "vehicle_bolt_install", 1 ] ]
+      },
+      "removal": { 
+        "skills": [ [ "mechanics", 1 ] ],
+        "time": "10 m",
+        "using": [ [ "vehicle_wrench_2", 1 ] ]
+      }
+    }
+  }
+]

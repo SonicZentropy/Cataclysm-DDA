@@ -31,7 +31,7 @@
         "max_radius": 10,
         "outdoor_only": true
       },
-      { "u_message": "Тяжёлые шаги приближаются...", "type": "warning", "popup": true }
+      { "u_message": "Heavy steps are approaching...", "type": "warning", "popup": true }
     ]
   },
   {
@@ -107,7 +107,7 @@
         }
       },
       {
-        "u_message": "Тьма внутри брони оживает и бросается на вас!",
+        "u_message": "Darkness within the armor comes alive and lunges at you!",
         "type": "warning"
       }
     ]
@@ -129,7 +129,7 @@
         }
       },
       {
-        "u_message": "Гриффит Возрождённый появляется в сиянии тёмной силы!",
+        "u_message": "Griffith Reborn appears in a glow of dark power!",
         "type": "warning",
         "popup": true
       }
@@ -147,7 +147,7 @@
         "outdoor_only": true
       },
       {
-        "u_message": "Перед вами предстаёт Гриффит Возрождённый — его крылья сияют, а взгляд полон холодной решимости. Вторая встреча началась!",
+        "u_message": "Before you stands Griffith Reborn — his wings shine and his gaze is full of cold resolve. The second encounter has begun!",
         "type": "warning",
         "popup": true
       }
@@ -165,7 +165,7 @@
         "duration": "60 turns"
       },
       {
-        "u_message": "Яд от плоти Демона Тьмы отравляет вас!",
+        "u_message": "The poison from the Dark Apostle's flesh poisons you!",
         "type": "bad"
       }
     ]

@@ -1,0 +1,49 @@
+# Translation Progress
+
+## Completed
+
+- `modinfo.json` — no Russian strings, skipped
+- `enchantments_berserk.json` — no Russian strings, skipped
+- `item_groups.json` — no Russian strings, skipped
+- `spells.json` — no Russian strings, skipped
+- `monster_weakpoints/zodd_weakpoints.json` — no Russian strings, skipped
+- `professions/professions.json` — no Russian strings, skipped
+- `scenarios/berserk_griffith_confrontation.json` — no Russian strings, skipped
+- `scenarios/berserk_pursuer.json` — no Russian strings, skipped
+- `scenarios/skull_knight_encounter.json` — no Russian strings, skipped
+- `scenarios/void_apostle_confrontation.json` — no Russian strings, skipped
+- `monsterdrops/demon_drops.json` — no Russian strings, skipped
+- `monsterdrops/void_apostle_drops.json` — no Russian strings, skipped
+- `monsterdrops/skull_knight_drops.json` — no Russian strings, skipped
+- `recipes/nosferatu_zodd_sword_recipe.json` — no Russian strings, skipped
+- `recipes/forged_guts_sword_recipe.json` — no Russian strings, skipped
+- `monstergroups/monster_groups.json` — no Russian strings, skipped
+- `effects_on_condition.json` — 5 Russian strings translated to English
+- `monsterdrops/griffith_drops.json` — 2 Russian strings translated to English
+- `monsterdrops/beast_drops.json` — 2 Russian strings translated to English
+- `monster_special_attacks/zodd_attacks.json` — 12 Russian strings translated to English
+- `monster_special_attacks/skull_knight_attacks.json` — 9 Russian strings translated to English
+- `monster_special_attacks/apostle_attacks.json` — 10 Russian strings translated to English
+- `monsters/nosferatu_zodd.json` — 2 Russian strings translated to English
+- `monsters/mon_void_apostle.json` — 2 Russian strings translated to English
+- `monsters/mon_skull_knight.json` — 2 Russian strings translated to English
+- `monsters/griffith_reborn.json` — 2 Russian strings translated to English
+- `monsters/beast_of_darkness_1.json` — 2 Russian strings translated to English
+- `monsters/beast_of_darkness_2.json` — 2 Russian strings translated to English
+- `monsters/beast_of_darkness_3.json` — 2 Russian strings translated to English
+- `monsters/beast_of_darkness_4.json` — 2 Russian strings translated to English
+- `monsters/beast_of_darkness_5.json` — 2 Russian strings translated to English
+- `monsters/beast_of_darkness_6.json` — 2 Russian strings translated to English
+- `items/void_crystal.json` — 2 Russian strings translated to English
+- `items/true_guts_sword.json` — 2 Russian strings translated to English
+- `items/nosferatu_zodd_sword.json` — 2 Russian strings translated to English
+- `items/forged_guts_sword.json` — 2 Russian strings translated to English
+- `items/armor_berserk/berserk_legguards.json` — 2 Russian strings translated to English
+- `items/armor_berserk/berserk_helmet.json` — 2 Russian strings translated to English
+- `items/armor_berserk/berserk_gloves.json` — 2 Russian strings translated to English
+- `items/armor_berserk/berserk_chestplate.json` — 2 Russian strings translated to English
+- `items/armor_berserk/berserk_boots.json` — 2 Russian strings translated to English
+- `items/armor_berserk/berserk_armguards.json` — 2 Russian strings translated to English
+- `effects/void_apostle_eoc.json` — 1 Russian string translated to English
+- `effects/skull_knight_eoc.json` — 2 Russian strings translated to English
+- `effects/berserk_effects.json` — 3 Russian strings translated to English

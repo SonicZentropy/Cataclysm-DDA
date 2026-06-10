@@ -3,11 +3,18 @@
     "type": "MOD_INFO",
     "id": "magiclysm",
     "name": "Magiclysm",
-    "authors": [ "KorGgenT", "GuardianDll", "Aptronym", "LaVeyanFiend", "Maleclypse", "Standing-Storm" ],
-    "maintainers": [ "Maleclypse", "Standing-Storm" ],
+    "authors": [
+      "KorGgenT",
+      "GuardianDll",
+      "Aptronym",
+      "LaVeyanFiend",
+      "Maleclypse",
+      "Standing-Storm"
+    ],
+    "maintainers": ["Maleclypse", "Standing-Storm"],
     "description": "Cataclysm but with magic spells!",
-    "category": "zen",
-    "dependencies": [ "dda" ]
+    "category": "boyd",
+    "dependencies": ["dda"]
   },
   {
     "type": "EXTERNAL_OPTION",
