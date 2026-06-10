@@ -1,0 +1,63 @@
+[
+  {
+    "id": "card_playing_box",
+    "type": "ITEM",
+    "category": "container",
+
+    "//sources": [
+      [
+        "https://aura-print.com/uk/blog/post/how-to-make-a-playing-card-box",
+        "dimensions reference",
+        "weight reference (g/m2)"
+      ]
+    ],
+
+    "name": {
+      "str": "playing card box",
+      "str_pl": "playing card boxes"
+    },
+    "description": "...",
+
+    "//weight": "6006 mm2 [area of the box] × 400 g/m2 [silk w/ laminate] × 2 [ends of the box] × 1.25 [rough area equivalent of all the other sides = 6.006 g ≈ 6 g",
+    "weight": "6 g",
+    "//dimensions": {
+      "length": "9.73 mm",
+      "width": "66 mm",
+      "height": "91 mm",
+      "raw": "54.89 ml",
+      "trim": 0,
+      "notes": [
+        "length (depth) is calculated as 0.1775 mm [thickness of a single card] × 52 = 9.23 mm + 0.25 mm [presumed thickness of a side of the box] × 2 = 9.73 mm"
+      ]
+    },
+    "volume": "55 ml",
+    "longest_side": "91 mm",
+
+    "material": ["cardboard"],
+
+    "symbol": "▯",
+    "color": "red",
+    "looks_like": "deck_of_cards",
+
+    "pocket_data": [
+      {
+        "pocket_type": "CONTAINER",
+
+        "rigid": true,
+
+        "max_contains_weight": "100 g",
+        "//max_contains_volume": ["volume of 52 cards (1 ml × 52)"],
+        "max_contains_volume": "52 ml",
+        "min_item_length": "44 mm",
+        "max_item_length": "89 mm",
+
+        "moves": 260
+      }
+    ],
+
+    "flags": ["NO_REPAIR", "FRAGILE_MELEE"],
+
+    "price": "1 cent",
+    "price_postapoc": "1 cent"
+  }
+]

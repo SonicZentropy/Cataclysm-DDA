@@ -1,0 +1,11 @@
+[
+  {
+    "id": "roof_holdout",
+    "copy-from": "roof_holdout",
+    "type": "item_group",
+
+    "extend": {
+      "items": [{ "group": "cards_enchanted_suits_worn_any", "prob": 1 }]
+    }
+  }
+]

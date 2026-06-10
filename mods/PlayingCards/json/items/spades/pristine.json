@@ -1,0 +1,197 @@
+[
+  {
+    "id": "card_spades_2",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♠</color> 2 of spades",
+      "str_pl": "of <color_blue>♠</color> 2s of spades"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a picture of a soldier mid-strike of their fist at an invisible opponent, and an arrow pointing up next to it in a corner.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_COMBAT_CATCHUP" }]
+  },
+  {
+    "id": "card_spades_3",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♠</color> 3 of spades",
+      "str_pl": "of <color_blue>♠</color> 3s of spades"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there is a pictogram of a head struck by a simplistic depiction of a lightning, with an shield next to the scene.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_PAIN_REDUCTION" }]
+  },
+  {
+    "id": "card_spades_4",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♠</color> 4 of spades",
+      "str_pl": "of <color_blue>♠</color> 4s of spades"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there is a pictogram of a pair of binoculars, and an electronic chip next to it in a corner.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_SIGHT_ELECTRONIC" }]
+  },
+  {
+    "id": "card_spades_5",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♠</color> 5 of spades",
+      "str_pl": "of <color_blue>♠</color> 5s of spades"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there is a picture of a police baton leaving a trail as it arches down and to the right, with a symbol of a speaker emitting little noise next to it in a corner.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_ATTACK_NOISE" }]
+  },
+  {
+    "id": "card_spades_6",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♠</color> 6 of spades",
+      "str_pl": "of <color_blue>♠</color> 6s of spades"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there is a pictogram of a pair of binoculars, and a set of tendrils crawling out of a dark hole next to it in a corner.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_SIGHT_NETHER" }]
+  },
+  {
+    "id": "card_spades_7",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♠</color> 7 of spades",
+      "str_pl": "of <color_blue>♠</color> 7s of spades"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there is a pictogram of a stomach, with an arrow pointing down next to it.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_HUNGER" }]
+  },
+  {
+    "id": "card_spades_8",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♠</color> 8 of spades",
+      "str_pl": "of <color_blue>♠</color> 8s of spades"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there is a picture of a muscle cuirass and a pistol laid over it.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_EXTRA_ARMOR_BULLET" }]
+  },
+  {
+    "id": "card_spades_9",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♠</color> 9 of spades",
+      "str_pl": "of <color_blue>♠</color> 9s of spades"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there is a pictogram of a pair of binoculars, and a brain next to it in a corner.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_SIGHT_MINDS" }]
+  },
+  {
+    "id": "card_spades_10",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♠</color> 10 of spades",
+      "str_pl": "of <color_blue>♠</color> 10s of spades"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there is a picture of a full-body environment suit and a snowflake laid over it.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_RESISTANCE_COLD" }]
+  },
+  {
+    "id": "card_spades_jack",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♠</color> jack of spades",
+      "str_pl": "of <color_blue>♠</color> jacks of spades"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there is a picture of a full-body environment suit and the sun laid over it.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_RESISTANCE_HEAT" }]
+  },
+  {
+    "id": "card_spades_queen",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♠</color> queen of spades",
+      "str_pl": "of <color_blue>♠</color> queens of spades"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there is a pictogram of a water bottle, with an arrow pointing down next to it.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_THIRST" }]
+  },
+  {
+    "id": "card_spades_king",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♠</color> king of spades",
+      "str_pl": "of <color_blue>♠</color> kings of spades"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there is a pictogram of a pair of binoculars, and a humanoid creature leaving a trail next to it in a corner.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_SIGHT_MOTION" }]
+  },
+  {
+    "id": "card_spades_ace",
+    "copy-from": "card_playing_enchanted_blue",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_blue>♠</color> ace of spades",
+      "str_pl": "of <color_blue>♠</color> aces of spades"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suit or the capital A in the center of the face, there's a pictogram of an open eye.",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_PERCEPTION" }]
+  }
+]

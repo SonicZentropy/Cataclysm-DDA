@@ -1,0 +1,197 @@
+[
+  {
+    "id": "card_diamonds_2_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♦</color> 2 of diamonds (worn)",
+      "str_pl": "of <color_red>♦</color> 2s of diamonds (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a picture of person with a backpack walking, and next to it, a double-chevron pointing to the right.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_MOVE_COST_MINOR" }]
+  },
+  {
+    "id": "card_diamonds_3_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♦</color> 3 of diamonds (worn)",
+      "str_pl": "of <color_red>♦</color> 3s of diamonds (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a picture of a target-practice sheet with a very tight group of shots.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_DISPERSION_MINOR" }]
+  },
+  {
+    "id": "card_diamonds_4_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♦</color> 4 of diamonds (worn)",
+      "str_pl": "of <color_red>♦</color> 4s of diamonds (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a picture of a boot about to stop on the invisible ground, and a symbol of a speaker emitting little sound.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_FOOTSTEP_NOISE_MINOR" }]
+  },
+  {
+    "id": "card_diamonds_5_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♦</color> 5 of diamonds (worn)",
+      "str_pl": "of <color_red>♦</color> 5s of diamonds (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a muscle cuirass with a pike laid over it.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_EXTRA_ARMOR_STAB_MINOR" }]
+  },
+  {
+    "id": "card_diamonds_6_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♦</color> 6 of diamonds (worn)",
+      "str_pl": "of <color_red>♦</color> 6s of diamonds (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of an assault rifle leaving a trail as its muzzle rises, and next to it, an arrow pointing down.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_RECOIL_MODIFIER_MINOR" }]
+  },
+  {
+    "id": "card_diamonds_7_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♦</color> 7 of diamonds (worn)",
+      "str_pl": "of <color_red>♦</color> 7s of diamonds (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a picture of a person sprinting, and next to it, a double-chevron pointing right.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_SPEED_BONUS_MINOR" }]
+  },
+  {
+    "id": "card_diamonds_8_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♦</color> 8 of diamonds (worn)",
+      "str_pl": "of <color_red>♦</color> 8s of diamonds (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a picture of a martial fighter with their upper body recoiled backwards, as if in avoidance.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_EXTRA_DODGE_MINOR" }]
+  },
+  {
+    "id": "card_diamonds_9_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♦</color> 9 of diamonds (worn)",
+      "str_pl": "of <color_red>♦</color> 9s of diamonds (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a human upper body, with bladed and blunt weapons flying over their head.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_AVOID_DAMAGE_MINOR" }]
+  },
+  {
+    "id": "card_diamonds_10_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♦</color> 10 of diamonds (worn)",
+      "str_pl": "of <color_red>♦</color> 10s of diamonds (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of battery at a low charge, with an arrow pointing upwards in a corner next to it.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_STAMINA_REGEN_MINOR" }]
+  },
+  {
+    "id": "card_diamonds_jack_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♦</color> jack of diamonds (worn)",
+      "str_pl": "of <color_red>♦</color> jacks of diamonds (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a picture of an assault rifle with two pluses in a corner next to it.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_RANGED_DAMAGE_MINOR" }]
+  },
+  {
+    "id": "card_diamonds_queen_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♦</color> queen of diamonds (worn)",
+      "str_pl": "of <color_red>♦</color> queens of diamonds (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a pictogram of a sword leaving a trail as it moves to the right.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_ATTACK_SPEED_MINOR" }]
+  },
+  {
+    "id": "card_diamonds_king_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♦</color> king of diamonds (worn)",
+      "str_pl": "of <color_red>♦</color> kings of diamonds (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suits in the center of the face, there's a picture of an assault rifle with a pair of binoculars in the corner next to it.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_EXTRA_RANGE_MINOR" }]
+  },
+  {
+    "id": "card_diamonds_ace_worn",
+    "copy-from": "card_playing_enchanted",
+    "type": "ITEM",
+    "subtypes": ["ARTIFACT"],
+    "category": "cards",
+
+    "name": {
+      "str": "<color_red>♦</color> ace of diamonds (worn)",
+      "str_pl": "of <color_red>♦</color> aces of diamonds (worn)"
+    },
+    "description": "A white playing card with an elaborate pattern of white lines on the red back.  Instead of the suit or the capital A in the center of the face, there's a picture of a person mid-back somersault.  <well_worn>",
+
+    "passive_effects": [{ "id": "CARD_ENCHANTMENT_DEXTERITY_MINOR" }]
+  }
+]

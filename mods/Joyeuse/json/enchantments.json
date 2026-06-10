@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ENCH_JOYEUSE",
+    "type": "enchantment",
+
+    "condition": "ALWAYS",
+    "has": "WIELD",
+
+    "melee_damage_bonus": [
+      {
+        "type": "cut",
+        "add": { "math": ["joyeuse_glory / 100"] }
+      },
+      {
+        "type": "bash",
+        "add": { "math": ["joyeuse_glory / 400"] }
+      }
+    ]
+  }
+]
