@@ -1842,8 +1842,6 @@
       { "level": 2, "name": "stabbing" }
     ],
 
-    "traits": ["PROF_ASSASSIN_CONVICT"],
-
     "items": {
       "both": {
         "items": ["striped_shirt", "striped_pants", "sneakers", "socks"],
