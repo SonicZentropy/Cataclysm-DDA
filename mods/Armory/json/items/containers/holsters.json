@@ -2,7 +2,7 @@
 	{
 		"id": "holster_leather_grommets",
 		"type": "ITEM",
-		"subtypes": [ "ARMOR" ],
+		"subtypes": ["ARMOR"],
 		"category": "container",
 		"//sources": [
 			"https://grommetsleathercraft.com/product/gunslinger-holster/"
@@ -10,9 +10,7 @@
 		"//notes": [
 			"while the model is clearly made to fit a particular model of a pistol, we model its permissiveness more loosely based on the photos from source"
 		],
-		"name": {
-			"str": "Grommet's Leathercraft holster"
-		},
+		"name": { "str": "Grommet's Leathercraft holster" },
 		"description": "A leather holster, originally designed for revolvers of around 5″ of barrel length, but able to hold an automatic pistol as well.  Straps onto a belt; usually a leather belt is preferred, for practical or aesthetic reasons.",
 		"//weight": [
 			"estimated as (area of holster × 3) × leather thickness per sq.ft.",
@@ -29,7 +27,7 @@
 		},
 		"volume": "146 ml",
 		"longest_side": "178 mm",
-		"material": [ "leather" ],
+		"material": ["leather"],
 		"material_thickness": 3.2,
 		"symbol": "[",
 		"color": "light_gray",
@@ -61,17 +59,14 @@
 				"moves": 95
 			}
 		],
-		"use_action": {
-			"type": "holster"
-		},
-		"armor": [
-			{ "encumbrance": 0, "coverage": 0, "covers": [ "torso" ] }
-		],
+		"use_action": { "type": "holster" },
+		"armor": [{ "encumbrance": 0, "coverage": 0, "covers": ["torso"] }],
 		"flags": [
 			"CANT_WEAR",
 			"TARDIS",
 			"WATER_FRIENDLY",
 			"BELTED",
+			"BELT_CLIP",
 			"ALLOWS_NATURAL_ATTACKS"
 		],
 		"//price": "price for the suede-lined model",
@@ -81,14 +76,12 @@
 	{
 		"id": "sheath_leather_eds",
 		"type": "ITEM",
-		"subtypes": [ "ARMOR" ],
+		"subtypes": ["ARMOR"],
 		"category": "container",
 		"//sources": [
 			"https://evilduckstudios.com/BUCK-119-Knife-Sheath-Horizontal-Carry-Behind-Back_p_58.html"
 		],
-		"name": {
-			"str": "EDS hunting knife sheath"
-		},
+		"name": { "str": "EDS hunting knife sheath" },
 		"description": "A thick leather sheath for a hunting knife made by Evil Duck Studios.  Worn horizontally on a belt; usually a leather belt is preferred, for practical or aesthetic reasons.",
 		"//weight": [
 			"estimated as (area of sheath × 3) × leather thickness per sq.ft.",
@@ -101,7 +94,7 @@
 			"width": "0.81 in",
 			"height": "2.15 in",
 			"raw": "175.51 ml",
-			"trim": [ 0.05, -0.075 ],
+			"trim": [0.05, -0.075],
 			"notes": [
 				"dimensions acquired relative to those of the Buck 119 hunting knife (used as basis for hunting knife in Core audit)",
 				"length is 102.5% of length of blade",
@@ -114,7 +107,7 @@
 		"volume": "179 ml",
 		"//longest_side": "10.55 in. (overall length of hunting knife) × 80% = 8.44 in. = 214.38 mm",
 		"longest_side": "214 mm",
-		"material": [ "leather" ],
+		"material": ["leather"],
 		"material_thickness": 54.6,
 		"symbol": "[",
 		"color": "light_gray",
@@ -132,20 +125,17 @@
 				"max_contains_volume": "100 ml",
 				"max_item_length": "268 mm",
 				"moves": 90,
-				"flag_restriction": [ "SHEATH_KNIFE" ]
+				"flag_restriction": ["SHEATH_KNIFE"]
 			}
 		],
-		"use_action": {
-			"type": "holster"
-		},
-		"armor": [
-			{ "encumbrance": 0, "coverage": 0, "covers": [ "torso" ] }
-		],
+		"use_action": { "type": "holster" },
+		"armor": [{ "encumbrance": 0, "coverage": 0, "covers": ["torso"] }],
 		"flags": [
 			"CANT_WEAR",
 			"TARDIS",
 			"WATER_FRIENDLY",
 			"BELTED",
+			"BELT_CLIP",
 			"ALLOWS_NATURAL_ATTACKS"
 		],
 		"price": "95 USD",
@@ -154,12 +144,10 @@
 	{
 		"id": "sheath_kydex_khukuri",
 		"type": "ITEM",
-		"subtypes": [ "ARMOR" ],
+		"subtypes": ["ARMOR"],
 		"category": "container",
-		"//sources": [ "https://www.thekhukurihouse.com/kukri-kydex-sheath" ],
-		"name": {
-			"str": "Khukuri House kukri sheath"
-		},
+		"//sources": ["https://www.thekhukurihouse.com/kukri-kydex-sheath"],
+		"name": { "str": "Khukuri House kukri sheath" },
 		"description": "A thick leather sheath for a hunting knife made by Evil Duck Studios.  Worn horizontally on a belt; usually a leather belt is preferred, for practical or aesthetic reasons.",
 		"weight": "70 g",
 		"//volume": "calculated as dimensions of kukri blade (23.48 ml, audited in Core) × 107.5%",
@@ -167,7 +155,7 @@
 		"//longest_side": "length of kukri blade (375 mm, audited in Core) × 107.5%",
 		"longest_side": "403 mm",
 		"//material": "Kydex",
-		"material": [ "plastic" ],
+		"material": ["plastic"],
 		"material_thickness": 0.1,
 		"symbol": "[",
 		"color": "light_gray",
@@ -184,18 +172,17 @@
 				"max_contains_volume": "183 ml",
 				"max_item_length": "485 mm",
 				"moves": 120,
-				"id_restriction": [ "kukri" ]
+				"id_restriction": ["kukri"]
 			}
 		],
 		"use_action": { "type": "holster" },
-		"armor": [
-			{ "encumbrance": 0, "coverage": 0, "covers": [ "torso" ] }
-		],
+		"armor": [{ "encumbrance": 0, "coverage": 0, "covers": ["torso"] }],
 		"flags": [
 			"CANT_WEAR",
 			"TARDIS",
 			"WATER_FRIENDLY",
 			"BELTED",
+			"BELT_CLIP",
 			"ALLOWS_NATURAL_ATTACKS"
 		],
 		"price": "75 USD",
