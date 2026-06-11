@@ -3012,12 +3012,10 @@ bool game::do_regular_action( action_id &act, avatar &player_character,
             break;
 
         case ACTION_SUICIDE:
-            if( query_yn( _( "Abandon this character?" ) ) ) {
-                if( query_yn( _( "This will kill your character.  Continue?" ) ) ) {
+            if( query_yn( _( "Suicide to escape the horror?" ) ) ) {
                     player_character.set_moves( 0 );
                     player_character.place_corpse( &here );
                     uquit = QUIT_SUICIDE;
-                }
             }
             break;
 
