@@ -16089,15 +16089,7 @@
             "bg": 6913,
             "rotates": false
           },
-          {
-            "id": [
-              "t_open_air",
-              "t_open_air_rooved",
-              "t_open_air_rooved_outside"
-            ],
-            "bg": 6932,
-            "rotates": false
-          },
+
           {
             "id": "t_ov_reb_cage",
             "fg": 6823,
