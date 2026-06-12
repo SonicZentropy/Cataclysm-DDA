@@ -1,0 +1,82 @@
+[
+	{
+		"type": "effect_on_condition",
+		"id": "EOC_NH_start",
+		"eoc_type": "EVENT",
+		"required_event": "game_start",
+		"effect": [{ "run_eocs": "EOC_NH_difficultycheck" }]
+	},
+	{
+		"type": "effect_on_condition",
+		"id": "EOC_NH_load",
+		"eoc_type": "EVENT",
+		"required_event": "game_load",
+		"effect": [{ "run_eocs": "EOC_NH_difficultycheck" }]
+	},
+	{
+		"type": "effect_on_condition",
+		"id": "EOC_NH_difficultycheck",
+		"//": "When this EOC gets changed significantly a version variable should be added and checked against here so it reruns",
+		"condition": { "math": ["!has_var( NH_item_difficulty )"] },
+		"effect": { "run_eocs": "EOC_NH_set_difficulty" },
+		"false_effect": [
+			{
+				"switch": { "math": ["NH_item_difficulty"] },
+				"cases": [
+					{ "case": 0, "effect": { "run_eocs": "EOC_NH_item_difficulty_0" } }
+				]
+			}
+		]
+	},
+	{
+		"type": "effect_on_condition",
+		"id": "EOC_NH_set_difficulty",
+		"effect": [
+			{
+				"run_eoc_selector": ["EOC_NH_set_item_difficulty_0"],
+				"names": ["Creeping Despair"],
+				"title": "Select a difficulty",
+				"keys": ["1"],
+				"descriptions": ["Creeping Despair makes items rarer than vanilla."]
+			}
+		]
+	},
+	{
+		"type": "effect_on_condition",
+		"id": "EOC_NH_set_item_difficulty_0",
+		"effect": [
+			{ "u_message": "A creeping sense of despair approaches…" },
+			{ "run_eocs": "EOC_NH_item_difficulty_0" },
+			{ "math": ["NH_item_difficulty = 0"] }
+		]
+	},
+	{
+		"type": "effect_on_condition",
+		"id": "EOC_NH_item_difficulty_0",
+		"//": "Purposefully doesn't affect all item categories, see EOCS.md",
+		"//1": "TODO: Add more variance to the rates to make it more tailored than just a flat decrease",
+		"effect": [
+			{
+				"set_item_category_spawn_rates": [
+					{ "spawn_rate": 1.0, "id": "guns" },
+					{ "spawn_rate": 1.0, "id": "magazines" },
+					{ "spawn_rate": 1.0, "id": "ammo" },
+					{ "spawn_rate": 1.0, "id": "weapons" },
+					{ "spawn_rate": 1.0, "id": "tools" },
+					{ "spawn_rate": 1.0, "id": "clothing" },
+					{ "spawn_rate": 1.0, "id": "food" },
+					{ "spawn_rate": 1.0, "id": "drugs" },
+					{ "spawn_rate": 1.0, "id": "manuals" },
+					{ "spawn_rate": 1.0, "id": "books" },
+					{ "spawn_rate": 1.0, "id": "mods" },
+					{ "spawn_rate": 1.0, "id": "veh_parts" },
+					{ "spawn_rate": 1.0, "id": "other" },
+					{ "spawn_rate": 1.0, "id": "fuel" },
+					{ "spawn_rate": 1.0, "id": "spare_parts" },
+					{ "spawn_rate": 1.0, "id": "tool_magazine" },
+					{ "spawn_rate": 1.0, "id": "armor" }
+				]
+			}
+		]
+	}
+]
