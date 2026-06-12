@@ -445,13 +445,13 @@
     "id": "samurai_sword_set_fake",
     "type": "item_group",
     "subtype": "collection",
-    "items": [ [ "katana_fake", 100 ], [ "wakizashi_fake", 34 ], [ "tanto_fake", 12 ] ]
+    "items": [ [ "katana_fake", 100 ], [ "wakizashi_fake", 34 ], [ "tanto_fake", 12 ], [ "sai", 6 ] ]
   },
   {
     "id": "samurai_sword_set_inferior",
     "type": "item_group",
     "subtype": "collection",
-    "items": [ [ "katana_inferior", 100 ], [ "wakizashi_inferior", 34 ], [ "tanto_inferior", 12 ] ]
+    "items": [ [ "katana_inferior", 100 ], [ "wakizashi_inferior", 34 ], [ "tanto_inferior", 12 ], [ "sai", 6 ] ]
   },
   {
     "id": "soa_fake_weapon_decor",
