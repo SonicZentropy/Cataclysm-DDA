@@ -1,0 +1,29 @@
+[
+	{
+		"type": "MOD_INFO",
+		"id": "some_hope",
+		"name": "Some Hope",
+		"authors": ["Night_Pryanik", "Zentropy"],
+		"maintainers": ["Zentropy"],
+		"description": "Middle Ground between no-hope and vanilla",
+		"category": "boyd",
+		"dependencies": ["dda"],
+		"conflicts": [
+			"aftershock_exoplanet",
+			"backrooms",
+			"desertpack",
+			"tropicata",
+			"classic_zombies",
+			"innawood",
+			"Isolation_Protocol",
+			"megacity_mod"
+		],
+		"version": "1.0"
+	},
+	{
+		"type": "EXTERNAL_OPTION",
+		"name": "DEFAULT_REGION",
+		"stype": "string_input",
+		"value": "default_somehope"
+	}
+]
