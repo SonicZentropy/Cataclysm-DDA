@@ -4963,8 +4963,7 @@ bool game::revive_corpse( const tripoint_bub_ms &p, item &it, int radius )
     critter.add_effect( effect_source(), effect_revived_marker, calendar::INDEFINITELY_LONG_DURATION,
                         true );
 
-    //return place_critter_around( newmon_ptr, tripoint_bub_ms( p ), radius );
-    return false;
+    return place_critter_around( newmon_ptr, tripoint_bub_ms( p ), radius );
 }
 
 void game::assign_revive_form( item &it, tripoint_bub_ms p )
