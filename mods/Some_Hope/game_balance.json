@@ -1,0 +1,21 @@
+[
+	{
+		"type": "EXTERNAL_OPTION",
+		"name": "OVERRIDE_VEHICLE_INIT_STATE",
+		"stype": "bool",
+		"value": true
+	},
+	{
+		"type": "EXTERNAL_OPTION",
+		"name": "VEHICLE_STATUS_AT_SPAWN",
+		"stype": "int",
+		"value": 1
+	},
+	{
+		"type": "EXTERNAL_OPTION",
+		"name": "SKILL_TRAINING_SPEED",
+		"//COMMENT": "Speed is slightly slowed down. Not enough to make the game into a grind, but to contribute to the general feeling that 'there is some hope'. Everything the player does here is a little harder, a little more difficult, and it only gets worse.",
+		"stype": "float",
+		"value": 0.9
+	}
+]
