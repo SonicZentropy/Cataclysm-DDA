@@ -1272,15 +1272,15 @@ static void wait()
             durations.emplace( 15, 15_minutes ); // to hide it from showing(?)
         }
         add_menu_item( 1, '1', !has_watch ? _( "Wait 20 heartbeats" ) : "", 20_seconds );
-        add_menu_item( 2, '2', !has_watch ? _( "Wait 60 heartbeats" ) : "", 1_minutes );
-        add_menu_item( 3, '3', !has_watch ? _( "Wait 300 heartbeats" ) : "", 5_minutes );
-        add_menu_item( 4, '4', !has_watch ? _( "Wait 1800 heartbeats" ) : "", 30_minutes );
+        add_menu_item( 2, '3', !has_watch ? _( "Wait 60 heartbeats" ) : "", 1_minutes );
+        add_menu_item( 3, '4', !has_watch ? _( "Wait 300 heartbeats" ) : "", 5_minutes );
+        add_menu_item( 4, '5', !has_watch ? _( "Wait 1800 heartbeats" ) : "", 30_minutes );
 
         if( has_watch ) {
-            add_menu_item( 5, '5', "", 1_hours );
-            add_menu_item( 6, '6', "", 2_hours );
-            add_menu_item( 7, '7', "", 3_hours );
-            add_menu_item( 8, '8', "", 6_hours );
+            add_menu_item( 5, '6', "", 1_hours );
+            add_menu_item( 6, '7', "", 2_hours );
+            add_menu_item( 7, '9', "", 3_hours );
+            add_menu_item( 8, '0', "", 6_hours );
         }
     }
 
@@ -1300,19 +1300,19 @@ static void wait()
         add_menu_item( 10,  'n',
                        setting_alarm ? _( "Set alarm for noon" ) : _( "Wait till noon" ),
                        diurnal_time_before( last_midnight + 12_hours ) );
-        add_menu_item( 11,  'k',
+        add_menu_item( 11,  'x',
                        setting_alarm ? _( "Set alarm for dusk" ) : _( "Wait till night" ),
                        diurnal_time_before( night_time( calendar::turn ) ) );
-        add_menu_item( 12, 'm',
+        add_menu_item( 12, 'c',
                        setting_alarm ? _( "Set alarm for midnight" ) : _( "Wait till midnight" ),
                        diurnal_time_before( last_midnight ) );
         if( setting_alarm ) {
             if( player_character.has_effect( effect_alarm_clock ) ) {
-                add_menu_item( 13, 'x', _( "Cancel the currently set alarm." ),
+                add_menu_item( 13, 'z', _( "Cancel the currently set alarm." ),
                                0_turns );
             }
         } else {
-            add_menu_item( 13, 'W', _( "Wait till weather changes" ) );
+            add_menu_item( 13, '-1', _( "Wait till weather changes" ) );
         }
     }
 
