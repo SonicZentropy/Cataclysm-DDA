@@ -80,18 +80,18 @@
     "disarms": true,
     "skill_requirements": [ { "name": "melee", "level": 4 } ],
     "description": "Unwield target's weapon, min 4 melee",
-    "tech_effects": [
-      {
-        "id": "disarmed",
-        "chance": 100,
-        "duration": 400,
-        "on_damage": true,
-        "message": "The weapon of %s has been forced out of their hands!"
-      }
-    ],
-    "attack_vectors": [ "vector_grasp" ]
-  },
-  {
+"tech_effects": [
+        {
+          "id": "disarmed",
+          "chance": 100,
+          "duration": 400,
+          "on_damage": true,
+          "message": "The weapon of %s has been forced out of their hands!"
+        }
+      ],
+      "attack_vectors": [ "vector_grasp", "vector_null" ]
+    },
+    {
     "type": "technique",
     "id": "GRAB",
     "name": "",

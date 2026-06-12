@@ -292,6 +292,8 @@
       [ "hand_pump", 10 ],
       [ "wakizashi_inferior", 3 ],
       [ "katana_inferior", 3 ],
+      { "item": "sai", "custom-flags": [ "REPLICA_EQUIPMENT" ], "prob": 2 },
+      { "item": "jitte", "custom-flags": [ "REPLICA_EQUIPMENT" ], "prob": 1 },
       [ "zweihander_inferior", 3 ],
       [ "battleaxe_inferior", 3 ],
       [ "cutlass_inferior", 3 ],
