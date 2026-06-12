@@ -28,7 +28,7 @@
     "id": "real_shivs",
     "type": "requirement",
     "//": "Any real, small weapons that can be concealed and stab someone at close range, like pocket knives.",
-    "tools": [ [ [ "switchblade", -1 ], [ "knife_swissarmy", -1 ], [ "punch_dagger", -1 ], [ "knuckle_katar", -1 ] ] ]
+    "tools": [ [ [ "switchblade", -1 ], [ "knife_swissarmy", -1 ], [ "punch_dagger", -1 ], [ "knuckle_katar", -1 ], [ "sai", -1 ] ] ]
   },
   {
     "id": "real_claws",
@@ -138,7 +138,8 @@
         [ "tanto", -1 ],
         [ "karambit", -1 ],
         [ "kirpan", -1 ],
-        [ "butterfly_swords", -1 ]
+        [ "butterfly_swords", -1 ],
+        [ "sai", -1 ]
       ]
     ]
   },
@@ -506,7 +507,8 @@
         [ "shillelagh_weighted", -1 ],
         [ "shocktonfa_off", -1 ],
         [ "tonfa", -1 ],
-        [ "tonfa_wood", -1 ]
+        [ "tonfa_wood", -1 ],
+        [ "jitte", -1 ]
       ]
     ]
   },

@@ -34,10 +34,15 @@
       [ "tonfa", 10 ],
       [ "tonfa_wood", 10 ],
       [ "shocktonfa_off", 5 ],
-      [ "tanto", 7 ],
-      [ "wakizashi_inferior", 3 ],
+      [ "tanto", 1 ],
+      [ "wakizashi_inferior", 1 ],
       [ "nodachi_inferior", 1 ],
-      [ "katana_inferior", 2 ],
+      [ "katana_inferior", 1 ],
+      { "item": "tanto", "custom-flags": [ "REPLICA_EQUIPMENT" ], "prob": 2 },
+      { "item": "wakizashi", "custom-flags": [ "REPLICA_EQUIPMENT" ], "prob": 2 },
+      { "item": "katana", "custom-flags": [ "REPLICA_EQUIPMENT" ], "prob": 2 },
+      { "item": "sai", "custom-flags": [ "REPLICA_EQUIPMENT" ], "prob": 2 },
+      { "item": "jitte", "custom-flags": [ "REPLICA_EQUIPMENT" ], "prob": 1 },
       [ "survnote", 1 ],
       [ "karambit", 1 ]
     ]
