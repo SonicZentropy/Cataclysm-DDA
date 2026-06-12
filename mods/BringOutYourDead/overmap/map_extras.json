@@ -1,12 +1,122 @@
 [
-  {
-    "id": "mx_XEDRA_truck",
-    "type": "map_extra",
-    "name": { "str": "TCL Truck" },
-    "description": "A truck with a utilitarian logo on the side, branded Trans-Coast Logistics.",
-    "generator": { "generator_method": "update_mapgen", "generator_id": "mx_XEDRA_truck" },
-    "min_max_zlevel": [ 0, 0 ],
-    "sym": "X",
-    "color": "light_red"
-  }
+	{
+		"id": "mx_XEDRA_truck",
+		"type": "map_extra",
+		"name": { "str": "TCL Truck" },
+		"description": "A truck with a utilitarian logo on the side, branded Trans-Coast Logistics.",
+		"generator": {
+			"generator_method": "update_mapgen",
+			"generator_id": "mx_XEDRA_truck"
+		},
+		"min_max_zlevel": [0, 0],
+		"sym": "X",
+		"color": "light_red"
+	},
+	{
+		"type": "overmap_special",
+		"id": "pig_farm_lab",
+		"overmaps": [
+			{ "point": [0, 0, 0], "overmap": "pig_farm_lab_ground_NW_north" },
+			{ "point": [1, 0, 0], "overmap": "pig_farm_lab_ground_N_north" },
+			{ "point": [2, 0, 0], "overmap": "pig_farm_lab_ground_NE_north" },
+			{ "point": [0, 1, 0], "overmap": "pig_farm_lab_ground_W_north" },
+			{ "point": [1, 1, 0], "overmap": "pig_farm_lab_ground_M_north" },
+			{ "point": [2, 1, 0], "overmap": "pig_farm_lab_ground_E_north" },
+			{ "point": [0, 2, 0], "overmap": "pig_farm_lab_ground_SW_north" },
+			{ "point": [1, 2, 0], "overmap": "pig_farm_lab_ground_S_north" },
+			{ "point": [2, 2, 0], "overmap": "pig_farm_lab_ground_SE_north" },
+			{ "point": [0, 0, 1], "overmap": "pig_farm_lab_roof_NW_north" },
+			{ "point": [1, 0, 1], "overmap": "pig_farm_lab_roof_N_north" },
+			{ "point": [2, 0, 1], "overmap": "pig_farm_lab_roof_NE_north" },
+			{ "point": [0, 1, 1], "overmap": "pig_farm_lab_roof_W_north" },
+			{ "point": [1, 1, 1], "overmap": "pig_farm_lab_roof_M_north" },
+			{ "point": [2, 1, 1], "overmap": "pig_farm_lab_roof_E_north" },
+			{ "point": [0, 2, 1], "overmap": "pig_farm_lab_roof_SW_north" },
+			{ "point": [1, 2, 1], "overmap": "pig_farm_lab_roof_S_north" },
+			{ "point": [2, 2, 1], "overmap": "pig_farm_lab_roof_SE_north" }
+		],
+		"connections": [
+			{
+				"point": [0, -1, 0],
+				"terrain": "road",
+				"connection": "local_road",
+				"from": [0, 0, 0]
+			},
+			{ "point": [1, 3, 0], "terrain": "road", "connection": "local_road" }
+		],
+		"locations": ["land"],
+		"occurrences": [1, 2],
+		"flags": ["CLASSIC", "MAN_MADE"]
+	},
+	{
+		"type": "overmap_terrain",
+		"id": ["pig_farm_lab_ground_NW"],
+		"name": "pig gene lab parking",
+		"sym": "O",
+		"color": "dark_gray",
+		"vision_levels": "blends_till_outlines",
+		"see_cost": "low",
+		"flags": ["REQUIRES_PREDECESSOR"]
+	},
+	{
+		"type": "overmap_terrain",
+		"id": [
+			"pig_farm_lab_ground_W",
+			"pig_farm_lab_ground_SW",
+			"pig_farm_lab_ground_S"
+		],
+		"name": "pig gene lab",
+		"sym": "L",
+		"color": "brown",
+		"vision_levels": "blends_till_outlines",
+		"see_cost": "low",
+		"flags": ["REQUIRES_PREDECESSOR"]
+	},
+	{
+		"type": "overmap_terrain",
+		"id": [
+			"pig_farm_lab_ground_N",
+			"pig_farm_lab_ground_NE",
+			"pig_farm_lab_ground_M",
+			"pig_farm_lab_ground_E",
+			"pig_farm_lab_ground_SE"
+		],
+		"name": "pig gene lab farm",
+		"sym": "#",
+		"color": "brown",
+		"vision_levels": "blends_till_outlines",
+		"see_cost": "low",
+		"flags": ["REQUIRES_PREDECESSOR"]
+	},
+	{
+		"type": "overmap_terrain",
+		"id": [
+			"pig_farm_lab_roof_W",
+			"pig_farm_lab_roof_SW",
+			"pig_farm_lab_roof_S"
+		],
+		"name": "pig gene lab roof",
+		"sym": "L",
+		"color": "brown",
+		"vision_levels": "blends_till_outlines",
+		"see_cost": "low",
+		"flags": ["REQUIRES_PREDECESSOR"]
+	},
+	{
+		"type": "overmap_terrain",
+		"id": [
+			"pig_farm_lab_roof_NW",
+			"pig_farm_lab_roof_N",
+			"pig_farm_lab_roof_NE",
+			"pig_farm_lab_roof_M",
+			"pig_farm_lab_roof_E",
+			"pig_farm_lab_roof_SE"
+		],
+		"name": "pig gene lab noroof",
+		"sym": ".",
+		"color": "blue",
+		"vision_levels": "blends_till_outlines",
+		"see_cost": "low",
+		"flags": ["REQUIRES_PREDECESSOR"]
+	}
 ]
