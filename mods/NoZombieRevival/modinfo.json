@@ -6,7 +6,7 @@
 		"authors": ["John-Candlebury"],
 		"maintainers": ["John-Candlebury"],
 		"description": "Disables zombie revival.  Other monsters (EX: Robots) might still self reassemble after death.",
-		"category": "rebalance",
+		"category": "boyd",
 		"dependencies": ["dda"]
 	},
 	{
