@@ -1,0 +1,3 @@
+- DELETE the t_open_air tiles
+- DELETE the t_open_air_rooved tiles
+- DELETE the t_open_air_rooved_outside tiles
