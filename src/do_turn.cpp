@@ -11,6 +11,7 @@
 #include <optional>
 #include <ostream>
 #include <ratio>
+#include <set>
 #include <string>
 #include <unordered_map>
 #include <utility>
@@ -78,6 +79,7 @@
 #include "vehicle.h"
 #include "vpart_position.h"
 #include "weather.h"
+#include "weather_type.h"
 #include "worldfactory.h"
 
 static const activity_id ACT_AUTODRIVE( "ACT_AUTODRIVE" );
@@ -794,7 +796,7 @@ bool game::do_turn()
                 }
             }
         }
-    }
+
 
     if( calendar::once_every( 9_turns ) ) {
         u.check_and_recover_morale();
