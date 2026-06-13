@@ -115,6 +115,7 @@ enum class debug_menu_index : int {
     VEHICLE_EFFECTS,
     WISHPROFICIENCY,
     RELOAD_GPU_SHADERS,
+    RESTORE_STAMINA,
     last
 };
 
