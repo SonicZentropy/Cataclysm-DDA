@@ -139,7 +139,11 @@
 		"replace": "armor_lc_leg_guard"
 	},
 	{ "type": "MIGRATION", "id": "weather_reader", "replace": "geiger_off" },
-	{ "type": "MIGRATION", "id": "survivor_machete", "replace": "machete" },
+	{
+		"type": "MIGRATION",
+		"id": "survivor_machete",
+		"replace": "survivor_machete_qt"
+	},
 	{ "type": "MIGRATION", "id": "toastem2", "replace": "toastem" },
 	{ "type": "MIGRATION", "id": "toastem3", "replace": "toastem" },
 	{ "type": "MIGRATION", "id": "toastem4", "replace": "toastem" },

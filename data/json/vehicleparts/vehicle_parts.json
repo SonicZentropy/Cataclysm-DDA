@@ -225,7 +225,7 @@
       { "count": [ 0, 5 ], "item": "cotton_patchwork" },
       { "count": [ 9, 50 ], "item": "scrap_cotton" },
       { "count": [ 0, 16 ], "item": "hc_wire" },
-      { "charges": [ 3, 8 ], "item": "scrap" }
+      { "count": [ 3, 8 ], "item": "scrap" }
     ],
     "damage_reduction": { "all": 3, "bash": 5 },
     "variants": [ { "symbols": "#", "symbols_broken": "*" } ]

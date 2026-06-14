@@ -857,7 +857,7 @@
         "w": { "item": { "item": "secro_power_armor_module_core" }, "furniture": "f_rack" },
         "s": { "item": [ { "item": "secro_recipe_flesh" } ], "furniture": "f_rack" }
       },
-      "monster": { "A": { "monster": "mon_sflesh_taken_zombie" } }
+      "monster": { "A": { "monster": "mon_sflesh_zombie" } }
     },
     "om_terrain": "SecronomSSLab_b3_flesh",
     "type": "mapgen",

@@ -252,6 +252,7 @@
 			"bio_watch",
 			"bio_power_storage_mkII"
 		],
+		"traits": ["CBM_Interface"],
 		"skills": [
 			{ "level": 2, "name": "cooking" },
 			{ "level": 2, "name": "computer" },

@@ -233,7 +233,7 @@
 			{ "item": "ax", "prob": 35 },
 			{ "item": "bat", "prob": 35 },
 			{ "item": "machete", "prob": 35 },
-			{ "item": "survivor_machete", "prob": 35 },
+			{ "item": "survivor_machete_qt", "prob": 35 },
 			{ "item": "bullwhip", "prob": 35 },
 			{ "item": "trimmer_off", "prob": 35, "charges": 600 },
 			{ "item": "chainsaw_off", "prob": 35, "charges": 450 },

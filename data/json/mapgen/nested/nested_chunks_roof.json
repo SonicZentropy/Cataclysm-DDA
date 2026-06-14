@@ -399,6 +399,7 @@
 			"mapgensize": [6, 6],
 			"rotation": [0, 3],
 			"rows": ["..AA..", "......", "..a...", ".o..o.", "......", "....A."],
+			"flags": ["ERASE_FURNITURE_BEFORE_PLACING_TERRAIN"],
 			"set": [
 				{ "point": "trap", "id": "tr_funnel", "x": 0, "y": 0 },
 				{ "point": "trap", "id": "tr_cot", "x": 5, "y": 5 },
@@ -455,6 +456,7 @@
 			"mapgensize": [6, 6],
 			"rotation": [0, 3],
 			"rows": ["%#++#%", "%1  1%", "#1  1#", "#1  1#", "%1  1%", "%#++#%"],
+			"flags": ["ERASE_FURNITURE_BEFORE_PLACING_TERRAIN"],
 			"terrain": {
 				"#": "t_reinforced_glass_shutter_open",
 				"+": "t_reinforced_door_glass_c",
@@ -479,6 +481,7 @@
 			"mapgensize": [6, 6],
 			"rotation": [0, 3],
 			"rows": ["%#++#%", "%1  1%", "#S  b#", "#S  b#", "%1  1%", "%#++#%"],
+			"flags": ["ERASE_FURNITURE_BEFORE_PLACING_TERRAIN"],
 			"terrain": {
 				"#": "t_reinforced_glass_shutter_open",
 				"+": "t_reinforced_door_glass_c",
@@ -504,6 +507,7 @@
 			"mapgensize": [6, 6],
 			"rotation": [0, 2],
 			"rows": ["%#++#%", "%1  1%", "#1a 1#", "#1  1#", "%1 a1%", "%#++#%"],
+			"flags": ["ERASE_FURNITURE_BEFORE_PLACING_TERRAIN"],
 			"terrain": {
 				"#": "t_reinforced_glass_shutter_open",
 				"+": "t_reinforced_door_glass_c",
@@ -657,7 +661,7 @@
 			"rows": ["#####", "#####", "#####", "#####", "#####"],
 			"terrain": { "#": "t_flat_roof" },
 			"furniture": { "#": "f_solar_unit" },
-			"flags": ["ERASE_ITEMS_BEFORE_PLACING_TERRAIN"]
+			"flags": ["ERASE_FURNITURE_BEFORE_PLACING_TERRAIN"]
 		}
 	},
 	{
@@ -672,7 +676,7 @@
 				"#": "f_solar_unit_v2",
 				"?": [["f_solar_unit_v2", 1], ["f_null", 1]]
 			},
-			"flags": ["ERASE_ITEMS_BEFORE_PLACING_TERRAIN"]
+			"flags": ["ERASE_FURNITURE_BEFORE_PLACING_TERRAIN"]
 		}
 	},
 	{
@@ -680,7 +684,7 @@
 		"nested_mapgen_id": "residential_6kW_solar",
 		"object": {
 			"mapgensize": [5, 5],
-			"flags": ["ERASE_ITEMS_BEFORE_PLACING_TERRAIN"],
+			"flags": ["ERASE_FURNITURE_BEFORE_PLACING_TERRAIN"],
 			"place_nested": [
 				{
 					"chunks": [
@@ -702,7 +706,7 @@
 			"rows": ["######", "######", "######", "######", "######", "      "],
 			"terrain": { "#": "t_flat_roof" },
 			"furniture": { "#": "f_solar_unit" },
-			"flags": ["ERASE_ITEMS_BEFORE_PLACING_TERRAIN"]
+			"flags": ["ERASE_FURNITURE_BEFORE_PLACING_TERRAIN"]
 		}
 	},
 	{
@@ -714,7 +718,7 @@
 			"rows": ["###   ", "###   ", "###   ", "###   ", "###   ", "      "],
 			"terrain": { "#": "t_flat_roof" },
 			"furniture": { "#": "f_solar_unit_v2" },
-			"flags": ["ERASE_ITEMS_BEFORE_PLACING_TERRAIN"]
+			"flags": ["ERASE_FURNITURE_BEFORE_PLACING_TERRAIN"]
 		}
 	},
 	{
@@ -742,6 +746,7 @@
 			"rotation": [0, 3],
 			"rows": ["######", "######", "######", "######", "######", "######"],
 			"terrain": { "#": "t_flat_roof" },
+			"flags": ["ERASE_FURNITURE_BEFORE_PLACING_TERRAIN"],
 			"furniture": { "#": "f_solar_unit" }
 		}
 	},
@@ -753,6 +758,7 @@
 			"rotation": [0, 3],
 			"rows": ["###   ", "###   ", "###   ", "###   ", "###   ", "###   "],
 			"terrain": { "#": "t_flat_roof" },
+			"flags": ["ERASE_FURNITURE_BEFORE_PLACING_TERRAIN"],
 			"furniture": { "#": "f_solar_unit_v2" }
 		}
 	},
