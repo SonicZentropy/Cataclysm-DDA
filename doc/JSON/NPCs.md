@@ -174,7 +174,7 @@ Format:
   "name_suffix": "examplar",
   "class": "NC_EXAMPLE",
   "attitude": 0,
-  "mission": 7,
+  "mission": "GUARD",
   "chat": "TALK_EXAMPLE",
   "faction": "no_faction",
   "death_eocs": [ "EOC_DEATH_NPC_TEST" ],
@@ -1207,14 +1207,14 @@ Example:
   { "u_add_morale": "morale_honey","bonus": -20,"max_bonus": -60, "decay_start": 1 },
   "duration": { "global_val": "test2", "default": "2 minutes" },
   {
-    "u_spawn_monster": "mon_absence", 
+    "u_spawn_monster": "mon_absence",
     "real_count": { "math": [ "1 + rand(2)" ] }
   }
 ]
 ```
 
 #### var_val
-var_val is a unique variable object in the fact that it attempts to resolve the variable stored inside a context variable. The values for var_val use the same syntax for scope that math [variables](#variables) do. 
+var_val is a unique variable object in the fact that it attempts to resolve the variable stored inside a context variable. The values for var_val use the same syntax for scope that math [variables](#variables) do.
 
 | Prefix of the value in var_val| Resolved as      |
 |------------------|------------------|
@@ -1235,8 +1235,8 @@ So if you had
 | key1 | global_val | SOME TEXT |
 | key2 | u_val | SOME OTHER TEXT |
 
-If you access "ref" as a context val it will have the value of "key1", if you access it as a var_val it will have a value of "SOME TEXT". 
-If you access "ref2" as a context val it will have the value of "u_key2", if you access it as a var_val it will have a value of "SOME OTHER TEXT". 
+If you access "ref" as a context val it will have the value of "key1", if you access it as a var_val it will have a value of "SOME TEXT".
+If you access "ref2" as a context val it will have the value of "u_key2", if you access it as a var_val it will have a value of "SOME OTHER TEXT".
 
 ### Mutators
 `mutators`: take in an amount of data and provide you with a relevant string. This can be used to get information about items, monsters, etc. from the id, or other data. Mutators can be used anywhere that a string [variable object](#variable-object) can be used. Mutators take the form:
@@ -1250,8 +1250,8 @@ Mutator Name | Required Keys | Description
 --- | --- | ---
 `"mon_faction"` | `mtype_id`: String or [variable object](#variable-object). | Returns the faction of the monster with mtype_id.
 `"game_option"` | `option`: String or [variable object](#variable-object). | Returns the value of the option as a string, for numerical options you should instead use the math function.
-`"ma_technique_name"` | `matec_id`: String or [variable object](#variable-object). | Returns the name of the martial arts tech with ID `matec_id` 
-`"ma_technique_description"` | `matec_id`: String or [variable object](#variable-object). | Returns the description of the martial arts tech with ID `matec_id` 
+`"ma_technique_name"` | `matec_id`: String or [variable object](#variable-object). | Returns the name of the martial arts tech with ID `matec_id`
+`"ma_technique_description"` | `matec_id`: String or [variable object](#variable-object). | Returns the description of the martial arts tech with ID `matec_id`
 `"valid_technique`" | `blacklist`: array of String or [variable object](#variable-object). <br/> `crit`: bool <br/> `dodge_counter`: bool <br/> `block_counter`: bool | Returns a random valid technique for the alpha talker to use against the beta talker with the provided specifications.
 `"u_/npc_loc_relative"` | `target`: String or [variable object](#variable-object). | target should be a string like "(x,y,z)" where x,y,z are coordinates relative to the player. Returns the abs_ms coordinates as a string (ready to store as a location variable), in the form "(x,y,z)" of the provided point relative to the alpha/beta talker respectively. So `"target":"(0,1,0)"` would return the point south of the talker.
 `"topic_item"` | | Returns current topic_item as a string. See [Repeat Responses](#repeat-responses)
@@ -1317,7 +1317,7 @@ Members of tripoint variables can be accessed with the dot operator in the usual
 The tokens `π` (and `pi` alias ) and `e` are recognized as mathematical constants and get replaced by their nominal values.
 
 #### Math functions
-Common math functions are supported: 
+Common math functions are supported:
 
 `abs()`, `sqrt()`, `log()`, `floor()`, `trunc()`, `ceil()`, `round()`, `sin()`, `cos()`, and `tan()` take one argument, for example `sin( 2 * pi + 1 )`.
 
@@ -1360,9 +1360,9 @@ _some functions support array arguments or kwargs, denoted with square brackets 
 
 | Function | Eval | Assign |Scopes | Description |
 |----------|------|--------|-------|-------------|
-| armor(`s`/`v`,`s`/`v`)    |  ✅   |   ❌  | u, n  | Return the numerical value for a characters armor on a body part, for a damage type.<br/>Arguments are damagetype ID, bodypart ID.<br/><br/>Example:<br/>`"condition": { "math": [ "u_armor('bash', 'torso') >= 5"] }`|  
-| attack_speed()    |  ✅   |   ❌  | u, n  | Return the characters current adjusted attack speed with their current weapon.<br/><br/>Example:<br/>`"condition": { "math": [ "u_attack_speed() >= 10"] }`| 
-| speed()    |  ✅   |   ❌  | u, n  | Return the character or monster current movement speed, in moves (default character speed is 100).<br/><br/>Example:<br/>`"condition": { "math": [ "u_speed() >= 10"] }`| 
+| armor(`s`/`v`,`s`/`v`)    |  ✅   |   ❌  | u, n  | Return the numerical value for a characters armor on a body part, for a damage type.<br/>Arguments are damagetype ID, bodypart ID.<br/><br/>Example:<br/>`"condition": { "math": [ "u_armor('bash', 'torso') >= 5"] }`|
+| attack_speed()    |  ✅   |   ❌  | u, n  | Return the characters current adjusted attack speed with their current weapon.<br/><br/>Example:<br/>`"condition": { "math": [ "u_attack_speed() >= 10"] }`|
+| speed()    |  ✅   |   ❌  | u, n  | Return the character or monster current movement speed, in moves (default character speed is 100).<br/><br/>Example:<br/>`"condition": { "math": [ "u_speed() >= 10"] }`|
 | addiction_intensity(`s`/`v`)    |  ✅   |   ❌  | u, n  | Return the characters current intensity of the given addiction.<br/>Argument is addiction type ID.<br/><br/>Example:<br/>`"condition": { "math": [ "u_addiction_intensity('caffeine') >= 1"] }`|
 | addiction_turns(`s`/`v`)    |  ✅   |   ✅  | u, n  | Return the characters current duration left (in turns) for the given addiction.<br/>Argument is addiction type ID. <br/><br/>Example:<br/>`"condition": { "math": [ "u_addiction_turns('caffeine') >= 3600"] }`|
 | characters_nearby()     |  ✅  |   ❌   | u, n, global  | Return the number of nearby characters (that is, the avatar and/or NPCs who are not hallucinations). <br/><br/>Optional kwargs:<br/>`radius`: `d`/`v` - limit to radius (rl_dist)<br/>`location`: `v` - center search on this location<br/>`attitude`: `s`/`v` - attitude filter. Must be one of `hostile`, `allies`, `not_allies`, `any`. Assumes `any` if not specified<br/><br/>The `location` kwarg is mandatory in the global scope.<br/>`allow_hallucinations`: `d`/`v` - False by default. If set to any non-zero number, all hallucinated NPCs in range will be counted as well.<br/><br/>Examples:<br/>`"condition": { "math": [ "u_characters_nearby('radius': u_search_radius * 3, 'attitude': 'not_allies' ) > 0" ] }`<br/><br/>`"condition": { "math": [ "characters_nearby( 'radius': u_search_radius * 3, 'location': u_search_loc) > 5" ] }`|

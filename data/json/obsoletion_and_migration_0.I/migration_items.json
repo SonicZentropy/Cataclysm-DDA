@@ -1,140 +1,132 @@
 [
-  {
-    "id": "depowered_armor",
-    "type": "MIGRATION",
-    "replace": "combat_exoskeleton_light_salvaged"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "dinosuit",
-    "replace": "fursuit",
-    "variant": "dinosuit"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "wolfsuit",
-    "replace": "fursuit",
-    "variant": "wolfsuit"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "felinesuit",
-    "replace": "fursuit",
-    "variant": "felinesuit"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "dragonsuit",
-    "replace": "fursuit",
-    "variant": "dragonsuit"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "sharksuit",
-    "replace": "fursuit",
-    "variant": "sharksuit"
-  },
-  {
-    "id": "depowered_helmet",
-    "type": "MIGRATION",
-    "replace": "combat_exoskeleton_armor_head_light"
-  },
-  {
-    "id": "streetsweeper",
-    "type": "MIGRATION",
-    "replace": "dp_12"
-  },
-  {
-    "id": "power_armor_frame",
-    "type": "MIGRATION",
-    "replace": "qt_steel_chunk"
-  },
-  {
-    "id": "fake_anvil_crude",
-    "type": "MIGRATION",
-    "replace": "fake_anvil"
-  },
-  {
-    "id": "power_armor_generator",
-    "type": "MIGRATION",
-    "replace": "qt_steel_chunk"
-  },
-  {
-    "id": "plasma_gun",
-    "type": "MIGRATION",
-    "replace": "exodii_plasma_projectile"
-  },
-  {
-    "id": "plasma_rifle",
-    "type": "MIGRATION",
-    "replace": "exodii_plasma_projectile"
-  },
-  {
-    "id": "power_armor_helmet_basic",
-    "type": "MIGRATION",
-    "replace": "combat_exoskeleton_armor_head_medium"
-  },
-  {
-    "id": "power_armor_helmet_basic_on",
-    "type": "MIGRATION",
-    "replace": "combat_exoskeleton_armor_head_medium"
-  },
-  {
-    "id": "power_armor_helmet_light",
-    "type": "MIGRATION",
-    "replace": "combat_exoskeleton_armor_head_light"
-  },
-  {
-    "id": "power_armor_helmet_light_on",
-    "type": "MIGRATION",
-    "replace": "combat_exoskeleton_armor_head_light"
-  },
-  {
-    "id": "power_armor_helmet_heavy",
-    "type": "MIGRATION",
-    "replace": "combat_exoskeleton_armor_head_heavy"
-  },
-  {
-    "id": "power_armor_helmet_heavy_on",
-    "type": "MIGRATION",
-    "replace": "combat_exoskeleton_armor_head_heavy"
-  },
-  {
-    "id": "power_armor_basic",
-    "type": "MIGRATION",
-    "replace": "combat_exoskeleton_medium"
-  },
-  {
-    "id": "power_armor_basic_on",
-    "type": "MIGRATION",
-    "replace": "combat_exoskeleton_medium_on"
-  },
-  {
-    "id": "power_armor_light",
-    "type": "MIGRATION",
-    "replace": "combat_exoskeleton_light"
-  },
-  {
-    "id": "power_armor_light_on",
-    "type": "MIGRATION",
-    "replace": "combat_exoskeleton_light_on"
-  },
-  {
-    "id": "power_armor_heavy",
-    "type": "MIGRATION",
-    "replace": "combat_exoskeleton_heavy"
-  },
-  {
-    "id": "power_armor_heavy_on",
-    "type": "MIGRATION",
-    "replace": "combat_exoskeleton_heavy_on"
-  },
-  {
-    "id": "lobotomizer",
-    "type": "MIGRATION",
-    "replace": "box_medium_wood",
-    "contents": [ { "id": "lc_steel_lump", "count": 6 } ]
-  },
+	{
+		"id": "depowered_armor",
+		"type": "MIGRATION",
+		"replace": "combat_exoskeleton_light_salvaged"
+	},
+	{
+		"type": "MIGRATION",
+		"id": "dinosuit",
+		"replace": "fursuit",
+		"variant": "dinosuit"
+	},
+	{
+		"type": "MIGRATION",
+		"id": "wolfsuit",
+		"replace": "fursuit",
+		"variant": "wolfsuit"
+	},
+	{
+		"type": "MIGRATION",
+		"id": "felinesuit",
+		"replace": "fursuit",
+		"variant": "felinesuit"
+	},
+	{
+		"type": "MIGRATION",
+		"id": "dragonsuit",
+		"replace": "fursuit",
+		"variant": "dragonsuit"
+	},
+	{
+		"type": "MIGRATION",
+		"id": "sharksuit",
+		"replace": "fursuit",
+		"variant": "sharksuit"
+	},
+	{
+		"id": "depowered_helmet",
+		"type": "MIGRATION",
+		"replace": "combat_exoskeleton_armor_head_light"
+	},
+	{ "id": "streetsweeper", "type": "MIGRATION", "replace": "dp_12" },
+	{
+		"id": "power_armor_frame",
+		"type": "MIGRATION",
+		"replace": "qt_steel_chunk"
+	},
+	{ "id": "fake_anvil_crude", "type": "MIGRATION", "replace": "fake_anvil" },
+	{
+		"id": "power_armor_generator",
+		"type": "MIGRATION",
+		"replace": "qt_steel_chunk"
+	},
+	{
+		"id": "plasma_gun",
+		"type": "MIGRATION",
+		"replace": "exodii_plasma_projectile"
+	},
+	{
+		"id": "plasma_rifle",
+		"type": "MIGRATION",
+		"replace": "exodii_plasma_projectile"
+	},
+	{
+		"id": "power_armor_helmet_basic",
+		"type": "MIGRATION",
+		"replace": "combat_exoskeleton_armor_head_medium"
+	},
+	{
+		"id": "power_armor_helmet_basic_on",
+		"type": "MIGRATION",
+		"replace": "combat_exoskeleton_armor_head_medium"
+	},
+	{
+		"id": "power_armor_helmet_light",
+		"type": "MIGRATION",
+		"replace": "combat_exoskeleton_armor_head_light"
+	},
+	{
+		"id": "power_armor_helmet_light_on",
+		"type": "MIGRATION",
+		"replace": "combat_exoskeleton_armor_head_light"
+	},
+	{
+		"id": "power_armor_helmet_heavy",
+		"type": "MIGRATION",
+		"replace": "combat_exoskeleton_armor_head_heavy"
+	},
+	{
+		"id": "power_armor_helmet_heavy_on",
+		"type": "MIGRATION",
+		"replace": "combat_exoskeleton_armor_head_heavy"
+	},
+	{
+		"id": "power_armor_basic",
+		"type": "MIGRATION",
+		"replace": "combat_exoskeleton_medium"
+	},
+	{
+		"id": "power_armor_basic_on",
+		"type": "MIGRATION",
+		"replace": "combat_exoskeleton_medium_on"
+	},
+	{
+		"id": "power_armor_light",
+		"type": "MIGRATION",
+		"replace": "combat_exoskeleton_light"
+	},
+	{
+		"id": "power_armor_light_on",
+		"type": "MIGRATION",
+		"replace": "combat_exoskeleton_light_on"
+	},
+	{
+		"id": "power_armor_heavy",
+		"type": "MIGRATION",
+		"replace": "combat_exoskeleton_heavy"
+	},
+	{
+		"id": "power_armor_heavy_on",
+		"type": "MIGRATION",
+		"replace": "combat_exoskeleton_heavy_on"
+	},
+	{
+		"id": "lobotomizer",
+		"type": "MIGRATION",
+		"replace": "box_medium_wood",
+		"contents": [{ "id": "lc_steel_lump", "count": 6 }]
+	},
 	{ "id": "tshirt_text", "type": "MIGRATION", "replace": "tshirt" },
 	{
 		"id": "flag_shirt",
@@ -1536,47 +1528,12 @@
 		"id": "solarpack_on",
 		"replace": "folding_solar_panel_v2"
 	},
-	{
-		"type": "MIGRATION",
-		"id": ["bone_glue", "rubber_cement"],
-		"replace": "glue_weak"
-	},
-  {
-    "type": "MIGRATION",
-    "id": "super_glue",
-    "replace": "glue_strong"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "fresh_fries_j",
-    "replace": "fries"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "fresh_fries",
-    "replace": "fries"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "crude_bronze_nail",
-    "replace": "bronze_nail"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "chips2",
-    "replace": "chips"
-  },
-  {
-    "type": "MIGRATION",
-    "id": "chips3",
-    "replace": "chips"
-  },
-
-  {
-    "type": "MIGRATION",
-    "id": "cooking_oil2",
-    "replace": "cooking_oil"
-  },
+	{ "type": "MIGRATION", "id": "fresh_fries_j", "replace": "fries" },
+	{ "type": "MIGRATION", "id": "fresh_fries", "replace": "fries" },
+	{ "type": "MIGRATION", "id": "crude_bronze_nail", "replace": "bronze_nail" },
+	{ "type": "MIGRATION", "id": "chips2", "replace": "chips" },
+	{ "type": "MIGRATION", "id": "chips3", "replace": "chips" },
+	{ "type": "MIGRATION", "id": "cooking_oil2", "replace": "cooking_oil" },
 	{
 		"type": "MIGRATION",
 		"id": "tail_bunny_playboy",
