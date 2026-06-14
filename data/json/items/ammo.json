@@ -1113,7 +1113,6 @@
   },
   {
     "type": "ITEM",
-    "subtypes": [ "AMMO" ],
     "id": "medical_tape",
     "category": "spare_parts",
     "price": "20 USD",
