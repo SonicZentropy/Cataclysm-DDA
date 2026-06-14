@@ -3290,7 +3290,7 @@
 		"activity_level": "BRISK_EXERCISE",
 		"result": "sai",
 		"category": "CC_WEAPON",
-		"subcategory": "CSC_WEAPON_STABBING",
+		"subcategory": "CSC_WEAPON_PIERCING",
 		"skill_used": "fabrication",
 		"difficulty": 6,
 		"time": "7 h",

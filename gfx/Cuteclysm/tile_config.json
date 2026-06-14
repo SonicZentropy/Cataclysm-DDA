@@ -2093,7 +2093,7 @@
         { "id": "surv_rocket_launcher", "fg": 1341, "rotates": false, "multitile": false },
         { "id": "surv_six_shooter", "fg": 1060, "rotates": false, "multitile": false },
         { "id": "survival_marker", "fg": 994, "rotates": false, "multitile": false },
-        { "id": "survivor_machete", "fg": 1194, "rotates": false, "multitile": false },
+        { "id": "survivor_machete_qt", "fg": 1194, "rotates": false, "multitile": false },
         { "id": "survivor_mess_kit", "fg": 1339, "rotates": false, "multitile": false },
         { "id": "survivor_special_700", "fg": 1052, "rotates": false, "multitile": false },
         { "id": "survivormap", "fg": 1126, "rotates": false, "multitile": false },

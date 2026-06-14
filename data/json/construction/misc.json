@@ -53,7 +53,7 @@
 			{ "item": "rock", "count": [0, 2] },
 			{ "item": "splinter", "count": [0, 2] },
 			{ "item": "scrap", "count": [0, 2] },
-			{ "item": "material_gravel", "charges": [0, 3] }
+			{ "item": "material_gravel", "count": [0, 3] }
 		],
 		"pre_terrain": "f_rubble",
 		"post_terrain": "f_null",
@@ -159,7 +159,7 @@
 		"time": "5 m",
 		"byproducts": [
 			{ "item": "scrap", "count": [0, 6] },
-			{ "item": "slag", "charges": [0, 3] },
+			{ "item": "slag", "count": [0, 3] },
 			{ "item": "scrap_tin", "count": [0, 1] },
 			{ "item": "scrap_aluminum", "count": [0, 1] },
 			{ "item": "scrap_copper", "count": [0, 1] }
