@@ -2488,6 +2488,28 @@ std::optional<int> iuse::water_purifier( Character *p, item *it, const tripoint_
     return charges_of_water;
 }
 
+std::optional<int> iuse::water_tablets( Character *p, item *it, const tripoint_bub_ms & )
+{
+    map &here = get_map();
+
+    if( p->cant_do_mounted() ) {
+        return std::nullopt;
+    }
+
+    item_location obj = g->inv_map_splice( [&here]( const item_location & e ) {
+        return ( !e->empty() && e->has_item_with( []( const item & it ) {
+            return it.typeId() == itype_water || it.typeId() == itype_water_murky;
+        } ) ) || ( ( e->typeId() == itype_water || e->typeId() == itype_water_murky ) &&
+                   here.has_flag_furn( ter_furn_flag::TFLAG_LIQUIDCONT, e.pos_bub( here ) ) );
+    }, _( "Purify what?" ), 1, _( "You don't have water to purify." ) );
+
+    if( !obj ) {
+        p->add_msg_if_player( m_info, _( "You don't have that item!" ) );
+        return std::nullopt;
+    }
+
+    return purify_water( p, it, obj );
+}
 
 // Part of iuse::water_tablets, but with the user interaction split out so it can be unit tested
 std::optional<int> iuse::purify_water( Character *p, item *purifier, item_location &water )
