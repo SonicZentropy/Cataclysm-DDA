@@ -4745,11 +4745,11 @@ namespace debug_menu {
         static const std::unordered_set<debug_menu_index> non_cheaty_options = {
             debug_menu_index::ENABLE_ACHIEVEMENTS
         };
-        if (!is_debug_character() && !non_cheaty_options.count(action) &&
-            achievements.is_enabled()) {
-            add_msg(m_mixed, _("Achievements have been disabled."));
-            achievements.set_enabled(false);
-        }
+        // if (!is_debug_character() && !non_cheaty_options.count(action) &&
+        //     achievements.is_enabled()) {
+        //     add_msg(m_mixed, _("Achievements have been disabled."));
+        //     achievements.set_enabled(false);
+        // }
 
         get_event_bus().send<event_type::uses_debug_menu>(action);
 
