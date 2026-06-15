@@ -50122,11 +50122,6 @@
 					"fg": 5628
 				},
 				{
-					"id": "overlay_wielded_mosin91_30_ebr",
-					"fg": 5629,
-					"rotates": false
-				},
-				{
 					"id": "mushroom_magic",
 					"fg": 5630,
 					"rotates": false

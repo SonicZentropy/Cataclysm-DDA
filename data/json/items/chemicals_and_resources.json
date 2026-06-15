@@ -188,6 +188,7 @@
 	},
 	{
 		"type": "ITEM",
+		"subtypes": ["AMMO"],
 		"id": "material_cement",
 		"category": "spare_parts",
 		"price": "2 USD",
@@ -198,10 +199,13 @@
 		"description": "Portland is most likely long gone, but its memory persists in cement.  This ubiquitous binder can be used for all kinds of advanced masonry.  Just add water.",
 		"material": ["cement"],
 		"volume": "5 ml",
-		"weight": "7200 mg"
+		"weight": "7200 mg",
+		"ammo_type": "components",
+		"count": 1
 	},
 	{
 		"type": "ITEM",
+		"subtypes": ["AMMO"],
 		"id": "material_gravel",
 		"category": "spare_parts",
 		"price": "0 cent",
@@ -214,10 +218,13 @@
 		"//": "density: 1.6 g/cm3",
 		"volume": "5 ml",
 		"weight": "8 g",
+		"ammo_type": "components",
+		"count": 1,
 		"melee_damage": { "bash": 1 }
 	},
 	{
 		"type": "ITEM",
+		"subtypes": ["AMMO"],
 		"id": "shredded_rubber",
 		"category": "spare_parts",
 		"price": "0 cent",
@@ -227,55 +234,66 @@
 		"color": "dark_gray",
 		"description": "A handful of shredded rubber, usable as a mulch now.",
 		"material": ["rubber"],
-		"volume": "5 ml",
-		"weight": "6 g"
+		"volume": "250 ml",
+		"weight": "6 g",
+		"ammo_type": "components",
+		"count": 50
 	},
 	{
 		"type": "ITEM",
+		"subtypes": ["AMMO"],
 		"id": "material_limestone",
 		"category": "chems",
-		"price": "1 cent",
-		"price_postapoc": "0 cent",
+		"price": "50 cent",
+		"price_postapoc": "10 cent",
 		"name": { "str_sp": "limestone" },
 		"symbol": "=",
 		"color": "dark_gray",
 		"description": "A handful of small chunks of limestone.  Useful for experiments at science fairs, but pretty useless as ammo.  Maybe something could be crafted from this stuff…",
 		"material": ["stone"],
-		"volume": "5 ml",
+		"volume": "250 ml",
 		"weight": "14 g",
+		"ammo_type": "components",
+		"count": 50,
 		"melee_damage": { "bash": 1 }
 	},
 	{
 		"type": "ITEM",
+		"subtypes": ["AMMO"],
 		"id": "material_quicklime",
 		"category": "chems",
 		"price": "1 USD",
 		"price_postapoc": "10 cent",
-		"name": { "str_sp": "quicklime powder" },
-		"display_type": "BY_WEIGHT",
+		"name": { "str_sp": "quicklime" },
 		"symbol": "=",
 		"color": "dark_gray",
 		"description": "The product of burning limestone, this white powder is a crucial ingredient in making cement.  That said, it is also extremely caustic and will cause severe burns to any tissue it comes in contact with.  This property could probably be exploited.",
 		"material": ["quicklime"],
 		"volume": "5 ml",
-		"weight": "16700 mg"
+		"weight": "16700 mg",
+		"ammo_type": "components",
+		"count": 1
 	},
 	{
 		"type": "ITEM",
+		"subtypes": ["AMMO"],
 		"id": "chem_slaked_lime",
 		"category": "chems",
-		"price": "2 cent",
-		"price_postapoc": "2 cent",
-		"name": { "str_sp": "slaked lime powder" },
+		"price": "5 USD",
+		"price_postapoc": "5 USD",
+		"name": { "str_sp": "slaked lime" },
 		"symbol": "=",
 		"color": "white",
 		"description": " A handful of slaked lime, a white odorless powder with many uses.  Also known as calcium hydroxide.",
 		"material": ["slaked_lime"],
-		"volume": "1 ml",
-		"weight": "2211 mg"
+		"volume": "250 ml",
+		"weight": "2211 mg",
+		"ammo_type": "components",
+		"count": 250
 	},
 	{
 		"type": "ITEM",
+		"subtypes": ["AMMO"],
 		"id": "material_sand",
 		"category": "spare_parts",
 		"price": "0 cent",
@@ -287,10 +305,13 @@
 		"description": "A handful of New England sand.  If you had a stoked furnace, you could turn it into glass.  Otherwise, it's only good for making cement.",
 		"material": ["sand"],
 		"volume": "5 ml",
-		"weight": "8 g"
+		"weight": "8 g",
+		"ammo_type": "components",
+		"count": 1
 	},
 	{
 		"type": "ITEM",
+		"subtypes": ["AMMO"],
 		"id": "material_soil",
 		"category": "spare_parts",
 		"price": "0 cent",
@@ -302,7 +323,9 @@
 		"description": "A pile of loosely-packed, slightly damp loamy soil.  This mixture of sand, silt and clay is ideal for growing plants.",
 		"material": ["soil"],
 		"volume": "5 L",
-		"weight": "6500 g"
+		"weight": "6500 g",
+		"ammo_type": "components",
+		"stack_size": 1
 	},
 	{
 		"type": "ITEM",
