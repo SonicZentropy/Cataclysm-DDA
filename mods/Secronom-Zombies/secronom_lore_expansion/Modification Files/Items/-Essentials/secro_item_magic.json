@@ -146,21 +146,6 @@
 		"shape": "blast"
 	},
 	{
-		"type": "SPELL",
-		"id": "secro_power_armor_feed_give",
-		"name": { "str": "Morph" },
-		"description": "Spell casted by an item. If you're seeing this, then read this one instead:\n'Item provides an object used for selecting the morphing branch.'",
-		"message": "",
-		"flags": ["SILENT", "NO_HANDS", "NO_LEGS", "NO_PROJECTILE"],
-		"valid_targets": ["self"],
-		"effect": "spawn_item",
-		"shape": "blast",
-		"effect_str": "secro_power_armor_feed_item",
-		"min_duration": 300,
-		"max_duration": 300,
-		"base_casting_time": 300
-	},
-	{
 		"id": "secro_power_armor_flesh_morphed_fite_blades_lowcut",
 		"type": "SPELL",
 		"name": { "str": "Slash" },

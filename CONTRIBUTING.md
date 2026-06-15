@@ -103,7 +103,7 @@ There are a couple of guidelines we suggest sticking to (see [#Example Workflow]
 ## Code Style
 
 Code style is enforced across the codebase by `astyle`.
-See [CODE_STYLE](./doc/c++/CODE_STYLE.md) for details.
+See [CODE_STYL(./doc/c++/CODE_STYLE.md) for details.
 
 ## Translations
 
@@ -362,8 +362,8 @@ You can also set the tracking information at the same time as creating the branc
 
 ## Unit tests
 
-There is a suite of tests built into the source tree at tests/  
-You should run the test suite after ANY change to the game source.  
+There is a suite of tests built into the source tree at tests/
+You should run the test suite after ANY change to the game source.
 An ordinary invocation of `make` will build the test executable at `tests/cata_test`, and it can be invoked like any ordinary executable, or via `make check`.
 Running `tests/cata_test` with no arguments will run the entire test suite; running it with `--help` will print a number of invocation options you can use to adjust its operation.
 

@@ -2,7 +2,7 @@
 	{
 		"id": "secro_power_armor_flesh_starter",
 		"type": "ITEM",
-		"subtypes": [ "TOOL", "ARMOR" ],
+		"subtypes": ["TOOL", "ARMOR"],
 		"category": "armor",
 		"name": { "str": "flesh vessel" },
 		"description": "It is currently not merged with anything. Activate to permanently merge with it.\n\nA complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
@@ -11,37 +11,50 @@
 		"price": "323000 USD",
 		"price_postapoc": "3000 USD",
 		"melee_damage": { "bash": 1 },
-		"material": [ "secro_flesh_reinforced" ],
+		"material": ["secro_flesh_reinforced"],
 		"symbol": "[",
 		"looks_like": "power_armor_light",
 		"color": "red",
 		"warmth": 30,
 		"use_action": [
 			{
-				"target": "secro_power_armor_flesh_starter_act",
+				"target": "secro_power_armor_flesh_starter_on",
 				"msg": "<color_light_green>The flesh vessel merges with your skin!",
 				"type": "transform",
 				"need_worn": true,
 				"menu_text": "Merge with the flesh vessel"
 			}
 		],
-		"qualities": [ [ "GLARE", 1 ] ],
-		"flags": [ "TRADER_KEEP", "WATERPROOF", "STURDY", "NO_UNLOAD", "OVERSIZE" ],
+		"qualities": [["GLARE", 1]],
+		"flags": ["TRADER_KEEP", "WATERPROOF", "STURDY", "NO_UNLOAD", "OVERSIZE"],
 		"material_thickness": 9,
 		"environmental_protection": 6,
 		"armor": [
 			{
 				"encumbrance": 50,
 				"coverage": 100,
-				"covers": [ "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r", "head", "eyes", "mouth" ]
+				"covers": [
+					"torso",
+					"arm_l",
+					"arm_r",
+					"hand_l",
+					"hand_r",
+					"leg_l",
+					"leg_r",
+					"foot_l",
+					"foot_r",
+					"head",
+					"eyes",
+					"mouth"
+				]
 			}
 		]
 	},
 	{
-		"id": "secro_power_armor_flesh_starter_act",
+		"id": "secro_power_armor_flesh_starter_on",
 		"copy-from": "secro_power_armor_flesh_starter",
 		"type": "ITEM",
-		"subtypes": [ "ARTIFACT", "TOOL", "ARMOR" ],
+		"subtypes": ["ARTIFACT", "TOOL", "ARMOR"],
 		"category": "armor",
 		"name": { "str": "flesh vessel" },
 		"description": "It is currently not merged with anything. Activate to permanently merge with it.\n\nA complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
@@ -50,7 +63,12 @@
 		"initial_charges": 1,
 		"max_charges": 1,
 		"turns_per_charge": 1,
-		"use_action": { "type": "cast_spell", "spell_id": "secro_power_armor_flesh_give_target", "no_fail": true, "level": 0 },
+		"use_action": {
+			"type": "cast_spell",
+			"spell_id": "secro_power_armor_flesh_give_target",
+			"no_fail": true,
+			"level": 0
+		},
 		"flags": [
 			"TRADER_AVOID",
 			"TRADER_KEEP",
@@ -69,7 +87,10 @@
 			{
 				"has": "WORN",
 				"condition": "ACTIVE",
-				"values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+				"values": [
+					{ "value": "CLIMATE_CONTROL_HEAT", "add": 50 },
+					{ "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
+				]
 			}
 		]
 	},
@@ -77,7 +98,7 @@
 		"//": "Removed complicated mechanics, cuz they're stupid af. Also they won't drop this on-death.",
 		"id": "secro_power_armor_flesh_npc",
 		"type": "ITEM",
-		"subtypes": [ "ARTIFACT", "TOOL", "ARMOR" ],
+		"subtypes": ["ARTIFACT", "TOOL", "ARMOR"],
 		"category": "armor",
 		"name": { "str": "flesh vessel" },
 		"description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
@@ -86,12 +107,12 @@
 		"price": "323000 USD",
 		"price_postapoc": "3000 USD",
 		"melee_damage": { "bash": 1 },
-		"material": [ "secro_flesh_reinforced" ],
+		"material": ["secro_flesh_reinforced"],
 		"symbol": "[",
 		"looks_like": "power_armor_light",
 		"color": "red",
 		"warmth": 30,
-		"qualities": [ [ "GLARE", 1 ] ],
+		"qualities": [["GLARE", 1]],
 		"flags": [
 			"TRADER_AVOID",
 			"TRADER_KEEP",
@@ -113,21 +134,37 @@
 			{
 				"encumbrance": 10,
 				"coverage": 100,
-				"covers": [ "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r", "head", "eyes", "mouth" ]
+				"covers": [
+					"torso",
+					"arm_l",
+					"arm_r",
+					"hand_l",
+					"hand_r",
+					"leg_l",
+					"leg_r",
+					"foot_l",
+					"foot_r",
+					"head",
+					"eyes",
+					"mouth"
+				]
 			}
 		],
 		"passive_effects": [
 			{
 				"has": "WORN",
 				"condition": "ACTIVE",
-				"values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+				"values": [
+					{ "value": "CLIMATE_CONTROL_HEAT", "add": 50 },
+					{ "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
+				]
 			}
 		]
 	},
 	{
 		"id": "secro_power_armor_flesh",
 		"type": "ITEM",
-		"subtypes": [ "ARTIFACT", "TOOL", "ARMOR" ],
+		"subtypes": ["ARTIFACT", "TOOL", "ARMOR"],
 		"category": "armor",
 		"name": { "str": "flesh vessel" },
 		"description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
@@ -136,20 +173,20 @@
 		"price": "323000 USD",
 		"price_postapoc": "3000 USD",
 		"melee_damage": { "bash": 1 },
-		"material": [ "secro_flesh_reinforced" ],
+		"material": ["secro_flesh_reinforced"],
 		"symbol": "[",
 		"looks_like": "power_armor_light",
 		"color": "red",
 		"warmth": 30,
 		"use_action": [
 			{
-				"target": "secro_power_armor_flesh_act",
+				"target": "secro_power_armor_flesh_on",
 				"msg": "<color_light_green>You took control of the flesh vessel.",
 				"type": "transform",
 				"menu_text": "Activate flesh vessel"
 			}
 		],
-		"qualities": [ [ "GLARE", 1 ] ],
+		"qualities": [["GLARE", 1]],
 		"flags": [
 			"TRADER_AVOID",
 			"TRADER_KEEP",
@@ -170,22 +207,38 @@
 			{
 				"encumbrance": 50,
 				"coverage": 100,
-				"covers": [ "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r", "head", "eyes", "mouth" ]
+				"covers": [
+					"torso",
+					"arm_l",
+					"arm_r",
+					"hand_l",
+					"hand_r",
+					"leg_l",
+					"leg_r",
+					"foot_l",
+					"foot_r",
+					"head",
+					"eyes",
+					"mouth"
+				]
 			}
 		],
 		"passive_effects": [
 			{
 				"has": "WORN",
 				"condition": "ACTIVE",
-				"values": [ { "value": "CLIMATE_CONTROL_HEAT", "add": 50 }, { "value": "CLIMATE_CONTROL_CHILL", "add": 50 } ]
+				"values": [
+					{ "value": "CLIMATE_CONTROL_HEAT", "add": 50 },
+					{ "value": "CLIMATE_CONTROL_CHILL", "add": 50 }
+				]
 			}
 		]
 	},
 	{
-		"id": "secro_power_armor_flesh_act",
+		"id": "secro_power_armor_flesh_on",
 		"copy-from": "secro_power_armor_flesh",
 		"type": "ITEM",
-		"subtypes": [ "TOOL", "ARMOR" ],
+		"subtypes": ["TOOL", "ARMOR"],
 		"category": "armor",
 		"name": { "str": "flesh vessel (on)", "str_pl": "flesh vessels (on)" },
 		"description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
@@ -219,7 +272,20 @@
 			{
 				"encumbrance": 10,
 				"coverage": 100,
-				"covers": [ "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r", "head", "eyes", "mouth" ]
+				"covers": [
+					"torso",
+					"arm_l",
+					"arm_r",
+					"hand_l",
+					"hand_r",
+					"leg_l",
+					"leg_r",
+					"foot_l",
+					"foot_r",
+					"head",
+					"eyes",
+					"mouth"
+				]
 			}
 		]
 	},
@@ -227,14 +293,14 @@
 		"id": "secro_power_armor_flesh2",
 		"copy-from": "secro_power_armor_flesh",
 		"type": "ITEM",
-		"subtypes": [ "TOOL", "ARMOR" ],
+		"subtypes": ["TOOL", "ARMOR"],
 		"category": "armor",
 		"name": { "str": "flesh vessel" },
 		"description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
 		"proportional": { "weight": 1.1, "volume": 1.1 },
 		"use_action": [
 			{
-				"target": "secro_power_armor_flesh2_act",
+				"target": "secro_power_armor_flesh2_on",
 				"msg": "<color_light_green>You took control of the flesh vessel.",
 				"type": "transform",
 				"menu_text": "Activate flesh vessel"
@@ -243,10 +309,10 @@
 		"material_thickness": 10
 	},
 	{
-		"id": "secro_power_armor_flesh2_act",
+		"id": "secro_power_armor_flesh2_on",
 		"copy-from": "secro_power_armor_flesh2",
 		"type": "ITEM",
-		"subtypes": [ "TOOL", "ARMOR" ],
+		"subtypes": ["TOOL", "ARMOR"],
 		"category": "armor",
 		"name": { "str": "flesh vessel (on)", "str_pl": "flesh vessels (on)" },
 		"description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
@@ -280,7 +346,20 @@
 			{
 				"encumbrance": 10,
 				"coverage": 100,
-				"covers": [ "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r", "head", "eyes", "mouth" ]
+				"covers": [
+					"torso",
+					"arm_l",
+					"arm_r",
+					"hand_l",
+					"hand_r",
+					"leg_l",
+					"leg_r",
+					"foot_l",
+					"foot_r",
+					"head",
+					"eyes",
+					"mouth"
+				]
 			}
 		]
 	},
@@ -288,14 +367,14 @@
 		"id": "secro_power_armor_flesh3",
 		"copy-from": "secro_power_armor_flesh2",
 		"type": "ITEM",
-		"subtypes": [ "TOOL", "ARMOR" ],
+		"subtypes": ["TOOL", "ARMOR"],
 		"category": "armor",
 		"name": { "str": "flesh vessel" },
 		"description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
 		"proportional": { "weight": 1.1, "volume": 1.1 },
 		"use_action": [
 			{
-				"target": "secro_power_armor_flesh3_act",
+				"target": "secro_power_armor_flesh3_on",
 				"msg": "<color_light_green>You took control of the flesh vessel.",
 				"type": "transform",
 				"menu_text": "Activate flesh vessel"
@@ -304,10 +383,10 @@
 		"material_thickness": 11
 	},
 	{
-		"id": "secro_power_armor_flesh3_act",
+		"id": "secro_power_armor_flesh3_on",
 		"copy-from": "secro_power_armor_flesh3",
 		"type": "ITEM",
-		"subtypes": [ "TOOL", "ARMOR" ],
+		"subtypes": ["TOOL", "ARMOR"],
 		"category": "armor",
 		"name": { "str": "flesh vessel (on)", "str_pl": "flesh vessels (on)" },
 		"description": "A complex battle suit brought to existence using the latest technological advancements. Secronom exoskeleton type \"Vessel\" takes advantage of the flesh's adaptive cell structure and its capability to respond from one's mind.",
@@ -341,7 +420,20 @@
 			{
 				"encumbrance": 10,
 				"coverage": 100,
-				"covers": [ "torso", "arm_l", "arm_r", "hand_l", "hand_r", "leg_l", "leg_r", "foot_l", "foot_r", "head", "eyes", "mouth" ]
+				"covers": [
+					"torso",
+					"arm_l",
+					"arm_r",
+					"hand_l",
+					"hand_r",
+					"leg_l",
+					"leg_r",
+					"foot_l",
+					"foot_r",
+					"head",
+					"eyes",
+					"mouth"
+				]
 			}
 		]
 	}
