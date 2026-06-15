@@ -3045,7 +3045,7 @@ bool game::do_regular_action( action_id &act, avatar &player_character,
                 uistate.overmap_visible_weather = false;
             }
             if( you_know_where_you_are() ) {
-                ui::omap::display();
+                ui::omap::display_editor();
             } else {
                 add_msg( m_info, _( "You have no idea where you are." ) );
             }
