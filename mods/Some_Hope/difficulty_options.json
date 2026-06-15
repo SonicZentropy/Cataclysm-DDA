@@ -34,10 +34,10 @@
 		"effect": [
 			{
 				"run_eoc_selector": ["EOC_NH_set_item_difficulty_0"],
-				"names": ["Creeping Despair"],
+				"names": ["No Despair"],
 				"title": "Select a difficulty",
 				"keys": ["1"],
-				"descriptions": ["Creeping Despair makes items rarer than vanilla."]
+				"descriptions": ["No Despair makes items slightly rarer than vanilla."]
 			}
 		]
 	},
@@ -58,13 +58,13 @@
 		"effect": [
 			{
 				"set_item_category_spawn_rates": [
+					{ "spawn_rate": 1.0, "id": "food" },
 					{ "spawn_rate": 1.0, "id": "guns" },
 					{ "spawn_rate": 1.0, "id": "magazines" },
 					{ "spawn_rate": 1.0, "id": "ammo" },
 					{ "spawn_rate": 1.0, "id": "weapons" },
 					{ "spawn_rate": 1.0, "id": "tools" },
 					{ "spawn_rate": 1.0, "id": "clothing" },
-					{ "spawn_rate": 1.0, "id": "food" },
 					{ "spawn_rate": 1.0, "id": "drugs" },
 					{ "spawn_rate": 1.0, "id": "manuals" },
 					{ "spawn_rate": 1.0, "id": "books" },

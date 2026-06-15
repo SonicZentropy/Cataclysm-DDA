@@ -1154,7 +1154,7 @@ void debug_menu::wishitem( Character *you, const tripoint_bub_ms &pos )
         { "SCROLL_DESC_UP", translation() },
         { "SCROLL_DESC_DOWN", translation() },
     };
-    wmenu.desired_bounds = { -0.9, -0.9, 0.9, 0.9 };
+    wmenu.desired_bounds = { -1, -1, 0.7, 0.7 };
     wmenu.selected = uistate.wishitem_selected;
     wish_item_callback cb( itypes, ivariants, snipped_id_str );
     wmenu.callback = &cb;

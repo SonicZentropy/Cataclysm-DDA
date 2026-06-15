@@ -596,15 +596,15 @@ namespace debug_menu {
 
     static int player_uilist() {
         std::vector<uilist_entry> uilist_initializer = {
-            {uilist_entry(debug_menu_index::RESTORE_STAMINA, true, 's', _("Restore stamina"))},
             {uilist_entry(debug_menu_index::MUTATE, true, 'M', _("Mutate"))},
+            {uilist_entry(debug_menu_index::EDIT_PLAYER, true, 'a', _("Edit player/NPC"))},
+            {uilist_entry(debug_menu_index::RESTORE_STAMINA, true, 's', _("Restore stamina"))},
             {uilist_entry(debug_menu_index::CHANGE_SKILLS, true, 'g', _("Change all skills"))},
             {uilist_entry(debug_menu_index::CHANGE_THEORY, true, 'T', _("Change all skills theoretical knowledge"))},
             {uilist_entry(debug_menu_index::LEARN_MA, true, 'l', _("Learn all melee styles"))},
             {uilist_entry(debug_menu_index::UNLOCK_RECIPES, true, 'r', _("Unlock all recipes"))},
             {uilist_entry(debug_menu_index::FORGET_ALL_RECIPES, true, 'f', _("Forget all recipes"))},
             {uilist_entry(debug_menu_index::FORGET_ALL_ITEMS, true, 'F', _("Forget all items"))},
-            {uilist_entry(debug_menu_index::EDIT_PLAYER, true, 'a', _("Edit player/NPC"))},
             {uilist_entry(debug_menu_index::DAMAGE_SELF, true, 'd', _("Damage self"))},
             {uilist_entry(debug_menu_index::BLEED_SELF, true, 'b', _("Bleed self"))},
             {uilist_entry(debug_menu_index::SET_AUTOMOVE, true, 'r', _("Set auto move route"))},
@@ -1050,20 +1050,20 @@ namespace debug_menu {
 
     static int map_uilist() {
         const std::vector<uilist_entry> uilist_initializer = {
-            {uilist_entry(debug_menu_index::KILL_AREA, true, 'a', _("Kill in Area"))},
-            {uilist_entry(debug_menu_index::KILL_NPCS, true, 'i', _("Kill NPCs"))},
+            {uilist_entry(debug_menu_index::OM_EDITOR, true, 'O', _("Overmap editor"))},
             {uilist_entry(debug_menu_index::MAP_EDITOR, true, 'M', _("Map editor"))},
-            {uilist_entry(debug_menu_index::PALETTE_VIEWER, true, 'P', _("Palette viewer"))},
+            {uilist_entry(debug_menu_index::CHANGE_TIME, true, 't', _("Change time"))},
+            {uilist_entry(debug_menu_index::MAP_EXTRA, true, 'm', _("Spawn map extra"))},
+            {uilist_entry(debug_menu_index::NESTED_MAPGEN, true, 'n', _("Spawn nested mapgen"))},
+            {uilist_entry(debug_menu_index::KILL_AREA, true, 'a', _("Kill in Area"))},
+            {uilist_entry(debug_menu_index::KILL_MONS, true, 'K', _("Kill all monsters"))},
+            {uilist_entry(debug_menu_index::KILL_NPCS, true, 'i', _("Kill NPCs"))},
             {uilist_entry(debug_menu_index::CHANGE_WEATHER, true, 'w', _("Change weather"))},
             {uilist_entry(debug_menu_index::WIND_DIRECTION, true, 'd', _("Change wind direction"))},
             {uilist_entry(debug_menu_index::WIND_SPEED, true, 's', _("Change wind speed"))},
             {uilist_entry(debug_menu_index::GEN_SOUND, true, 'S', _("Generate sound"))},
-            {uilist_entry(debug_menu_index::KILL_MONS, true, 'K', _("Kill all monsters"))},
-            {uilist_entry(debug_menu_index::CHANGE_TIME, true, 't', _("Change time"))},
             {uilist_entry(debug_menu_index::FORCE_TEMP, true, 'T', _("Force temperature"))},
-            {uilist_entry(debug_menu_index::OM_EDITOR, true, 'O', _("Overmap editor"))},
-            {uilist_entry(debug_menu_index::MAP_EXTRA, true, 'm', _("Spawn map extra"))},
-            {uilist_entry(debug_menu_index::NESTED_MAPGEN, true, 'n', _("Spawn nested mapgen"))},
+            {uilist_entry(debug_menu_index::PALETTE_VIEWER, true, 'P', _("Palette viewer"))},
             {uilist_entry(debug_menu_index::PRINT_OVERMAPS, true, 'v', _("Print overmaps"))}
         };
 
