@@ -1111,15 +1111,16 @@ namespace debug_menu {
             {uilist_entry(D_MAP, true, 'm', _("Map…"))},
             {uilist_entry(D_PLAYER, true, 'a', _("Player…"))},
             {uilist_entry(D_TELEPORT, true, 't', _("Teleport…"))},
-
+            {uilist_entry(D_SPAWNING, true, 's', _("Spawning…"))},
+            {uilist_entry(D_GAME, true, 'g', _("Game…"))},
             {uilist_entry(D_CONSOLE, true, 'C', _("Console…"))},
             {uilist_entry(D_INFO, true, 'i', _("Info…"))},
-            {uilist_entry(D_GAME, true, 'g', _("Game…"))},
-            {uilist_entry(D_SPAWNING, true, 's', _("Spawning…"))},
             {uilist_entry(D_MONSTER, true, 'c', _("Monster…"))},
             {uilist_entry(D_FACTION, true, 'f', _("Faction…"))},
             {uilist_entry(D_VEHICLE, true, 'v', _("Vehicle…"))},
             {uilist_entry(D_DIALOGUE, true, 'd', _("Dialogue…"))},
+            {uilist_entry(D_QUICK_SETUP, true, 'Q', _("Quick setup…"))},
+
         };
 
         while (true) {
