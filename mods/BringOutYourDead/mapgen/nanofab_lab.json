@@ -24,12 +24,6 @@
 		}
 	},
 	{
-		"id": "nanofab",
-		"name": { "str": "facility jumpsuit" },
-		"description": "A brown jumpsuit with yellow accents, appears to be an uniform of some sort.",
-		"weight": 0
-	},
-	{
 		"type": "ITEM",
 		"id": "melchior_platter",
 		"copy-from": "melchior_platter",
@@ -68,7 +62,6 @@
 				"microlab_nanofab_roof10"
 			]
 		],
-		"method": "json",
 		"object": {
 			"fill_ter": "t_strconc_floor",
 			"rows": [
@@ -143,7 +136,6 @@
 				"microlab_nanofab_gantry_upper10"
 			]
 		],
-		"method": "json",
 		"object": {
 			"fill_ter": "t_strconc_floor",
 			"rows": [
@@ -224,7 +216,6 @@
 				"microlab_nanofab_gantry_lower10"
 			]
 		],
-		"method": "json",
 		"object": {
 			"fill_ter": "t_strconc_floor",
 			"rows": [
@@ -279,15 +270,14 @@
 			],
 			"palettes": ["microlab_generic"],
 			"terrain": {
-				"terrain": {
-					"_": "t_bridge",
-					" ": "t_open_air",
-					"r": "t_metal_railing",
-					"&": "t_roof_fan_industrial",
-					">": "t_ladder_down",
-					"<": "t_ladder_up",
-					"X": "t_ladder_up_down"
-				}
+				"/": "t_wall_metal_corrugated",
+				"_": "t_bridge",
+				" ": "t_open_air",
+				"r": "t_metal_railing",
+				"&": "t_roof_fan_industrial",
+				">": "t_ladder_down",
+				"<": "t_ladder_up",
+				"X": "t_ladder_up_down"
 			}
 		}
 	},
@@ -309,7 +299,6 @@
 				"microlab_nanofab_office_roof10"
 			]
 		],
-		"method": "json",
 		"object": {
 			"fill_ter": "t_strconc_floor",
 			"rows": [
@@ -393,7 +382,6 @@
 				"microlab_nanofab_ground_floor_10"
 			]
 		],
-		"method": "json",
 		"object": {
 			"fill_ter": "t_strconc_floor",
 			"rows": [
@@ -457,10 +445,20 @@
 				"<": "t_ladder_up",
 				"ç": "t_carpet_strconcrete_red",
 				"?": "t_carpet_strconcrete_red",
+				"Ü": "t_door_metal_c",
 				"$": "t_metal_ventilation_shutter",
+				"Ï": "t_concrete_wall",
+				"]": "t_wall_glass",
+				"É": "t_card_science_security_black",
+				"W": "t_water_sh",
+				"/": "t_wall_metal_corrugated",
 				"F": "t_chainfence"
 			},
-			"furniture": { "l": "f_locker", "G": "f_12000_gasoline_generator" },
+			"furniture": {
+				"l": "f_locker",
+				"G": "f_12000_gasoline_generator",
+				"p": "f_indoor_plant"
+			},
 			"items": {
 				",": { "item": "mercenary_battle_traces", "chance": 40 },
 				"_": { "item": "mercenary_battle_traces", "chance": 40 },
@@ -522,7 +520,6 @@
 				"microlab_nanofab_upperfab_10"
 			]
 		],
-		"method": "json",
 		"object": {
 			"fill_ter": "t_strconc_floor",
 			"rows": [
@@ -539,8 +536,8 @@
 				"###|  >||##########|||Ï||||||###################|eeee5 2 |    | 2 5eeee||||||||||||||||22||||||||22||||||||22|||||||||||",
 				"###|T||||##########|        |###################|eeeE| | |    | | |Eeee|          (°°°r  r°°°°°°r  r°°°°°°r  r°°°°°°°°°|",
 				"###| |#############|        |###################|||||||| |||||| ||||||||          (°°°r  r°°°°°°r  r°°°°°°r  ((((°°°°°°|",
-				"###| ||||||######|||        |###################||LLLLLL bL||Lb LLLLLL||          (rrrr  rrrrrrrr  rrrrrrrr  (  (°°°°°°|",
-				"###| |eeeE||||||||é|((((((((||||||||||||||||||||||L      bL||Lb      L||                                     (  (°°°°°°|",
+				"###| ||||||######|||        |###################||LLLLLL bN||Nb LLLLLL||          (rrrr  rrrrrrrr  rrrrrrrr  (  (°°°°°°|",
+				"###| |eeeE||||||||é|((((((((||||||||||||||||||||||N      bL||Lb      N||                                     (  (°°°°°°|",
 				"###| |eeee2 T  555                         555   || |bbbbbL||Lbbbbb| |||          (rrrr  rrrrrrrr  rrrrrrrr  (  (°°°°°°|",
 				"###| |eeee2 T  555                         555      |LLLLLL||LLLLLL|              (°°°r  r°°°°°°r  r°°°°°°r  ((((°°°°°°|",
 				"###| |eeee||||||||||        |||||||||||||||||||  ||||||||||||||||||||||  ||||     (°°°r  r°°°°°°r  r°°°°°°r  r°°°°°°°°°|",
@@ -583,6 +580,19 @@
 				"_": "t_carpet_concrete_red",
 				"1": "t_nether_glass_floor",
 				"8": "t_nether_glass_wall",
+				"L": "t_nanofab_body",
+				"N": "t_nanofab",
+				"º": "t_open_air",
+				"°": "t_strconc_floor",
+				"É": "t_card_science_security_black",
+				"Ú": "t_card_science_mu",
+				"Ï": "t_concrete_wall",
+				"Ë": "t_door_metal_c",
+				"é": "t_door_metal_c",
+				"ë": "t_door_metal_c",
+				"ó": "t_concrete_wall",
+				"Ö": "t_concrete_wall",
+				"Z": "t_concrete_wall",
 				"$": "t_metal_ventilation_shutter"
 			},
 			"furniture": {
@@ -590,6 +600,7 @@
 				"M": "f_server",
 				":": "f_xedra_antenna",
 				"Ñ": "f_locker",
+				"ú": "f_locker",
 				"H": "f_table",
 				"D": "f_desk",
 				"Ó": "f_utility_shelf",
@@ -608,6 +619,12 @@
 				],
 				"Ó": { "item": "yrax_scrap", "chance": 100, "repeat": 3 },
 				"ü": { "item": "xedra_kill_team_set", "chance": 100 }
+			},
+			"monster": {
+				"T": {
+					"monster": "mon_turret_rifle",
+					"spawn_data": { "ammo": [{ "ammo_id": "556", "qty": [30, 90] }] }
+				}
 			},
 			"computers": {
 				"9": {
@@ -643,7 +660,6 @@
 				"microlab_nanofab_midfab_10"
 			]
 		],
-		"method": "json",
 		"object": {
 			"fill_ter": "t_strconc_floor",
 			"rows": [
@@ -704,6 +720,9 @@
 				"_": "t_carpet_concrete_red",
 				"1": "t_nether_glass_floor",
 				"8": "t_nether_glass_wall",
+				"º": "t_open_air",
+				"°": "t_strconc_floor",
+				"Ï": "t_concrete_wall",
 				"$": "t_metal_ventilation_shutter"
 			},
 			"furniture": {
@@ -716,8 +735,17 @@
 				"Ó": "f_utility_shelf",
 				"7": "f_machinery_light",
 				"&": "f_machinery_electronic",
+				"p": "f_indoor_plant",
+				"s": "f_sink",
+				"ò": "f_trashcan",
 				"ä": "f_impaled_officer",
 				"ü": "f_impaled_soldier"
+			},
+			"monster": {
+				"T": {
+					"monster": "mon_turret_rifle",
+					"spawn_data": { "ammo": [{ "ammo_id": "556", "qty": [30, 90] }] }
+				}
 			},
 			"items": {
 				",": { "item": "mercenary_battle_traces", "chance": 40 },
@@ -764,7 +792,6 @@
 				"microlab_nanofab_lowerfab_10"
 			]
 		],
-		"method": "json",
 		"object": {
 			"fill_ter": "t_strconc_floor",
 			"rows": [
@@ -782,7 +809,7 @@
 				"#########################################################|    |###################|                                    |",
 				"#################################################||||||||||  ||||||||||###########|                                    |",
 				"#####||||||######################################|LLLLLL        LLLLLL|||||#######|                          ((((      |",
-				"#####|eeeE||||||||||||||||||||||||||||||||||||||||L                  L|||||#######|                          2eE(      |",
+				"#####|eeeE||||||||||||||||||||||||||||||||||||||||N                  N|||||#######|                          2eE(      |",
 				"#####|eeee2 T    5                           2                            |#######|                          ((((      |",
 				"#####|eeee2 T    5                           2                            |#######|                                    |",
 				"#####|eeee||||||||||        |||||||||||||||||||||||||||||||||||||||||||||||||||###|                                    |",
@@ -812,7 +839,7 @@
 				"########################################||,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,||########################################",
 				"########################################||||,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,|||########################################",
 				"###########################################|||,,,,,,,,,,,,,,,,,,,,,,,,,,,,|||###########################################",
-				"#############################################|||||,,,,,,,,,,,,,,,,,,,,,|||||#############################################",
+				"#############################################|||||,,,,,,,,,,,,,,,,,,,,,|||||############################################",
 				"#################################################||||||||||||||||||||||#################################################",
 				"########################################################################################################################",
 				"########################################################################################################################"
@@ -825,6 +852,9 @@
 				"_": "t_carpet_concrete_red",
 				"1": "t_nether_glass_floor",
 				"8": "t_nether_glass_wall",
+				"L": "t_nanofab_body",
+				"º": "t_open_air",
+				"N": "t_nanofab",
 				"$": "t_metal_ventilation_shutter"
 			},
 			"furniture": {
@@ -838,7 +868,14 @@
 				"7": "f_machinery_light",
 				"&": "f_machinery_electronic",
 				"ä": "f_impaled_officer",
-				"ü": "f_impaled_soldier"
+				"ü": "f_impaled_soldier",
+				"S": "f_sink"
+			},
+			"monster": {
+				"T": {
+					"monster": "mon_turret_rifle",
+					"spawn_data": { "ammo": [{ "ammo_id": "556", "qty": [30, 90] }] }
+				}
 			},
 			"items": {
 				",": { "item": "mercenary_battle_traces", "chance": 40 },
@@ -885,7 +922,6 @@
 				"microlab_nanofab_basefab_10"
 			]
 		],
-		"method": "json",
 		"object": {
 			"fill_ter": "t_strconc_floor",
 			"rows": [
@@ -924,7 +960,7 @@
 				"########################################|             y yyy  yyy               |########################################",
 				"########################################|              y       y               |########################################",
 				"########################################|         EE   y  t    y               |########################################",
-				"########################################|         E    y  rLL  y               |########################################",
+				"########################################|         E    y  rLN  y               |########################################",
 				"########################################|         EE   y       y               |########################################",
 				"########################################|              yyyyyyyyy               |########################################",
 				"########################################|                                      |########################################",
@@ -946,6 +982,8 @@
 				"_": "t_carpet_concrete_red",
 				"1": "t_nether_glass_floor",
 				"8": "t_nether_glass_wall",
+				"L": "t_nanofab_body",
+				"N": "t_nanofab",
 				"$": "t_metal_ventilation_shutter"
 			},
 			"furniture": {
