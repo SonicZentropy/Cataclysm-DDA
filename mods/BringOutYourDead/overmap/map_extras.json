@@ -45,8 +45,8 @@
 			{ "point": [1, 3, 0], "terrain": "road", "connection": "local_road" }
 		],
 		"locations": ["land"],
-		"occurrences": [1, 2],
-		"flags": ["CLASSIC", "MAN_MADE"]
+		"occurrences": [1, 5],
+		"flags": ["CLASSIC", "MAN_MADE", "GLOBALLY_UNIQUE"]
 	},
 	{
 		"type": "overmap_terrain",
