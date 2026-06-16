@@ -273,7 +273,6 @@
 			"~": "t_water_sh",
 			"1": "t_column",
 			"5": "t_palisade_pulley",
-			"6": "t_console",
 			"0": "t_window_empty",
 			"e": "t_elevator",
 			"E": "t_elevator_control_off",
@@ -288,6 +287,7 @@
 			"Y": "t_palisade"
 		},
 		"furniture": {
+			"6": "f_console",
 			"3": "f_machinery_heavy",
 			"2": "f_machinery_light",
 			"4": "f_machinery_electronic",
@@ -361,7 +361,6 @@
 			"~": "t_water_sh",
 			"1": "t_column",
 			"5": "t_palisade_pulley",
-			"6": "t_console",
 			"0": "t_window_empty",
 			"e": "t_elevator",
 			"E": "t_elevator_control_off",
@@ -373,6 +372,7 @@
 			"u": "t_utility_light"
 		},
 		"furniture": {
+			"6": "f_console",
 			"2": "f_machinery_light",
 			"4": "f_machinery_electronic",
 			"3": "f_machinery_heavy",
@@ -621,12 +621,9 @@
 	{
 		"type": "palette",
 		"id": "electro_lab",
-		"terrain": {
-			"1": "t_support_l",
-			"8": "t_radio_tower",
-			"9": "t_plut_generator"
-		},
+		"terrain": { "1": "t_support_l", "8": "t_radio_tower" },
 		"furniture": {
+			"9": "f_compact_ASRG_containment",
 			"3": "f_robotic_arm",
 			"4": "f_machinery_electronic",
 			"6": "f_console_broken",
