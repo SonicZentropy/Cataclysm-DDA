@@ -2,7 +2,7 @@
   {
     "id": "integrated_cable",
     "type": "ITEM",
-    "subtypes": ["TOOL_ARMOR"],
+    "subtypes": ["TOOL", "ARMOR"],
     "category": "armor",
     "weight": "25 g",
     "volume": "300 ml",
