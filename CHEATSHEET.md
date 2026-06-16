@@ -1,6 +1,14 @@
+Mods to port from Kenan Archive: https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack
+- BioCo
+- Abrahms_Recipes (has spear and polearm and other good items)
+- Advanced Gear
+- Armor Up Survivor Expansion
+- More_locations
+
+
 Charges vs Count:
 
-- An item is count_by_charges if it has "stackable": true in JSON, is an AMMO subtype, or is a non-solid COMESTIBLE. 
+- An item is count_by_charges if it has "stackable": true in JSON, is an AMMO subtype, or is a non-solid COMESTIBLE.
 - For count_by_charges items, charges is the quantity (e.g., 50 rounds of 9mm = one item object with charges = 50). For non-stackable items, charges tracks tool power/ammo level, and count() always returns 1
 
 Part 2: Item Group Spawn Entries
@@ -32,10 +40,10 @@ Porting charges → count (for a count_by_charges item)
 
 Only valid when you want separate physical item instances instead of one merged stack.
 
-// Before: one stack of 20 rounds  
+// Before: one stack of 20 rounds
 { "item": "9mm", "charges": 20 }
 
-// After: 20 separate single-round items (NOT equivalent for stacking)  
+// After: 20 separate single-round items (NOT equivalent for stacking)
 { "item": "9mm", "count": 20, "charges": 1 }
 
 For the migration the project is doing (removing the charges system), the correct port is to make the item non-count_by_charges and use count for quantity. This requires:
@@ -47,10 +55,10 @@ For the migration the project is doing (removing the charges system), the correc
 
 Porting count → charges (for a non-stackable item becoming stackable)
 
-// Before: 5 separate bandage items  
+// Before: 5 separate bandage items
 { "item": "bandage", "count": 5 }
 
-// After: one stack of 5 (requires item to have "stackable": true)  
+// After: one stack of 5 (requires item to have "stackable": true)
 { "item": "bandage", "charges": 5 }
 
 This also requires updating the item definition:
@@ -119,4 +127,4 @@ For non-`count_by_charges` items (clothing, weapons, etc.):
 2. Adjust `volume` to mean "volume of stack_size charges" (multiply by stack_size)
 3. Adjust `price` to mean "price for stack_size charges" (multiply by stack_size)
 4. `weight` stays the same (already per-item = per-charge)
-5. In spawn groups: replace `"count": N` with `"charges": N`  
+5. In spawn groups: replace `"count": N` with `"charges": N`
