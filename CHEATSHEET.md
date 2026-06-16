@@ -1,10 +1,14 @@
 Mods to port from Kenan Archive: https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack
+
 - BioCo
 - Abrahms_Recipes (has spear and polearm and other good items)
 - Advanced Gear
 - Armor Up Survivor Expansion
 - More_locations
 
+Regex replacements:
+Pattern: (fridge.*)"chance"
+Replacement: $1"count"
 
 Charges vs Count:
 
@@ -70,52 +74,62 @@ This also requires updating the item definition:
     Change price to mean "price for stack_size charges"
 
 | Scenario                              | Use `charges`                    | Use `count`                              |
-|---------------------------------------|----------------------------------|------------------------------------------|
+| ------------------------------------- | -------------------------------- | ---------------------------------------- |
 | Ammo quantity in spawn                | `"charges": 50`                  | Wrong field                              |
 | Multiple separate non-stackable items | Wrong field                      | `"count": 5`                             |
 | Multiple separate stackable stacks    | `"charges": N, "count": M`       | `"count": M` (each gets default charges) |
 | Tool battery level                    | `"charges": 100`                 | Wrong field                              |
 | Item definition: default quantity     | `"charges": N` (default charges) | `"count": N` (ammo: pellets per shot)    |
 
-
 # AI SUMMARY
+
 # Cataclysm-DDA: charges vs count reference
 
 ## The core predicate: `count_by_charges()`
+
 An item is "count_by_charges" if it is:
+
 - AMMO subtype, OR
 - non-solid COMESTIBLE subtype, OR
 - has `"stackable": true` in its JSON definition
 
 ## Item definition JSON semantics
+
 For `count_by_charges` items:
+
 - `weight` = weight **per single charge**
 - `volume` = volume of **`stack_size` charges** (NOT one charge)
 - `price` = price for **`stack_size` charges**
 - `stack_size` defaults to `charges_default()` if unset
 
 For non-`count_by_charges` items:
+
 - `weight`, `volume`, `price` = per single item instance
 
 ## Item group spawn entry semantics
+
 - `count`: how many **separate item instances** to create (repeats the spawn). Default 1.
 - `charges`: the **charge/quantity value** set on each spawned item.
 
 For `count_by_charges` items (ammo, food, stackable):
+
 - `"charges": 20` → 1 item object with charges=20 (one merged stack of 20)
 - `"count": 3` → 3 separate item objects, each with default charges
 - `"count": 3, "charges": 20` → 3 separate item objects, each with 20 charges
 - These are NOT interchangeable: charges merges into one stack, count creates N separate objects
 
 For non-`count_by_charges` items (clothing, weapons, etc.):
+
 - `"count": 5` → 5 separate items
 - `"charges"` → sets tool battery/ammo level only, not quantity
 
 ## Runtime
+
 - `item::charges` = raw field; for count_by_charges items this IS the quantity
 - `item::count()` = returns `charges` if count_by_charges, else `1`
 
 ## Porting count_by_charges item → non-stackable (charges → count)
+
 1. Remove `"stackable": true` (or change away from AMMO/liquid COMESTIBLE type)
 2. Adjust `volume` to be per-item (divide by old stack_size)
 3. Adjust `price` to be per-item (divide by old stack_size)
@@ -123,6 +137,7 @@ For non-`count_by_charges` items (clothing, weapons, etc.):
 5. In spawn groups: replace `"charges": N` with `"count": N`
 
 ## Porting non-stackable item → count_by_charges (count → charges)
+
 1. Add `"stackable": true` and set `"stack_size": N`
 2. Adjust `volume` to mean "volume of stack_size charges" (multiply by stack_size)
 3. Adjust `price` to mean "price for stack_size charges" (multiply by stack_size)
