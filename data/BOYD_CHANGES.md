@@ -61,7 +61,7 @@ TLG - Awesome ideas ported from TLG, a much finer fork than this one
 - Superalloy is now actually super
 - Lard.
 - Weariness does basically nothing - This game has far too many number bars for the same thing. Stamina and Sleep are quite enough on their own
-- Focus does do absolutely nothing - This is the dumbest mechanic in the game, to the point the devs themselves will tell you to ignore it because there's no counterplay to it. It's now forever 100. Take slow learner or something if you think you're learning too fast. Grinding mechanics to 8 in CDDA is miserable when it's your 50th time
+- Focus does do absolutely nothing - This is the dumbest mechanic in the game, to the point the devs themselves will tell you to ignore it because there's no counterplay to it. It's now forever 100. Take the new Very Slow Learner or something if you think you're learning too fast. Grinding mechanics to 8 in CDDA is miserable when it's your 50th time
 - Old atomic stuff returned - cool factor
 - Vehicle degradation/repair works the old way - BEGONE TEDIUM
 - Welding rod requirements removed - BEGONE TEDIUM
