@@ -158,7 +158,7 @@
 				"description": "Giant flames erupt from the heat of a tripod!"
 			}
 		],
-		"death_drops": { "groups": [ [ "robots", 4 ], [ "tripod", 1 ] ] },
+		"death_drops": { "groups": [ [ "robots", 5 ] ] },
 		"death_function": { "corpse_type": "BROKEN" },
 		"flags": [ "SEES", "HEARS", "GOODHEARING", "BASHES", "NO_BREATHE", "ELECTRONIC", "CLIMBS", "PRIORITIZE_TARGETS" ],
 		"armor": { "bash": 12, "cut": 8 }

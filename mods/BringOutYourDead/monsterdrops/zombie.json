@@ -7,6 +7,11 @@
     "extend": {
       "entries": [
         { "item": "power_supply", "count": [ 0, 7 ], "prob": 75 },
+				{ "item": "power_armor_helmet_light", "damage": [ 2, 4 ], "prob": 75 },
+				{ "item": "power_armor_light", "damage": [ 2, 4 ], "prob": 75 },
+				{ "item": "power_armor_frame", "damage": [ 2, 4 ], "prob": 75 },
+				{ "item": "power_armor_generator", "damage": [ 2, 4 ], "prob": 75 },
+				
         { "item": "combat_exoskeleton_armor_head_medium", "damage": [ 2, 4 ], "prob": 75 },
         { "item": "combat_exoskeleton_armor_torso_medium", "damage": [ 2, 4 ], "prob": 75 },
         { "item": "combat_exoskeleton_armor_arm_medium", "damage": [ 2, 4 ], "prob": 75 },
