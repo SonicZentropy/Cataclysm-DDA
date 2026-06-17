@@ -955,5 +955,27 @@
 				]
 			}
 		]
+	},
+	{
+		"id": "power_armor_pieces",
+		"type": "item_group",
+		"subtype": "distribution",
+		"items": [
+			{ "item": "power_armor_helmet_light" },
+			{ "item": "power_armor_helmet_basic" },
+			{ "item": "power_armor_helmet_heavy" }
+		]
+	},
+	{
+		"id": "power_armor_set_damaged",
+		"type": "item_group",
+		"subtype": "distribution",
+		"items": [
+			{ "item": "power_armor_generator", "damage": [0, 3] },
+			{ "item": "power_armor_frame", "damage": [0, 3] },
+			{ "item": "power_armor_basic", "damage": [0, 3] },
+			{ "item": "power_armor_light", "damage": [0, 3] },
+			{ "item": "power_armor_heavy", "damage": [0, 3] }
+		]
 	}
 ]
