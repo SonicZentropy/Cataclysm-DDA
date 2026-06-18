@@ -143,3 +143,28 @@ For non-`count_by_charges` items (clothing, weapons, etc.):
 3. Adjust `price` to mean "price for stack_size charges" (multiply by stack_size)
 4. `weight` stays the same (already per-item = per-charge)
 5. In spawn groups: replace `"count": N` with `"charges": N`
+
+# Adding new options:
+
+to add a new world option for that map.cpp check, define the option in src/options.cpp inside options_manager::add_options_world_default(),
+which is where world-only options are registered and commonly hidden with COPT_ALWAYS_HIDE. options.cpp:2840-2844 options.cpp:2855-2859 options.cpp:2861-2866
+
+If you want players to set it during world creation, add an option_slider entry in data/core/world_option_sliders.json with context: "WORLDGEN"
+and map the slider to your option ID, like the existing world_daycycle entry does. world_option_sliders.json:364-368 world_option_sliders.json:374-376
+
+In src/map.cpp, wrap your container visibility logic with a world-option check, using get_option<bool>( "YOUR_OPTION" )
+or the equivalent option lookup before the container branch. map.cpp:6553-6558 map.cpp:6560-6567
+
+get_option() reads from the current world’s option set when available, and falls back to global defaults when no world options are active. options.cpp:4373-4376 options.cpp:4377-4381 options.cpp:4383-4386
+
+New worlds start by copying get_world_defaults(), so adding the option to the world-default set makes it part of fresh worlds automatically. worldfactory.cpp:78-81 worldfactory.cpp:87-90
+
+A sketch of the map.cpp change would look like this: map.cpp:6553-6567
+
+```
+if( get_option<bool>( "YOUR_OPTION" ) && container ) {  
+return std::abs( p.x() - from.x() ) <= 1 &&  
+std::abs( p.y() - from.y() ) <= 1 &&  
+std::abs( p.z() - from.z() ) <= 1;  
+}
+```

@@ -2871,7 +2871,7 @@ void options_manager::add_options_world_default()
        );
 
     add( "EVOLUTION_INVERSE_MULTIPLIER", "world_default", translation(), translation(),
-         0.0, 100, 1.0, 0.01, COPT_ALWAYS_HIDE
+         0.0, 100, 1.0, 0.01f
        );
 
     add( "SEASON_LENGTH", "world_default", translation(), translation(), 14, 127, 91,
@@ -3044,6 +3044,10 @@ void options_manager::add_options_world_default()
              "a reasonable pace." ),
          true
        );
+
+    add_empty_line();
+
+    add( "SHOW_ALL_ITEMS", "world_default", to_translation("Show All Items"), to_translation("Controls whether items are shown even when in containers"), false );
 }
 
 void options_manager::add_options_debug()

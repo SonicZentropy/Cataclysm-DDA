@@ -1,112 +1,145 @@
 [
-  {
-    "type": "option_slider",
-    "id": "world_cities",
-    "context": "WORLDGEN",
-    "name": "Cities",
-    "default": 0,
-    "levels": [
-      {
-        "level": 0,
-        "name": "Suburbia",
-        "description": "Cities use default size and distances, with small to large cities separated by large rural areas.",
-        "options": [ { "option": "CITY_SIZE", "type": "int", "val": 8 }, { "option": "CITY_SPACING", "type": "int", "val": 4 } ]
-      },
-      {
-        "level": 1,
-        "name": "Cityscape",
-        "description": "Cities are 50% larger and 25% closer to each other.",
-        "options": [ { "option": "CITY_SIZE", "type": "int", "val": 12 }, { "option": "CITY_SPACING", "type": "int", "val": 3 } ]
-      },
+	{
+		"type": "option_slider",
+		"id": "world_cities",
+		"context": "WORLDGEN",
+		"name": "Cities",
+		"default": 0,
+		"levels": [
+			{
+				"level": 0,
+				"name": "Suburbia",
+				"description": "Cities use default size and distances, with small to large cities separated by large rural areas.",
+				"options": [
+					{ "option": "CITY_SIZE", "type": "int", "val": 8 },
+					{ "option": "CITY_SPACING", "type": "int", "val": 4 }
+				]
+			},
+			{
+				"level": 1,
+				"name": "Cityscape",
+				"description": "Cities are 50% larger and 25% closer to each other.",
+				"options": [
+					{ "option": "CITY_SIZE", "type": "int", "val": 12 },
+					{ "option": "CITY_SPACING", "type": "int", "val": 3 }
+				]
+			},
 			{
 				"level": 2,
 				"name": "Realistic Big Cities",
 				"description": "Cities are 50% larger and 25% further apart.",
-				"options": [ { "option": "CITY_SIZE", "type": "int", "val": 12 }, { "option": "CITY_SPACING", "type": "int", "val": 5 } ]
+				"options": [
+					{ "option": "CITY_SIZE", "type": "int", "val": 12 },
+					{ "option": "CITY_SPACING", "type": "int", "val": 5 }
+				]
 			}
-    ]
-  },
-  {
-    "type": "option_slider",
-    "id": "world_difficulty",
-    "context": "WORLDGEN",
-    "name": "Difficulty",
-    "default": 2,
-    "levels": [
-      {
-        "level": 0,
-        "name": "Cakewalk?",
-        "description": "Monsters are much easier to deal with, and plenty of items can be found.",
-        "options": [
-          { "option": "MONSTER_SPEED", "type": "int", "val": 90 },
-          { "option": "MONSTER_RESILIENCE", "type": "int", "val": 75 },
-          { "option": "SPAWN_DENSITY", "type": "float", "val": 0.8 },
-          { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 2 },
-          { "option": "ITEM_SPAWNRATE", "type": "float", "val": 1.5 }
-        ]
-      },
-      {
-        "level": 1,
-        "name": "Be nice to me",
-        "description": "Monsters are weaker, appear in smaller numbers, and evolve at a slower rate.",
-        "options": [
-          { "option": "MONSTER_SPEED", "type": "int", "val": 100 },
-          { "option": "MONSTER_RESILIENCE", "type": "int", "val": 85 },
-          { "option": "SPAWN_DENSITY", "type": "float", "val": 0.9 },
-          { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 1.5 },
-          { "option": "ITEM_SPAWNRATE", "type": "float", "val": 1 }
-        ]
-      },
-      {
-        "level": 2,
-        "name": "Cataclysm",
-        "description": "The default monster hunting and item collecting experience.",
-        "options": [
-          { "option": "MONSTER_SPEED", "type": "int", "val": 100 },
-          { "option": "MONSTER_RESILIENCE", "type": "int", "val": 100 },
-          { "option": "SPAWN_DENSITY", "type": "float", "val": 1 },
-          { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 1 },
-          { "option": "ITEM_SPAWNRATE", "type": "float", "val": 1 }
-        ]
-      },
-      {
-        "level": 3,
-        "name": "Hurt me",
-        "description": "Monsters are stronger, appear 50% more often, and evolve faster.",
-        "options": [
-          { "option": "MONSTER_SPEED", "type": "int", "val": 100 },
-          { "option": "MONSTER_RESILIENCE", "type": "int", "val": 120 },
-          { "option": "SPAWN_DENSITY", "type": "float", "val": 1.5 },
-          { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 0.91 },
-          { "option": "ITEM_SPAWNRATE", "type": "float", "val": 1 }
-        ]
-      },
-      {
-        "level": 4,
-        "name": "Punish me",
-        "description": "Monsters are significantly tougher and faster, spawn more, and evolve faster.  Items are a bit rarer too.",
-        "options": [
-          { "option": "MONSTER_SPEED", "type": "int", "val": 110 },
-          { "option": "MONSTER_RESILIENCE", "type": "int", "val": 150 },
-          { "option": "SPAWN_DENSITY", "type": "float", "val": 2 },
-          { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 0.88 },
-          { "option": "ITEM_SPAWNRATE", "type": "float", "val": 0.8 }
-        ]
-      },
-      {
-        "level": 5,
-        "name": "Punish me more!",
-        "description": "Monsters are much tougher, extremely fast, and spawn 3x more.  Items are half as likely to spawn.",
-        "options": [
-          { "option": "MONSTER_SPEED", "type": "int", "val": 120 },
-          { "option": "MONSTER_RESILIENCE", "type": "int", "val": 200 },
-          { "option": "SPAWN_DENSITY", "type": "float", "val": 3 },
-          { "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 0.75 },
-          { "option": "ITEM_SPAWNRATE", "type": "float", "val": 0.5 }
-        ]
-      }
-    ]
-  },
+		]
+	},
+	{
+		"type": "option_slider",
+		"id": "world_difficulty",
+		"context": "WORLDGEN",
+		"name": "Difficulty",
+		"default": 2,
+		"levels": [
+			{
+				"level": 0,
+				"name": "Cakewalk?",
+				"description": "Monsters are much easier to deal with, and plenty of items can be found.",
+				"options": [
+					{ "option": "MONSTER_SPEED", "type": "int", "val": 90 },
+					{ "option": "MONSTER_RESILIENCE", "type": "int", "val": 75 },
+					{ "option": "SPAWN_DENSITY", "type": "float", "val": 0.8 },
+					{
+						"option": "EVOLUTION_INVERSE_MULTIPLIER",
+						"type": "float",
+						"val": 2
+					},
+					{ "option": "ITEM_SPAWNRATE", "type": "float", "val": 1.5 }
+				]
+			},
+			{
+				"level": 1,
+				"name": "Be nice to me",
+				"description": "Monsters are weaker, appear in smaller numbers, and evolve at a slower rate.",
+				"options": [
+					{ "option": "MONSTER_SPEED", "type": "int", "val": 100 },
+					{ "option": "MONSTER_RESILIENCE", "type": "int", "val": 85 },
+					{ "option": "SPAWN_DENSITY", "type": "float", "val": 0.9 },
+					{
+						"option": "EVOLUTION_INVERSE_MULTIPLIER",
+						"type": "float",
+						"val": 1.5
+					},
+					{ "option": "ITEM_SPAWNRATE", "type": "float", "val": 1 }
+				]
+			},
+			{
+				"level": 2,
+				"name": "Cataclysm",
+				"description": "The default monster hunting and item collecting experience.",
+				"options": [
+					{ "option": "MONSTER_SPEED", "type": "int", "val": 100 },
+					{ "option": "MONSTER_RESILIENCE", "type": "int", "val": 100 },
+					{ "option": "SPAWN_DENSITY", "type": "float", "val": 1 },
+					{
+						"option": "EVOLUTION_INVERSE_MULTIPLIER",
+						"type": "float",
+						"val": 1
+					},
+					{ "option": "ITEM_SPAWNRATE", "type": "float", "val": 1 }
+				]
+			},
+			{
+				"level": 3,
+				"name": "Hurt me",
+				"description": "Monsters are stronger, appear 50% more often, and evolve faster.",
+				"options": [
+					{ "option": "MONSTER_SPEED", "type": "int", "val": 100 },
+					{ "option": "MONSTER_RESILIENCE", "type": "int", "val": 120 },
+					{ "option": "SPAWN_DENSITY", "type": "float", "val": 1.5 },
+					{
+						"option": "EVOLUTION_INVERSE_MULTIPLIER",
+						"type": "float",
+						"val": 0.91
+					},
+					{ "option": "ITEM_SPAWNRATE", "type": "float", "val": 1 }
+				]
+			},
+			{
+				"level": 4,
+				"name": "Punish me",
+				"description": "Monsters are significantly tougher and faster, spawn more, and evolve faster.  Items are a bit rarer too.",
+				"options": [
+					{ "option": "MONSTER_SPEED", "type": "int", "val": 110 },
+					{ "option": "MONSTER_RESILIENCE", "type": "int", "val": 150 },
+					{ "option": "SPAWN_DENSITY", "type": "float", "val": 2 },
+					{
+						"option": "EVOLUTION_INVERSE_MULTIPLIER",
+						"type": "float",
+						"val": 0.88
+					},
+					{ "option": "ITEM_SPAWNRATE", "type": "float", "val": 0.8 }
+				]
+			},
+			{
+				"level": 5,
+				"name": "Punish me more!",
+				"description": "Monsters are much tougher, extremely fast, and spawn 3x more.  Items are half as likely to spawn.",
+				"options": [
+					{ "option": "MONSTER_SPEED", "type": "int", "val": 120 },
+					{ "option": "MONSTER_RESILIENCE", "type": "int", "val": 200 },
+					{ "option": "SPAWN_DENSITY", "type": "float", "val": 3 },
+					{
+						"option": "EVOLUTION_INVERSE_MULTIPLIER",
+						"type": "float",
+						"val": 0.75
+					},
+					{ "option": "ITEM_SPAWNRATE", "type": "float", "val": 0.5 }
+				]
+			}
+		]
+	},
 	{
 		"type": "option_slider",
 		"id": "world_difficulty",
@@ -119,7 +152,11 @@
 				"name": "240 Days",
 				"description": "Most zombies won't have evolved until after 240 days.",
 				"options": [
-					{ "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 2 }
+					{
+						"option": "EVOLUTION_INVERSE_MULTIPLIER",
+						"type": "float",
+						"val": 2
+					}
 				]
 			},
 			{
@@ -127,7 +164,11 @@
 				"name": "180 Days",
 				"description": "Most zombies won't have evolved until after 180 days.",
 				"options": [
-					{ "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 1.5 }
+					{
+						"option": "EVOLUTION_INVERSE_MULTIPLIER",
+						"type": "float",
+						"val": 1.5
+					}
 				]
 			},
 			{
@@ -135,7 +176,11 @@
 				"name": "Default",
 				"description": "Most zombies will have evolved at least once after 120 days.",
 				"options": [
-					{ "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 1 }
+					{
+						"option": "EVOLUTION_INVERSE_MULTIPLIER",
+						"type": "float",
+						"val": 1
+					}
 				]
 			},
 			{
@@ -143,7 +188,11 @@
 				"name": "110 Days",
 				"description": "Most zombies will have evolved at least once after 110 days.",
 				"options": [
-					{ "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 0.91 }
+					{
+						"option": "EVOLUTION_INVERSE_MULTIPLIER",
+						"type": "float",
+						"val": 0.91
+					}
 				]
 			},
 			{
@@ -151,7 +200,11 @@
 				"name": "105 Days",
 				"description": "Most zombies will have evolved at least once after 105 days.",
 				"options": [
-					{ "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 0.88 }
+					{
+						"option": "EVOLUTION_INVERSE_MULTIPLIER",
+						"type": "float",
+						"val": 0.88
+					}
 				]
 			},
 			{
@@ -159,7 +212,11 @@
 				"name": "90 Days",
 				"description": "Most zombies will have evolved at least once after 90 days.",
 				"options": [
-					{ "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 0.75 }
+					{
+						"option": "EVOLUTION_INVERSE_MULTIPLIER",
+						"type": "float",
+						"val": 0.75
+					}
 				]
 			},
 			{
@@ -167,7 +224,11 @@
 				"name": "30 Days",
 				"description": "Most zombies will have evolved at least once after 30 days.",
 				"options": [
-					{ "option": "EVOLUTION_INVERSE_MULTIPLIER", "type": "float", "val": 0.25 }
+					{
+						"option": "EVOLUTION_INVERSE_MULTIPLIER",
+						"type": "float",
+						"val": 0.25
+					}
 				]
 			}
 		]
@@ -240,25 +301,19 @@
 				"level": 0,
 				"name": "90%",
 				"description": "Monster speed is reduced to 90%.",
-				"options": [
-					{ "option": "MONSTER_SPEED", "type": "int", "val": 90 }
-				]
+				"options": [{ "option": "MONSTER_SPEED", "type": "int", "val": 90 }]
 			},
 			{
 				"level": 1,
 				"name": "100%",
 				"description": "Monster speed is at its normal level.",
-				"options": [
-					{ "option": "MONSTER_SPEED", "type": "int", "val": 100 }
-				]
+				"options": [{ "option": "MONSTER_SPEED", "type": "int", "val": 100 }]
 			},
 			{
 				"level": 2,
 				"name": "110%",
 				"description": "Monster speed is increased to 110%.",
-				"options": [
-					{ "option": "MONSTER_SPEED", "type": "int", "val": 110 }
-				]
+				"options": [{ "option": "MONSTER_SPEED", "type": "int", "val": 110 }]
 			}
 		]
 	},
@@ -273,49 +328,37 @@
 				"level": 0,
 				"name": "80%",
 				"description": "The monster population is reduced to 80%.",
-				"options": [
-					{ "option": "SPAWN_DENSITY", "type": "float", "val": 0.8 }
-				]
+				"options": [{ "option": "SPAWN_DENSITY", "type": "float", "val": 0.8 }]
 			},
 			{
 				"level": 1,
 				"name": "90%",
 				"description": "The monster population is reduced to 90%.",
-				"options": [
-					{ "option": "SPAWN_DENSITY", "type": "float", "val": 0.9 }
-				]
+				"options": [{ "option": "SPAWN_DENSITY", "type": "float", "val": 0.9 }]
 			},
 			{
 				"level": 2,
 				"name": "100%",
 				"description": "The monster population is at its normal level.",
-				"options": [
-					{ "option": "SPAWN_DENSITY", "type": "float", "val": 1 }
-				]
+				"options": [{ "option": "SPAWN_DENSITY", "type": "float", "val": 1 }]
 			},
 			{
 				"level": 3,
 				"name": "150%",
 				"description": "The monster population is increased to 150%.",
-				"options": [
-					{ "option": "SPAWN_DENSITY", "type": "float", "val": 1.5 }
-				]
+				"options": [{ "option": "SPAWN_DENSITY", "type": "float", "val": 1.5 }]
 			},
 			{
 				"level": 4,
 				"name": "200%",
 				"description": "The monster population is increased to 200%.",
-				"options": [
-					{ "option": "SPAWN_DENSITY", "type": "float", "val": 2 }
-				]
+				"options": [{ "option": "SPAWN_DENSITY", "type": "float", "val": 2 }]
 			},
 			{
 				"level": 5,
 				"name": "300%",
 				"description": "The monster population is increased to 300%.",
-				"options": [
-					{ "option": "SPAWN_DENSITY", "type": "float", "val": 3 }
-				]
+				"options": [{ "option": "SPAWN_DENSITY", "type": "float", "val": 3 }]
 			}
 		]
 	},
@@ -394,48 +437,77 @@
 		]
 	},
 	{
-    "type": "option_slider",
-    "id": "world_random_npcs",
-    "context": "WORLDGEN",
-    "name": "Random NPCs",
-    "default": 1,
-    "levels": [
-      {
-        "level": 0,
-        "name": "Where is everyone?",
-        "description": "You are very unlikely to encounter random NPCs.",
-        "options": [ { "option": "NPC_SPAWNTIME", "type": "float", "val": 10 } ]
-      },
-      {
-        "level": 1,
-        "name": "Lonely",
-        "description": "The default: NPCs are rare, but as expected in this ruined world.",
-        "options": [ { "option": "NPC_SPAWNTIME", "type": "float", "val": 4 } ]
-      },
-      {
-        "level": 2,
-        "name": "Average",
-        "description": "You are twice as likely to encounter random NPCs.",
-        "options": [ { "option": "NPC_SPAWNTIME", "type": "float", "val": 2 } ]
-      },
-      {
-        "level": 3,
-        "name": "Crowded",
-        "description": "Random NPCs are fairly common (4x more likely).  Go meet some friends!",
-        "options": [ { "option": "NPC_SPAWNTIME", "type": "float", "val": 1 } ]
-      },
+		"type": "option_slider",
+		"id": "world_random_npcs",
+		"context": "WORLDGEN",
+		"name": "Random NPCs",
+		"default": 1,
+		"levels": [
+			{
+				"level": 0,
+				"name": "Where is everyone?",
+				"description": "You are very unlikely to encounter random NPCs.",
+				"options": [{ "option": "NPC_SPAWNTIME", "type": "float", "val": 10 }]
+			},
+			{
+				"level": 1,
+				"name": "Lonely",
+				"description": "The default: NPCs are rare, but as expected in this ruined world.",
+				"options": [{ "option": "NPC_SPAWNTIME", "type": "float", "val": 4 }]
+			},
+			{
+				"level": 2,
+				"name": "Average",
+				"description": "You are twice as likely to encounter random NPCs.",
+				"options": [{ "option": "NPC_SPAWNTIME", "type": "float", "val": 2 }]
+			},
+			{
+				"level": 3,
+				"name": "Crowded",
+				"description": "Random NPCs are fairly common (4x more likely).  Go meet some friends!",
+				"options": [{ "option": "NPC_SPAWNTIME", "type": "float", "val": 1 }]
+			},
 			{
 				"level": 4,
 				"name": "Party time",
 				"description": "Random NPCs are 8x more likely.  PARTYYYYY!",
-				"options": [ { "option": "NPC_SPAWNTIME", "type": "float", "val": 0.5 } ]
+				"options": [{ "option": "NPC_SPAWNTIME", "type": "float", "val": 0.5 }]
 			},
 			{
 				"level": 5,
 				"name": "Jakarta",
 				"description": "How are they all still alive?  Random NPCs are 32x more likely.  JAKARTA!",
-				"options": [ { "option": "NPC_SPAWNTIME", "type": "float", "val": 0.1 } ]
+				"options": [{ "option": "NPC_SPAWNTIME", "type": "float", "val": 0.1 }]
+			},
+			{
+				"level": 6,
+				"name": "India",
+				"description": "Jesus Christ m8",
+				"options": [{ "option": "NPC_SPAWNTIME", "type": "float", "val": 0.01 }]
 			}
-    ]
-  }
+		]
+	},
+	{
+		"type": "option_slider",
+		"id": "world_show_all_items",
+		"context": "WORLDGEN",
+		"name": "Show All Items",
+		"default": 0,
+		"levels": [
+			{
+				"level": 0,
+				"name": "No",
+				"description": "Show only adjacent (Like CDDA)",
+				"options": [
+					{ "option": "SHOW_ALL_ITEMS", "type": "bool", "val": false }
+				]
+			},
+			{
+				"level": 1,
+				"name": "Yes",
+				"description": "No containers will obscure their contents",
+				"options": [{ "option": "SHOW_ALL_ITEMS", "type": "bool", "val": true }]
+			}
+		]
+	}
 ]

@@ -6557,13 +6557,15 @@ bool map::could_see_items( const tripoint_bub_ms &p, const tripoint_bub_ms &from
         // never see inside of sealed containers
         return false;
     }
-    // if( container ) {
-    //     // can see inside of containers if adjacent or
-    //     // on top of the container
-    //     return std::abs( p.x() - from.x() ) <= 1 &&
-    //            std::abs( p.y() - from.y() ) <= 1 &&
-    //            std::abs( p.z() - from.z() ) <= 1;
-    // }
+    if ( ! get_option<bool>( "SHOW_ALL_ITEMS" ) ) {
+        if( container ) {
+            // can see inside of containers if adjacent or
+            // on top of the container
+            return std::abs( p.x() - from.x() ) <= 1 &&
+                   std::abs( p.y() - from.y() ) <= 1 &&
+                   std::abs( p.z() - from.z() ) <= 1;
+        }
+    }
     return true;
 }
 
