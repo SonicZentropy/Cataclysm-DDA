@@ -509,5 +509,155 @@
 				"options": [{ "option": "SHOW_ALL_ITEMS", "type": "bool", "val": true }]
 			}
 		]
+	},
+	{
+		"type": "option_slider",
+		"id": "world_allow_torn_pockets",
+		"context": "WORLDGEN",
+		"name": "Allow Torn Pockets",
+		"default": 0,
+		"levels": [
+			{
+				"level": 0,
+				"name": "No",
+				"description": "Pockets will never tear",
+				"options": [
+					{ "option": "ALLOW_TORN_POCKETS", "type": "bool", "val": false }
+				]
+			},
+			{
+				"level": 1,
+				"name": "Yes",
+				"description": "Pockets tear as normal",
+				"options": [
+					{ "option": "ALLOW_TORN_POCKETS", "type": "bool", "val": true }
+				]
+			}
+		]
+	},
+	{
+		"type": "option_slider",
+		"id": "world_disable_weariness",
+		"context": "WORLDGEN",
+		"name": "Disable Weariness",
+		"default": 0,
+		"levels": [
+			{
+				"level": 0,
+				"name": "No",
+				"description": "Weariness functions normally",
+				"options": [
+					{ "option": "DISABLE_WEARINESS", "type": "bool", "val": false }
+				]
+			},
+			{
+				"level": 1,
+				"name": "Yes",
+				"description": "Weariness locked at zero (stamina and sleepiness unaffected)",
+				"options": [
+					{ "option": "DISABLE_WEARINESS", "type": "bool", "val": true }
+				]
+			}
+		]
+	},
+	{
+		"type": "option_slider",
+		"id": "world_disable_focus",
+		"context": "WORLDGEN",
+		"name": "Disable Focus",
+		"default": 0,
+		"levels": [
+			{
+				"level": 0,
+				"name": "No",
+				"description": "Focus functions normally",
+				"options": [{ "option": "DISABLE_FOCUS", "type": "bool", "val": false }]
+			},
+			{
+				"level": 1,
+				"name": "Yes",
+				"description": "Focus permanently locked at 100 (consider Slow Learner to compensate)",
+				"options": [{ "option": "DISABLE_FOCUS", "type": "bool", "val": true }]
+			}
+		]
+	},
+	{
+		"type": "option_slider",
+		"id": "world_remove_riot_fires",
+		"context": "WORLDGEN",
+		"name": "Remove Riot Fires",
+		"default": 0,
+		"levels": [
+			{
+				"level": 0,
+				"name": "No",
+				"description": "Riot fires spawn as normal",
+				"options": [
+					{ "option": "REMOVE_RIOT_FIRES", "type": "bool", "val": false }
+				]
+			},
+			{
+				"level": 1,
+				"name": "Yes",
+				"description": "No random fires; other riot damage still occurs",
+				"options": [
+					{ "option": "REMOVE_RIOT_FIRES", "type": "bool", "val": true }
+				]
+			}
+		]
+	},
+	{
+		"type": "option_slider",
+		"id": "world_always_use_debug_map",
+		"context": "WORLDGEN",
+		"name": "Always Use Debug Map",
+		"default": 0,
+		"levels": [
+			{
+				"level": 0,
+				"name": "No",
+				"description": "Normal overmap",
+				"options": [
+					{ "option": "ALWAYS_USE_DEBUG_MAP", "type": "bool", "val": false }
+				]
+			},
+			{
+				"level": 1,
+				"name": "Yes",
+				"description": "Overmap replaced with debug version (dev convenience only)",
+				"options": [
+					{ "option": "ALWAYS_USE_DEBUG_MAP", "type": "bool", "val": true }
+				]
+			}
+		]
+	},
+	{
+		"type": "option_slider",
+		"id": "world_no_disabling_achievements",
+		"context": "WORLDGEN",
+		"name": "No Disabling Achievements",
+		"default": 0,
+		"levels": [
+			{
+				"level": 0,
+				"name": "No",
+				"description": "Debug mode disables achievements as normal",
+				"options": [
+					{
+						"option": "NO_DISABLING_ACHIEVEMENTS",
+						"type": "bool",
+						"val": false
+					}
+				]
+			},
+			{
+				"level": 1,
+				"name": "Yes",
+				"description": "Achievements stay enabled regardless of debug mode",
+				"options": [
+					{ "option": "NO_DISABLING_ACHIEVEMENTS", "type": "bool", "val": true }
+				]
+			}
+		]
 	}
 ]

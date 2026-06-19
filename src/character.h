@@ -44,6 +44,7 @@
 #include "item_pocket.h"
 #include "memory_fast.h"
 #include "monster.h"
+#include "options.h"
 #include "pimpl.h"
 #include "player_activity.h"
 #include "pocket_type.h"
@@ -2897,8 +2898,11 @@ class Character : public Creature, public visitable
         void randomize( bool random_scenario, bool play_now = false );
         void randomize_cosmetics();
         int get_focus() const {
-            //return std::max( 1, focus_pool / 1000 );
-            return 100;
+            if (get_option<bool>("DISABLE_FOCUS")) {
+                return 100;
+            }
+            return std::max( 1, focus_pool / 1000 );
+
         }
         int get_effective_focus() const;
         void mod_focus( int amount ) {

@@ -563,7 +563,9 @@
 		"starting_trait": true,
 		"valid": false,
 		"vitamin_cost": 60,
-		"integrated_armor": ["packmule_storage"]
+		"enchantments": [
+			{ "values": [{ "value": "OBTAIN_COST_MULTIPLIER", "multiply": -0.1 }] }
+		]
 	},
 	{
 		"type": "mutation",
@@ -6827,7 +6829,13 @@
 		"prereqs": ["INT_UP_4"],
 		"threshreq": ["THRESH_CEPHALOPOD"],
 		"strict_threshreq": true,
-		"cancels": ["TRUTHTELLER", "LIAR", "SLOWLEARNER", "FASTLEARNER", "VERYSLOWLEARNER"],
+		"cancels": [
+			"TRUTHTELLER",
+			"LIAR",
+			"SLOWLEARNER",
+			"FASTLEARNER",
+			"VERYSLOWLEARNER"
+		],
 		"points": 5,
 		"purifiable": false,
 		"vitamin_cost": 210,
@@ -6852,7 +6860,13 @@
 		"threshreq": ["THRESH_INTERSTICE"],
 		"strict_threshreq": true,
 		"mixed_effect": true,
-		"cancels": ["TRUTHTELLER", "LIAR", "SLOWLEARNER", "VERYSLOWLEARNER", "FASTLEARNER"],
+		"cancels": [
+			"TRUTHTELLER",
+			"LIAR",
+			"SLOWLEARNER",
+			"VERYSLOWLEARNER",
+			"FASTLEARNER"
+		],
 		"points": -1,
 		"purifiable": false,
 		"vitamin_cost": 210,
